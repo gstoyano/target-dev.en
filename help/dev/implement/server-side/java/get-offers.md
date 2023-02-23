@@ -10,7 +10,7 @@
 
 The `TargetClient.getOffers` method signature is shown as follows.
 
-#### Request
+**Request**
 
 ```javascript
 TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
@@ -18,7 +18,7 @@ TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
 
 TargetDeliveryRequest is created using `TargetDeliveryRequest.builder`.
 
-#### Response
+**Response**
 
 ```javascript
 TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
@@ -32,7 +32,7 @@ The `TargetDeliveryRequestBuilder` object has the following structure:
 | --- | --- | --- | --- |
 |context|Context|Yes|Specifies the context for the request|
 |sessionId||String|No|Used for linking multiple Target requests|
-|thirdPartyId|String|No|Your company’s identifier for the user that you can send with every call|
+|thirdPartyId|String|No|Your company's identifier for the user that you can send with every call|
 |cookies|List|No|List of cookies returned in previous Target request of same user.|
 |customerIds|Map|No|Customer Ids in VisitorId-compatible format|
 |execute|ExecuteRequest|No|PageLoad or mboxes request to execute. Will be evaluated on server side immediately|
@@ -90,7 +90,7 @@ You don't have to worry about expiring the cookies. Target handles maxAge inside
 
 ## Example
 
-#### Request
+**Request**
 
 ```javascript
 ClientConfig clientConfig = ClientConfig.builder()
@@ -109,7 +109,7 @@ TargetDeliveryRequest targetDeliveryRequest = TargetDeliveryRequest.builder()
         .build();
 ```
 
-#### Response
+**Response**
 
 ```javascript
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);

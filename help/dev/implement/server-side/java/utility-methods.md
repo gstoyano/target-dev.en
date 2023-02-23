@@ -1,8 +1,12 @@
+---
+title: Utility Methods
+description: These helper methods are reusable across controllers and can be moved to a separate utility class.
+---
 # Utility Methods
 
 These helper methods are reusable across controllers and can be moved to a separate utility class.
 
-### Methods
+## Methods
 
 ```javascript
 public class TargetRequestUtils {

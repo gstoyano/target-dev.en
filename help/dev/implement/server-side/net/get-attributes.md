@@ -1,3 +1,7 @@
+---
+title: Get Attributes
+description: GetAttributes() is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+---
 # Get Attributes
 
 ## Description
@@ -23,9 +27,9 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 A `TargetAttributes` object is returned from `TargetClient.GetAttributes()` which has the following properties and methods:
 
-|Property/Method|Return Type|Description
+|Property/Method|Return Type|Description|
 | --- | --- | --- |
-|Response|TargetDeliveryResponse|Returns the response object normally returned by [Get Offers​](get-offers.md)|
+|Response|TargetDeliveryResponse|Returns the response object normally returned by [Get Offers](get-offers.md)|
 |ToDictionary|IReadOnlyDictionary|Returns a dictionary of dictionaries with key value pairs grouped by mbox names|
 |ToMboxDictionary(mboxName)|IReadOnlyDictionary|Returns a dictionary with key value pairs for the provided mbox|
 |GetBoolean(mboxName, key, defaultValue)|bool|Returns the value for a specified mbox name and attribute key|

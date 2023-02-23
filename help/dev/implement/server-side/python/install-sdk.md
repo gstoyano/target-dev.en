@@ -1,8 +1,12 @@
+---
+title: Install SDK
+description: The Python SDK is distributed by pypi. To get started, add it as a dependency by installing it via pip.
+---
 # Install SDK
 
 The Python SDK is distributed by [pypi](https://pypi.org/project/target-python-sdk). To get started, add it as a dependency by installing it via pip:
 
-### Install
+## Install
 
 ```python
 pip install target-python-sdk

@@ -1,10 +1,14 @@
+---
+title: Install SDK
+description: The Node.js SDK is distributed by npm.
+---
 # Install SDK
 
 The Node.js SDK is distributed by [npm](https://www.npmjs.com/package/@adobe/target-nodejs-sdk).
 
 To get started, add it as a dependency by installing from NPM:
 
-### Install
+## Install
 
 ```js
 npm i @adobe/target-nodejs-sdk -P

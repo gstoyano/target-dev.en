@@ -1,14 +1,18 @@
+---
+title: Install SDK
+description: The Java SDK is distributed by Maven Central. To get started, add it as a dependency by installing in gradle or maven.
+---
 # Install SDK
 
 The Java SDK is distributed by [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). To get started, add it as a dependency by installing in `gradle` or `maven`:
 
-### Gradle
+## Gradle
 
 ```javascript
 compile 'com.adobe.target:java-sdk:1.0'
 ```
 
-### Maven
+## Maven
 
 ```markup
 <dependency>

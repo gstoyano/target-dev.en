@@ -47,3 +47,4 @@ The [Java SDK](https://github.com/adobe/target-java-sdk) is open sourced and mai
 
 Read the [changelog](https://github.com/adobe/target-java-sdk/blob/main/CHANGELOG.md) for the Java SDK.
 
+-->
