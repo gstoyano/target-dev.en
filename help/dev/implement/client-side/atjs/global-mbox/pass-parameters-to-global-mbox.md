@@ -15,7 +15,7 @@ The code to call the JavaScript function must come before the global mbox on the
 
 >[!NOTE]
 >
->If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/src/pages/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) function.
+>If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) function.
 
 You can pass in parameters to `target-global-mbox` using the `targetPageParams()` function in any of the following ways:
 

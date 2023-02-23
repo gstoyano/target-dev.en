@@ -30,7 +30,7 @@ This function is built into at.js mostly to ease the transition from mbox.js (no
 
 `mboxCreate()` now uses the "json" endpoint instead of the "standard" endpoint and fires asynchronously. Because of this:
 
-* [Debugging](/src/pages/implement/client-side/target-debugging-atjs/target-debugging-atjs.md) is a little different. 
+* [Debugging](/help/dev/implement/client-side/target-debugging-atjs/target-debugging-atjs.md) is a little different. 
 * Avoid offer code requiring synchronous, blocking calls.
 
   For example, offers that set JavaScript variables that are used by site code or other mboxes that come later on the page.

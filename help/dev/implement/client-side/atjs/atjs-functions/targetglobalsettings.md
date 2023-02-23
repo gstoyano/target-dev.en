@@ -25,7 +25,7 @@ You can override the following settings:
 * **Default Value**: body { opacity: 0 }
 * **Description**: Used only when `globalMboxAutocreate === true` to minimize the chance of flicker.
 
-  For more information, see [How at.js Manages Flicker](/src/pages/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
+  For more information, see [How at.js Manages Flicker](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
 
 ### bodyHidingEnabled
 
@@ -154,7 +154,7 @@ You can override the following settings:
 
 * **Type**: Boolean
 * **Default Value**: false
-* **Description**: Target provides opt-in functionality support via Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, add the `optinEnabled=true` setting. In Adobe Experience Platform you must select "enable" from the GDPR Opt-In drop-down list in the extension installation view. See the [Adobe Experience Platform documentation](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) for more details. For more information about this setting as it relates to privacy and data protection regulations, including the European Union's General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), see [Privacy and data protection regulations](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
+* **Description**: Target provides opt-in functionality support via Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, add the `optinEnabled=true` setting. In Adobe Experience Platform you must select "enable" from the GDPR Opt-In drop-down list in the extension installation view. See the [Adobe Experience Platform documentation](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) for more details. For more information about this setting as it relates to privacy and data protection regulations, including the European Union's General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), see [Privacy and data protection regulations](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
 
 ### optoutEnabled
 
@@ -168,7 +168,7 @@ You can override the following settings:
 * **Default Value**: true (true beginning with at.js version 1.6.2)
 * **Description**: Indicates if we should use `<clientCode>.tt.omtrdc.net` domain or `mboxedge<clusterNumber>.tt.omtrdc.net` domain.
 
-  If this value is true, `mboxedge<clusterNumber>.tt.omtrdc.net` domain will be saved to a cookie. Currently not working with [CNAME](/src/pages/before-implement/implement-cname-support-in-target.md) when using at.js versions prior to at.js 1.8.2 and at.js 2.3.1. If this is an issue for you, consider [updating at.js](/src/pages/implement/client-side/atjs/target-atjs-versions.md) to a newer, supported version.
+  If this value is true, `mboxedge<clusterNumber>.tt.omtrdc.net` domain will be saved to a cookie. Currently not working with [CNAME](/src/pages/before-implement/implement-cname-support-in-target.md) when using at.js versions prior to at.js 1.8.2 and at.js 2.3.1. If this is an issue for you, consider [updating at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md) to a newer, supported version.
 
 ### overrideMboxEdgeServerTimeout
 
@@ -402,8 +402,8 @@ After `cspScriptNonce` and `cspStyleNonce` settings are specified, at.js 2.3.0+ 
 
 You must have a hybrid integration of Target.
 
-* **Server-side**:  You must use the [Delivery API](/src/pages/implement/delivery-api/index.md) or [Target SDKs](../../implement/server-side/sdk-guides/).
-* **Client-side**: You must use [at.js version 2.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
+* **Server-side**:  You must use the [Delivery API](/help/dev/implement/delivery-api/index.md) or [Target SDKs](../../implement/server-side/sdk-guides/).
+* **Client-side**: You must use [at.js version 2.2 or later](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Code samples
 

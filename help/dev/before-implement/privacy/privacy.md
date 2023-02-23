@@ -13,7 +13,7 @@ Adobe Target has enabled processes and settings that allow you to use Target in 
 
 Individual feature-usage data is collected for internal Adobe purposes to identify whether Target features are performing as intended or to identify features that are being under-utilized. Various measurements of latency are collected to help address performance concerns. Personal data is not collected.
 
-You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled).
+You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled).
 
 ## Collection of IP addresses
 

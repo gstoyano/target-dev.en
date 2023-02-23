@@ -17,7 +17,7 @@ Here are some benefits of using at.js 2.*x* that are not available in previous v
 
 ## at.js 2.*x* system diagrams
 
-The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/src/pages/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
+The following diagrams help you understand the workflow of at.js 2.*x* with Views and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.*x*, see [Single Page Application implementation](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 ![Target flow with at.js 2.*x*](../assets/system-diagram-atjs-20.png)
 
@@ -47,7 +47,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 ## Deploy at.js 2.*x*
 
-Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) extension. 
+Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) extension. 
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/
 >
 >Or
 >
->Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Deprecated at.js functions
 
@@ -65,7 +65,7 @@ There are several functions that have been deprecated in at.js 2.*x*.
 >
 >If these deprecated functions are still used on your site when at.js 2.*x* is deployed, you will see console warnings. The recommended approach when upgrading is to test the deployment of at.js 2.*x* in a staging environment and make sure to go through each and every warning that has been logged in the console and translate the deprecated functions to new functions introduced in at.js 2.*x*. 
 
-You can find the deprecated functions and their counterpart below. For a complete list of functions, see [at.js functions](/src/pages/implement/client-side/atjs/atjs-functions/atjs-functions.md).
+You can find the deprecated functions and their counterpart below. For a complete list of functions, see [at.js functions](/help/dev/implement/client-side/atjs/atjs-functions/atjs-functions.md).
 
 >[!NOTE]
 >
@@ -361,10 +361,10 @@ The following tables explain at.js. 2.*x* compatibility with different activity 
 |Audiences|Yes|
 |Customer Attributes|Yes|
 |AEM Experience Fragments|Yes|
-|[Adobe Experience Platform extension](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)|Yes|
+|[Adobe Experience Platform extension](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)|Yes|
 |Debugger|Yes|
 |Auditor|Rules have not yet been updated for at.js 2.*x*|
-|Opt-In support for [GDPR](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)|This is supported in [at.js version 2.1.0](/src/pages/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) or later.|
+|Opt-In support for [GDPR](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)|This is supported in [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) or later.|
 | AEM Enhanced Personalization powered by Adobe Target | No|
 
 ### Features

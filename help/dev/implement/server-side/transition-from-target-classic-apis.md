@@ -11,7 +11,7 @@ Information to help you transition from the Target Classic APIs to the Target AP
 
 With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your Target Classic API-based integrations to the Target APIs powered by the [Adobe Developer Console](https://developer.adobe.com/console/home).
 
-For more information about Target APIs, see [Target APIs](/src/pages/before-administer/index.md). For more information about Target SDKs, see [Target Server-side Implementation](/src/pages/implement/server-side/index.md)
+For more information about Target APIs, see [Target APIs](/src/pages/before-administer/index.md). For more information about Target SDKs, see [Target Server-side Implementation](/help/dev/implement/server-side/index.md)
 
 ## Terminology
 

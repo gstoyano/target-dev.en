@@ -13,7 +13,7 @@ For more information about implementing Target on mobile apps, see the new [Adob
 
 If you are leveraging the SDK 4.x, the mobile app targeting process includes the following steps:
 
-1. [How Target works in mobile apps](/src/pages/implement/mobile/how-target-works-mobile-apps.md)
-1. [Enable Target in the SDK](/src/pages/implement/mobile/enable-target-in-sdk.md)
-1. [Create a Target location and success metric](/src/pages/implement/mobile/mobile-create-location-and-metric.md)
-1. [Send custom user data](/src/pages/implement/mobile/mobile-custom-user-data.md)
+1. [How Target works in mobile apps](/help/dev/implement/mobile/how-target-works-mobile-apps.md)
+1. [Enable Target in the SDK](/help/dev/implement/mobile/enable-target-in-sdk.md)
+1. [Create a Target location and success metric](/help/dev/implement/mobile/mobile-create-location-and-metric.md)
+1. [Send custom user data](/help/dev/implement/mobile/mobile-custom-user-data.md)

@@ -11,10 +11,10 @@ In a client-side implementation of Adobe Target, Target delivers the experiences
 
 To implement Adobe Target client-side, you must use one of the following JavaScript libraries:
 
-* [Adobe Experience Platform Web SDK](/src/pages/implement/client-side/aep-web-sdk.md)
+* [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk.md)
 
-  The Adobe Experience Platform Web SDK lets you interact with the various services in the Experience Cloud (including Target) through the Adobe Experience Edge Network. If you choose to migrate to the Adobe Experience Platform Web SDK, see [What is Adobe Experience Platform Web SDK](/src/pages/implement/client-side/aep-web-sdk.md).
+  The Adobe Experience Platform Web SDK lets you interact with the various services in the Experience Cloud (including Target) through the Adobe Experience Edge Network. If you choose to migrate to the Adobe Experience Platform Web SDK, see [What is Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk.md).
 
-* [Target at.js JavaScript library](/src/pages/implement/client-side/atjs/how-atjs-works/)
+* [Target at.js JavaScript library](/help/dev/implement/client-side/atjs/how-atjs-works/)
 
-  The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single page applications. If you choose to migrate to at.js, see [How At.js Works](/src/pages/implement/client-side/atjs/how-atjs-works/) and [Adobe Target Skill Builder: Developer chat, migrate Adobe Target's mbox.js to at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
+  The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single page applications. If you choose to migrate to at.js, see [How At.js Works](/help/dev/implement/client-side/atjs/how-atjs-works/) and [Adobe Target Skill Builder: Developer chat, migrate Adobe Target's mbox.js to at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).

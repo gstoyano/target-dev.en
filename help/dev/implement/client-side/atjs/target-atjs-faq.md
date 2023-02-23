@@ -106,7 +106,7 @@ If you are deploying at.js through an asynchronous Adobe Experience Platform imp
 
 If you are deploying at.js through a synchronous DTM implementation, the pre-hiding snippet can be added through a Page Load rule triggered at the top of the page.
 
-For more information, see [How at.js manages flicker](/src/pages/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md). 
+For more information, see [How at.js manages flicker](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md). 
 
 ## Is at.js compatible with the Adobe Experience Manager integration (Experience Manager)?
 
@@ -114,7 +114,7 @@ Adobe Experience Manager 6.2 with FP-11577 (or later) now supports at.js impleme
 
 ## How can I prevent page-load flicker using at.js?
 
-Target provides several ways to prevent page-load flicker. For more information, see [Preventing Flicker with at.js](/src/pages/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
+Target provides several ways to prevent page-load flicker. For more information, see [Preventing Flicker with at.js](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
 
 ## What is the file size of at.js?
 
@@ -154,17 +154,17 @@ Yes, same as with mbox.js.
 
 Target customers sometimes use cloud-based instances with Target for testing or simple proof-of-concept purposes. These domains, and many others, are part of the [Public Suffix List](https://publicsuffix.org/list/public_suffix_list.dat).
 
-Modern browsers do not save cookies if you are using these domains unless you customize the `cookieDomain` setting using targetGlobalSettings(). For more information, see [Using Cloud-Based Instances with Target](/src/pages/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
+Modern browsers do not save cookies if you are using these domains unless you customize the `cookieDomain` setting using targetGlobalSettings(). For more information, see [Using Cloud-Based Instances with Target](/help/dev/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
 
 ## Can IP addresses be used as the cookie domain when using at.js?
 
-Yes, if you are using [at.js version 1.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md). Adobe strongly recommends that you keep current with the latest version, however.
+Yes, if you are using [at.js version 1.2 or later](/help/dev/implement/client-side/atjs/target-atjs-versions.md). Adobe strongly recommends that you keep current with the latest version, however.
 
 >[!NOTE]
 >
 >The following examples are not necessary if you are using at.js version 1.2 or later.
 
-Depending on how you use [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md), you might need to make additional modifications to the code after downloading at.js. For example, if you needed slightly different settings for your Target implementations on various websites and were unable to define these settings dynamically using custom JavaScript, make these customizations manually after downloading the file and before uploading to the respective website.
+Depending on how you use [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md), you might need to make additional modifications to the code after downloading at.js. For example, if you needed slightly different settings for your Target implementations on various websites and were unable to define these settings dynamically using custom JavaScript, make these customizations manually after downloading the file and before uploading to the respective website.
 
 The following examples let you use the `targetGlobalSettings()` at.js function to insert a code snippet to support IP addresses:
 
@@ -195,10 +195,10 @@ The following are possible root causes if you see this warning message:
 * The page is being built dynamically and at.js cannot find the element.
 * The page is being built slowly (due to a slow network) and at.js cannot find the selector in the DOM.
 * The page structure that activity is running on has been changed. If you reopen the activity in the Visual Experience Composer (VEC), you should get a warning message. Update the activity so that all the necessary elements can be found. 
-* The underlying page is part of a Single Page Application (SPA) or the page contains elements that appear farther down the page and the at.js "selector polling mechanism" cannot find those elements. Increasing the `selectorsPollingTimeout` might help. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md). 
+* The underlying page is part of a Single Page Application (SPA) or the page contains elements that appear farther down the page and the at.js "selector polling mechanism" cannot find those elements. Increasing the `selectorsPollingTimeout` might help. For more information, see [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md). 
 * Any click-tracking metric tries to add itself to every page, regardless of the URL on which the metric was set up. Although harmless, this situation makes many of these messages display.
   
-  For best results, please download and use the [latest version of at.js](/src/pages/implement/client-side/atjs/target-atjs-versions.md). For more information on how to download at.js, see the [Download at.js using the Target interface](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) section in the [*How to deploy at.js* > *Implement Target without a tag manager*](how-to-deployatjs/implement-target-without-a-tag-manager.md) article.
+  For best results, please download and use the [latest version of at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md). For more information on how to download at.js, see the [Download at.js using the Target interface](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) section in the [*How to deploy at.js* > *Implement Target without a tag manager*](how-to-deployatjs/implement-target-without-a-tag-manager.md) article.
 
 ## What is the domain tt.omtrdc.net that Target server calls go to?
 
@@ -214,7 +214,7 @@ To ensure that Target can properly track users, and because the cookies are gene
 
 ## How does at.js handle security issues like XSS and MITM attacks?
 
-Communication with the Adobe Edge network, enabled by at.js, happens only over HTTPS as long as the `secureOnly` option is set to true in the targetGlobalSettings() function ([targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)), otherwise at.js is allowed to switch between HTTP and HTTPS based on the page protocol.
+Communication with the Adobe Edge network, enabled by at.js, happens only over HTTPS as long as the `secureOnly` option is set to true in the targetGlobalSettings() function ([targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md)), otherwise at.js is allowed to switch between HTTP and HTTPS based on the page protocol.
 
 The following headers are enforced by default:
 * HTTP Strict Transport Security (HSTS)
@@ -236,7 +236,7 @@ Note that for response tokens and session IDs transmitted in these requests:
 
 It is expected to see the `Access-Control-Allow-Origin` header with value "*" in at.js requests, due to the fact they are public, authentication is not required, and the Adobe Edge Network needs to be accessed from any domain via JavaScript calls.
 
-However, Content Security Policy (CSP) needs to be enforced on the page. For more information on CSP requirements for at.js, see [Content Security Policy](src/pages/before-implement/privacy/content-security-policy.md) and [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+However, Content Security Policy (CSP) needs to be enforced on the page. For more information on CSP requirements for at.js, see [Content Security Policy](src/pages/before-implement/privacy/content-security-policy.md) and [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
 ## How often does at.js fire a network request?
 
@@ -244,7 +244,7 @@ Target executes all of its decisioning on the server side. This means that at.js
 
 ## In the best case scenario, can we expect that the user doesn't experience any visible effects on page load relating to hiding, replacing, and showing content?
 
-at.js tries to avoid pre-hiding HTML BODY or other DOM elements for an extended period, but this depends on network conditions and activity setup. at.js provides [settings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md) you can use to customize the BODY hiding CSS style, such that instead of blanking the entire HTML BODY, you can pre-hide only some parts of the page. The expectation is that those parts contain DOM elements that have to be "personalized."
+at.js tries to avoid pre-hiding HTML BODY or other DOM elements for an extended period, but this depends on network conditions and activity setup. at.js provides [settings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md) you can use to customize the BODY hiding CSS style, such that instead of blanking the entire HTML BODY, you can pre-hide only some parts of the page. The expectation is that those parts contain DOM elements that have to be "personalized."
 
 ## What is the sequence of events in an average scenario where a user qualifies for an activity?
 

@@ -57,9 +57,9 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
         + [at.js integrations](implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
       + How to deploy at.js {#deploy-at-js}
          + [How to deploy at.js](implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)
-         + [Implement Target using Adobe Experience Platform](implement/client-side/atjs/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md)
-         + [Implement Target without a tag manager](implement/client-side/atjs/how-to-deployatjs/implementing-target-without-a-tag-manager.md)
-         + [Implement Target using Dynamic Tag Manager (DTM)](implement/client-side/atjs/how-to-deployatjs/implementing-target-using-dynamic-tag-management.md)
+         + [Implement Target using Adobe Experience Platform](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
+         + [Implement Target without a tag manager](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
+         + [Implement Target using Dynamic Tag Manager (DTM)](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
          + [Implement Target for Single Page Applications (SPAs)](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
       + On-device decisioning {#on-device-decisioning}
          + [On-device decisioning overview](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
@@ -75,9 +75,9 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
          + [adobe.target.triggerView() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)
          + [adobe.target.trackEvent()](implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
          + [mboxCreate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)
-         + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetgobalsettings.md)
-         + [mboxDefine() and mboxUpdate() - at.js 1.x](implement/client-side/mboxdefine-mboxupdate-atjs-1x.md)
-         + [targetPageParams()](implement/client-side/targetpageparams.md)
+         + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetglobalsettings.md)
+         + [mboxDefine() and mboxUpdate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)
+         + [targetPageParams()](implement/client-side/atjs/atjs-functions/targetpageparams.md)
          + [targetPageParamsAll()](implement/client-side/atjs/atjs-functions/targetpageparamsall.md)
          + [registerExtension() - at.js 1.x](implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)
          + [sendNotifications() - at.js 2.1](implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)
@@ -94,18 +94,15 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
       + [Use a global mbox from a legacy implementation](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [Pass parameters to a global mbox](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [Global mbox frequently asked questions](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
+  + Server Side: implement Target {#server-side}
+     + [Server Side: implement Target overview](implement/server-side/overview.md)
+     + [Transition from Target legacy APIs to Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
+  + [Hybrid implementation](implement/hybrid/hybrid-overview.md)
 
 <!--
 
-  + Server Side: implement Target {#server-side}
-     + [Server Side: implement Target overview](c-api-and-sdk-overview/api-and-sdk-overview.md)
-     + [Transition from Target legacy APIs to Adobe I/O](c-api-and-sdk-overview/target-api-documentation.md)
-     + [On-device decisioning](implement/c-api-and-sdk-overview/on-device-decisioning.md)
-
 + [Jump to Administration Guide](https://blah.html)
 + Administration {#administration}
-
-+ [Implement Target overview](implementing-target.md)
 
 + Target for mobile apps {#mobile-apps}
    + [Target for mobile apps overview](c-target-mobile-app/target-mobile-app.md)
@@ -117,7 +114,6 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
    + [Prefetch offer content](c-target-mobile-app/prefetch-offer-content.md)
    + [Target for mobile apps FAQ](c-target-mobile-app/target-for-mobile-apps-faq.md)
    + [Use Location Service](c-target-mobile-app/use-location-service.md)
-+ [Hybrid implementation](implement/hybrid-implementation.md)
 + Email: implement Target {#implement-email}
    + [Email: implement Target overview](c-non-javascript-based-implementation/non-javascript-based-implementation.md)
    + [Create an Adbox for an image](c-non-javascript-based-implementation/testing-content-with-the-adbox.md)
