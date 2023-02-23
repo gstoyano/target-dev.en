@@ -1,10 +1,5 @@
 ---
-keywords:
-- qa
-- preview
-- preview link
-- mobile
-- mobile preview
+keywords: qa, preview, preview link, mobile, mobile preview
 description: Use mobile preview links to perform end-to-end QA for mobile app activities. You can enroll yourself into different experiences without special test devices.
 title: How Do I Use the Mobile Preview Link in Target Mobile?
 feature: Implement Mobile

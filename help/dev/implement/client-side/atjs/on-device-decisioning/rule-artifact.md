@@ -1,12 +1,5 @@
 ---
-keywords:
-- implementation
-- javascript library
-- js
-- atjs
-- on-device decisioning
-- on device decisioning
-- rule artifact
+keywords: implementation, javascript library, js, atjs, on-device decisioning, on device decisioning, rule artifact, $8
 description: Learn about the JSON rule artifact used by on-device decisioning.
 title: What is the JSON Rule Artifact Do in On-Device Decisioning?
 feature: at.js

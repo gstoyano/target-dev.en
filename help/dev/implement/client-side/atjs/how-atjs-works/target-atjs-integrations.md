@@ -1,9 +1,5 @@
 ---
-keywords:
-- at.js integration
-- supported integrations
-- unsupported integrations
-- third party integrations
+keywords: at.js integration, supported integrations, unsupported integrations, third party integrations
 description: See the integrations supported (and not supported) by Adobe Target at.js, including Analytics for Target (A4T), the Experience Cloud ID Service, and more.
 title: What Integrations Does at.js Support?
 feature: at.js

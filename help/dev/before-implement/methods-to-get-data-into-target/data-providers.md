@@ -1,10 +1,5 @@
 ---
-keywords:
-- implement
-- implementing
-- setting up
-- setup
-- data providers
+keywords: implement, implementing, setting up, setup, data providers
 description: Get data into Target using data providers.
 title: How Do I Get Data into Target Using Data Providers?
 feature: Implementation

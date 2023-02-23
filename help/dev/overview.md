@@ -1,8 +1,7 @@
 ---
 title: Overview - Adobe Target
 description: This is the overview page for Adobe Target APIs and SDKs
-contributors:
-  - https://github.com/icaraps
+contributors: https://github.com/icaraps
 ---
 
 <Hero slots="heading, text"/>

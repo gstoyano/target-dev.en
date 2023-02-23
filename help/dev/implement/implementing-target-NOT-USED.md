@@ -1,7 +1,5 @@
 ---
-keywords:
-- implement
-- implementing
+keywords: implement, implementing
 description: Understand basic concepts, be familiar with how Target works and integrates with your infrastructure, and understand how visitors are tracked.
 landing-page-description: Before you start using Adobe Target, you should implement it on your site, understand a few basic concepts and terms, and be familiar with how Target works.
 title: How Do I Implement Target?

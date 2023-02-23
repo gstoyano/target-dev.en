@@ -1,16 +1,5 @@
 ---
-keywords:
-- implementation
-- javascript library
-- js
-- atjs
-- on-device decisioning
-- on device decisioning
-- at.js
-- on-device
-- on device
-- troubleshooting
-- trouble shooting
+keywords: implementation, javascript library, js, atjs, on-device decisioning, on device decisioning, at.js, on-device, on device, troubleshooting, trouble shooting, implementation2
 description: Learn how to troubleshoot on-device decisioning with the at.js library.
 title: How Do I Troubleshoot On-Device Decisioning with the at.js JavaScript Library?
 feature: at.js

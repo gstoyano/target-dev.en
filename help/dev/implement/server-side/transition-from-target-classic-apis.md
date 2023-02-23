@@ -1,9 +1,5 @@
 ---
-keywords:
-- api
-- adobe i/o
-- classic
-- adobe developer console
+keywords: api, adobe i/o, classic, adobe developer console
 description: Learn how to transition from the Adobe Target Classic APIs to the Target APIs on the Adobe Developer Console.
 title: How Do I Transition From Target Classic APIs to Target APIs on the Adobe Developer Console?
 feature: Implement Server-side

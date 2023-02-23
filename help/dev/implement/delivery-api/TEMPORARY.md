@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API Introduction
 description: Adobe Target Delivery API Introduction
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # Introduction
@@ -26,8 +25,7 @@ You can still access the [legacy /v1/mbox and /v2/batchmbox API documentation](h
 ---
 title: Adobe Target Delivery API and SDKs
 description: Adobe Target Delivery API and SDKs
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # SDKs

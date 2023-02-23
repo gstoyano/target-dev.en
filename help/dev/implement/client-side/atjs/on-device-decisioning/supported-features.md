@@ -1,12 +1,5 @@
 ---
-keywords:
-- implementation
-- javascript library
-- js
-- atjs
-- on-device decisioning
-- on device decisioning
-- supported features
+keywords: implementation, javascript library, js, atjs, on-device decisioning, on device decisioning, supported features, $8
 description: Learn which features are supported for on-device decisioning.
 title: Which Features Are Supported in On-Device Decisioning
 feature: at.js

@@ -1,14 +1,5 @@
 ---
-keywords:
-- single page application implementation
-- implement single page application
-- spa
-- at.js 2.x
-- at.js
-- single page application
-- single page app
-- spa
-- SPAs
+keywords: single page application implementation, implement single page application, spa, at.js 2.x, at.js, single page application, single page app, spa, SPAs, single page application implementation0
 description: Learn how to use Adobe Target at.js 2.x to implement Target for Single Page Applications (SPAs).
 title: Can I implement Target for Single Page Applications (SPAs)?
 feature: Implement Server-side

@@ -1,19 +1,5 @@
 ---
-keywords:
-- cloud instances
-- public suffix list
-- public suffix
-- cookie
-- first-party cookie
-- 1st-party cookie
-- azurewebsites.net
-- cloudapp.net
-- amazonaws.com
-- cloudfront.net
-- herokuapp.com
-- firebaseapp.com
-- targetGlobalSettings
-- cookieDomain
+keywords: cloud instances, public suffix list, public suffix, cookie, first-party cookie, 1st-party cookie, azurewebsites.net, cloudapp.net, amazonaws.com, cloudfront.net, herokuapp.com, firebaseapp.com, targetGlobalSettings, cookieDomain, cloud instances5, cloud instances6, cloud instances7, cloud instances8, cloud instances9, public suffix list0, public suffix list1, public suffix list2, public suffix list3, public suffix list4, public suffix list5
 description: Explore issues (with solutions) customers face when using cloud-based instances to test Adobe Target or for proof-of-concept purposes.
 title: Can I Use Target with Cloud-based Instances?
 feature: at.js

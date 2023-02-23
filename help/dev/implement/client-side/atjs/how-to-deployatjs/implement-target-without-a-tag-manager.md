@@ -1,11 +1,5 @@
 ---
-keywords:
-- implement target
-- implementation
-- implement at.js
-- tag manager
-- on-device decisioning
-- on device decisioning
+keywords: implement target, implementation, implement at.js, tag manager, on-device decisioning, on device decisioning
 description: Learn how to specify the settings (account details, implementation methods, etc.) to implement the Adobe Target at.js library without using a tag manager.
 title: Can I Implement Target without a Tag Manager?
 feature: Implement Server-side

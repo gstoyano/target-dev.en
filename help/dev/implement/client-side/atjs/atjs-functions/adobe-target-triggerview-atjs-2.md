@@ -1,15 +1,5 @@
 ---
-keywords:
-- adobe.target.triggerView
-- triggerView
-- triggerview
-- trigger view
-- at.js
-- functions
-- function
-- viewName
-- viewname
-- view name
+keywords: adobe.target.triggerView, triggerView, triggerview, trigger view, at.js, functions, function, viewName, viewname, view name, adobe.target.triggerView1
 description: Use the adobe.target.triggerView() function for the Adobe Target at.js JavaScript library for use in Single Page Applications (SPAs). (at.js 2.x)
 title: How Do I Use the adobe.target.triggerView() Function?
 feature: at.js

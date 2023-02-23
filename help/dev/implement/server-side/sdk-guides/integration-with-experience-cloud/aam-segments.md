@@ -1,13 +1,7 @@
 ---
 title: Integration with Experience Cloud AAM Segments
 description: Integration with Experience Cloud, Audience Manager integration
-keywords:
-- delivery api
-- server-side
-- serverside
-- integration
-- audience manager
-- aam
+keywords: delivery api, server-side, serverside, integration, audience manager, aam
 --- 
 
 # AAM segments

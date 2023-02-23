@@ -1,40 +1,6 @@
 ---
 keywords:
-- serverstate
-- targetGlobalSettings
-- targetglobalsettings
-- globalSettings
-- globalsettings
-- global settings
-- at.js
-- functions
-- function
-- clientCode
-- clientcode
-- serverDomain
-- serverdomain
-- cookieDomain
-- cookiedomain
-- crossDomain
-- crossdomain
-- timeout
-- globalMboxAutoCreate
-- visitorApiTimeout
-- defaultContentHiddenStyle
-- defaultContentVisibleStyle
-- bodyHiddenStyle
-- bodyHidingEnabled
-- imsOrgId
-- secureOnly
-- overrideMboxEdgeServer
-- overrideMboxEdgeServerTimeout
-- optoutEnabled
-- optout
-- opt out
-- selectorsPollingTimeout
-- dataProviders
-- Hybrid Personalization
-- deviceIdLifetime
+keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, globalsettings, global settings, at.js, functions, function, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle, bodyHiddenStyle, bodyHidingEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout, opt out, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
 description: Use the targetGlobalSettings() function for the Adobe Target at.js JavaScript library to override settings instead of using the Target UI or REST APIs.
 title: How Do I Use the targetGlobalSettings() Function?
 feature: at.js
@@ -120,9 +86,9 @@ You can override the following settings:
 
   Server-side only is the default decisioning method that is set out of the box when at.js 2.5+ is implemented and deployed on your web properties.
 
-  Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities.
+  Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target's machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities.
 
-  Furthermore, enhancing your personalized experiences by using Target’s user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business.
+  Furthermore, enhancing your personalized experiences by using Target's user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business.
 
   Lastly, server-side only lets you use the Adobe Experience Cloud and fine-tune audiences that can be targeted against through Audience Manager and Adobe Analytics segments.
 
@@ -190,7 +156,7 @@ The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 * **Type**: Boolean
 * **Default Value**: false
-* **Description**: Target provides opt-in functionality support via Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, add the `optinEnabled=true` setting. In Adobe Experience Platform you must select “enable” from the GDPR Opt-In drop-down list in the extension installation view. See the [Adobe Experience Platform documentation](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) for more details. For more information about this setting as it relates to privacy and data protection regulations, including the European Union’s General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), see [Privacy and data protection regulations](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
+* **Description**: Target provides opt-in functionality support via Adobe Experience Platform to help support your consent management strategy. Opt-in functionality lets customers control how and when the Target tag is fired. There is also an option via Adobe Experience Platform to pre-approve the Target tag. To enable the ability to use Opt-In in the Target at.js library, add the `optinEnabled=true` setting. In Adobe Experience Platform you must select "enable" from the GDPR Opt-In drop-down list in the extension installation view. See the [Adobe Experience Platform documentation](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) for more details. For more information about this setting as it relates to privacy and data protection regulations, including the European Union's General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), see [Privacy and data protection regulations](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
 
 ### optoutEnabled
 

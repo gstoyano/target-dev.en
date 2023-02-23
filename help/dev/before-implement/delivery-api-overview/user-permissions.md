@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API User Permissions
 description: Adobe Target Delivery API User Permissions
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # User Permissions (Premium)

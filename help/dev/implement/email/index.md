@@ -1,10 +1,5 @@
 ---
-keywords:
-- Implementation
-- at.js non javascript
-- adbox
-- redirector
-- mbox
+keywords: Implementation, at.js non javascript, adbox, redirector, mbox
 description: Learn how to implement Adobe Target in non-JavaScript scenarios, such as using an AdBox or Redirector.
 title: How Do I Implement Target for Email?
 feature: Implement Email

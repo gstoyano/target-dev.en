@@ -1,8 +1,5 @@
 ---
-keywords:
-- global mbox
-- target classic
-- use global mbox from target classic
+keywords: global mbox, target classic, use global mbox from target classic
 description: Learn how to use a legacy global mbox for your Adobe Target activities if you have already created a global mbox on your pages for your legacy implementations.
 title: Can I Use a Global mbox from a Legacy Implementation?
 feature: at.js

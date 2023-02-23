@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API and SDKs
 description: Adobe Target Delivery API and SDKs
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # SDKs

@@ -1,12 +1,5 @@
 ---
-keywords:
-- system diagram
-- flicker
-- at.js
-- implementation
-- javascript library
-- js
-- atjs
+keywords: system diagram, flicker, at.js, implementation, javascript library, js, atjs, $8
 description: Learn how the Target at.js JavaScript library functions, including system diagrams to help you understand the workflow as pages load.
 title: How Does the at.js Javascript Library Work?
 feature: at.js

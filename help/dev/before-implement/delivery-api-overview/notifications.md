@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API Notifications
 description: Adobe Target Delivery API Notifications
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # Notifications

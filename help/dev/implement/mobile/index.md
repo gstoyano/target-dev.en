@@ -1,10 +1,5 @@
 ---
-keywords:
-- mobile app
-- mobile app process
-- target mobile app
-- mobile target locations
-- mobile app success metrics
+keywords: mobile app, mobile app process, target mobile app, mobile target locations, mobile app success metrics
 description: Learn how to use Adobe Target for mobile app optimization and personalization, with iterative testing and rules-based and AI-powered personalization.
 title: Can I use Target with Mobile Apps?
 feature: Implement Mobile

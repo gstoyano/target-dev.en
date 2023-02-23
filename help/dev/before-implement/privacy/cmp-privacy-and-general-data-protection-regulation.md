@@ -1,19 +1,5 @@
 ---
-keywords:
-- gdpr
-- eu
-- european union
-- privacy
-- faq
-- frequently asked questions
-- california consumer privacy act
-- ccpa
-- privacy
-- data protection
-- opt-out
-- opt out
-- government
-- regulation
+keywords: gdpr, eu, european union, privacy, faq, frequently asked questions, california consumer privacy act, ccpa, privacy, data protection, opt-out, opt out, government, regulation, gdpr5, gdpr6, gdpr7, gdpr8, gdpr9, eu0, eu1, eu2, eu3, eu4, eu5
 description: Learn about Target and the European Union General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other privacy requirements.
 title: How Does Target Handle Privacy and Data Protection Regulations?
 feature: Privacy & Security
@@ -54,7 +40,7 @@ At a high level, the law affords Californians several key rights, including righ
 * Have personal information deleted
 * Be informed that personal information is being disclosed or sold
 
-If you were busy getting ready for Europe’s privacy law (GDPR) last year, some of these rights might be familiar and much of the work you have done can be repurposed.
+If you were busy getting ready for Europe's privacy law (GDPR) last year, some of these rights might be familiar and much of the work you have done can be repurposed.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -144,7 +130,7 @@ Target supports the following ID types to locate a customer profile:
 | User ID | Name Space ID Type | Namespace ID | Definition |
 |--- |--- |--- |--- |
 |Experience Cloud ID (ECID)|Standard|4|Adobe Experience Cloud ID, formerly known as Visitor ID or Experience Cloud ID. You can use the JavaScript API to locate this ID (see details below).|
-|TnT ID / Cookie ID(TNTID)|Standard|9|Target identifier set as a cookie in the visitor’s browser. You can use the JavaScript API to locate this ID (see details below).|
+|TnT ID / Cookie ID(TNTID)|Standard|9|Target identifier set as a cookie in the visitor's browser. You can use the JavaScript API to locate this ID (see details below).|
 |3rd-Party ID / CRM ID (THIRDPARTYID)|Target-Specific|N/A|If you provide Target with your CRM or other unique identifier information for your customers.|
 
 <InlineAlert variant="info" slots="text"/>
@@ -153,7 +139,7 @@ Although Target supports both first-party and third-party cross-domain cookies, 
 
 ### How does Target handle consent management?
 
-GDPR and CCPA do not change when you must get consent, but how you get it. Each customer's consent strategy depends on its data collection and use practices and its privacy policy. Consent management isn’t supported by and shouldn’t be achieved via Target for GDPR and CCPA.
+GDPR and CCPA do not change when you must get consent, but how you get it. Each customer's consent strategy depends on its data collection and use practices and its privacy policy. Consent management isn't supported by and shouldn't be achieved via Target for GDPR and CCPA.
 
 Adobe does not currently offer a Consent Management Solution, but there are various tools developing in the market to address some of the new requirements. For more information on privacy tools in general, including consent managers, see the [2017 Privacy Tech Vendor Report](https://iapp.org/media/pdf/resource_center/Tech-Vendor-Directory-1.4.1-electronic.pdf) on the *International Association of Privacy Professionals (iaap)* website.
 
@@ -298,9 +284,9 @@ The following table contains description of the illustrative profile JSON fields
 | Field | Description |
 |--- |--- |
 |Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
-|user.ReturnTimeOfDay|This standard field includes the time of day of a user’s most recent return visit.|
-|firstSessionStart|This standard field includes the time of day the user’s first session began.|
-|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller’s site. For more information, see [Profile Script Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
+|user.ReturnTimeOfDay|This standard field includes the time of day of a user's most recent return visit.|
+|firstSessionStart|This standard field includes the time of day the user's first session began.|
+|user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller's site. For more information, see [Profile Script Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
 
 <InlineAlert variant="info" slots="text"/>
 

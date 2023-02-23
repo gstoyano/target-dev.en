@@ -1,12 +1,5 @@
 ---
-keywords:
-- flicker
-- at.js
-- implementation
-- asynchronously
-- asynchronous
-- synchronously
-- synchronous
+keywords: flicker, at.js, implementation, asynchronously, asynchronous, synchronously, synchronous, $8
 description: Learn how at.js and Adobe Target prevent flicker (default content momentarily displays before being replaced by activity content) during page or app load.
 title: How does at.js Manage Flicker?
 feature: at.js

@@ -1,13 +1,5 @@
 ---
-keywords:
-- Recommendations
-- settings
-- preferences
-- industry vertical
-- filter incompatible criteria
-- default host group
-- thumb base url
-- recommendations api token
+keywords: Recommendations, settings, preferences, industry vertical, filter incompatible criteria, default host group, thumb base url, recommendations api token, $9
 description: Learn how to implement Recommendations activities in Adobe Target. 
 title: How Do I Implement Recommendations Activities?
 feature: Recommendations

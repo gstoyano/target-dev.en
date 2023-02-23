@@ -1,13 +1,5 @@
 ---
-keywords:
-- at.js
-- debug at.js
-- adobe Experience Cloud debugger
-- experience cloud debugger
-- mbox trace
-- mbox highlight
-- debug
-- debugging
+keywords: at.js, debug at.js, adobe Experience Cloud debugger, experience cloud debugger, mbox trace, mbox highlight, debug, debugging, $9
 description: Use the Adobe Experience Cloud Debugger to view your library configuration, examine requests, turn on console logging, disable Target call requests, and more.
 title: How Do I Debug at.Js with Adobe Experience Cloud Debugger?
 feature: at.js

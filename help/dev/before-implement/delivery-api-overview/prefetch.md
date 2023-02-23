@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API Prefetch
 description: Adobe Target Delivery API Prefetch
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # Prefetch

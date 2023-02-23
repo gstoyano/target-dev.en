@@ -1,8 +1,7 @@
 ---
 title: Adobe Target Delivery API Changelog
 description: Adobe Target Delivery API Changelog
-keywords:
-- delivery api
+keywords: delivery api
 --- 
 
 # Changelog

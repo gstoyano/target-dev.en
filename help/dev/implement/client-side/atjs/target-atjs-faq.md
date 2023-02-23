@@ -1,33 +1,5 @@
 ---
-keywords:
-- at.js faq
-- at.js frequently asked questions
-- faq
-- flicker
-- loader
-- page loader
-- cross domain
-- file size
-- filesize
-- x-domain
-- at.js and mbox.js
-- x only
-- cross domain
-- safari
-- single page app
-- missing selectors
-- selectors
-- single page application
-- tt.omtrdc.net
-- spa
-- Adobe Experience Manager
-- AEM
-- ip address
-- httponly
-- HttpOnly
-- secure
-- ip
-- cookie domain
+keywords: at.js faq, at.js frequently asked questions, faq, flicker, loader, page loader, cross domain, file size, filesize, x-domain, at.js and mbox.js, x only, cross domain, safari, single page app, missing selectors, selectors, single page application, tt.omtrdc.net, spa, Adobe Experience Manager, AEM, ip address, httponly, HttpOnly, secure, ip, cookie domain
 description: Read answers to frequently asked questions about the Adobe Target at.js JavaScript library.
 title: What Are Common Questions and Answers About at.js?
 feature: at.js
@@ -165,7 +137,7 @@ at.js currently uses parts of jQuery and thus you see the MIT license notificati
 
 No, if cross domain is set to x-only and Safari has third-party cookies disabled, then both mbox.js and at.js sets a disabled cookie and no mbox requests are executed for that particular client's domain.
 
-To support Safari visitors, a better X-Domain would be “disabled” (sets only a first-party cookie) or “enabled” (sets only a first-party cookie on Safari, while setting first- and third-party cookies on other browsers).
+To support Safari visitors, a better X-Domain would be "disabled" (sets only a first-party cookie) or "enabled" (sets only a first-party cookie on Safari, while setting first- and third-party cookies on other browsers).
 
 ## Can I use the Target Visual Experience Composer (VEC) in my single-page applications?
 
@@ -253,7 +225,7 @@ The following headers are enforced by default:
 
 All headers already used in client pages can be enforced. One common way to do this is through "HTTP Request Header Authorization." Adobe Customer Care can advise further on best methods and practices.
 
-Moreover, requests to the Adobe Edge Network are public (as they are designed to be made from visitors’ browsers), and they do not contain visible visitor details (they contain only a visitor ID). These requests deliver experiences to visitors, and they contain details on what a visitor should see on the page.
+Moreover, requests to the Adobe Edge Network are public (as they are designed to be made from visitors' browsers), and they do not contain visible visitor details (they contain only a visitor ID). These requests deliver experiences to visitors, and they contain details on what a visitor should see on the page.
 
 Note that for response tokens and session IDs transmitted in these requests:
 

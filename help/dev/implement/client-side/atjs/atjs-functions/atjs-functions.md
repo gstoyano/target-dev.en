@@ -1,8 +1,5 @@
 ---
-keywords:
-- at.js
-- functions
-- javascript library
+keywords: at.js, functions, javascript library
 description: View a list of functions that can be used with the 1.x and 2.x versions of the at.js JavaScript library in Adobe Target.
 title: What Functions Can I Use with at.js?
 feature: at.js

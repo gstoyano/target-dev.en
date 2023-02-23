@@ -1,10 +1,5 @@
 ---
-keywords:
-- mobile app
-- mobile app location
-- target mobile app
-- mobile target locations
-- mobile app success metrics
+keywords: mobile app, mobile app location, target mobile app, mobile target locations, mobile app success metrics
 description: View sample code to help you learn how to create locations and success metrics in iOS apps so you can use Adobe Target to personalize and optimize your app.
 title: How Do I Create Target Locations and Success Metrics in an iOS app?
 feature: Implement Mobile

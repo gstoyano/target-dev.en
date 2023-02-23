@@ -1,14 +1,5 @@
 ---
-keywords:
-- implementation
-- javascript library
-- js
-- atjs
-- on-device decisioning
-- on device decisioning
-- at.js
-- on-device
-- on device
+keywords: implementation, javascript library, js, atjs, on-device decisioning, on device decisioning, at.js, on-device, on device, implementation0
 description: Learn how to perform on-device decisioning with the at.js library
 title: How Does On-device Decisioning Work with the at.js JavaScript Library?
 feature: at.js

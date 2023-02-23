@@ -1,16 +1,5 @@
 ---
-keywords:
-- implement
-- implementing
-- implementation
-- adobe launch
-- launch
-- race
-- redirect
-- experience platform launch
-- platform launch
-- tags
-- adobe platform
+keywords: implement, implementing, implementation, adobe launch, launch, race, redirect, experience platform launch, platform launch, tags, adobe platform, implement2
 description: Learn how to implement the Adobe Target at.js library using Adobe Experience Platform, the preferred method to implement Target.
 title: How Do I Implement Target using Adobe Experience Platform?
 feature: Implement Server-side

@@ -1,12 +1,5 @@
 ---
-keywords:
-- offer
-- prefetch
-- iOS
-- android
-- sdk
-- mobile
-- mobile sdk
+keywords: offer, prefetch, iOS, android, sdk, mobile, mobile sdk, $8
 description: Use the Adobe Target prefetch feature in the iOS and Android Mobile SDKs to fetch offer content as few times as possible by caching the server responses.
 title: Can I Prefetch Offer Content for Mobile Apps?
 feature: Implement Mobile

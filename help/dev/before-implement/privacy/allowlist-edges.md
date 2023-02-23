@@ -1,13 +1,5 @@
 ---
-keywords:
-- implement
-- implementing
-- whitelist
-- white list
-- allowlist
-- allow list
-- edge
-- edges
+keywords: implement, implementing, whitelist, white list, allowlist, allow list, edge, edges, $9
 description: View a list of hosts to help you allowlist Adobe Target edges (geographically distributed serving nodes that ensure optimum response times end users).
 title: How Do I Allowlist Target Edge Nodes?
 feature: Privacy & Security

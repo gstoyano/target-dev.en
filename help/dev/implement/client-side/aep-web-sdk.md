@@ -1,14 +1,5 @@
 ---
-keywords:
-- Adobe Experience Platform Web SDK
-- aep web sdk
-- web sdk
-- sdk
-- adobe experience cloud
-- platform edge network
-- adobe experience platform edge network
-- edge network
-- aep edge network
+keywords: Adobe Experience Platform Web SDK, aep web sdk, web sdk, sdk, adobe experience cloud, platform edge network, adobe experience platform edge network, edge network, aep edge network, Adobe Experience Platform Web SDK0
 description: Learn how to use the Adobe Experience Platform Web SDK to interact with the various services in the Adobe Experience Cloud through the AEP Edge Network.
 title: How Do I Implement with the Experience Platform Web SDK?
 feature: AEP Web SDK

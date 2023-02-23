@@ -1,15 +1,5 @@
 ---
-keywords:
-- server side
-- server-side
-- api
-- sdk
-- node.js
-- nodejs
-- node js
-- recommendations api
-- api
-- apis
+keywords: server side, server-side, api, sdk, node.js, nodejs, node js, recommendations api, api, apis, server side1
 description: Learn about the Adobe Target server-side Delivery APIs, SDKs, and Target Recommendations APIs.
 title: Where Can I Learn About Target Server-Side Delivery APIs and SDKs?
 feature: Implement Server-side

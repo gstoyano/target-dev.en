@@ -1,10 +1,5 @@
 ---
-keywords:
-- Implementation
-- mbox.js non javascript
-- redirector
-- costs per click
-- revenue per click
+keywords: Implementation, mbox.js non javascript, redirector, costs per click, revenue per click
 description: Learn how to use Redirectors in email implementations, similarly to how you use an mbox in your Adobe Target activities.
 title: How Do I Work with Redirectors?
 feature: Implement Email

@@ -1,22 +1,6 @@
 ---
 keywords:
-- implement
-- implementing
-- setting up
-- setup
-- page parameter
-- tomcat
-- url encoded
-- in-page profile attribute
-- mbox parameter
-- in-page profile attributes
-- script profile attribute
-- bulk profile update API
-- single file update API
-- customer attributes
-- data providers
-- dataprovider
-- data provider
+keywords: implement, implementing, setting up, setup, page parameter, tomcat, url encoded, in-page profile attribute, mbox parameter, in-page profile attributes, script profile attribute, bulk profile update API, single file update API, customer attributes, implement5, implement6, implement7, implement8, implement9, implementing0, implementing1, implementing2, implementing3, implementing4, implementing5, data providers, dataprovider, data provider
 description: Get data into Target (page parameters, profile attributes, script profile attributes, data providers, single and bulk profile update APIs, Customer Attributes).
 title: How Do I Get Data into Target?
 feature: Implementation

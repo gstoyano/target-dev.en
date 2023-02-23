@@ -1,11 +1,5 @@
 ---
-keywords:
-- at.js releases
-- at.js versions
-- single page app
-- spa
-- cross domain
-- cross-domain
+keywords: at.js releases, at.js versions, single page app, spa, cross domain, cross-domain
 description: Learn how to upgrade from Adobe Target at.js 1.x to at.js 2.x. Examine system flow diagrams, learn about new and deprecated functions, and more.
 title: How Do I Upgrade from at.js Version 1.x to Version 2.x?
 feature: at.js

@@ -1,12 +1,5 @@
 ---
-keywords:
-- implement
-- implementing
-- implementation
-- tag manager
-- dtm
-- at.js
-- dynamic tag management
+keywords: implement, implementing, implementation, tag manager, dtm, at.js, dynamic tag management, $8
 description: Learn how to implement the Adobe Target at.js library using the legacy Dynamic Tag Management (DTM). Tags in Adobe Experience Platform are the preferred method to implement Target.
 title: Can I Implement Target using Dynamic Tag Manager (DTM)?
 feature: Implement Server-side
