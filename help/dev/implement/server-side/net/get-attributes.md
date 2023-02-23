@@ -21,7 +21,7 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
 |targetRequest|TargetDeliveryRequest|No|null|The same target request as used for [Get Offers​](get-offers.md)|
-|mboxNames|params string[]|No|null|A parameter array of mbox names
+|mboxNames|params string[]|No|null|A parameter array of mbox names|
 
 ## Result
 
