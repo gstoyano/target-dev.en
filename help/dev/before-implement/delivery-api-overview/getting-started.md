@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API Getting Started
 description: Adobe Target Delivery API Getting Started
 keywords: delivery api
---- 
+---
 
 # Getting Started
 

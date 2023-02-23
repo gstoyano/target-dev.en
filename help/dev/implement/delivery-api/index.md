@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API
 description: Adobe Target Delivery API
 openAPISpec: https://raw.githubusercontent.com/AdobeDocs/target-developers/main/src/delivery-api.json 
---- 
+---
 
 # Placeholder
 

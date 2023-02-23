@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API Single or Batch Delivery
 description: Adobe Target Delivery API Single or Batch Delivery
 keywords: delivery api
---- 
+---
 
 # Single or Batch Delivery
 

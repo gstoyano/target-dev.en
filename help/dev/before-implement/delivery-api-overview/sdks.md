@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API and SDKs
 description: Adobe Target Delivery API and SDKs
 keywords: delivery api
---- 
+---
 
 # SDKs
 

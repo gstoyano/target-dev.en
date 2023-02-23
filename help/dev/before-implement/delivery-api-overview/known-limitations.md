@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API Known Limitations
 description: Adobe Target Delivery Known Limitations
 keywords: delivery api
---- 
+---
 
 # Known Limitations
 

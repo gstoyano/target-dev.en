@@ -1,7 +1,7 @@
 ---
 title: Adobe Target Delivery API Client Hints
 description: Adobe Target Delivery API Client Hints
---- 
+---
 
 # Client Hints and the Target Delivery API
 

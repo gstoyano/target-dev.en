@@ -2,7 +2,7 @@
 title: Adobe Target Delivery API Introduction
 description: Adobe Target Delivery API Introduction
 keywords: delivery api
---- 
+---
 
 # Introduction
 
