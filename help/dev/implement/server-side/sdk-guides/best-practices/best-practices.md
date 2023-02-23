@@ -1,3 +1,7 @@
+---
+title: Best practices
+description: Adobe recommends the following best practices when using on-device decisioning
+---
 # Best practices
 
 Adobe recommends the following best practices when using on-device decisioning:

@@ -1,3 +1,8 @@
+---
+title: User identification and bucketing
+description: User identification and bucketing
+---
+
 # User identification and bucketing
 
 ## User Identification
@@ -6,8 +11,8 @@ There are multiple ways in which a user can be identified within Adobe Target. T
 
 |Field Name|Description|
 | --- | --- |
-|`tntID`|The `tntId` is the primary identifier in Target for a user. You can supply this ID, or Target will auto-generate it if the request doesn’t contain one.|
-|`thirdPartyId`|The `thirdPartyId` is your company’s identifier for the user, which you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
+|`tntID`|The `tntId` is the primary identifier in Target for a user. You can supply this ID, or Target will auto-generate it if the request doesn't contain one.|
+|`thirdPartyId`|The `thirdPartyId` is your company's identifier for the user, which you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
 |`marketingCloudVisitorId`|The `marketingCloudVisitorId` is used to merge and share data between different Adobe solutions. The marketingCloudVisitorId is required for integrations with Adobe Analytics and Adobe Audience Manager.|
 |`customerIds`|Along with the Experience Cloud Visitor ID, additional [customer IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) and an authenticated status for each visitor can also be utilized.|
 

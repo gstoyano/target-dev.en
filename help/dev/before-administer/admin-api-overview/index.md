@@ -15,7 +15,7 @@ This article provides an overview of background information necessary to underst
 
 ## Before You Begin
 
-In all code examples provided for the [Admin APIs](../../administer/admin-api/index.md), replace {tenant} with your tenant value, `your-bearer-token` with the access token that you generate with your JWT and `your-api-key` with your API key from the [Adobe Developer Console](https://developer.adobe.com/console/home). For more information on tenants and JWTs, please see the article on how to [configure authentication](../configure-authentication.md) for Adobe Target Admin APIs.
+In all code examples provided for the [Admin APIs](../../administer/admin-api/overview.md), replace {tenant} with your tenant value, `your-bearer-token` with the access token that you generate with your JWT and `your-api-key` with your API key from the [Adobe Developer Console](https://developer.adobe.com/console/home). For more information on tenants and JWTs, please see the article on how to [configure authentication](../configure-authentication.md) for Adobe Target Admin APIs.
 
 ## Versioning
 

@@ -1,3 +1,8 @@
+---
+title: Event tracking
+description: Use Adobe Target's event tracking capabilities to effectively measure metrics that matter most for your business and use cases.
+---
+
 # Event tracking
 
 Use Adobe Target's event tracking capabilities to effectively measure metrics that matter most for your business and use cases. Tracking events is key to measuring the success of your experimentation or personalization activities, since they tell you which variation or experience is winning or losing. Understanding this will help you understand how your users are engaging with your product or evolving in an ever-changing landscape.

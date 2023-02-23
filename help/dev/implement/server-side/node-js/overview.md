@@ -1,3 +1,7 @@
+---
+title: Node.js SDK overview
+description: This reference guide shows how Adobe Target customers can install, initialize, and use the Node.js SDK.
+---
 # Node.js SDK overview
 
 This reference guide shows how Adobe Target customers can install, initialize, and use the Node.js SDK.

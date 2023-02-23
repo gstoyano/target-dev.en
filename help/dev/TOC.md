@@ -96,13 +96,31 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
       + [Global mbox frequently asked questions](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
   + Server Side: implement Target {#server-side}
      + [Server Side: implement Target overview](implement/server-side/overview.md)
+     + [Getting started](implement/server-side/sdk-guides/getting-started/overview.md)
+     + [Sample apps](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
      + [Transition from Target legacy APIs to Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
+     + Core principles {#core-principles}
+       + [Overview](implement/server-side/sdk-guides/core-principles/overview.md)
+       + [User ID & bucketing](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
+       + [Audience targeting](implement/server-side/sdk-guides/core-principles/audience-targeting.md)
+       + [Event tracking](implement/server-side/sdk-guides/core-principles/event-tracking.md)
+     + Integration {#integration}
+     + On-Device Decisioning {#on-device-decisioning}
+     + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
+     + Node.js SDK Reference {#node-js}
+       + [Overview](overview.md)
+       + 
+     + Java SDK Reference {#java}
+     + .NET SDK Reference {#net}
+     + Python SDK Reference {#python}
+
   + [Hybrid implementation](implement/hybrid/hybrid-overview.md)
++ Administration {#administration}
+  + [Overview](administer/admin-api/overview.md)
 
 <!--
 
 + [Jump to Administration Guide](https://blah.html)
-+ Administration {#administration}
 
 + Target for mobile apps {#mobile-apps}
    + [Target for mobile apps overview](c-target-mobile-app/target-mobile-app.md)
