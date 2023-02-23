@@ -6,8 +6,6 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### getAttributes
 
 ```js
@@ -32,8 +30,6 @@ The `Promise` returned by `TargetClient.getAttributes()` resolves an object with
 |getResponse()|[getOffers Response](https://github.com/jasonwaters/target-nodejs-sdk#targetclientgetoffers)|Returns the response object normally returned by `getOffers`|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Node.js
 

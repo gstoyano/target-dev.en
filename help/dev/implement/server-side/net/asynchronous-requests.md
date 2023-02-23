@@ -6,8 +6,6 @@ One benefit of server-side integration is that one can leverage the huge bandwid
 
 ## Supported Methods
 
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
-
 ### \.NET
 
 ```dotnet
@@ -19,8 +17,6 @@ Task<TargetAttributes> GetAttributesAsync(TargetDeliveryRequest request, params 
 ## Example
 
 A sample async SDK API usage could appear as follows:
-
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
 
 ### \.NET
 

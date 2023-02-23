@@ -6,8 +6,6 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
-
 ### getAttributes
 
 ```dotnet
@@ -37,8 +35,6 @@ A `TargetAttributes` object is returned from `TargetClient.GetAttributes()` whic
 |GetValue(mboxName, key, defaultValue)|T|Returns the value for a specified mbox name and attribute key|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
 
 ### \.NET
 

@@ -44,12 +44,4 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 
 Watch the following video to learn how to use Response Tokens and at.js Custom Events to share profile information from Target to third-party systems.
 
-<iframe
-src="https://video.tv.adobe.com/v/23253"
-frameBorder="0"
-height="270"
-width="480"
-webkitallowfullscreen="true"
-mozallowfullscreen="true"
-allowFullScreen>
-</iframe>
+>[!VIDEO](https://video.tv.adobe.com/v/23253/?quality=12)

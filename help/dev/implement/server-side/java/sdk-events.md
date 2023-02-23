@@ -16,8 +16,6 @@ The `OnDeviceDecisioningHandler` object contains the following callbacks, which 
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 ### SDK Events
 
 ```javascript

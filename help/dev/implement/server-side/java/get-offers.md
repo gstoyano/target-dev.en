@@ -10,8 +10,6 @@
 
 The `TargetClient.getOffers` method signature is shown as follows.
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 #### Request
 
 ```javascript
@@ -19,8 +17,6 @@ TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
 ```
 
 TargetDeliveryRequest is created using `TargetDeliveryRequest.builder`.
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 #### Response
 
@@ -93,8 +89,6 @@ The `TargetCookie` object used for saving data for user session has the followin
 You don't have to worry about expiring the cookies. Target handles maxAge inside the SDK.
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="2" languages="Java, Java" />
 
 #### Request
 

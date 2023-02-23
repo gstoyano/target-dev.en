@@ -5,8 +5,6 @@ Use the `create` method in order to initialize the Python SDK and instantiate th
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
-
 ### create
 
 ```python
@@ -39,8 +37,6 @@ TargetClient.create(options)
 |version|str|No|None|The version number of this sdk|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
 
 ### Python
 

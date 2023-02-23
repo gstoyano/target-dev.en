@@ -6,8 +6,6 @@ Use the `create` method in order to initialize the Node.js SDK and instantiate t
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### create
 
 ```js
@@ -37,8 +35,6 @@ TargetClient.create(options: Object): TargetClient
 |telemetryEnabled|Boolean|No|true|When enabled, Adobe will collect SDK feature usage and performance telemetry data. Personal data is not collected.|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Node.js
 

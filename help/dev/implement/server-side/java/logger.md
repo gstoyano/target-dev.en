@@ -15,8 +15,6 @@ Target Java SDK uses `slf4j` logging. You need to provide your implementation of
 
 Add the `slf4j` dependency.
 
-<CodeBlock slots="heading, code" repeat="2" languages="Java, Java" />
-
 ### Gradle
 
 ```javascript
@@ -34,8 +32,6 @@ compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 ```
 
 Enable the `DEBUG` logs based on your implementation, and mark the request logging flags.
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Debug
 

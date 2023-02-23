@@ -287,11 +287,11 @@ If an on-device decisioning activity is not executing, but you have verified tha
     }]
    }
  ...
- ```
+```
 
- **Node.js SDK**
+**Node.js SDK**
 
- ```js
+```js
  const request = {
    trace: {
      authorizationToken: '2dfc1dce-1e58-4e05-bbd6-a6725893d4d6'

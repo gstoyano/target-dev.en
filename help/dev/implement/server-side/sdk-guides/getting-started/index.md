@@ -33,8 +33,6 @@ After enabling the **On-Device Decisioning** toggle, Adobe Target begins generat
 
 For Node.js, Java, and Python, run the following command in your project directory in the terminal. For .NET, add it as a dependency by [installing from NuGet](https://www.nuget.org/packages/Adobe.Target.Client).
 
-<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
-
 ### Node.js (NPM)
 
 ```js
@@ -152,10 +150,8 @@ target_client = TargetClient.create(CONFIG)
    Enter the feature flag variables for Experience A.
 
    ![alt image](assets/asset-json_a.png)
-
-   <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
    
-   #### (Sample JSON for Experience A, above)
+   **(Sample JSON for Experience A, above)**
 
    ```json
    {
@@ -168,9 +164,7 @@ target_client = TargetClient.create(CONFIG)
 
    ![alt image](assets/asset-json_b.png)
 
-   <CodeBlock slots="heading, code" repeat="1" languages="JSON" />
-   
-   #### (Sample JSON for Experience B, above)
+   **(Sample JSON for Experience B, above)**
 
    ```json
    {
@@ -194,8 +188,6 @@ target_client = TargetClient.create(CONFIG)
 ## 5. Implement and render the feature in your application
 
 After setting up the feature flag variables in Adobe Target, modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
-
-<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
 ### Node.js
 

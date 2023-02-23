@@ -6,8 +6,6 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 ### getAttributes
 
 ```javascript
@@ -36,8 +34,6 @@ An `Attributes` object is returned from `TargetClient.getAttributes()` which has
 |getResponse()|TargetDeliveryResponse|Returns the response object normally returned by getOffers|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 #### Java
 

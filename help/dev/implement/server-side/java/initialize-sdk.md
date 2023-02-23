@@ -8,8 +8,6 @@ Use the `create` method in order to initialize the Java SDK and instantiate the 
 
 TargetClient is created using `TargetClient.create`.
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 ### create
 
 ```javascript
@@ -54,8 +52,6 @@ ClientConfigBuilder ClientConfig.builder()
 |onDeviceAllMatchingRulesMboxes|List\<String\>|No|None|Allows users to specify mboxes for which all matching rule content will be returned during on-device decisioning|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Java
 

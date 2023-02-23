@@ -12,8 +12,6 @@ After this, use the `Initialize` method of the SDK to configure the SDK, thus co
 
 `TargetClient` is created using `TargetClient.Create`.
 
-<CodeBlock slots="heading, code" repeat="1" languages="csharp" />
-
 ## C\#
 
 ```csharp
@@ -21,8 +19,6 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 ```
 
 `ClientConfig` is created using ClientConfig.Builder.
-
-<CodeBlock slots="heading, code" repeat="1" languages="csharp" />
 
 ## C\#
 
@@ -57,8 +53,6 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 |OnDeviceArtifactPayload|string|No|null|Provides on-device decisioning with a local artifact payload to allow immediate execution|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="csharp" />
 
 ## C\#
 

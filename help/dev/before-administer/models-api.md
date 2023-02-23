@@ -231,8 +231,6 @@ Answer: To remove a discrete subset of blocklisted features from a multi-feature
 
 The examples above were all in the context of a single activity. You may also block features for all activities across a given client (tenant), instead of having to specify the blocklist for each activity individually. To perform a global blocklist, use the `/blockList/global` call, instead of `blockList/<campaignId>`.
 
-<CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
-
 **Request**
 
 ```json

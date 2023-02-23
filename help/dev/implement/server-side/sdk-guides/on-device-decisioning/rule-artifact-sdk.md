@@ -10,8 +10,6 @@ This approach is best when you are able to initialize the Adobe Target SDK at th
 
 ## Install the SDK
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 ### NPM
 
 ```javascript
@@ -32,8 +30,6 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 ### Node.js
 
 ```javascript
@@ -48,8 +44,6 @@ import com.adobe.target.edge.client.TargetClient;
 ```
 
 1. To configure the SDK, use the create method.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -90,8 +84,6 @@ TargetClient targetClient = TargetClient.create(config);
 ## Store and Use the Rule Artifact
 
 You do not need to manage the rule artifact yourself and calling the SDK methods should be straightforward.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -137,8 +129,6 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 >In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next section, regarding [downloading the rule artifact using a JSON payload](rule-artifact-json.md).
 
 Here is an example that starts a web application after initializing the Adobe Target SDK.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 

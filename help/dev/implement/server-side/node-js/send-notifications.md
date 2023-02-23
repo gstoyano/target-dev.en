@@ -17,8 +17,6 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### create
 
 ```js
@@ -37,8 +35,6 @@ TargetClient.sendNotifications(options: Object): Promise
 
 First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### Node.js
 
 ```js
@@ -55,8 +51,6 @@ const targetResponse = await targetClient.getOffers({ request: prefetchMboxesReq
 ```
 
 A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may appear as follows:
-
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Node.js
 
@@ -116,8 +110,6 @@ A successful response will contain a Target Delivery API response object, which 
 
 Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will appear as follows:
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### Node.js
 
 ```js
@@ -136,8 +128,6 @@ const mboxNotificationRequest = {
 ```
 
 Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via the `sendNotifications()` API method:
-
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Node.js
 

@@ -120,8 +120,6 @@ Adobe Target requires Client Hints for correct segmentation of Browser, Operatin
 
 Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent to Target via `getOffers()` calls. Client Hints should be included on the `request.context` object, along with User Agent.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 #### Node.js SDK
 
 ```js
@@ -199,8 +197,6 @@ The following table indicates which audience rules are supported or not supporte
 
 In order to maintain near-zero latency for on-device decisioning activities with geo-based audiences, Adobe recommends you provide the geo values yourself in the call to `getOffers`. Do this by setting the `Geo` object in the `Context` of the request. This means your server will need a way to determine the location of each end user. For example, your server may perform an IP-to-Geo lookup, using a service you configure. Some hosting providers, such as Google Cloud, provide this functionality via custom headers in each `HttpServletRequest`.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, java" />
-
 #### Node.js
 
 ```js
@@ -255,8 +251,6 @@ public class TargetRequestUtils {
 ```
 
 However, if you do not have the ability to perform IP-to-Geo lookups on your server, but you still want to perform on-device decisioning for `getOffers` requests that contain geo-based audiences, this is also supported. The downside of this approach is that it will use a remote IP-to-Geo lookup, which will add latency to each `getOffers` call. This latency should be lower than a remote `getOffers` call, since it hits a CDN that is located close to your server. You must **only** provide the `ipAddress` field in the `Geo` object in the `Context` of your request, in order for the SDK to retrieve the geo-location of your user's IP address. If any other field in addition to the `ipAddress` is provided, the Target SDK will not fetch the geo-location metadata for resolution.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, java" />
 
 #### Node.js
 

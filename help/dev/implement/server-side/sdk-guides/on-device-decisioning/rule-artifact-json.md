@@ -10,8 +10,6 @@ This approach is best if your application is structured in a way that requires t
 
 ## Install the SDK
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 ### NPM
 
 ```javascript
@@ -32,8 +30,6 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 ### Node.js
 
 ```javascript
@@ -48,8 +44,6 @@ import com.adobe.target.edge.client.TargetClient;
 ```
 
 1. To configure the SDK, use the create method.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 
@@ -112,8 +106,6 @@ TargetClient targetClient = TargetClient.create(config);
 
 The mechanism you use to store the JSON payload depends on your system architecture. You can use a local file, a database, or a memory object caching system such as Memcached . You need to be able to read this JSON from your application for consumption. In this guide, we use a local file as the storage.
 
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
-
 ### Node.js
 
 ```javascript
@@ -153,8 +145,6 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 >By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
 
 Here is an example demonstrating the JSON payload-initializing capability.
-
-<CodeBlock slots="heading, code" repeat="2" languages="js, Java" />
 
 ### Node.js
 

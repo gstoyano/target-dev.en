@@ -7,8 +7,6 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
-
 ### getAttributes
 
 ```python
@@ -33,8 +31,6 @@ The `AttributesProvider` returned by `target_client.get_attributes()` has the fo
 |get_response()|[TargetDeliveryResponse](https://github.com/adobe/target-python-sdk/blob/main/target_python_sdk/types/target_delivery_response.py)|Returns the response object normally returned by `get_offers`|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
 
 ### Python
 

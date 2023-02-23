@@ -17,8 +17,6 @@ The following delegates can be configured for certain events:
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
-
 ### \.NET
 
 ```dotnet

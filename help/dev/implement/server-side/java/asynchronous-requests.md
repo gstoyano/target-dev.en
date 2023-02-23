@@ -1,3 +1,7 @@
+---
+title: Asynchronous Requests
+description: One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target Java SDK supports asynchronous requests, which can reduce the effective target time to zero.
+---
 # Asynchronous Requests
 
 ## Description
@@ -5,8 +9,6 @@
 One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target Java SDK supports asynchronous requests, which can reduce the effective target time to zero.
 
 ## Supported Methods
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Methods
 
@@ -19,8 +21,6 @@ CompletableFuture<Attributes> getAttributesAsync(TargetDeliveryRequest targetReq
 ## Example
 
 A sample `Spring` application Controller could look like this:
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Sample Controller
 

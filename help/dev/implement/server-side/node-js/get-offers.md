@@ -7,8 +7,6 @@
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### getOffers
 
 ```js
@@ -64,8 +62,6 @@ The `status` object used for indicating the status of the target response has th
 |remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/src/pages/implement/delivery-api/index.md) request is needed.|
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
 
 ### Node.js
 

@@ -25,8 +25,6 @@ Enabling traces will output additional information from Adobe Target in regards 
 
 1. Copy the newly generated authorization token to the clipboard and add it to your Target request.
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### Node.js
 
 ```javascript

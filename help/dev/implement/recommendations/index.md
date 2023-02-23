@@ -47,8 +47,6 @@ On pages where a visitor is viewing a single item, such as a product detail page
 
 You can also pass certain quickly changing attributes on the product page itself. For example, you can pass the price (`value`) and inventory/stock level.
 
-<CodeBlock slots="heading, code" repeat="1" languages="javascript" />
-
 #### Pass price and inventory
 
 ```js
@@ -70,8 +68,6 @@ function targetPageParams() {
 
 On a category page, you likely want to restrict your recommendations to products or content within that category. To do so, ensure you pass the identity of the currently viewed category.
 
-<CodeBlock slots="heading, code" repeat="1" languages="javascript" />
-
 #### Pass current category
 
 ```js
@@ -88,8 +84,6 @@ function targetPageParams() {
 
 On a cart page, you can recommend items based on the contents of the visitor's current cart. To do so, pass the IDs of all items in the visitor's current cart using the special parameter `cartIds`.
 
-<CodeBlock slots="heading, code" repeat="1" languages="javascript" />
-
 #### Pass items currently in cart
 
 ```js
@@ -104,9 +98,7 @@ For more information about Cart-Based recommendations, see [Cart-Based](https://
 
 ### Exclude items already in the visitor's cart
 
-On pages throughout your site, you can exclude some items from recommendations. For example, you might not want to recommend items that are already in the visitor’s current cart. To do so, pass the IDs of all items you want to exclude using the special parameter `excludedIds`.
-
-<CodeBlock slots="heading, code" repeat="1" languages="javascript" />
+On pages throughout your site, you can exclude some items from recommendations. For example, you might not want to recommend items that are already in the visitor's current cart. To do so, pass the IDs of all items you want to exclude using the special parameter `excludedIds`.
 
 #### Pass items to exclude
 

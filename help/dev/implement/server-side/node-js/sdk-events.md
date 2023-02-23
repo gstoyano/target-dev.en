@@ -16,8 +16,6 @@ When the callback function is called, an event object is passed in. Each event h
 
 ## Example
 
-<CodeBlock slots="heading, code" repeat="1" languages="js" />
-
 ### Node.js
 
 ```js

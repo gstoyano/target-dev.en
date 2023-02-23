@@ -17,8 +17,6 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ## Method
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 ### create
 
 ```javascript
@@ -28,8 +26,6 @@ ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 ## Example
 
 First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Prefetch 
 
@@ -44,8 +40,6 @@ TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliver
 ```
 
 A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may look as follows:
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Response
 
@@ -105,8 +99,6 @@ A successful response will contain a Target Delivery API response object, which 
 
 Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will look like this:
 
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
-
 ### Request
 
 ```javascript
@@ -125,8 +117,6 @@ TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().
 ```
 
 Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via `sendNotifications()` API method:
-
-<CodeBlock slots="heading, code" repeat="1" languages="Java" />
 
 ### Response
 

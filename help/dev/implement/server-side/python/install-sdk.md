@@ -2,8 +2,6 @@
 
 The Python SDK is distributed by [pypi](https://pypi.org/project/target-python-sdk). To get started, add it as a dependency by installing it via pip:
 
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
-
 ### Install
 
 ```python

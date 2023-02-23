@@ -1,11 +1,10 @@
 # Asynchronous Requests
 
 ## Description
+
 One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target Python SDK supports asynchronous requests, which can reduce the effective target time to zero.
 
 ## Supported Methods
-
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
 
 ### Python
 
@@ -18,8 +17,6 @@ get_attributes(mbox_names, options)
 ## Example
 
 A sample application that uses the `asyncio` module's async/await in Python 3.9+ could look like this:
-
-<CodeBlock slots="heading, code" repeat="1" languages="python" />
 
 ### Python
 

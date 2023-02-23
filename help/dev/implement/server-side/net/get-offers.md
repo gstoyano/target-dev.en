@@ -8,8 +8,6 @@
 
 `TargetClient.GetOffers` method signature.
 
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
-
 ## \.NET
 
 ```dotnet
@@ -17,8 +15,6 @@ TargetDeliveryResponse TargetClient.GetOffers(TargetDeliveryRequest request)
 ```
 
 `TargetDeliveryRequest` is created using `TargetDeliveryRequest.Builder`.
-
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
 
 ## \.NET
 
@@ -83,8 +79,6 @@ The `TargetCookie` object used for saving data for user session has the followin
 You don't have to worry about expiring the cookies. Target handles `MaxAge` inside the SDK.
 
 ## Example
-
-<CodeBlock slots="heading, code" repeat="1" languages="dotnet" />
 
 ## \.NET
 
