@@ -10,11 +10,11 @@ exl-id: b6edb504-a8b6-4379-99c1-6907e71601f9
 Before setting up your first Recommendations activity in Adobe Target, complete the following steps:
 
 1. [Implement Target](#implement-target) on the web and mobile app surfaces that you want to use for capturing user behavior and delivering recommendations.
-2. [Set up your Recommendations catalog](#set-up-your-recommendations-catalog) of products or content that you want to recommend to your users.
-3. [Pass behavioral information and context](#pass-behavioral-information-and-context) to Target Recommendations to allow it to deliver personalized recommendations.
-4. [Configure global exclusions](#configure-global-exclusions).
-5. [Configure Recommendations settings](#configure-recommendations-settings).
-6. (Optional) [Administer Recommendations using Admin APIs](#administer-recommendations-using-admin-apis).
+1. [Set up your Recommendations catalog](#set-up-your-recommendations-catalog) of products or content that you want to recommend to your users.
+1. [Pass behavioral information and context](#pass-behavioral-information-and-context) to Target Recommendations to allow it to deliver personalized recommendations.
+1. [Configure global exclusions](#configure-global-exclusions).
+1. [Configure Recommendations settings](#configure-recommendations-settings).
+1. (Optional) [Administer Recommendations using Admin APIs](#administer-recommendations-using-admin-apis).
 
 ## Implement Target
 
@@ -25,8 +25,8 @@ Target Recommendations requires you to implement the Adobe Experience Platform W
 To deliver high-quality recommendations, Target must know about the products or content that you want to recommend. Catalogs typically include three types of information about recommended items. Suppose you are recommending movies. Include the following:
 
 1. Data that you want to display to the user receiving the recommendation. For example, you can display the name of the movie and a URL for a thumbnail image of the movie poster.
-2. Data that is useful for applying marketing and merchandising controls. For example, you can display the rating of the movie so that you do not recommend NC-17 movies.
-3. Data that is useful for determining the similarity of items to other pieces of items. For example, you can display the genre of the movie and director of the movie.
+1. Data that is useful for applying marketing and merchandising controls. For example, you can display the rating of the movie so that you do not recommend NC-17 movies.
+1. Data that is useful for determining the similarity of items to other pieces of items. For example, you can display the genre of the movie and director of the movie.
 
 Target offers multiple integration options to populate your catalog. These options can be used in combination to update different items in the catalog or to update different item attributes on different frequencies.
 

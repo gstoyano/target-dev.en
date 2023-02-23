@@ -17,9 +17,9 @@ The Adobe Target Admin APIs, including Recommendations Admin APIs, are secured b
 Here are the preliminary steps required to generate authentication tokens needed to successfully interact with Adobe Target APIs. In the sections that follow, you will:
 
 1. Create a project (previously called integration) in the Adobe Developer Console.
-2. Export project details to Postman.
-3. Generate a bearer access token.
-4. Test the bearer access token.
+1. Export project details to Postman.
+1. Generate a bearer access token.
+1. Test the bearer access token.
 
 ## Pre-requisites
 
@@ -36,30 +36,30 @@ In this section, you will access the Adobe Developer Console and create a projec
 
 1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), ensure your Adobe user account has been granted both [Product Admin](https://helpx.adobe.com/enterprise/using/admin-roles.html) and [Developer](https://helpx.adobe.com/enterprise/using/manage-developers.html) level access to Target.
 
-2. In the [Adobe Developer Console](https://developer.adobe.com/console/home), select the Experience Cloud Organization for which you want to create this integration. (Note it is likely you may only have access to a single Experience Cloud Organization.) 
+1. In the [Adobe Developer Console](https://developer.adobe.com/console/home), select the Experience Cloud Organization for which you want to create this integration. (Note it is likely you may only have access to a single Experience Cloud Organization.) 
 
    ![configure-io-target-createproject2.png](assets/configure-io-target-createproject2.png)
 
-3. Click **Create new project**.
+1. Click **Create new project**.
 
    ![configure-io-target-createproject3.png](assets/configure-io-target-createproject3.png)
 
-4. Click **Add API** to add a REST API to your project to access Adobe services and products.
+1. Click **Add API** to add a REST API to your project to access Adobe services and products.
 
    ![Add API](assets/configure-io-target-createproject4.png)
 
-5. Select **Adobe Target** as the Adobe service you wish to integrate with. Click the **Next** button that appears. 
+1. Select **Adobe Target** as the Adobe service you wish to integrate with. Click the **Next** button that appears. 
 
    ![configure-io-target-createproject5](assets/configure-io-target-createproject5.png)
 
-6. Select an option for associating public and private keys with the service account integration you are creating for Target. For this example, select **Option 1: Generate a key pair** and click **Generate keypair**.
+1. Select an option for associating public and private keys with the service account integration you are creating for Target. For this example, select **Option 1: Generate a key pair** and click **Generate keypair**.
    ![configure-io-target-createproject6](assets/configure-io-target-createproject6.png)
 
-7. Note the results! As instructed, make note of the automatically downloaded configuration file (`config`), which contains your private key. Click **Next**.
+1. Note the results! As instructed, make note of the automatically downloaded configuration file (`config`), which contains your private key. Click **Next**.
    ![configure-io-target-createproject7](assets/configure-io-target-createproject7.png)
-8. In your file system, verify the location of `config`, which is the compressed configuration file created in the previous step. Again, this `config` file contains your private key, which you will need, later. The exact location within your file system may differ from the one shown here.
+1. In your file system, verify the location of `config`, which is the compressed configuration file created in the previous step. Again, this `config` file contains your private key, which you will need, later. The exact location within your file system may differ from the one shown here.
    ![configure-io-target-createproject8](assets/configure-io-target-createproject8.png)
-9. Back in the Adobe Developer Console, select the [product profile(s)](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) corresponding to the properties in which you are using Adobe Recommendations. (If you are not using properties, select the Default Workspace option.) Click **Save configured API**.
+1. Back in the Adobe Developer Console, select the [product profile(s)](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) corresponding to the properties in which you are using Adobe Recommendations. (If you are not using properties, select the Default Workspace option.) Click **Save configured API**.
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
 10. Click **Create Integration**. You should receive a temporary message indicating your API was successfully configured.
@@ -88,28 +88,28 @@ There are many ways to specify the details of your project in Postman, but in th
    ![JWT1](assets/configure-io-target-jwt1.png)
    In **Credential details**, note you may view your **Public key(s)**, **Client ID**, and other information related to your service account.
    ![JWT1a](assets/configure-io-target-jwt1a.png)
-2. Click to navigate to information about the **Adobe Target** API. Use either the left navigation or the **Connected products and services** section as shown.
+1. Click to navigate to information about the **Adobe Target** API. Use either the left navigation or the **Connected products and services** section as shown.
    ![JWT2](assets/configure-io-target-jwt2.png)
-3. Click **Download for Postman** > **Service Account (JWT)** to create a JSON file capturing your authentication information for a Postman environment.
+1. Click **Download for Postman** > **Service Account (JWT)** to create a JSON file capturing your authentication information for a Postman environment.
    ![JWT3](assets/configure-io-target-jwt3.png)
    Note the JSON file in your file system.
    ![JWT3a](assets/configure-io-target-jwt3a.png)
-4. In Postman, click the gear icon to manage your environments, then click **Import** to import the JSON file (environment).
+1. In Postman, click the gear icon to manage your environments, then click **Import** to import the JSON file (environment).
    ![JWT4](assets/configure-io-target-jwt4.png)
-5. Choose your file and click **Open**.
+1. Choose your file and click **Open**.
    ![JWT5](assets/configure-io-target-jwt5.png)
-6. In the Postman **Manage Environments** modal, click the name of the newly imported environment to inspect it. (Your environment name may be different from the one shown here. Edit the name as desired. It does not necessarily need to match the name of the Adobe project.)
+1. In the Postman **Manage Environments** modal, click the name of the newly imported environment to inspect it. (Your environment name may be different from the one shown here. Edit the name as desired. It does not necessarily need to match the name of the Adobe project.)
    ![JWT6](assets/configure-io-target-jwt6.png)
-7. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
+1. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
    ![JWT7](assets/configure-io-target-jwt7.png)
 
 Pop quiz! Can you remember where your private key is?
 
 That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
 
-8. From your file system, open your `config` file, and open the `private` key file.
+1. From your file system, open your `config` file, and open the `private` key file.
    ![JWT8](assets/configure-io-target-jwt8.png)
-9. Select and copy the entire contents of the `private` key file.
+1. Select and copy the entire contents of the `private` key file.
    ![JWT9](assets/configure-io-target-jwt9.png)
 10. In Postman, paste your private key value into the **INITIAL VALUE** and **CURRENT VALUE** fields.
    ![JWT10](assets/configure-io-target-jwt10.png)
@@ -122,13 +122,13 @@ In this section, you generate your bearer access token, which is required for au
 
 1. Navigate to the [Adobe Identity Management Service API sample calls](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims).
    ![token1](assets/configure-io-target-generatetoken1.png)
-2. Click the **Adobe I/O Access Token Generation Postman collection**.
+1. Click the **Adobe I/O Access Token Generation Postman collection**.
    ![token2](assets/configure-io-target-generatetoken2.png)
-3. Get the raw JSON for this collection by clicking **Raw**, then copying the resulting JSON to your clipboard. (Alternatively, you can save the raw JSON as a .json file.)
+1. Get the raw JSON for this collection by clicking **Raw**, then copying the resulting JSON to your clipboard. (Alternatively, you can save the raw JSON as a .json file.)
    ![token3](assets/configure-io-target-generatetoken3.png)
-4. In Postman, import the collection by pasting and submitting the raw JSON from your clipboard. (Alternatively, you can upload the .json file you saved.) Click **Continue**.
+1. In Postman, import the collection by pasting and submitting the raw JSON from your clipboard. (Alternatively, you can upload the .json file you saved.) Click **Continue**.
    ![token4](assets/configure-io-target-generatetoken4.png)
-5. Select the **IMS: JWT Generate + Auth via User Token** request in the Adobe I/O Access Token Generation Postman collection, ensure your environment is selected, and click **Send** to generate the token.
+1. Select the **IMS: JWT Generate + Auth via User Token** request in the Adobe I/O Access Token Generation Postman collection, ensure your environment is selected, and click **Send** to generate the token.
 
    ![token5](assets/configure-io-target-generatetoken5.png)
 
@@ -137,9 +137,9 @@ In this section, you generate your bearer access token, which is required for au
    >
    >This bearer access token will be valid for 24 hours. Send the request again whenever you need to generate a new token.
    
-6. Open the Manage Environments modal again, and select your environment.
+1. Open the Manage Environments modal again, and select your environment.
    ![token6](assets/configure-io-target-jwt11.png)
-7.  Note the `ACCESS_TOKEN` and `JWT_TOKEN` values are now populated.
+1.  Note the `ACCESS_TOKEN` and `JWT_TOKEN` values are now populated.
    ![token7](assets/configure-io-target-generatetoken7.png)
 
 Q: Do I have to use the Adobe I/O Access Token Generation Postman collection to generate the JSON Web Token (JWT) and bearer access token?
@@ -173,7 +173,7 @@ In this exercise, you will use your new bearer access token by sending an API re
    >
    >The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
 
-9. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
+1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
 Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](/recs-api/index.md) to create or manage recommendations, or you can use it with the [Target Delivery API](/src/pages/implement/delivery-api/index.md).

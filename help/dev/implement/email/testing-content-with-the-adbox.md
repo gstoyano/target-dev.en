@@ -34,18 +34,18 @@ For help selecting the right setup see [Non-JavaScript-Based Implementations](/s
    
      This must be URL encoded and must be an absolute reference. You can use the [HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp) to quickly encode your URLs.
 
-2. Create [Redirect Offers](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) for each alternative image.
+1. Create [Redirect Offers](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) for each alternative image.
 
 >[!NOTE]
 >
 >AdBoxes must be loaded with a Redirect Offer or the default content offer. Other offers types will not work. Because the AdBox is a URL, it can only display the URLs it receives, so only the Redirect Offer works.
 
-3. Create the activity.
+1. Create the activity.
 
    See [Non-JavaScript-Based Implementations](/src/pages/implement/email/index.md) for the right set up to meet your goals. 
    
-4. Complete QA on the activity.
+1. Complete QA on the activity.
 
    As best practice, create a dummy page and verify that all experiences, default content, and reports act as expected on all browser types, for all of your environments. 
 
-5. Launch the activity.
+1. Launch the activity.

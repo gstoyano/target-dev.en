@@ -28,7 +28,7 @@ There are three main use cases for cookies:
 
    Approach: Use only first-party cookies (the default). 
 
-2. Users cross domains and you want to track and test their behavior across these domains.
+1. Users cross domains and you want to track and test their behavior across these domains.
 
    Example: A user comes to your site to shop but checks out through Yahoo stores. Three approaches (work with your account representative to determine the best approach):
 
@@ -38,7 +38,7 @@ There are three main use cases for cookies:
 
       The `mboxSession` parameter must be passed to a landing page and referenced from the JavaScript library (Adobe Experience Platform Web SDK or at.js). It cannot be an intermediate redirector page.
 
-3. You are only using adboxes or Flashboxes on a third-party site.
+1. You are only using adboxes or Flashboxes on a third-party site.
 
    Two approaches (work with your account representative to determine the best approach):
 

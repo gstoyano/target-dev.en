@@ -287,7 +287,7 @@ To use cross-domain tracking for at.js v2.10 or later, you may do either of the 
 
 1. Install the [ECID library v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html) in conjunction with at.js 2.*x*. The ECID library exists to manage persistent IDs that are used to identify a visitor even across domains. After installing the ECID library v4.3.0+ and at.js 2.*x*, you will be able to create activities that span unique domains as well as track users. It is important to note this functionality works only after the session expires.
 
-2. Instead of installing the ECID library, if you have at.js v2.10 or later, you may enable the Cross-Domain setting in the Target UI in **Administration** > **Implementation**. (Alternatively, you may set the _crossDomain_ option to _enabled_ in the at.js code.)
+1. Instead of installing the ECID library, if you have at.js v2.10 or later, you may enable the Cross-Domain setting in the Target UI in **Administration** > **Implementation**. (Alternatively, you may set the _crossDomain_ option to _enabled_ in the at.js code.)
 
 To use cross-domain tracking for versions of at.js v2.*x* prior to 2.10, you may implement option #1 above (install the ECID library).
 

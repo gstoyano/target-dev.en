@@ -89,7 +89,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    ![alt image](assets/mobile-preview-create.png)
 
-2. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
+1. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    ![alt image](assets/mobile-preview-select-activities.png)
 
-3. Specify your app's URL scheme.
+1. Specify your app's URL scheme.
 
    This needs to be the same as what is present in your iOS or Android app. Repeat this process separately for iOS and Android, if required.
 
    ![alt image](assets/mobile-preview-enter-url-scheme.png)
 
-4. Click **Generate Mobile Preview Link**, then copy the link.
+1. Click **Generate Mobile Preview Link**, then copy the link.
 
    ![alt image](assets/mobile-preview-generate-and-copy.png)
 

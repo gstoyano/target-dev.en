@@ -136,20 +136,20 @@ target_client = TargetClient.create(CONFIG)
 
    ![alt image](assets/asset-ab.png)
 
-2. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).
+1. In the **Create A/B Test Activity** modal, leave the default Web option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions**(3), then click **Next** (4).
 
    ![alt image](assets/asset-form.png)
 
-3. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking **Add Experience** (2). Enter the location name of your choice (3). For example, `ondevice-featureflag` or `homepage-addtocart-featureflag` are location names indicating the destinations for feature flag testing.  In the example shown below, `ondevice-featureflag` is the location defined for Experience B. Optionally, you may add Audience Refinements (4) to restrict qualification to the activity.
+1. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking **Add Experience** (2). Enter the location name of your choice (3). For example, `ondevice-featureflag` or `homepage-addtocart-featureflag` are location names indicating the destinations for feature flag testing.  In the example shown below, `ondevice-featureflag` is the location defined for Experience B. Optionally, you may add Audience Refinements (4) to restrict qualification to the activity.
 
    ![alt image](assets/asset-location.png)
 
-4. In the **CONTENT** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
+1. In the **CONTENT** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
 
 
    ![alt image](assets/asset-offer.png)
 
-5. In the **JSON Data** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
+1. In the **JSON Data** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
 
    Enter the feature flag variables for Experience A.
 
@@ -185,11 +185,11 @@ target_client = TargetClient.create(CONFIG)
 
    ![alt image](assets/asset-next_2_t.png)
 
-2. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
+1. In the **Targeting** step example shown below, Audience Targeting (2) remains on the default set of All Visitors, for simplicity. This means the activity is untargeted. However, note Adobe recommends you always target your audiences for production activities. Click **Next** (3) to advance to the **Goals & Settings** step of activity creation.
 
    ![alt image](assets/asset-next_2_g.png)
 
-3. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
+1. In the **Goals & Settings** step, set **Reporting Source** to **Adobe Target** (1). Define the **Goal Metric** as **Conversion**, specifying the details based on your site's conversion metrics (2). Click **Save & Close** (3) to save the activity.
 
    ![alt image](assets/asset-conv.png)
 

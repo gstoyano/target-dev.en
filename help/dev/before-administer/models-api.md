@@ -107,7 +107,7 @@ The **internalName** is the feature's actual identifier. It is also created by T
 Note that in order for the features list to populate with values (that is, in order for it to be non-null), an activity:
 
 1. Must have Status = Live, or must have been activated previously
-2. Must have been running long enough for there to be campaign activity, so that the model has had data to run against.
+1. Must have been running long enough for there to be campaign activity, so that the model has had data to run against.
 
 ## Step 2: Check the blocklist of the activity {#step2}
 

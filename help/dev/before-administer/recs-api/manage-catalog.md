@@ -38,11 +38,11 @@ For example, Save Entities may be used to update items whenever certain threshol
 
     ![SaveEntities1](/assets/SaveEntities01.png)
 
-2. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
+1. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
     ![SaveEntities3](/assets/SaveEntities03.png)
 
-3. Enter your JSON as **raw** code in the **Body**. Don't forget to specify your environment ID, using the `environment` variable. (In the example below, the environment ID is 6781.)
+1. Enter your JSON as **raw** code in the **Body**. Don't forget to specify your environment ID, using the `environment` variable. (In the example below, the environment ID is 6781.)
 
     ![SaveEntities4.png](/assets/SaveEntities04.png)
 
@@ -69,7 +69,7 @@ Below is sample JSON that adds entity.id kit2001 with associated entity values f
        }
    ```
 
-4. Click **Send**. You should receive the following response.
+1. Click **Send**. You should receive the following response.
 
     ![SaveEntities5.png](/assets/SaveEntities05.png)
 
@@ -113,7 +113,7 @@ The JSON object can be scaled to send multiple products. For example, this JSON 
     }
 ```
 
-5. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
+1. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
 
     ![SaveEntities6.png](/assets/SaveEntities06.png)
 
@@ -133,11 +133,11 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
    ![GetEntity1](/assets/GetEntity1.png)
 
-2. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
+1. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
     ![GetEntity2](/assets/GetEntity2.png)
 
-3. Send the request.
+1. Send the request.
 
     ![GetEntity3](/assets/GetEntity3.png)
     If you receive an error stating the entity was not found, as shown in the example above, verify you are submitting the request to the correct Target environment.
@@ -148,11 +148,11 @@ Entity details can only be retrieved for a single entity at a time. You can use 
    >
    >If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
 
-4. If necessary, add the `environmentId` parameter, and re-send the request.
+1. If necessary, add the `environmentId` parameter, and re-send the request.
 
    ![GetEntity4](/assets/GetEntity4.png)
 
-5. Send another **Get Entity** request, this time to inspect the entity whose entityId=kit2005.
+1. Send another **Get Entity** request, this time to inspect the entity whose entityId=kit2005.
 
    ![GetEntity5](/assets/GetEntity5.png)
 
@@ -174,23 +174,23 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
     ![DeleteEntities1](/assets/SaveEntities01.png)
 
-2. In the API request, specify the entity IDs of the entities you want to delete, using the syntax `&ids=[comma-delimited-entity-ids]` (a query parameter). When deleting more than one entity, separate the IDs using commas.
+1. In the API request, specify the entity IDs of the entities you want to delete, using the syntax `&ids=[comma-delimited-entity-ids]` (a query parameter). When deleting more than one entity, separate the IDs using commas.
 
     ![DeleteEntities2](/assets/DeleteEntities2.png)
 
-3. Specify the environment ID, using the syntax `&environment=[environmentId]`, otherwise entities across all environments will be deleted.
+1. Specify the environment ID, using the syntax `&environment=[environmentId]`, otherwise entities across all environments will be deleted.
 
     ![DeleteEntities3](/assets/DeleteEntities3.png)
 
-4. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
+1. Verify `TENANT_ID` and `API_KEY` reference the Postman environment variables established earlier. Use the image below for comparison. If necessary, modify the Headers and path in your API request to match those in the image below.
 
     ![DeleteEntities4](/assets/DeleteEntities4.png)
 
-5. Send the request.
+1. Send the request.
 
     ![DeleteEntities5](/assets/DeleteEntities5.png)
 
-6. Verify your results using **Get Entity**, which should now indicate the deleted entities cannot be found.
+1. Verify your results using **Get Entity**, which should now indicate the deleted entities cannot be found.
 
     ![DeleteEntities6](/assets/DeleteEntities6.png)
 

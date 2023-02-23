@@ -211,12 +211,12 @@ To enable on-device decisioning:
 >You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
 1. Click **Administration** > **Implementation** > **Account details**.
-2. Under **Account details**, slide the **On-Device Decisioning** toggle to the "on" position.
+1. Under **Account details**, slide the **On-Device Decisioning** toggle to the "on" position.
 
    ![On-device decisioning toggle](/assets/on-device-decisioning-toggle.png)
 
    The "Include all existing on-device decisioning qualified activities in the artifact" option displays if you enable on-device decisioning.
-3. (Conditional) Slide the toggle to the "on" position if you want all your live Target activities that qualify for on-device decisioning to be automatically included in the artifact.
+1. (Conditional) Slide the toggle to the "on" position if you want all your live Target activities that qualify for on-device decisioning to be automatically included in the artifact.
 
    Leaving this toggle off means you must re-create and activate any on-device decisioning activities for them to be included in the generated rules artifact. In other words, any activity in live state before turning on the On-Device Decisioning toggle are not included in the rules artifact.
 
@@ -229,7 +229,7 @@ After enabling the On-Device Decisioning toggle, Target begins generating and pr
 ## How do I configure at.js 2.5.0+ to use on-device decisioning?
 
 1. Click **Administration** > **Implementation** > **Account details**.
-2. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
+1. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
  
    ![Edit Main Implementation Method settings](/assets/main-implementation-method.png)
 
@@ -237,7 +237,7 @@ After enabling the On-Device Decisioning toggle, Target begins generating and pr
 >
 >Before changing these default settings, consult with Client Care to avoid affecting your current implementation.
 
-3. Select the desired decisioning method:
+1. Select the desired decisioning method:
 
    * Server-side only
    * On-device only
@@ -319,6 +319,6 @@ You can filter for all activities that are on-device decisioning eligible on the
 
    The first JSON rules artifact generation can take up to 10 minutes. 
 
-2. Create and activate an [activity type that is supported by on-device decisioning](/src/pages/implement/client-side/atjs/on-device-decisioning/supported-features.md), and verify that it is on-device decisioning eligible. 
-3. Set the **Decisioning Method** to either **"Hybrid"** or **"On-device only"** through the at.js settings UI. 
-4. Download and deploy At.js 2.5.0+ to your pages.
+1. Create and activate an [activity type that is supported by on-device decisioning](/src/pages/implement/client-side/atjs/on-device-decisioning/supported-features.md), and verify that it is on-device decisioning eligible. 
+1. Set the **Decisioning Method** to either **"Hybrid"** or **"On-device only"** through the at.js settings UI. 
+1. Download and deploy At.js 2.5.0+ to your pages.

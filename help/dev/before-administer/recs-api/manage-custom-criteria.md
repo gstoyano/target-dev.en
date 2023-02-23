@@ -36,15 +36,15 @@ Only proceed with the following steps after you have read the warning above and 
 
     ![CreateCustomCriteria1](/assets/CreateCustomCriteria1.png)
 
-2. Add your **Body** as **raw** JSON that defines the location of your custom criteria CSV file. Use the example provided in the [Create Custom Criteria API](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom) documentation as a template, supplying your `environmentId` and other values as necessary. For this example, we use LAST_PURCHASED as the key.
+1. Add your **Body** as **raw** JSON that defines the location of your custom criteria CSV file. Use the example provided in the [Create Custom Criteria API](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom) documentation as a template, supplying your `environmentId` and other values as necessary. For this example, we use LAST_PURCHASED as the key.
 
     ![CreateCustomCriteria2](/assets/CreateCustomCriteria2.png)
 
-3. Send the request and observe the response, which contains the details of the custom criteria you just created.
+1. Send the request and observe the response, which contains the details of the custom criteria you just created.
 
     ![CreateCustomCriteria3](/assets/CreateCustomCriteria3.png)
 
-4. To verify your custom criteria has been created, navigate within Adobe Target to **Recommendations > Criteria** and search for your criteria by name, or use the **List Custom Criteria API** in the next step.
+1. To verify your custom criteria has been created, navigate within Adobe Target to **Recommendations > Criteria** and search for your criteria by name, or use the **List Custom Criteria API** in the next step.
 
     ![CreateCustomCriteria4](/assets/CreateCustomCriteria4.png)
 

@@ -20,15 +20,15 @@ To use your existing global mbox for both Target and your legacy implementation,
 
    By default, **Page load enabled (Auto-create global mbox** is enabled, and the custom global mbox is named `target-global-mbox`.
 
-2. If you want to use an existing mbox, disable **Page load enabled (Auto-create global mbox**, and specify the name of a previously created global mbox in the **Global Mbox** field.
+1. If you want to use an existing mbox, disable **Page load enabled (Auto-create global mbox**, and specify the name of a previously created global mbox in the **Global Mbox** field.
 
    The Global Mbox drop-down lists all mboxes in your account. If you want to use an mbox that does not yet exist, create the mbox.
 
-3. Click **Save**.
+1. Click **Save**.
 
    The settings for your account are updated.
 
-4. Download the new at.js file and reference it on your site.
+1. Download the new at.js file and reference it on your site.
 
    All existing activities update to use the specified global mbox, including activities that have previously been created and implemented.
 
