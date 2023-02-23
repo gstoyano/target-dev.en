@@ -95,6 +95,8 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
       + [Pass parameters to a global mbox](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [Global mbox frequently asked questions](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
 
+<!--
+
   + Server Side: implement Target {#server-side}
      + [Server Side: implement Target overview](c-api-and-sdk-overview/api-and-sdk-overview.md)
      + [Transition from Target legacy APIs to Adobe I/O](c-api-and-sdk-overview/target-api-documentation.md)
@@ -102,8 +104,6 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
 
 + [Jump to Administration Guide](https://blah.html)
 + Administration {#administration}
-
-<!--
 
 + [Implement Target overview](implementing-target.md)
 
