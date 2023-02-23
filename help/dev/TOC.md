@@ -109,7 +109,6 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
      + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
      + Node.js SDK Reference {#node-js}
        + [Overview](overview.md)
-       + 
      + Java SDK Reference {#java}
      + .NET SDK Reference {#net}
      + Python SDK Reference {#python}
