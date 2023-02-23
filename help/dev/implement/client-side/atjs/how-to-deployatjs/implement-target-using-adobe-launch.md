@@ -10,9 +10,9 @@ exl-id: 7cc1d3ab-4a68-4454-95b0-04fa547a6d9e
 
 Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
-<InlineAlert variant="info" slots="text"/>
-
-Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?) for a consolidated reference of the terminology changes.
+>[!NOTE]
+>
+>Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?) for a consolidated reference of the terminology changes.
 
 The following table lists the various sources where you can get more information:
 
@@ -32,4 +32,4 @@ The following advantages apply only if you use tags in Adobe Experience Platform
   
 Use the Send Beacon action in the Adobe Analytics extension so that the Analytics call waits for the Target call. If you directly call `s.t()` or `s.tl()` using custom code, Analytics calls do not wait until Target calls are complete.
 
-* **Prevents incorrect redirect offer handling:** If you have Target and Analytics on the page, and there is a redirect offer executed by Target, you can experience a situation in which the Analytics tracker fires a request when it shouldn’t (because the user is being redirected to a different URL). If you implement Target and Analytics via tags in Adobe Experience Platform, you’ll not experience this issue. Using tags in Adobe Experience Platform, Target instructs Analytics to abort the Analytics beacon request.
+* **Prevents incorrect redirect offer handling:** If you have Target and Analytics on the page, and there is a redirect offer executed by Target, you can experience a situation in which the Analytics tracker fires a request when it shouldn't (because the user is being redirected to a different URL). If you implement Target and Analytics via tags in Adobe Experience Platform, you'll not experience this issue. Using tags in Adobe Experience Platform, Target instructs Analytics to abort the Analytics beacon request.

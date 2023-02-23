@@ -4,6 +4,6 @@ description: Adobe Target Admin API
 openAPISpec: https://raw.githubusercontent.com/AdobeDocs/target-developers/main/src/admin-api.json 
 --- 
 
-
+# Adobe Target Admin API
 
 

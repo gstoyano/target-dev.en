@@ -12,9 +12,9 @@ You can delete your Adobe Target browser cookie (mbox) so that you can validate 
 
 If there is no Target cookie (mbox), you are considered a new visitor and shown a new experience. There are several ways to delete your mbox without deleting all of your browser cookies.
 
-<InlineAlert variant="info" slots="text"/>
-
-The following instructions are correct for the browsers and versions listed. Search the internet for instructions for your specific browser or version.
+>[!NOTE]
+>
+>The following instructions are correct for the browsers and versions listed. Search the internet for instructions for your specific browser or version.
 
 ## Delete the Target cookie from Google Chrome
 
@@ -37,9 +37,9 @@ Version 79.0
 1. Under **Cookies and Site Data**, click **Manage Data**.
 1. Select the `adobe.com` site, then click **Remove Selected**.
 
-<InlineAlert variant="warning" slots="text"/>
-
-This deletes all cookies associated with the `adobe.com` site. If you want to delete an individual cookie for a site, follow the instructions below.
+>[!WARNING]
+>
+>This deletes all cookies associated with the `adobe.com` site. If you want to delete an individual cookie for a site, follow the instructions below.
 
 ### Delete an individual cookie (mbox)
 
@@ -70,9 +70,9 @@ Version 13.1.2
 1. Click **Manage Website Data**.
 1. Select the sites for the cookies you want to delete, then click **Remove**.
 
-<InlineAlert variant="warning" slots="text"/>
-
-This deletes all cookies associated with the `adobe.com` site. If you want to delete an individual cookie for a site, follow the instructions below.
+>[!WARNING]
+>
+>This deletes all cookies associated with the `adobe.com` site. If you want to delete an individual cookie for a site, follow the instructions below.
 
 ### Delete an individual cookie (mbox)
 

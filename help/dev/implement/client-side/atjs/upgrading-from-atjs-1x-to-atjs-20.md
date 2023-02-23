@@ -50,27 +50,27 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) extension. 
 
-<InlineAlert variant="info" slots="text"/>
-
-Deploying at.js using tags in Adobe Experience Platform is the preferred method.
-
-Or
-
-Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>[!NOTE]
+>
+>Deploying at.js using tags in Adobe Experience Platform is the preferred method.
+>
+>Or
+>
+>Manually download at.js 2.*x* using the Target UI and deploy it using the [method of your choice](/src/pages/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Deprecated at.js functions
 
 There are several functions that have been deprecated in at.js 2.*x*. 
 
-<InlineAlert variant="warning" slots="text"/>
-
-If these deprecated functions are still used on your site when at.js 2.*x* is deployed, you will see console warnings. The recommended approach when upgrading is to test the deployment of at.js 2.*x* in a staging environment and make sure to go through each and every warning that has been logged in the console and translate the deprecated functions to new functions introduced in at.js 2.*x*. 
+>[!WARNING]
+>
+>If these deprecated functions are still used on your site when at.js 2.*x* is deployed, you will see console warnings. The recommended approach when upgrading is to test the deployment of at.js 2.*x* in a staging environment and make sure to go through each and every warning that has been logged in the console and translate the deprecated functions to new functions introduced in at.js 2.*x*. 
 
 You can find the deprecated functions and their counterpart below. For a complete list of functions, see [at.js functions](/src/pages/implement/client-side/atjs/atjs-functions/atjs-functions.md).
 
-<InlineAlert variant="info" slots="text"/>
-
-at.js 2.*x* no longer automatically pre-hides `mboxDefault` marked elements. Customers will therefore have to accommodate for the pre-hide logic manually on the site or through a tag manager.
+>[!NOTE]
+>
+>at.js 2.*x* no longer automatically pre-hides `mboxDefault` marked elements. Customers will therefore have to accommodate for the pre-hide logic manually on the site or through a tag manager.
 
 ### mboxCreate(mbox,params)
 
@@ -218,11 +218,11 @@ Yes, the visitor profile is preserved across pages using different versions and 
 
 ### New API use in at.js 2.*x*
 
-at.js 2.*x* uses a new API, which we call the Delivery API. In order to debug whether at.js is calling the Target edge server correctly, you can filter the Network tab of your browser’s Developer Tools to “delivery”, “`tt.omtrdc.net`,” or your client code. You will also notice that Target sends a JSON payload instead of key-value pairs.
+at.js 2.*x* uses a new API, which we call the Delivery API. In order to debug whether at.js is calling the Target edge server correctly, you can filter the Network tab of your browser's Developer Tools to "delivery", "`tt.omtrdc.net`," or your client code. You will also notice that Target sends a JSON payload instead of key-value pairs.
 
 ### Target Global Mbox is no longer used
 
-In at.js 2.*x*, you no longer see “`target-global-mbox`” visibly in the network calls. Instead, we have replaced the “`target-global-mbox`” syntax to “`execute > pageLoad`” in the JSON payload sent to the Target servers, as seen below:
+In at.js 2.*x*, you no longer see "`target-global-mbox`" visibly in the network calls. Instead, we have replaced the "`target-global-mbox`" syntax to "`execute > pageLoad`" in the JSON payload sent to the Target servers, as seen below:
 
 ```json
 {
@@ -273,11 +273,11 @@ Yes, because execute > pageLoad is treated on the Target edge servers like `targ
 
 ### Cross-domain tracking support in at.js 2.x
 
-Cross-domain tracking makes it possible to stitch visitors across different domains. Because a new cookie must be created for each domain, it is difficult to track visitors when they navigate from domain to domain. To accomplish cross-domain tracking, Target uses a third-party cookie to track visitors across domains. This allows you to create a Target activity that spans `siteA.com` and `siteB.com` and visitors remain in the same experience when they navigate across unique domains. This functionality ties into Target’s third-party and first-party cookie behavior.
+Cross-domain tracking makes it possible to stitch visitors across different domains. Because a new cookie must be created for each domain, it is difficult to track visitors when they navigate from domain to domain. To accomplish cross-domain tracking, Target uses a third-party cookie to track visitors across domains. This allows you to create a Target activity that spans `siteA.com` and `siteB.com` and visitors remain in the same experience when they navigate across unique domains. This functionality ties into Target's third-party and first-party cookie behavior.
 
-<InlineAlert variant="info" slots="text"/>
-
-Cross-domain tracking is supported as of at.js 2.10, but not supported out-of-the-box in at.js 2.*x* prior to 2.10. Cross-domain tracking is supported in at.js 2.*x* via the Experience Cloud ID (ECID) library v4.3.0+.
+>[!NOTE]
+>
+>Cross-domain tracking is supported as of at.js 2.10, but not supported out-of-the-box in at.js 2.*x* prior to 2.10. Cross-domain tracking is supported in at.js 2.*x* via the Experience Cloud ID (ECID) library v4.3.0+.
 
 In Target, the third-party cookie is stored in `<CLIENTCODE>.tt.omtrdc.net`. The first-party cookie is stored in `clientdomain.com`. The first request returns HTTP response headers that attempt to set third-party cookies named `mboxSession` and `mboxPC`, whereas a redirect request is sent back with an extra parameter (`mboxXDomainCheck=true`). If the browser accepts third-party cookies, the redirect request includes those cookies, and the experience is returned. This workflow is possible because we use the HTTP GET method.
 
@@ -308,7 +308,7 @@ Customers are able to specify a global mbox name via **Target > Administration >
 
 Yes the at.js custom events are applicable to `triggerView()` as well.
 
-### It says when I call `triggerView()` with &lbrace;`“page” : “true”`&rbrace;, it will send a notification to the Target backend and increase the impression. Does it also cause the profile scripts to execute?
+### It says when I call `triggerView()` with &lbrace;`"page" : "true"`&rbrace;, it will send a notification to the Target backend and increase the impression. Does it also cause the profile scripts to execute?
 
 When a prefetch call is made to the Target backend, the profile scripts are executed. Thereafter, the impacted profile data will then be encrypted and passed back to the client side. After `triggerView()` with `{"page": "true"}` is invoked, a notification is sent along with the encrypted profile data. This is when the Target backend will then decrypt the profile data and store into the databases.
 
@@ -350,9 +350,9 @@ The following tables explain at.js. 2.*x* compatibility with different activity 
 |Automated Personalization|Yes|
 |Recommendations|Yes|
 
-<InlineAlert variant="info" slots="text"/>
-
-Auto-Target activities are supported through at.js 2.*x* and the VEC when all modifications are applied to the `Page Load Event`. When modifications are added to particular views, A/B Test, Auto-Allocate, and Experience Targeting (XT) activities only are supported.
+>[!NOTE]
+>
+>Auto-Target activities are supported through at.js 2.*x* and the VEC when all modifications are applied to the `Page Load Event`. When modifications are added to particular views, A/B Test, Auto-Allocate, and Experience Targeting (XT) activities only are supported.
 
 ### Integrations
 

@@ -10,9 +10,9 @@ exl-id: ec1f1459-d539-4eac-a8f1-33a2d4910dec
 
 Details about changes in each version of the Adobe Target at.js JavaScript library.
 
-<InlineAlert variant="warning" slots="text"/>
-
-Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure you are running a supported version.
+>[!WARNING]
+>
+>Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure you are running a supported version.
 
 Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
 
@@ -139,9 +139,9 @@ This release of at.js includes the following enhancements and fixes:
 * Previously, the ECID made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 * Fixed incorrect prefetched view processing, where event tokens from default offers were not included in sent notifications.
 
-<InlineAlert variant="info" slots="text"/>
-
-Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
+>[!NOTE]
+>
+>Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
 
 * at.js version 2.2 also provides a new setting called `serverState`. This setting can be used to optimize page performance when a hybrid integration of Target is implemented. Hybrid integration means that you are using both at.js v2.2+ on the client-side and the Delivery API or a Target SDK on the server-side to deliver experiences. `serverState` gives at.js v2.2+ the ability to apply experiences directly from content fetched on the server side and returned to the client as part of the page being served. For more information, see "serverState" in [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverstate).
 
@@ -152,9 +152,9 @@ This release of at.js includes the following enhancements and fixes:
 * Improved performance when using both Experience Cloud ID Service (ECID) v4.4 and at.js 1.8 on your web pages.
 * Previously, the ECID made two blocking calls before at.js could fetch experiences. This has been reduced to a single call, which significantly improves performance.
 
-<InlineAlert variant="info" slots="text"/>
-
-Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
+>[!NOTE]
+>
+>Upgrade your ECID Extension to v4.4 to take advantage of this performance enhancement.
 
 ## at.js version 2.1.1 (July 24, 2019)
 
@@ -236,9 +236,9 @@ The following functions have been deprecated with the introduction of at.js 2.x:
 
 For more information, see [Upgrading from at.js 1.x to at.js 2.x](/src/pages/implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md) and [at.js functions](/src/pages/implement/client-side/atjs/atjs-functions/atjs-functions.md).
 
-<InlineAlert variant="info" slots="text"/>
-
-If you require Adobe Opt-in support for the [General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
+>[!NOTE]
+>
+>If you require Adobe Opt-in support for the [General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
 
 ## at.js Version 1.7.0
 
@@ -248,9 +248,9 @@ For more information about Adobe Opt-in, see [Privacy and General Data Protectio
 
 This release also fixes an issue where Target might override redirect URL parameters with parameters that are coming from the redirect URL.
 
-<InlineAlert variant="info" slots="text"/>
-
-If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
+>[!NOTE]
+>
+>If you require Adobe Opt-in support for GDPR, you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
 
 ## at.js Version 1.6.4
 
@@ -273,9 +273,9 @@ This is a maintenance release and addresses the following issue:
 
 * Fixed an issue that on some customer sites lead to an infinite "async" loop.
 
-<InlineAlert variant="warning" slots="text"/>
-
-In addition, at.js Version 1.6.2 also contains all of the enhancements and fixes included in at.js Version 1.6.1 and 1.6.0. These versions are no longer available for download. We recommend that you upgrade to version 1.6.2 if using 1.6.1 or 1.6.0
+>[!WARNING]
+>
+>In addition, at.js Version 1.6.2 also contains all of the enhancements and fixes included in at.js Version 1.6.1 and 1.6.0. These versions are no longer available for download. We recommend that you upgrade to version 1.6.2 if using 1.6.1 or 1.6.0
 
 Here are the enhancements and fixes that were included in at.js Version 1.6.1:
 
@@ -423,7 +423,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 * Added the `selectorsPollingTimeout` setting. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md). 
 * The format of the response from `getOffer()` has been changed. For more information, see [adobe.target.getOffer(options)](/src/pages/implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md). 
 * Console logging has been added for unsupported `<!DOCTYPE>` declarations. 
-* Fixed an issue where Target Classic plugins weren’t being applied correctly when multiple default offers were delivered to a single mbox. (TGT-22664) 
+* Fixed an issue where Target Classic plugins weren't being applied correctly when multiple default offers were delivered to a single mbox. (TGT-22664) 
 * Improved cookie-setting for two letter top-level-domains (TLDs) to ensure that the mbox cookie is set correctly for these domains (for example, test.no, autodrives.ca, and so forth). 
 * The algorithm for extracting the top-level domain that should be used when saving cookies has changed in at.js version 0.9.6. Because of this change, cookies cannot be saved to addresses that use IP. Most of the time, IP addresses are used for testing purposes, but as workarounds you can use DNS entries or adjust the hosts file on a local box. 
 * Fixed move and rearrange actions handling when properties are string values instead of integers.
@@ -459,7 +459,7 @@ The following enhancements and fixes are included in at.js version 0.9.6:
 
 **Date:** July 14, 2016
 
-* Provides at.js a timeout for the Visitor Id Service, which is independent of the service’s own timeout. 
+* Provides at.js a timeout for the Visitor Id Service, which is independent of the service's own timeout. 
 * Corrects an issue in 0.9.0 that impacted implementations using at.js on some pages and mbox.js (now deprecated) on other pages. 
 * If you use Adobe Analytics as your activity's reporting source, you do not need to specify a tracking server during activity creation if you are using mbox.js version 61 (or later) or at.js version 0.9.1 (or later). The at.js library automatically sends tracking server values to Target. During activity creation, you can leave the Tracking Server field empty on the Goals & Settings page.
 

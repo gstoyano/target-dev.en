@@ -42,9 +42,9 @@ At a high level, the law affords Californians several key rights, including righ
 
 If you were busy getting ready for Europe's privacy law (GDPR) last year, some of these rights might be familiar and much of the work you have done can be repurposed.
 
-<InlineAlert variant="info" slots="text"/>
-
-Accessing and deleting data as it applies to the CCPA follows the same process as for the GDPR.
+>[!NOTE]
+>
+>Accessing and deleting data as it applies to the CCPA follows the same process as for the GDPR.
 
 ## Adobe Target and Adobe Experience Platform opt-in
 
@@ -58,11 +58,9 @@ window.targetGlobalSettings = {
 };
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-Opt-in functionality is supported in at.js version 1.7.0 and at.js 2.1.0 or later. Opt-in is not supported in at.js version 2.0.0 and 2.0.1.
-
-<InlineAlert variant="info" slots="text"/>
+>[!NOTE]
+>
+>Opt-in functionality is supported in at.js version 1.7.0 and at.js 2.1.0 or later. Opt-in is not supported in at.js version 2.0.0 and 2.0.1.
 
 Using Adobe Experience Platform to manage opt-in is the recommended approach. Further granular control exists in Adobe Experience Platform to hide selected elements of your page before Target firing that are helpful to use as part of your consent strategy.
 
@@ -133,9 +131,9 @@ Target supports the following ID types to locate a customer profile:
 |TnT ID / Cookie ID(TNTID)|Standard|9|Target identifier set as a cookie in the visitor's browser. You can use the JavaScript API to locate this ID (see details below).|
 |3rd-Party ID / CRM ID (THIRDPARTYID)|Target-Specific|N/A|If you provide Target with your CRM or other unique identifier information for your customers.|
 
-<InlineAlert variant="info" slots="text"/>
-
-Although Target supports both first-party and third-party cross-domain cookies, first-party Target cookies only are recommended for GDPR and CCPA.
+>[!NOTE]
+>
+>Although Target supports both first-party and third-party cross-domain cookies, first-party Target cookies only are recommended for GDPR and CCPA.
 
 ### How does Target handle consent management?
 
@@ -288,9 +286,9 @@ The following table contains description of the illustrative profile JSON fields
 |firstSessionStart|This standard field includes the time of day the user's first session began.|
 |user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller's site. For more information, see [Profile Script Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|
 
-<InlineAlert variant="info" slots="text"/>
-
-This code sample is a shortened version of a Target profile JSON for illustration. Many of the fields of the Target profile are not standard. What is returned depends on what information is in that specific visitor profile.
+>[!NOTE]
+>
+>This code sample is a shortened version of a Target profile JSON for illustration. Many of the fields of the Target profile are not standard. What is returned depends on what information is in that specific visitor profile.
 
 ### Does Target support IP obfuscation?
 

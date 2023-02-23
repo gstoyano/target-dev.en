@@ -10,9 +10,9 @@ exl-id: 619d5166-d1d9-49a6-9807-338544782e66
 
 This function can be called whenever a new page is loaded or when a component on a page is re-rendered. `adobe.target.triggerView()` should be implemented for single page applications (SPAs) in order to use the Visual Experience Composer (VEC) to create A/B Tests and Experience Targeting (XT) activities. If `adobe.target.triggerView()` is not implemented on the site, the VEC cannot be utilized for SPA. For more information, see [Single Page Application implementation](/src/pages/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-<InlineAlert variant="info" slots="text"/>
-
-This function was introduced with at.js 2.x. This function is not available for at.js version 1.*x*.
+>[!NOTE]
+>
+>This function was introduced with at.js 2.x. This function is not available for at.js version 1.*x*.
 
 |Parameter|Type|Required?|Description|
 | --- | --- | --- | --- |

@@ -10,9 +10,9 @@ exl-id: d230d48f-0d6c-4f55-96a0-681dd31e8d16
 
 This function is for applying the response content with Adobe Target.
 
-<InlineAlert variant="info" slots="text"/>
-
-`applyOffer` requires the `mbox` parameter. If no mbox name is specified, an error occurs.
+>[!NOTE]
+>
+>`applyOffer` requires the `mbox` parameter. If no mbox name is specified, an error occurs.
 
 The options parameter is mandatory and has the following structure:
 

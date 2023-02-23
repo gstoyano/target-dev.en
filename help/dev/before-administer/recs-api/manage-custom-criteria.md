@@ -16,9 +16,9 @@ Sometimes the algorithms provided by Recommendations are not able to surface par
 
 To create custom criteria, define and import the desired mapping between the key item or category and the recommended items. This process is described in the [custom criteria documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). As noted in that documentation, you are able to create, edit, and delete custom criteria through the Target user interface (UI). However, Target also provides a set of Custom Criteria APIs that allow for more detailed management of your custom criteria.
 
-<InlineAlert variant="warning" slots="text"/>
-
-For custom criteria, either perform all actions (create, edit, delete) for a given custom criteria using the APIs, or else perform all actions (create, edit, delete) using the UI. Managing your custom criteria through a combination of the UI and the API may lead to conflicting information or unexpected results. For example, creating a custom criteria in the UI but then editing it via API will not reflect your updates in the UI, even though it will be updated in the backend, as visible via the API.
+>[!WARNING]
+>
+>For custom criteria, either perform all actions (create, edit, delete) for a given custom criteria using the APIs, or else perform all actions (create, edit, delete) using the UI. Managing your custom criteria through a combination of the UI and the API may lead to conflicting information or unexpected results. For example, creating a custom criteria in the UI but then editing it via API will not reflect your updates in the UI, even though it will be updated in the backend, as visible via the API.
 
 ## Create Custom Criteria
 
@@ -26,9 +26,9 @@ To create custom criteria using the [Create Custom Criteria API](https://develop
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
-<InlineAlert variant="warning" slots="text"/>
-
-Custom criteria created using the Create Custom Criteria API, as described in this exercise, will appear in the UI, where they will persist. You will not be able to edit or delete them from the UI. You may edit or delete them **via API**, but either way, they will continue to appear in the Target UI. To maintain the option of editing or deleting from the UI, create the custom criteria using the UI per [the documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html), as opposed to using the Create Custom Criteria API.
+>[!WARNING]
+>
+>Custom criteria created using the Create Custom Criteria API, as described in this exercise, will appear in the UI, where they will persist. You will not be able to edit or delete them from the UI. You may edit or delete them **via API**, but either way, they will continue to appear in the Target UI. To maintain the option of editing or deleting from the UI, create the custom criteria using the UI per [the documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html), as opposed to using the Create Custom Criteria API.
 
 Only proceed with the following steps after you have read the warning above and are comfortable creating new custom criteria that cannot subsequently be deleted from the UI.
 
@@ -107,9 +107,9 @@ Using the criteria ID noted earlier, delete your custom criteria, using the [Del
    ![DeleteCustomCriteria2](/assets/DeleteCustomCriteria2.png)
    In this case, the expected 404 error indicates the deleted criteria cannot be found.
 
-<InlineAlert variant="info" slots="text"/>
-
-As a reminder, the criteria will not be removed from the Target UI even though it was deleted, because it was created using the Create Custom Criteria API.
+>[!NOTE]
+>
+>As a reminder, the criteria will not be removed from the Target UI even though it was deleted, because it was created using the Create Custom Criteria API.
 
 Congratulations! You are now able to create, list, edit, delete, and get details on custom criteria, using the Recommendations API. In the next section, you will use the Target Delivery API to retrieve recommendations.
 

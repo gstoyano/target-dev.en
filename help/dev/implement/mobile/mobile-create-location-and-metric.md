@@ -12,9 +12,9 @@ To use Target in your mobile app, create a location and success metric.
 
 This section includes sample code that can be used as a template for your app. The samples in this section contain code for iOS. The same patterns apply to Android. Android-specific syntax can be found in the [Android SDK 4.x for Experience Cloud Solutions](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html) guide.
 
-<InlineAlert variant="info" slots="text"/>
-
-See the [Mobile documentation](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html) for a list of all the available Target methods.
+>[!NOTE]
+>
+>See the [Mobile documentation](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html) for a list of all the available Target methods.
 
 To create a Target location in your app and make a request, there are two primary methods:
 

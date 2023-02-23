@@ -68,9 +68,10 @@ In this section, you will access the Adobe Developer Console and create a projec
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
 
-<InlineAlert variant="info" slots="text"/>
 
-In this example, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
+>[!NOTE]
+>
+>In this example, we name our project "Target Integration." If you anticipate using your project for more than just Adobe Target, you may want to name it accordingly. For example, you might choose to name it "Adobe APIs" or "Experience Cloud APIs," since it may be used with other solutions in the Adobe Experience Cloud.
 
 ## Export project details
 
@@ -78,9 +79,10 @@ Now that you have an Adobe project you can use for accessing Target, you need to
 
 There are many ways to specify the details of your project in Postman, but in this section, we take advantage of some pre-built features and collections. First (in this section), you will export the details of your integration into a Postman environment. Next (in the following section), you will generate a bearer access token to grant you access to the necessary Adobe resources.
 
-<InlineAlert variant="info" slots="text"/>
 
-For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). The following sections are relevant to the Target APIs: 1. Create and export Experience Platform API to Postman 2. Generate an Access Token with Postman. These steps are also provided below.
+>[!NOTE]
+>
+>For video instructions applicable for any Experience Cloud solution, including Target, see [Use Postman with Experience Platform APIs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). The following sections are relevant to the Target APIs: 1. Create and export Experience Platform API to Postman 2. Generate an Access Token with Postman. These steps are also provided below.
 
 1. Still in the [Adobe Developer Console](https://developer.adobe.com/console/home), navigate to view your new project's **Service Account (JWT)** credentials. Use either the left navigation or the **Credentials** section as shown.
    ![JWT1](assets/configure-io-target-jwt1.png)
@@ -101,11 +103,7 @@ For video instructions applicable for any Experience Cloud solution, including T
 7. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
    ![JWT7](assets/configure-io-target-jwt7.png)
 
-<InlineAlert variant="help" slots="text"/>
-
 Pop quiz! Can you remember where your private key is?
-
-<InlineAlert variant="success" slots="text"/>
 
 That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
 
@@ -134,20 +132,17 @@ In this section, you generate your bearer access token, which is required for au
 
    ![token5](assets/configure-io-target-generatetoken5.png)
 
-<InlineAlert variant="info" slots="text"/>
 
-This bearer access token will be valid for 24 hours. Send the request again whenever you need to generate a new token.
+   >[!NOTE]
+   >
+   >This bearer access token will be valid for 24 hours. Send the request again whenever you need to generate a new token.
    
 6. Open the Manage Environments modal again, and select your environment.
    ![token6](assets/configure-io-target-jwt11.png)
 7.  Note the `ACCESS_TOKEN` and `JWT_TOKEN` values are now populated.
    ![token7](assets/configure-io-target-generatetoken7.png)
 
-<InlineAlert variant="help" slots="text"/>
-
 Q: Do I have to use the Adobe I/O Access Token Generation Postman collection to generate the JSON Web Token (JWT) and bearer access token?
-
-<InlineAlert variant="success" slots="text"/>
 
 A: Nope! The Adobe I/O Access Token Generation Postman collection is available as a convenience to more easily generate the JWT and bearer access token in Postman. Alternatively, you can use capabilities within the Adobe Developer Console to manually generate the bearer access token.
 
@@ -173,9 +168,10 @@ In this exercise, you will use your new bearer access token by sending an API re
 
    ![testtoken5](assets/configure-io-target-testtoken5.png)
 
-<InlineAlert variant="info" slots="text"/>
 
-The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
+   >[!NOTE]
+   >
+   >The Tenant ID is different from your Target `clientcode`. The Tenant ID exists in the URL when you are logged in to Target. To obtain your Tenant ID, log in to the Adobe Experience Cloud, open Target, and click the Target card. Use the Tenant ID value as noted in the URL subdomain. For example, if your URL when logged in to Adobe Target is `<https://mycompany.experiencecloud.adobe.com/...>` then your Tenant ID is "mycompany."
 
 9. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)

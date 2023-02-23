@@ -45,6 +45,6 @@ For added security, you can require that the Bulk Update API call require a vali
 
 5. Click **Generate New Profile Authentication Token** to regenerate the token as needed.
 
-<InlineAlert variant="warning" slots="text"/>
-
-Resetting this token will cause API calls using the current token to fail. This will require updating any scripts or apps that use this token.
+>[!WARNING]
+>
+>Resetting this token will cause API calls using the current token to fail. This will require updating any scripts or apps that use this token.

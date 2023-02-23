@@ -16,13 +16,11 @@ At this point, you have learned how to generate an access token, using the JWT a
   
 You can now use the [Recommendations APIs](https://developers.adobetarget.com/api/recommendations/) to add, update, or delete items in your recommendations catalog. As with the rest of the Adobe Target Admin APIs, the Recommendations APIs require authentication.
 
-<InlineAlert variant="info" slots="text"/>
-
-Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../configure-authentication.md) for instructions.
+>[!NOTE]
+>
+>Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../configure-authentication.md) for instructions.
 
 ![JWT3ff](/assets/configure-io-target-jwt3ff.png)
-
-<InlineAlert variant="info" slots="text"/>
 
 Before proceeding, get the [Recommendations Postman collection](https://developers.adobetarget.com/api/recommendations/#section/Postman).
 
@@ -47,8 +45,6 @@ For example, Save Entities may be used to update items whenever certain threshol
 3. Enter your JSON as **raw** code in the **Body**. Don't forget to specify your environment ID, using the `environment` variable. (In the example below, the environment ID is 6781.)
 
     ![SaveEntities4.png](/assets/SaveEntities04.png)
-
-<InlineAlert variant="info" slots="text"/>
 
 Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
    
@@ -148,9 +144,9 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
 
 
-<InlineAlert variant="info" slots="text"/>
-
-If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
+   >[!NOTE]
+   >
+   >If no environment is explicitly specified, Get Entity attempts to get the entity from your [default environment](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) only. If you wish to pull from any environment other than your default environment, you must specify the environment ID.
 
 4. If necessary, add the `environmentId` parameter, and re-send the request.
 
@@ -170,9 +166,9 @@ To remove items from your catalog, use the [Delete Entities API](https://develop
 DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimited-entity-ids]&environment=[environmentId]
 ```
 
-<InlineAlert variant="warning" slots="text"/>
-
-The Delete Entities API deletes entities referenced by IDs you specify. If no entity IDs are provided, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!
+>[!WARNING]
+>
+>The Delete Entities API deletes entities referenced by IDs you specify. If no entity IDs are provided, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!
 
 1. Navigate to **Target > Setup > Hosts > Environments** to obtain the Target Environment ID from which you want to delete items.
 

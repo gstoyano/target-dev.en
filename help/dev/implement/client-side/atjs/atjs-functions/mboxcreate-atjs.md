@@ -10,9 +10,9 @@ exl-id: 821ad97a-345a-4e56-9be6-ab1c7d3a651d
 
 Executes a request and applies the offer to the closest DIV with mboxDefault class name.
 
-<InlineAlert variant="info" slots="text"/>
-
-This function is available for at.js versions 1.*x* only. This function was deprecated with the release of at.js 2.x. This function returns default content if used with at.js 2.x.
+>[!NOTE]
+>
+>This function is available for at.js versions 1.*x* only. This function was deprecated with the release of at.js 2.x. This function returns default content if used with at.js 2.x.
 
 This function is built into at.js mostly to ease the transition from mbox.js (now deprecated) to at.js. A newer alternative to `mboxCreate()` is `adobe.target.getOffer()`/ `adobe.target.applyOffer()` or the Angular directive.
 

@@ -10,9 +10,9 @@ exl-id: 5ad6032b-9865-4c80-8800-705673657286
 
 Starting with version 2.5.0, at.js offers on-device decisioning. On-device decisioning lets you cache your [A/B Test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) and [Experience Targeting](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activities on the browser to perform in-memory decisioning without a blocking network request to the Adobe Target Edge Network. 
 
-<InlineAlert variant="info" slots="text"/>
-
-On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for client-side. For information regarding on-device decisioning for server-side, reference the server-side implementation documentation [here](../../../server-side/sdk-guides/on-device-decisioning/).
+>[!NOTE]
+>
+>On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for client-side. For information regarding on-device decisioning for server-side, reference the server-side implementation documentation [here](../../../server-side/sdk-guides/on-device-decisioning/).
 
 Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and Machine Learning-driven (ML-driven) personalization activities via a live server call. In other words, when performance is most important, you can choose to use on-device decisioning. However, when the most relevant, up-to-date, and ML-driven experience is needed, a server call can be made instead.
 
@@ -51,9 +51,9 @@ With on-device decisioning, Target introduces a new setting called Decisioning M
 
 Server-side only is the default decisioning method that is set out of the box when at.js 2.5.0+ is implemented and deployed on your web properties.
 
-Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target’s machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
+Using server-side only as the default configuration means that all decisions are made on the Target edge network, which involves a blocking server call. This approach can introduce incremental latency, but it also provides significant benefits, such as giving you the ability to apply Target's machine-learning capabilities that include [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), and [Auto-Target](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activities. 
 
-Furthermore, enhancing your personalized experiences by using Target’s user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business. 
+Furthermore, enhancing your personalized experiences by using Target's user profile, which is persisted across sessions and channels, can provide powerful outcomes for your business. 
 
 Lastly, server-side only lets you use the Adobe Experience Cloud and fine-tune audiences that can be targeted against through Audience Manager and Adobe Analytics segments. 
 
@@ -96,9 +96,9 @@ The following diagram illustrates the interaction between your visitor, the brow
 
 The following list corresponds to the numbers in the diagram:
 
-<InlineAlert variant="info" slots="text"/>
-
-Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
+>[!NOTE]
+>
+>Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
 
 |Step|Description|
 | --- | --- |
@@ -121,9 +121,9 @@ The following diagram illustrates the interaction between your visitor, the brow
 
 The following list corresponds to the numbers in the diagram:
 
-<InlineAlert variant="info" slots="text"/>
-
-Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
+>[!NOTE]
+>
+>Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
 
 |Step|Description|
 | --- | --- |
@@ -148,15 +148,15 @@ The JSON rules artifact includes metadata to inform at.js whether an mbox has a 
 
 The following diagram illustrates the interaction between your visitor, the browser, at.js 2.5.0+, the Akamai CDN, and the Adobe Target Edge Network for a new visitor visiting your page for the first time. The takeaway from this diagram is that the JSON rules artifact is downloaded asynchronously while the decisions are made through the Adobe Target Edge network. 
 
-This approach ensures that the size of the artifact, which can include many activities, doesn’t negatively influence the latency of the decision. Downloading the JSON rules artifact synchronously and making the decision thereafter can also have adverse effects to latency and can be inconsistent. Therefore, the hybrid decisioning method is a best practice recommendation to always make a server-side call for the decision for a new visitor, and as the JSON rules artifact is cached in parallel. For any subsequent page visits and return visits, the decisions are made from the cache and in-memory through the JSON rules artifact.
+This approach ensures that the size of the artifact, which can include many activities, doesn't negatively influence the latency of the decision. Downloading the JSON rules artifact synchronously and making the decision thereafter can also have adverse effects to latency and can be inconsistent. Therefore, the hybrid decisioning method is a best practice recommendation to always make a server-side call for the decision for a new visitor, and as the JSON rules artifact is cached in parallel. For any subsequent page visits and return visits, the decisions are made from the cache and in-memory through the JSON rules artifact.
 
 ![Hybrid flow diagram for a first-time visitor](/assets/hybrid-first-time-visitor.png)
 
 The following list corresponds to the numbers in the diagram:
 
-<InlineAlert variant="info" slots="text"/>
-
-Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
+>[!NOTE]
+>
+>Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
 
 |Step|Description|
 | --- | --- |
@@ -182,9 +182,9 @@ The following diagram illustrates the interaction between your visitor, the brow
 
 The following list corresponds to the numbers in the diagram:
 
-<InlineAlert variant="info" slots="text"/>
-
-Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
+>[!NOTE]
+>
+>Adobe Target Admin servers qualify all of your activities that are eligible for on-device decisioning, generate the JSON rules artifact, and propagates it to the Akamai CDN. Your activities are continuously monitored for updates to output a new JSON rules artifact to be propagated to the Akamai CDN.
 
 |Step|Description|
 | --- | --- |
@@ -206,9 +206,9 @@ On-device decisioning is available for all Target customers who use At.js 2.5.0+
 
 To enable on-device decisioning:
 
-<InlineAlert variant="info" slots="text"/>
-
-You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+>[!NOTE]
+>
+>You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
 1. Click **Administration** > **Implementation** > **Account details**.
 2. Under **Account details**, slide the **On-Device Decisioning** toggle to the "on" position.
@@ -222,9 +222,9 @@ You must have the Admin or Approver [user role](https://experienceleague.adobe.c
 
 After enabling the On-Device Decisioning toggle, Target begins generating and propagating [rule artifacts](/src/pages/implement/client-side/atjs/on-device-decisioning/rule-artifact.md) for your client.
 
-<InlineAlert variant="warning" slots="text"/>
-
-Make sure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts first need to generate and propagate to the Akamai CDNs for on-device decisioning to work. Propagation can take five to ten minutes for the first rule artifact to generate and propagate to the Akamai CDN.
+>[!WARNING]
+>
+>Make sure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts first need to generate and propagate to the Akamai CDNs for on-device decisioning to work. Propagation can take five to ten minutes for the first rule artifact to generate and propagate to the Akamai CDN.
 
 ## How do I configure at.js 2.5.0+ to use on-device decisioning?
 
@@ -233,9 +233,9 @@ Make sure you enable the toggle before you initialize the Adobe Target SDK to us
  
    ![Edit Main Implementation Method settings](/assets/main-implementation-method.png)
 
-<InlineAlert variant="warning" slots="text"/>
-
-Before changing these default settings, consult with Client Care to avoid affecting your current implementation.
+>[!WARNING]
+>
+>Before changing these default settings, consult with Client Care to avoid affecting your current implementation.
 
 3. Select the desired decisioning method:
 
@@ -267,7 +267,7 @@ You can configure a default Decisioning Method for all of Target decisions. The 
 
 ### Customized setting
 
-If you set the `decisioningMethod` in `window.targetGlobalSettings`, but would like to override the `decisioningMethod` for each Adobe Target decision according to your use case, you can do this procedure by specifying `decisioningMethod` in At.js2.5.0+’s [getOffers()](/src/pages/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) call.
+If you set the `decisioningMethod` in `window.targetGlobalSettings`, but would like to override the `decisioningMethod` for each Adobe Target decision according to your use case, you can do this procedure by specifying `decisioningMethod` in At.js2.5.0+'s [getOffers()](/src/pages/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) call.
 
 ```javascript
 adobe.target.getOffers({ 
@@ -286,9 +286,9 @@ adobe.target.getOffers({
 });
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-In order to use “on-device” or “hybrid” as a decisioning method in the getOffers() call, ensure that the global setting has `decisioningMethod` as “on-device” or “hybrid.” The at.js library 2.5.0+ must know whether to download and cache the JSON rules artifact immediately after loading on the page. If the decisioning method for the global setting is set to “server-side”, and “on-device” or “hybrid” decisioning method is passed into the getOffers() call, at.js 2.5.0+ would not have the JSON rule artifact cached to execute your on-device decisions.
+>[!NOTE]
+>
+>In order to use "on-device" or "hybrid" as a decisioning method in the getOffers() call, ensure that the global setting has `decisioningMethod` as "on-device" or "hybrid." The at.js library 2.5.0+ must know whether to download and cache the JSON rules artifact immediately after loading on the page. If the decisioning method for the global setting is set to "server-side", and "on-device" or "hybrid" decisioning method is passed into the getOffers() call, at.js 2.5.0+ would not have the JSON rule artifact cached to execute your on-device decisions.
 
 ### Artifact Cache TTL
 
@@ -308,9 +308,9 @@ You can filter for all activities that are on-device decisioning eligible on the
 
 ![On-Device Decisioning Eligible filter on Activities page.](/assets/on-device-decisioning-filter.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-After creating and activating an activity that is on-device decisioning eligible, it can take five to ten minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN point of presences.
+>[!NOTE]
+>
+>After creating and activating an activity that is on-device decisioning eligible, it can take five to ten minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN point of presences.
 
 ## Summary of steps to ensure my on-device decisioning activities are delivered via At.js 2.5.0+?
 
@@ -320,5 +320,5 @@ After creating and activating an activity that is on-device decisioning eligible
    The first JSON rules artifact generation can take up to 10 minutes. 
 
 2. Create and activate an [activity type that is supported by on-device decisioning](/src/pages/implement/client-side/atjs/on-device-decisioning/supported-features.md), and verify that it is on-device decisioning eligible. 
-3. Set the **Decisioning Method** to either **“Hybrid”** or **“On-device only”** through the at.js settings UI. 
+3. Set the **Decisioning Method** to either **"Hybrid"** or **"On-device only"** through the at.js settings UI. 
 4. Download and deploy At.js 2.5.0+ to your pages.

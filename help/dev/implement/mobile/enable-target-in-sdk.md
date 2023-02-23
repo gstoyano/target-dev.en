@@ -24,10 +24,10 @@ Add the Adobe Mobile Services SDK to your app.
 
    ![alt image](assets/mobile-clientcode.png)
 
-1. After you’ve created/located your app, find the app settings and download the desired SDK.
+1. After you've created/located your app, find the app settings and download the desired SDK.
 
    ![alt image](assets/download-sdk.png)
 
-<InlineAlert variant="warning" slots="text"/>
-
- If you don't have access to the mobile marketing interface, you can make changes directly in the config file in your app code; however, it won't be in sync with the settings page in the user interface.
+>[!WARNING]
+>
+> If you don't have access to the mobile marketing interface, you can make changes directly in the config file in your app code; however, it won't be in sync with the settings page in the user interface.

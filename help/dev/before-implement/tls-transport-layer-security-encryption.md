@@ -12,9 +12,9 @@ Information about changes to how Adobe and Adobe Target use TLS (Transport Layer
 
 Transport Layer Security (TLS) is the most-widely deployed security protocol used today for web browsers and other applications that require data to be securely exchanged over a network. Adobe has security compliance standards that require the end-of-life of older protocols and is mandating the use of TLS 1.2 in order to have the most up-to-date and secure version in use. 
 
-<InlineAlert variant="warning" slots="text"/>
-
-As of March 1, 2020, Adobe Target no longer supports TLS 1.1 encryption for the Visual Experience Composer (VEC), Enhanced Experience Composer (EEC), activity delivery, APIs, etc. Please upgrade to TLS 1.2 to avoid any issues.
+>[!WARNING]
+>
+>As of March 1, 2020, Adobe Target no longer supports TLS 1.1 encryption for the Visual Experience Composer (VEC), Enhanced Experience Composer (EEC), activity delivery, APIs, etc. Please upgrade to TLS 1.2 to avoid any issues.
 
 We do not expect this to have a significant impact on customer data or reporting.
 
@@ -77,9 +77,9 @@ To check the TLS version on your website using Google Chrome:
 
    ![TLS version details](assets/chrome-tls-version.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-These instructions are current as of publication and are subject to change. A quick internet search should help should these instructions change. Other browsers have similar steps.
+>[!NOTE]
+>
+>These instructions are current as of publication and are subject to change. A quick internet search should help should these instructions change. Other browsers have similar steps.
 
 ## Expected behavior with browsers supporting TLS versions below 1.2
 
@@ -99,8 +99,6 @@ This section describes what to expect with browsers that support TLS versions be
 |at.js|With TLS 1.0 or TLS 1.1 enabled:<ul><li>Using browser dev tools, on the Network tab, you'll see "200 OK." This means the request has succeeded.</li><li>User sees a "Can't connect securely to this page" message. The message explains that this might be caused because the site uses outdated or unsafe TLS security settings.</li><li>No console errors are displayed.</li><li>Default content is served.</li></ul>With TLS 1.2 enabled:<ul><li>Offer content is served.</li></ul>|
 
 ### Activity targeted with browser-version audience (Internet Explorer, Versions 6, 7, or 8)
-
-<InlineAlert variant="info" slots="text"/>
 
 Audiences stop working.
 

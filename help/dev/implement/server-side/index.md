@@ -19,9 +19,9 @@ The following process occurs in a server-side implementation of Target:
 
 The experience does not need to display in a browser. The experience can display in an email or kiosk, via a voice assistant, or through some other non-visual experience or non-browser-based device. Because your server sits between the client and Target, this type of implementation is also ideal if you need greater control and security or have complex backend processes that you want to run on your server.
 
-<InlineAlert variant="info" slots="text"/>
-
-A first-time visitor can be initialized only on the client-side. A first-time visitor *cannot* be initialized on the server-side. This is due to the ECID, which depends on the third-party demdex cookie and therefore needs to be initialized via Visitor API.js on an implementation where the browser is involved.
+>[!NOTE]
+>
+>A first-time visitor can be initialized only on the client-side. A first-time visitor *cannot* be initialized on the server-side. This is due to the ECID, which depends on the third-party demdex cookie and therefore needs to be initialized via Visitor API.js on an implementation where the browser is involved.
 
 The following sections provide more information about the various APIs and the NodeJS SDK:
 

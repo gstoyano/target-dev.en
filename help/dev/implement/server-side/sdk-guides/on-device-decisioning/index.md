@@ -13,9 +13,9 @@ The next-generation Adobe Target SDKs now offer on-device decisioning, which pro
 
 Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
 
-<InlineAlert variant="info" slots="text"/>
-
-On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for server-side. For information regarding on-device decisioning for client-side, reference the client-side implementation documentation [here](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
+>[!NOTE]
+>
+>On-device decisioning is available for both client-side as well as server-side implementations. This article describes on-device decisioning for server-side. For information regarding on-device decisioning for client-side, reference the client-side implementation documentation [here](../../../client-side/atjs/on-device-decisioning/on-device-decisioning.md).
 
 ## How does it work?
 
@@ -67,17 +67,17 @@ On-device decisioning supports the following audience rules:
 
 On-device decisioning is available for all Adobe Target customers who use Adobe Target server-side SDKs. In order to enable this feature, navigate to **Administration** > **Implementation** > **Account details** in the Adobe Target UI, and enable the **On-Device Decisioning** toggle.
 
-<InlineAlert variant="info" slots="text"/>
-
-You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
+>[!NOTE]
+>
+>You must have the Admin or Approver *user role* to enable or disable the On-Device Decisioning toggle.
 
 ![alt image](assets/asset-odd-toggle.png)
 
 After enabling the On-Device Decisioning toggle, Adobe Target will begin generating and propagating *rule artifacts* for your client.
 
-<InlineAlert variant="info" slots="text"/>
-
-Ensure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts will first need to generate and propagate to the Akamai CDNs in order for on-device decisioning to work.
+>[!NOTE]
+>
+>Ensure you enable the toggle before you initialize the Adobe Target SDK to use on-device decisioning. The rule artifacts will first need to generate and propagate to the Akamai CDNs in order for on-device decisioning to work.
 
 ### Include all existing on-device decisioning qualified activities in the artifact toggle
 
@@ -95,9 +95,9 @@ You can also see all activities that are on-device decisioning capable on the **
 
 ![alt image](assets/asset-odd7.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-After creating and activating an activity that is on-device decisioning capable, it may take up 5-10 minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN PoPs.
+>[!NOTE]
+>
+>After creating and activating an activity that is on-device decisioning capable, it may take up 5-10 minutes before it is included in the rules artifact that is generated and propagated to the Akamai CDN PoPs.
 
 ## What is the summary of steps I need to follow to ensure my on-device decisioning activities are delivered successfully via Adobe Target's server-side SDK?
 

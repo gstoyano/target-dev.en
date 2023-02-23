@@ -14,9 +14,9 @@ The JavaScript `targetPageParams` function is used to pass parameters to the glo
 
 The code to call the JavaScript function must come before the global mbox on the page, whether the global mbox is fired as a part of at.js or is manually included in the page code.
 
-<InlineAlert variant="info" slots="text"/>
-
-If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/src/pages/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) function.
+>[!NOTE]
+>
+>If you want to add parameters to all mboxes on the page, not just to the global mbox, use the [targetPageParamsAll()](/src/pages/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) function.
 
 You can pass in parameters to `target-global-mbox` using the `targetPageParams()` function in any of the following ways:
 

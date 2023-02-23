@@ -14,9 +14,9 @@ exl-id: 553d1208-647f-479d-acc7-d7760469d642
 
 The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](/src/pages/implement/delivery-api/index.md) still enables access to the full range of Target functionality, to deliver personalized experiences.
 
-<InlineAlert variant="info" slots="text"/>
-
-When requesting content containing actual recommendations (recommended products or items), use the Target Delivery API.
+>[!NOTE]
+>
+>When requesting content containing actual recommendations (recommended products or items), use the Target Delivery API.
 
 To retrieve recommendations, send an Adobe Target Delivery API POST call with the appropriate contextual information, which may include a user ID (for use with profile-specific recommendations such as the user's recently viewed items), relevant mbox name, mbox parameters, profile parameters, or other attributes. The response will include recommended entity.ids (and may include other entity data) in JSON or HTML format, which can then be displayed in the device.
 

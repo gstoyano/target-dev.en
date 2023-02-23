@@ -24,7 +24,7 @@ Here are some benefits to using at.js 2.x that are not available in previous ver
 
 The Adobe Target VEC for SPAs takes advantage of a new concept called Views: a logical group of visual elements that together make up an SPA experience. A SPA can, therefore, be considered as transitioning through views, instead of URLs, based on user interactions. A View can typically represent a whole site or grouped visual elements within a site.
 
-To explain further about what Views are, let’s navigate this hypothetical online e-commerce site implemented in React and explore some example Views. Click the links below to open this site in a new browser tab.
+To explain further about what Views are, let's navigate this hypothetical online e-commerce site implemented in React and explore some example Views. Click the links below to open this site in a new browser tab.
 
 **Link: [Home Site](https://target.enablementadobe.com/react/demo/#/)**
 
@@ -58,7 +58,7 @@ Now, marketers might want to run an A/B Test to see whether changing the color f
 
 ## Implementing Adobe Target Views
 
-Now that we have covered what Adobe Target Views are, we can leverage this concept in Target to empower marketers to run A/B and XT tests on SPAs via the VEC. This will require a one-time developer setup. Let’s go through the steps to set this up.
+Now that we have covered what Adobe Target Views are, we can leverage this concept in Target to empower marketers to run A/B and XT tests on SPAs via the VEC. This will require a one-time developer setup. Let's go through the steps to set this up.
 
 1. Install at.js 2.x.
 
@@ -66,9 +66,9 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    Download at.js 2.x via the Adobe Target UI located in **Administration > Implementation**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
 
-2. Implement at.js 2.x’s newest function, `triggerView()` on your sites.
+2. Implement at.js 2.x's newest function, `triggerView()` on your sites.
 
-   After defining the Views of your SPA where you want to run an A/B or XT test, implement at.js 2.x’s `triggerView()` function with the Views passed in as a parameter. This allows marketers to use the VEC to design and run the A/B and XT tests for those Views defined. If the `triggerView()` function is not defined for those Views, the VEC will not detect the Views and thus marketers cannot use the VEC to design and run A/B and XT tests.
+   After defining the Views of your SPA where you want to run an A/B or XT test, implement at.js 2.x's `triggerView()` function with the Views passed in as a parameter. This allows marketers to use the VEC to design and run the A/B and XT tests for those Views defined. If the `triggerView()` function is not defined for those Views, the VEC will not detect the Views and thus marketers cannot use the VEC to design and run A/B and XT tests.
 
    **`adobe.target.triggerView(viewName, options)`**
 
@@ -78,7 +78,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
    |options|Object|No|||
    |options > page|Boolean|No||**TRUE**: Default value of page is true. When `page=true`, notifications will be sent to the Edge servers for incrementing impression count.<br />**FALSE**: When `page=false`, notifications will not be sent for incrementing impression count. This should be used when you want to only re-render a component on a page with an offer.|
 
-   Now let’s go through some example use cases on how to invoke the `triggerView()` function in React for our hypothetical  e-commerce SPA:
+   Now let's go through some example use cases on how to invoke the `triggerView()` function in React for our hypothetical  e-commerce SPA:
 
    **Link: [Home Site](https://target.enablementadobe.com/react/demo/#/)**
 
@@ -113,7 +113,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    **Link: [Products Site](https://target.enablementadobe.com/react/demo/#/products)**
 
-   Now, let’s look at an example that is a little bit more complicated. Let’s say as marketers, we want to personalize the second row of the products by changing the "Price" label color to red after a user clicked the Load More button.
+   Now, let's look at an example that is a little bit more complicated. Let's say as marketers, we want to personalize the second row of the products by changing the "Price" label color to red after a user clicked the Load More button.
 
    ![react products](/assets/react4.png)
 
@@ -133,7 +133,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
      }
 
      handleLoadMoreClicked() {
-       var page = this.state.page + 1; // assuming page number is derived from component’s state
+       var page = this.state.page + 1; // assuming page number is derived from component's state
        this.setState({page: page});
        targetView('PRODUCTS-PAGE-' + page);
      }
@@ -213,9 +213,9 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 After you have completed installing at.js 2.x and adding `triggerView()` to your site, use the VEC to run A/B and XT activities. For more information, see [Single Page App (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
-<InlineAlert variant="info" slots="text"/>
-
-The VEC for SPAs is really the same VEC that you use on regular web pages, but some additional capabilities are available when you open a single page app with `triggerView()` implemented.
+>[!NOTE]
+>
+>The VEC for SPAs is really the same VEC that you use on regular web pages, but some additional capabilities are available when you open a single page app with `triggerView()` implemented.
 
 ## Use TriggerView to ensure that A4T works correctly with at.js 2.x and SPAs
 
@@ -258,9 +258,9 @@ document.addEventListener("at-view-end", function(e) {
 });
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-You must fire the `at-view-start` and `at-view-end` events. These events are not part of at.js custom events.
+>[!NOTE]
+>
+>You must fire the `at-view-start` and `at-view-end` events. These events are not part of at.js custom events.
 
 Although these examples use JavaScript code, all this can be simplified if you are using a tag manager, such as tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md).
 

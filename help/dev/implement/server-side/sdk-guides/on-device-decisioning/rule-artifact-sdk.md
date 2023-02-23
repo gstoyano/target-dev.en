@@ -132,9 +132,9 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next section, regarding [downloading the rule artifact using a JSON payload](rule-artifact-json.md).
+>[!NOTE]
+>
+>In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next section, regarding [downloading the rule artifact using a JSON payload](rule-artifact-json.md).
 
 Here is an example that starts a web application after initializing the Adobe Target SDK.
 

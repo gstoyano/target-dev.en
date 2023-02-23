@@ -10,9 +10,9 @@ exl-id: cb57f6b8-43cb-485d-a7ea-12db8170013f
 
 Information about implementing Adobe Target without using a tag manager or tags in Adobe Experience Platform.
 
-<InlineAlert variant="info" slots="text"/>
-
-Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+>[!NOTE]
+>
+>Tags in [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
 To access the Implementation page, click **Administration** > **Implementation**.
 
@@ -24,9 +24,9 @@ You can specify the following settings on this page:
 * Debugger tools
 * Privacy
 
-<InlineAlert variant="info" slots="text"/>
-
-You can override settings in the at.js library, rather than configuring them in the Target Standard/Premium UI or by using REST APIs. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+>[!NOTE]
+>
+>You can override settings in the at.js library, rather than configuring them in the Target Standard/Premium UI or by using REST APIs. For more information, see [targetGlobalSettings()](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
 ## Account details
 
@@ -45,9 +45,9 @@ The following settings can be configured in the Implementation methods panel:
 
 ### Global settings
 
-<InlineAlert variant="info" slots="text"/>
-
-These settings are applied to all Target .js libraries. After performing changes in the Implementation methods section, you must download the library and update it in your implementation.
+>[!NOTE]
+>
+>These settings are applied to all Target .js libraries. After performing changes in the Implementation methods section, you must download the library and update it in your implementation.
 
 |Setting|Description|
 | --- | --- |
@@ -58,17 +58,17 @@ These settings are applied to all Target .js libraries. After performing changes
 
 ### Main implementation method
 
-<InlineAlert variant="warning" slots="text"/>
-
-Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version.
+>[!WARNING]
+>
+>Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version.
 
 To download the desired at.js version, click the appropriate **Download** button.
 
 To edit at.js settings, click **Edit** next to the desired at.js version. 
 
-<InlineAlert variant="warning" slots="text"/>
-
-Before changing these default settings, please consult with [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) so you don't affect your current implementation.
+>[!WARNING]
+>
+>Before changing these default settings, please consult with [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) so you don't affect your current implementation.
 
 In addition to the settings explained above, the following specific at.js settings are also available:
 
@@ -102,21 +102,19 @@ Choose the desired setting from the Obfuscate Visitor IP address drop-down list:
 
 For more information, see [Privacy](/src/pages/before-implement/privacy/privacy.md).
 
-<InlineAlert variant="info" slots="text"/>
-
-The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/src/pages/before-implement/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
+>[!NOTE]
+>
+>The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/src/pages/before-implement/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
 
 ## Download at.js
 
 Instructions to download the library using the Target interface or the Download API.
 
-<InlineAlert variant="info" slots="text"/>
-
- [Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
-
-<InlineAlert variant="info" slots="text"/>
-
- Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
+>[!NOTE]
+>
+>[Adobe Experience Platform](/src/pages/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) is the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
+>
+>Adobe Target supports both at.js 1.*x* and at.js 2.*x*. Please upgrade to the most recent update of either major version of at.js to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Download at.js using the Target interface
 
@@ -165,9 +163,9 @@ To download at.js using the API.
     * Replace `client code` with the client code from Step 1. 
     * Replace `version number` with the desired at.js version number (for example, 2.2).
 
-<InlineAlert variant="warning" slots="text"/>
-
-The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
+>[!WARNING]
+>
+>The Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a supported version. For more information about what's in each version, see [at.js Version Details](/src/pages/implement/client-side/atjs/target-atjs-versions.md).
 
 ## at.js implementation
 
@@ -240,9 +238,9 @@ Consider the following important notes:
 
 The Order Confirmation mbox records details about orders on your site and allows reporting based on revenue and orders. The Order Confirmation mbox can also drive recommendation algorithms, such as "People who bought product x also bought product y."
 
-<InlineAlert variant="info" slots="text"/>
-
-If users make purchases on your website, Adobe recommends implementing an Order Confirmation mbox even if you use Analytics for Target (A4T) for your reporting.
+>[!NOTE]
+>
+>If users make purchases on your website, Adobe recommends implementing an Order Confirmation mbox even if you use Analytics for Target (A4T) for your reporting.
 
 1. In your order details page, insert the mbox script following the model below.
 1. Replace the WORDS IN CAPITAL LETTERS with either dynamic or static values from your catalog.
@@ -262,9 +260,9 @@ If users make purchases on your website, Adobe recommends implementing an Order 
    </script> 
    ```
 
-<InlineAlert variant="info" slots="text"/>
-
-In the Order Confirmation mbox, use comma delimiting to separate multiple product IDs.
+>[!NOTE]
+>
+>In the Order Confirmation mbox, use comma delimiting to separate multiple product IDs.
 
 The Order Confirmation mbox uses the following parameters:
 

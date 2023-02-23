@@ -10,9 +10,9 @@ exl-id: a6f4c755-e5a0-4228-90f3-0f9d3b092cd8
 
 This function lets you apply more than one offer that was retrieved by `adobe.target.getOffers()`.
 
-<InlineAlert variant="info" slots="text"/>
-
-This function was introduced with at.js 2.x. This function is not available for at.js version 1.*x*.
+>[!NOTE]
+>
+>This function was introduced with at.js 2.x. This function is not available for at.js version 1.*x*.
 
 |Key|Type|Required?|Description|
 | --- | --- | --- | --- |
@@ -21,9 +21,9 @@ This function was introduced with at.js 2.x. This function is not available for 
 
 ## Response
 
-<InlineAlert variant="info" slots="text"/>
-
-Consult the [Delivery API documentation](../../../delivery-api/index.md) for information about the acceptable types for all fields listed below.
+>[!NOTE]
+>
+>Consult the [Delivery API documentation](../../../delivery-api/index.md) for information about the acceptable types for all fields listed below.
 
 |Field Name|Description|
 | --- | --- |

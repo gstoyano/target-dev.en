@@ -10,9 +10,9 @@ exl-id: 22d29bfe-e022-44b2-913f-c8c32c65bc48
 
 Adobe Target uses the user-agent to qualify visitors for segmentation and personalization.
 
-<InlineAlert variant="info" slots="text"/>
-
-The information in this article applies to [at.js version 2.9.0](target-atjs-versions.md) (or later).
+>[!NOTE]
+>
+>The information in this article applies to [at.js version 2.9.0](target-atjs-versions.md) (or later).
 
 Each time a web browser makes a request to a server, information about the browser and the environment where the browser runs are included in the header of the request. Since the early days of the Internet, this data has been aggregated in a single string called the user-agent. 
 

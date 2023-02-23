@@ -7,13 +7,11 @@ description: Overview of the Adobe Target Admin API
 
 This article provides an overview of background information necessary to understand and use Adobe Target Admin APIs successfully. The following content assumes you understand how to [configure authentication](../configure-authentication.md) for Adobe Target Admin APIs.
 
-<InlineAlert variant="info" slots="text"/>
-
-If you wish to administer Target via the UI, see the [administration section of the *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
-
-<InlineAlert variant="info" slots="text"/>
-
-The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a Target Admin API.
+>[!NOTE]
+>
+>If you wish to administer Target via the UI, see the [administration section of the *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>
+>The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a Target Admin API.
 
 ## Before You Begin
 
@@ -29,9 +27,9 @@ If the request does not contain a payload (GET, DELETE or OPTIONS), the `Accept`
 
 If a version is not provided, the call will default to V1 (application/vnd.adobe.target.v1+json).
 
-<InlineAlert variant="info" slots="text"/>
-
-If the correct version is not specified -- for example, if you use a V2 payload but fail to specify the Content-Type header -- then the API will respond with an unsupported error if the API is not backwards compatible.
+>[!NOTE]
+>
+>If the correct version is not specified -- for example, if you use a V2 payload but fail to specify the Content-Type header -- then the API will respond with an unsupported error if the API is not backwards compatible.
 
 Error Message for unsupported features
 
@@ -93,11 +91,11 @@ Specifying dependencies between operations in the request By default, the operat
 
 Often, the operations in the request are dependent - for example, the output of one operation may be used in the input of the next operation. For example offer created in operationId=0 needs to be used in campaign creation operationId=1.
 
-In order to link two batch operations together specify in the dependent operation the id of the required operation, for instance: “dependsOnOperationId” : 5. Also IDs of created resources via POST requests of batch operations can be used in dependent operations both in “relativeUrl” and “body”.
+In order to link two batch operations together specify in the dependent operation the id of the required operation, for instance: "dependsOnOperationId" : 5. Also IDs of created resources via POST requests of batch operations can be used in dependent operations both in "relativeUrl" and "body".
 
 #### Permissions & Throttling
 
-In order to execute batch API actions the underlying user has to have at least “editor” rights (for each individual operation in case additional rights are required than user has then the individual operation will fail). Usual throttling strategies are applied on batch API actions as if every operation has been performed individually.
+In order to execute batch API actions the underlying user has to have at least "editor" rights (for each individual operation in case additional rights are required than user has then the individual operation will fail). Usual throttling strategies are applied on batch API actions as if every operation has been performed individually.
 
 Batch processing finishes when all operations have been completed, an operation could either be successful (2xx statusCode), failure (4xx, 5xx status code) or skipped because a dependency operation has failed or has been skipped.
 
@@ -105,7 +103,7 @@ Batch processing finishes when all operations have been completed, an operation 
 
 |Attribute|Description|Limits|Default|
 | --- | --- | --- | --- |
-|body|body for HTTP batch operation. will be ignored for all actions but POST and PUT. can refer to IDs from previous batch actions, for instance: “offerId”: “{operationIdResponse:0}”, “segmentId”: “{operationIdResponse:1}”|should be a valid JSON; in case referencing an operationIdResponse, the operationId response referred should be a valid ID and the method on that action should be POST|empty object {}||
+|body|body for HTTP batch operation. will be ignored for all actions but POST and PUT. can refer to IDs from previous batch actions, for instance: "offerId": "{operationIdResponse:0}", "segmentId": "{operationIdResponse:1}"|should be a valid JSON; in case referencing an operationIdResponse, the operationId response referred should be a valid ID and the method on that action should be POST|empty object {}||
 |dependsOnOperationIds|list of constraint IDs that will assure that current operation will execute only if specified operations have completed successfully. Can be used to achieve chaining of operations.|maximum 255 operations are allowed; unique values are only allowed; should point to a valid operationId in the array; cyclical dependencies are not allowed|||
 |headers|array of key-value headers to be sent with particular operation. In case authentication for batch API has been performed via Authorization header, it will be copied for individual operations as well.|max number of headers in array allowed is 50|Content-Type: application/json||
 |headers->name|header name|should be unique among other header names. headers are case insensitive by rfc, otherwise the values will override each other.|||
@@ -113,7 +111,7 @@ Batch processing finishes when all operations have been completed, an operation 
 |method|HTTP method to use. Available options: GET, POST, PUT, PATCH, DELETE|only GET, POST, PUT, PATCH, DELETE methods are allowed|||
 |operationId|operation ID used to identify an operation among other operations for responses and referencing results.|unique among other operations; values from 0-255|||
 |operations|list of operations to perform in a batch. order is not relevant.|maximum 256 operations are allowed|||
-|relativeUrl|relative URL for admin rest API, the part after “/admin/rest/”. Can contain query string parameters like: “/v2/campaigns?limit=10&offset=10”. can refer to URLs with contain IDs from previous batch actions, for instance: “/v1/offers/{operationIdResponse:0}”. In case query parameters are sent they have to be URL encoded.|should start with / (be relative); only new valid JSON APIs are supported; in case of invalid relativeURL a 404 response for particular operation will be returned; in case referencing an operationIdResponse, the operationId response referred should be a valid ID and the method on that action should be POST|||
+|relativeUrl|relative URL for admin rest API, the part after "/admin/rest/". Can contain query string parameters like: "/v2/campaigns?limit=10&offset=10". can refer to URLs with contain IDs from previous batch actions, for instance: "/v1/offers/{operationIdResponse:0}". In case query parameters are sent they have to be URL encoded.|should start with / (be relative); only new valid JSON APIs are supported; in case of invalid relativeURL a 404 response for particular operation will be returned; in case referencing an operationIdResponse, the operationId response referred should be a valid ID and the method on that action should be POST|||
 
 #### Sample Request Object
 

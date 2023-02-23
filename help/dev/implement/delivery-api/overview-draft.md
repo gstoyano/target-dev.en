@@ -22,6 +22,8 @@ Through Adobe Target's Delivery API, you can:
 
 You can still access the [legacy /v1/mbox and /v2/batchmbox API documentation](https://developers.adobetarget.com/api/legacy-api/index.html). However, features will be developed in the Delivery API (as documented here) that will not be backported to the legacy APIs.
 
+<!--
+
 ---
 title: Adobe Target Delivery API and SDKs
 description: Adobe Target Delivery API and SDKs
@@ -43,6 +45,4 @@ Read the [changelog](https://github.com/adobe/target-nodejs-sdk/blob/main/CHANGE
 The [Java SDK](https://github.com/adobe/target-java-sdk) is open sourced and maintained within Github, where you can find the documentation and usage instructions.
 
 Read the [changelog](https://github.com/adobe/target-java-sdk/blob/main/CHANGELOG.md) for the Java SDK.
-
-<!--- Judy: remove or modify this page? adequately covered elsewhere? --->
 

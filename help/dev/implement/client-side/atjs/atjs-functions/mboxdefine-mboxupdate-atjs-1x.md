@@ -10,9 +10,9 @@ exl-id: 48261be0-c4d0-4961-9712-ef7e0d2cb1c0
 
 Define and update an mbox in Adobe Target.
 
-<InlineAlert variant="info" slots="text"/>
-
-These functions are available for at.js versions 1.*x* only. These functions were deprecated with the release of at.js 2.x. These functions return default content if used with at.js 2.x.
+>[!NOTE]
+>
+>These functions are available for at.js versions 1.*x* only. These functions were deprecated with the release of at.js 2.x. These functions return default content if used with at.js 2.x.
 
 `mboxDefine()` and `mboxCreate()` are tied to HTML DIV elements where the offer should be displayed. These HTML DIV elements should have the `mboxDefault` class. If the HTML elements won't have this class attached, you could see some noticeable flicker.
 

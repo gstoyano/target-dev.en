@@ -27,9 +27,9 @@ Target SDKs call the underlying [Delivery API](../../../delivery-api/index.md). 
 * getOffers()
 * getAttributes()
 
-<InlineAlert variant="info" slots="text"/>
-
-When a prefetch object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the prefetch object.
+>[!NOTE]
+>
+>When a prefetch object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the prefetch object.
 
 The `sendNotifications` method can be used to manually send events to Adobe Target and trigger an impression.
 

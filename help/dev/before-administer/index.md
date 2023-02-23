@@ -13,9 +13,9 @@ The Adobe Target APIs are a collection of APIs that power Adobe Target products,
 
 Adobe Target APIs may be grouped according to type: Admin, Profile, Delivery, and Reporting. 
 
-<InlineAlert variant="info" slots="text"/>
-
-The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a Target Admin API.
+>[!NOTE]
+>
+>The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a Target Admin API.
  
 |API type|What it enables you to do|Download link|Other helpful links|
 | --- | --- | --- |--- |

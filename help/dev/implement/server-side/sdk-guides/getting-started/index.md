@@ -23,9 +23,9 @@ Enabling on-device decisioning ensures an A/B activity is executed at near-zero 
 
    ![alt image](assets/asset-odd-toggle.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-You must have the **Admin** or **Approver** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the **On-Device Decisioning** toggle.
+>[!NOTE]
+>
+>You must have the **Admin** or **Approver** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the **On-Device Decisioning** toggle.
 
 After enabling the **On-Device Decisioning** toggle, Adobe Target begins generating [rule artifacts](../on-device-decisioning/rule-artifact-overview.md) for your client.
 
@@ -63,9 +63,9 @@ dotnet add package Adobe.Target.Client
 pip install target-python-sdk
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
+>[!NOTE]
+>
+>The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
 
 <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
@@ -371,8 +371,8 @@ target_client.send_notifications({
 
 1. Click **Activate** (1) to activate your A/B activity.
 
-<InlineAlert variant="info" slots="text"/>
-
-You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
+>[!NOTE]
+>
+>You must have the **Approver** or **Publisher** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
 
 ![alt image](assets/asset-activate.png)

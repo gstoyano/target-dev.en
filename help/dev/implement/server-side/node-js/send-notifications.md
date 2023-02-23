@@ -4,9 +4,9 @@
 
 `sendNotifications()` is used to send display or click notifications to Adobe Target for measurement and reporting.
 
-<InlineAlert variant="info" slots="text"/>
-
-When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities.
+>[!NOTE]
+>
+>When an `execute` object with required params is within the request itself, the impression will be incremented automatically for qualifying activities.
 
 SDK methods that will increment an impression automatically are:
 

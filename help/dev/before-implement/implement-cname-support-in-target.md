@@ -54,9 +54,9 @@ The following information answers frequently asked questions about requesting an
 
 You can provide your own certificate. However, Adobe does not recommend this practice. Management of the SSL certificate lifecycle is easier for both Adobe and you if Adobe purchases and controls the certificate. SSL certificates must be renewed every year. Therefore, Adobe Client Care must contact you every year to obtain a new certificate in a timely manner. Some customers can have difficulty producing a renewed certificate in a timely manner. Your Target implementation is jeopardized when the certificate expires because browsers refuse connections.
 
-<InlineAlert variant="warning" slots="text"/>
-
-If you request a Target bring-your-own-certificate CNAME implementation, you are responsible for providing renewed certificates to Adobe Client Care every year. Allowing your CNAME certificate to expire before Adobe can deploy a renewed certificate results in an outage for your specific Target implementation.
+>[!WARNING]
+>
+>If you request a Target bring-your-own-certificate CNAME implementation, you are responsible for providing renewed certificates to Adobe Client Care every year. Allowing your CNAME certificate to expire before Adobe can deploy a renewed certificate results in an outage for your specific Target implementation.
 
 ### How long until my new SSL certificate expires?
 
@@ -321,9 +321,9 @@ Use the following set of commands (in the macOS or Linux command-line terminal, 
    ==========================================================
    ```
 
-<InlineAlert variant="info" slots="text"/>
-
-If this validation command fails on DNS validation but you've already made the necessary DNS changes, you might need to wait for your DNS updates to fully propagate. DNS records have an associated [TTL (time-to-live)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) that dictates cache expiration time for DNS replies of those records. As a result, you might need to wait at least as long as your TTLs. You can use the `dig target.example.com` command or [the G Suite Toolbox](https://toolbox.googleapps.com/apps/dig/#CNAME) to look up your specific TTLs. To check DNS propagation around the world, see [whatsmydns.net](https://whatsmydns.net/#CNAME).
+>[!NOTE]
+>
+>If this validation command fails on DNS validation but you've already made the necessary DNS changes, you might need to wait for your DNS updates to fully propagate. DNS records have an associated [TTL (time-to-live)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) that dictates cache expiration time for DNS replies of those records. As a result, you might need to wait at least as long as your TTLs. You can use the `dig target.example.com` command or [the G Suite Toolbox](https://toolbox.googleapps.com/apps/dig/#CNAME) to look up your specific TTLs. To check DNS propagation around the world, see [whatsmydns.net](https://whatsmydns.net/#CNAME).
 
 ### How do I use an opt-out link with CNAME
 

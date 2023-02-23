@@ -10,9 +10,9 @@ exl-id: c66325b3-3995-401e-a1e3-839fdb1cf762
 
 Use the mobile preview link to perform easy end-to-end QA for mobile app activities and enroll yourself into different experiences right on your device without any special test devices.
 
-<InlineAlert variant="info" slots="text"/>
-
-The mobile preview feature requires that you download and install the appropriate 4.14 (or later) version of the Adobe Mobile SDK.
+>[!NOTE]
+>
+>The mobile preview feature requires that you download and install the appropriate 4.14 (or later) version of the Adobe Mobile SDK.
 
 ## Overview
 
@@ -91,9 +91,9 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
 2. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
 
-<InlineAlert variant="info" slots="text"/>
-
-Only form-based AB and XT activities can be selected.
+>[!NOTE]
+>
+>Only form-based AB and XT activities can be selected.
 
    ![alt image](assets/mobile-preview-select-activities.png)
 

@@ -148,9 +148,9 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
 
-<InlineAlert variant="info" slots="text"/>
-
-By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
+>[!NOTE]
+>
+>By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
 
 Here is an example demonstrating the JSON payload-initializing capability.
 

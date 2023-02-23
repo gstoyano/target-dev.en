@@ -10,9 +10,9 @@ exl-id: 1eb6836b-6b3c-4494-af67-cd72a4f357e2
 
 By default, Target creates a global mbox called target-global-mbox, which is used to run activities created in Target. However, if you have already created a global mbox on your pages for your legacy implementations, you can use that mbox for your Target activities.
 
-<InlineAlert variant="info" slots="text"/>
-
-You can have only one global mbox per account.
+>[!NOTE]
+>
+>You can have only one global mbox per account.
 
 To use your existing global mbox for both Target and your legacy implementation, you must set a few parameters. 
 

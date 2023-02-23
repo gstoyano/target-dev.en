@@ -1,5 +1,4 @@
 ---
-keywords:
 keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, globalsettings, global settings, at.js, functions, function, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle, bodyHiddenStyle, bodyHidingEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout, opt out, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
 description: Use the targetGlobalSettings() function for the Adobe Target at.js JavaScript library to override settings instead of using the Target UI or REST APIs.
 title: How Do I Use the targetGlobalSettings() Function?
@@ -128,9 +127,9 @@ You can override the following settings:
 * **Default Value**: 63244800000 ms = 2 years
 * **Description**: Amount of time `deviceId` is persisted in cookies.
 
-<InlineAlert variant="info" slots="text"/>
-
-The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
+>[!NOTE]
+>
+>The deviceIdLifetime setting is overrideable in at.js version 2.3.1 or later.
 
 ### enabled
 
@@ -260,9 +259,9 @@ window.targetGlobalSettings = {
 
 This setting lets customers gather data from third-party data providers, such as Demandbase, BlueKai, and custom services, and pass the data to Target as mbox parameters in the global mbox request. It supports the collection of data from multiple providers via async and sync requests. Using this approach makes it easy to manage flicker of default page content, while including independent timeouts for each provider to limit the impact on page performance
 
-<InlineAlert variant="info" slots="text"/>
-
-Data Providers requires at.js 1.3 or later.
+>[!NOTE]
+>
+>Data Providers requires at.js 1.3 or later.
 
 The following videos contain more information:
 

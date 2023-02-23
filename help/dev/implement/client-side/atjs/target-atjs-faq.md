@@ -28,9 +28,9 @@ Many customers and consultants want to know the impact of at.js and mbox.js on p
 
 However, if the Visitor API is present on the page, Target can better understand how at.js and mbox.js influence page-load time.
 
-<InlineAlert variant="info" slots="text"/>
-
-The Visitor API and at.js or mbox.js have an impact on page-load time only when you are using the global mbox (because of the body-hiding technique). Regional mboxes are not impacted by Visitor API integration.
+>[!NOTE]
+>
+>The Visitor API and at.js or mbox.js have an impact on page-load time only when you are using the global mbox (because of the body-hiding technique). Regional mboxes are not impacted by Visitor API integration.
 
 The following sections describe the sequence of actions for new and returning visitors:
 
@@ -56,9 +56,9 @@ The following sections describe the sequence of actions for new and returning vi
    * The Visitor API retrieves data from cookies.
    * After Experience Cloud Visitor ID data is retrieved, a request to Target is fired.
 
-<InlineAlert variant="info" slots="text"/>
-
-For new visitors, when the Visitor API is present, Target has to go over the wire multiple times to make sure that Target requests contain Experience Cloud Visitor ID data. For returning visitors, Target goes over the wire only to Target to retrieve the personalized content. 
+>[!NOTE]
+>
+>For new visitors, when the Visitor API is present, Target has to go over the wire multiple times to make sure that Target requests contain Experience Cloud Visitor ID data. For returning visitors, Target goes over the wire only to Target to retrieve the personalized content. 
 
 ## Why does it seem like I see slower response times after upgrading from a previous version of at.js to version 1.0.0?
 
@@ -161,9 +161,9 @@ Modern browsers do not save cookies if you are using these domains unless you cu
 
 Yes, if you are using [at.js version 1.2 or later](/src/pages/implement/client-side/atjs/target-atjs-versions.md). Adobe strongly recommends that you keep current with the latest version, however.
 
-<InlineAlert variant="info" slots="text"/>
-
-The following examples are not necessary if you are using at.js version 1.2 or later.
+>[!NOTE]
+>
+>The following examples are not necessary if you are using at.js version 1.2 or later.
 
 Depending on how you use [targetGlobalSettings](/src/pages/implement/client-side/atjs/atjs-functions/targetglobalsettings.md), you might need to make additional modifications to the code after downloading at.js. For example, if you needed slightly different settings for your Target implementations on various websites and were unable to define these settings dynamically using custom JavaScript, make these customizations manually after downloading the file and before uploading to the respective website.
 

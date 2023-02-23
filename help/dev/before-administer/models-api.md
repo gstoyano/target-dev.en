@@ -92,9 +92,9 @@ In the example shown here, the user is checking to see the list of features bein
 
 ![Step 1](assets/models-api-step-1.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-To find your activity's Activity ID, navigate to the Activities List in the Target UI. Click on the activity of interest. The Activity ID will be displayed in the body of the resulting Activities Overview page, as well as at the end of the URL for that page.
+>[!NOTE]
+>
+>To find your activity's Activity ID, navigate to the Activities List in the Target UI. Click on the activity of interest. The Activity ID will be displayed in the body of the resulting Activities Overview page, as well as at the end of the URL for that page.
 
 <InlineAlert variant="info" slots="header, text1, text2"/>
 
@@ -113,9 +113,9 @@ Note that in order for the features list to populate with values (that is, in or
 
 Next, view the blocklist. In other words, check to see which features, if any, are currently being blocked from inclusion in the models for this activity.
 
-<InlineAlert variant="error" slots="text"/>
-
-Note that `/blockList/` is case sensitive in the request.
+>[!ERROR]
+>
+>Note that `/blockList/` is case sensitive in the request.
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
@@ -127,17 +127,17 @@ GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 #### Response
 
-````json
+```json
 
-````
+```
 
 In the example shown here, the user is checking the list of blocked features for the activity whose Activity ID is 260840. The results are empty, which means this activity does not currently have any blocklisted features.
 
 ![Step 2](assets/models-api-step-2.png)
 
-<InlineAlert variant="info" slots="text"/>
-
-You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which an empty blocklisted features array is returned. Continue reading to see an example of this in [Step 4](#step4).
+>[!NOTE]
+>
+>You may see empty results like this, the first time you check the full blocklist, before adding any features to it. However, once you have added (and subsequently removed) features from a blocklist, you may see slightly different results, in which an empty blocklisted features array is returned. Continue reading to see an example of this in [Step 4](#step4).
 
 ## Step 3: Add features to the blocklist of the activity {#step3}
 
@@ -181,7 +181,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 #### Response
 
-````json
+```json
 {
     "blockedFeatures": [
             "SES_PREVIOUS_VISIT_COUNT",
@@ -192,7 +192,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
         ]
 }
 
-````
+```
 
 In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISIT_COUNT` and `SES_TOTAL_SESSIONS`, which they previously identified by querying the full list of features for the activity whose Activity ID is 260480, as described in [Step 1](#step1). They are also blocking all features coming from Experience Cloud Segments, which is achieved by blocking features with the prefix of "AAM," as described in the [table](#table) above.
 
@@ -221,13 +221,13 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 #### Response
 
-````json
+```json
 {
     "blockedFeatures": [],
     "blockedFeatureSources": []
 }
 
-````
+```
 
 In the example shown here, the user is clearing their blocklist for the activity whose Activity ID is 260840. Note that the response confirms empty arrays for both blocked features and their sources—`blockedFeatureSources` and `blockedFeatures`, respectively.
 
@@ -262,7 +262,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 #### Response
 
-````json
+```json
 {
     "blockedFeatures": [
         "AAM_FEATURE_1",
@@ -275,7 +275,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
     ]
 }
 
-````
+```
 
 In the sample Request shown above, the user is blocking two features, "AAM_FEATURE_1" and "AAM_FEATURE_2," for all activities in their Target account. This means that, regardless of the activity, "AAM_FEATURE_1" and "AAM_FEATURE_2" will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is "AAM," "PRO," or "ENV."
 
