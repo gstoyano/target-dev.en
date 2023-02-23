@@ -4,7 +4,6 @@ description: Use the mboxCreate() function for the Adobe Target at.js JavaScript
 title: How Do I Use the mboxCreate() Function?
 feature: at.js
 role: Developer
-exl-id: 821ad97a-345a-4e56-9be6-ab1c7d3a651d
 ---
 # mboxCreate(mbox,params) - at.js 1.x 
 

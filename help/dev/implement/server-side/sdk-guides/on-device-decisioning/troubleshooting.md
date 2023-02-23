@@ -225,8 +225,6 @@ client = TargetClient.create({
 
 ## Common Troubleshooting Scenarios
 
-<InlineAlert variant="info" slots="text"></InlineAlert>
-
 Please be sure to review [supported features](supported-features.md) for on-device decisioning when running into issues.
 
 ### On-device decisioning activities not executing due to unsupported audience or activity

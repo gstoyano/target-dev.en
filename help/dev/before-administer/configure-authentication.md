@@ -8,7 +8,6 @@ feature: APIs/SDKs, Administration & Configuration
 kt:
 thumbnail:
 author: Judy Kim
-exl-id: 8a1e93e4-67b2-4942-a8da-fc0f2cbb2df2
 ---
 # Configure authentication for Adobe Target APIs
 
@@ -62,9 +61,8 @@ In this section, you will access the Adobe Developer Console and create a projec
 1. Back in the Adobe Developer Console, select the [product profile(s)](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) corresponding to the properties in which you are using Adobe Recommendations. (If you are not using properties, select the Default Workspace option.) Click **Save configured API**.
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
-10. Click **Create Integration**. You should receive a temporary message indicating your API was successfully configured.
-
-11. As a final step, rename your project to a name more meaningful than the original `Project 1`. To do this, navigate to the project using the navigation path as shown, click **Edit project** to access the **Edit Project** modal, and rename the project.
+1. Click **Create Integration**. You should receive a temporary message indicating your API was successfully configured.
+1. As a final step, rename your project to a name more meaningful than the original `Project 1`. To do this, navigate to the project using the navigation path as shown, click **Edit project** to access the **Edit Project** modal, and rename the project.
 
    ![configure-io-target-createproject11](assets/configure-io-target-createproject11.png)
 
@@ -111,9 +109,9 @@ That's right, it's in the `config` file downloaded earlier from the Adobe Develo
    ![JWT8](assets/configure-io-target-jwt8.png)
 1. Select and copy the entire contents of the `private` key file.
    ![JWT9](assets/configure-io-target-jwt9.png)
-10. In Postman, paste your private key value into the **INITIAL VALUE** and **CURRENT VALUE** fields.
+1. In Postman, paste your private key value into the **INITIAL VALUE** and **CURRENT VALUE** fields.
    ![JWT10](assets/configure-io-target-jwt10.png)
-11. Click **Update**, and close the Environments modal.
+1. Click **Update**, and close the Environments modal.
 
 
 ## Generate the bearer access token

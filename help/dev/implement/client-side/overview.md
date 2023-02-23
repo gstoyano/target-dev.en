@@ -4,7 +4,6 @@ description: Learn how to implement Adobe Target for client-side web using the A
 title: How Do I Implement Target for Client-Side Web
 feature: at.js
 role: Developer
-exl-id: 34c1e39b-acae-4547-b67f-584bcd59913f
 ---
 # Overview: implement Target for client-side web
 

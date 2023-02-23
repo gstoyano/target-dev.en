@@ -35,13 +35,13 @@ For Node.js, Java, and Python, run the following command in your project directo
 
 <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-#### Node.js (NPM)
+### Node.js (NPM)
 
 ```js
 npm i @adobe/target-nodejs-sdk -P
 ```
 
-#### Java (Maven)
+### Java (Maven)
 
 ```javascript
 <dependency>
@@ -51,13 +51,13 @@ npm i @adobe/target-nodejs-sdk -P
 </dependency>
 ```
 
-#### .NET (Bash)
+### .NET (Bash)
 
 ```bash
 dotnet add package Adobe.Target.Client
 ```
 
-#### Python (pip)
+### Python (pip)
 
 ```python
 pip install target-python-sdk
@@ -67,9 +67,7 @@ pip install target-python-sdk
 >
 >The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
 
-<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
-
-#### Node.js
+### Node.js
 
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -91,7 +89,7 @@ function targetClientReady() {
 }
 ```
 
-#### Java (Maven)
+### Java (Maven)
 
 ```javascript
 ClientConfig config = ClientConfig.builder()
@@ -101,7 +99,7 @@ ClientConfig config = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(config);
 ```
 
-#### .NET (C#)
+### .NET (C#)
 
 ```csharp
 var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -109,7 +107,7 @@ var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012
 this.targetClient.Initialize(targetClientConfig);
 ```
 
-#### Python
+### Python
 
 ```python
 from target_python_sdk import TargetClient
@@ -199,7 +197,7 @@ After setting up the feature flag variables in Adobe Target, modify your applica
 
 <CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
 
-#### Node.js
+### Node.js
 
 ```js
 //... Code removed for brevity
@@ -243,7 +241,7 @@ var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
 var flag = attributes.GetString("ondevice-featureflag", "flag");
 ```
 
-#### Python
+### Python
 
 ```python
 # ... Code removed for brevity
@@ -263,9 +261,7 @@ def target_client_ready():
 
 Optionally, you may send additional events for tracking conversions using the sendNotification() function.
 
-<CodeBlock slots="heading, code" repeat="4" languages="js, java, bash, python" />
-
-#### Node.js
+### Node.js
 
 ```js
 //... Code removed for brevity
@@ -293,7 +289,7 @@ TargetClient.sendNotifications({
 })
 ```
 
-#### Java (Maven)
+### Java (Maven)
 
 ```javascript
 Notification notification = new Notification();
@@ -343,7 +339,7 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 targetClient.SendNotifications(notificationRequest);
 ```
 
-#### Python
+### Python
 
 ```python
 # ... Code removed for brevity

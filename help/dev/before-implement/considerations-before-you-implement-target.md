@@ -10,9 +10,9 @@ Considerations you should address before you implement Adobe Target.
 
 This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into Target, security considerations, and information about TLS (Transport Layer Security) Encryption. 
 
-<InlineAlert variant="warning" slots="test"/>
-
-Modifications to at.js or the Adobe Experience Platform Web SDK are not supported by Adobe Customer Care.
+>[!WARNING]
+>
+>Modifications to at.js or the Adobe Experience Platform Web SDK are not supported by Adobe Customer Care.
 
 - [Prepare to implement Target](prepare-to-implement-target.md)
 - [Privacy](privacy/privacy.md)

@@ -4,7 +4,6 @@ description: Learn about Adobe Target's unique hybrid deployment model for perso
 title: What Is A Hybrid Target Implementation?
 feature: Implementation
 role: Developer
-exl-id: af898360-217f-4c90-ac26-e80735e4dd20
 ---
 # Hybrid implementation
 

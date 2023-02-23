@@ -4,7 +4,6 @@ description: Learn how to configure authentication for batch updates via Adobe T
 title: How Do I Use Profile API Settings to Enable or Disable Batch Updates?
 feature: APIs/SDKs
 role: Developer
-exl-id: 6346e11b-0853-47f1-9706-69e8635a6f25
 ---
 # Profile API settings
 

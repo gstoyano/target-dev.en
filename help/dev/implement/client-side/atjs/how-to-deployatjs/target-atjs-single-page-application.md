@@ -4,7 +4,6 @@ description: Learn how to use Adobe Target at.js 2.x to implement Target for Sin
 title: Can I implement Target for Single Page Applications (SPAs)?
 feature: Implement Server-side
 role: Developer
-exl-id: 624f8e62-b443-4093-8e05-9320a365ea07
 ---
 # Single Page Application implementation
 

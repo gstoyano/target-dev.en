@@ -4,7 +4,6 @@ description: Use the adobe.target.applyOffer() function for the Adobe Target at.
 title: How Do I Use the adobe.target.applyOffer() Function?
 feature: at.js
 role: Developer
-exl-id: d230d48f-0d6c-4f55-96a0-681dd31e8d16
 ---
 # adobe.target.applyOffer(options)
 

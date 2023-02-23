@@ -4,7 +4,6 @@ description: Learn how to transition from the Adobe Target Classic APIs to the T
 title: How Do I Transition From Target Classic APIs to Target APIs on the Adobe Developer Console?
 feature: Implement Server-side
 role: Developer
-exl-id: 4b4274a9-b91a-4a79-9b40-8b1909a2d1d1
 ---
 # Transition from Target Classic APIs to Target APIs on the Adobe Developer Console
 

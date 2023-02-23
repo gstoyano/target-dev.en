@@ -4,7 +4,6 @@ description: Get data into Target using script profile attributes.
 title: How Do I Get Data into Target Using Script Profile Attributes?
 feature: Implementation
 role: Developer
-exl-id: c323fb4c-f263-43d4-8523-9f42c2913542
 ---
 # Script profile attributes
 

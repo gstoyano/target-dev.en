@@ -4,7 +4,6 @@ description: Learn how to use Adobe Target to dynamically test images in email, 
 title: How Do I Test an Email Image Adbox?
 feature: Implement Email
 role: Developer
-exl-id: 87a918d7-83dc-4277-821b-d90302c59736
 ---
 # Test an email image Adbox
 

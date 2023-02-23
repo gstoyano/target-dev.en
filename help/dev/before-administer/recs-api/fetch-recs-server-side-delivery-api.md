@@ -8,7 +8,6 @@ feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
 thumbnail:
 author: Judy Kim
-exl-id: 553d1208-647f-479d-acc7-d7760469d642
 ---
 # Fetching Recommendations with the Delivery API
 

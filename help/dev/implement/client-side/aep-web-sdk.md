@@ -4,7 +4,6 @@ description: Learn how to use the Adobe Experience Platform Web SDK to interact 
 title: How Do I Implement with the Experience Platform Web SDK?
 feature: AEP Web SDK
 role: Developer
-exl-id: afcd741f-bb7e-4bc2-b96c-ec10d5d6f4c5
 ---
 # Adobe Experience Platform Web SDK
 

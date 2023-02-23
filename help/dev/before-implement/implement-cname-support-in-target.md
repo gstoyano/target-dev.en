@@ -4,7 +4,6 @@ description: Work with Adobe Client Care to implement CNAME (Canonical Name) sup
 title: How Do I Use CNAME in Target?
 feature: Privacy & Security
 role: Developer
-exl-id: bf533771-6d46-48ba-964c-3ad9ce9f7352
 ---
 # CNAME and Target
 
@@ -22,9 +21,9 @@ Instructions for working with Adobe Client Care to implement CNAME (Canonical Na
    target.example.com.  IN  CNAME  cnamecustomer.tt.omtrdc.net.
    ```
    
-<InlineAlert variant="warning" slots="text"/>
-   
-Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
+>[!WARNING]
+>
+>Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
 
 1. [Fill out this form](/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 

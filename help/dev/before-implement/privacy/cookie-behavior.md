@@ -4,7 +4,6 @@ description: Learn about Target cookie behavior (first-party cookie, third-party
 title: Where Can I Find Information About Target Cookies?
 feature: at.js
 role: Developer
-exl-id: 1c4e5b0b-8ae4-4526-aea0-318a33f4d247
 ---
 # Target cookies
 

@@ -4,7 +4,6 @@ description: Learn how Adobe Target uses the user-agent and Client Hints to qual
 title: User Agent and Client Hints
 feature: at.js
 role: Developer
-exl-id: 22d29bfe-e022-44b2-913f-c8c32c65bc48
 ---
 # User-agent and Client Hints
 

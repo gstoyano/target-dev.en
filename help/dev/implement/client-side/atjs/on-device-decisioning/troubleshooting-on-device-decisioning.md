@@ -4,7 +4,6 @@ description: Learn how to troubleshoot on-device decisioning with the at.js libr
 title: How Do I Troubleshoot On-Device Decisioning with the at.js JavaScript Library?
 feature: at.js
 role: Developer
-exl-id: 76bb9393-1560-455b-9d95-91576faee1f2
 ---
 # Troubleshooting on-device decisioning for at.js
 

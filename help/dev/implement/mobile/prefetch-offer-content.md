@@ -4,7 +4,6 @@ description: Use the Adobe Target prefetch feature in the iOS and Android Mobile
 title: Can I Prefetch Offer Content for Mobile Apps?
 feature: Implement Mobile
 role: Developer
-exl-id: 83a96a41-cf27-4ed8-8169-277f3ef3f249
 ---
 # Prefetch offer content
 

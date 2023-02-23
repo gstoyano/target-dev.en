@@ -4,7 +4,6 @@ description: Explore issues (with solutions) customers face when using cloud-bas
 title: Can I Use Target with Cloud-based Instances?
 feature: at.js
 role: Developer
-exl-id: 220371a9-ba57-4e67-b82f-8fec6f9d2833
 ---
 # Use cloud-based instances with Target
 

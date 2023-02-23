@@ -8,7 +8,6 @@ feature: APIs/SDKs, Recommendations, Administration & Configuration, Overview
 kt: 3815
 thumbnail:
 author: Judy Kim
-exl-id: 10f80056-fb71-4362-86bc-d161f596cb91
 ---
 # Adobe Recommendations API Overview
 

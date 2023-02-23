@@ -4,7 +4,6 @@ description: Get data into Target using page parameters.
 title: How Do I Get Data into Target Using Page Parameters?
 feature: Implementation
 role: Developer
-exl-id: a285eadc-b71e-49a8-9071-397ada283baf
 ---
 # Page parameters
 

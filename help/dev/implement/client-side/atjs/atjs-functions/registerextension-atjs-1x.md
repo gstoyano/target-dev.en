@@ -4,7 +4,6 @@ description: Use the registerExtension() function for the Adobe Target at.js Jav
 title: How Do I Use the registerExtension() Function?
 feature: at.js
 role: Developer
-exl-id: 7f0898b4-ddd5-425c-99dc-94f9b30f8ba7
 ---
 # registerExtension() - at.js 1.x
 

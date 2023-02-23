@@ -8,7 +8,6 @@ feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
 thumbnail:
 author: Judy Kim
-exl-id: ee63bd3e-200a-4c08-b364-9f17a479033b
 ---
 # Manage Custom Criteria
 

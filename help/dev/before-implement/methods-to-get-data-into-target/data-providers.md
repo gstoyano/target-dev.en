@@ -4,7 +4,6 @@ description: Get data into Target using data providers.
 title: How Do I Get Data into Target Using Data Providers?
 feature: Implementation
 role: Developer
-exl-id: 05fe9190-4d36-43e2-9fc7-c354a6821bfb
 ---
 # Data providers
 

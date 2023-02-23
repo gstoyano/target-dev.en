@@ -4,7 +4,6 @@ description: Get data into Target using in-page profile attributes.
 title: How Do I Get Data into Target Using In-Page Profile Attributes?
 feature: Implementation
 role: Developer
-exl-id: c6000720-a862-4e9c-96a5-055963a79544
 ---
 # In-page profile attributes
 

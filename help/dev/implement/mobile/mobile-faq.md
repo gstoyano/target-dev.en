@@ -4,7 +4,6 @@ description: View frequently asked questions and their answers about Adobe Targe
 title: What Are Frequently Asked Questions About Target for Mobile Apps?
 feature: Implement Mobile
 role: Developer
-exl-id: 1ddd8345-e753-4608-9293-939e092cb16d
 ---
 # Target for mobile apps FAQ
 

@@ -4,7 +4,6 @@ description: Learn about the global mbox in Adobe Target, a name used to refer t
 title: What Is a Global mbox?
 feature: at.js
 role: Developer
-exl-id: 84d15feb-f5df-4879-ae35-a7f455c1b20f
 ---
 # Understand the Global mbox
 

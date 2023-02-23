@@ -4,7 +4,6 @@ description: Learn about the JSON rule artifact used by on-device decisioning.
 title: What is the JSON Rule Artifact Do in On-Device Decisioning?
 feature: at.js
 role: Developer
-exl-id: 1170bc2e-5102-4e04-8e97-0220ce20e903
 ---
 # On-device decisioning rule artifact
 

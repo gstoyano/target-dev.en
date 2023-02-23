@@ -4,7 +4,6 @@ description: Learn about the Adobe Target server-side Delivery APIs, SDKs, and T
 title: Where Can I Learn About Target Server-Side Delivery APIs and SDKs?
 feature: Implement Server-side
 role: Developer
-exl-id: cdee007f-f54d-4cf3-9575-6319da3434a5
 ---
 # Server Side: implement Target
 

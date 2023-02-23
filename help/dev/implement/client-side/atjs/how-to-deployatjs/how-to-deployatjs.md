@@ -4,7 +4,6 @@ description: Learn how to deploy the Adobe Target at.js JavaScript library using
 title: How Do I Deploy at.js?
 feature: Implement Server-side
 role: Developer
-exl-id: a11b916a-923e-43d2-af0f-8efde7cd547e
 ---
 # How to deploy at.js
 

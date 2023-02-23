@@ -4,7 +4,6 @@ description: Learn how to perform on-device decisioning with the at.js library
 title: How Does On-device Decisioning Work with the at.js JavaScript Library?
 feature: at.js
 role: Developer
-exl-id: 5ad6032b-9865-4c80-8800-705673657286
 ---
 # On-device decisioning for at.js
 

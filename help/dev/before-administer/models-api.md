@@ -6,13 +6,15 @@ description: Overview of the Models API, which users can use to block features f
 
 The Models API, also called the Blocklist API, enables users to view and manage the list of features used in machine learning models for Automated Personalization (AP) and Auto-Target (AT) activities. If a user would like to exclude a feature from being used by the models for AP or AT activities, they can use the Models API to add that feature to the "blocklist."
 
-<InlineAlert variant="info" slots="header, text"/>
+>[!BEGINSHADEBOX]
 
 Definition
 
 A **blocklist** defines the set of features that will be excluded by Adobe Target from its machine learning models. For more information on features, see [Data used by Target machine-learning algorithms](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
 
 Blocklists may be defined per activity (activity level), or for all activities within a Target account (global level).
+
+>[!ENDSHADEBOX]
 
 <!-- To get started with the Models API in order to create and manage your blocklist, download the Postman Collection [here](https://git.corp.adobe.com/target/ml-configuration-management-service/tree/nextRelease/rest_api_library). Note this is an Adobe internal link. Need to publish this publicly if want to share with customers. -->
 
@@ -25,8 +27,6 @@ View the Models API specification [here](../administer/models-api/index.md).
 To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/index.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
 
 ## Models API usage guidelines
-
-<InlineAlert variant="info" slots="header, text1, text2, text3, text4, text5"/>
 
 How to manage blocklists
 
@@ -45,15 +45,13 @@ How to manage blocklists
 
 Before blocklisting a feature, view the list of features that are currently being included in the models for that activity.
 
-<CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
-
-#### Request
+**Request**
 
 ```json
 GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 ```
 
-#### Response
+**Response**
 
 ```json
 {
@@ -96,10 +94,6 @@ In the example shown here, the user is checking to see the list of features bein
 >
 >To find your activity's Activity ID, navigate to the Activities List in the Target UI. Click on the activity of interest. The Activity ID will be displayed in the body of the resulting Activities Overview page, as well as at the end of the URL for that page.
 
-<InlineAlert variant="info" slots="header, text1, text2"/>
-
-Definition
-
 The **externalName** is a user-friendly name for a feature. It is created by Target, and it is possible this value may change over time. Users can view these user-friendly names in the [Personalization Insights report](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
 
 The **internalName** is the feature's actual identifier. It is also created by Target, but it cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
@@ -117,15 +111,13 @@ Next, view the blocklist. In other words, check to see which features, if any, a
 >
 >Note that `/blockList/` is case sensitive in the request.
 
-<CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
-
-#### Request
+**Request**
 
 ```json
 GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 ```
 
-#### Response
+**Response**
 
 ```json
 
@@ -166,9 +158,7 @@ Note that `blockedFeatureSources` indicates where a feature came from. For the p
 |UPA|Custom - RT-CDP Profile Attribute|
 |IAC|Visitor Interest Areas||
 
-<CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
-
-#### Request
+**Request**
 
 ```json
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
@@ -179,7 +169,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 }
 ```
 
-#### Response
+**Response**
 
 ```json
 {
@@ -198,17 +188,13 @@ In the example shown here, the user is blocking two features, `SES_PREVIOUS_VISI
 
 ![Step 3](assets/models-api-step-3.png)
 
-<InlineAlert variant="help" slots="text" />
-
 Note that after blocklisting a feature, it is recommended that you verify the updated blocklist by performing [Step 2](#step2) again (GET the blocklist). Verify that the results appear as expected (verify that the results include the features added from the latest PUT request).
 
 ## Step 4: (Optional) Unblock {#step4}
 
 To unblock all blocklisted features, clear the values from `blockedFeatureSources` or `blockedFeatures`.
 
-<CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
-
-#### Request
+**Request**
 
 ```json
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
@@ -219,7 +205,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 }
 ```
 
-#### Response
+**Response**
 
 ```json
 {
@@ -237,8 +223,6 @@ As always, after modifying the blocklist, it is recommended that you perform [St
 
 ![Step 4b](assets/models-api-step-4b.png)
 
-<InlineAlert variant="info" slots="header, text"/>
-
 Question: How can I delete some, but not all, of a blocklist?
 
 Answer: To remove a discrete subset of blocklisted features from a multi-feature blocklist, users can simply send the updated list of features they would like to block in [the blocklist request](#step3), as opposed to clearing the entire blocklist and re-adding the desired features. In other words, send the updated feature list (as shown in [Step 3](#step3)), making sure to exclude the features you wish to "delete" from the blocklist.
@@ -249,7 +233,7 @@ The examples above were all in the context of a single activity. You may also bl
 
 <CodeBlock slots="heading, code" repeat="2" languages="JSON, JSON" />
 
-#### Request
+**Request**
 
 ```json
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
@@ -260,7 +244,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 }
 ```
 
-#### Response
+**Response**
 
 ```json
 {
@@ -278,8 +262,6 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 ```
 
 In the sample Request shown above, the user is blocking two features, "AAM_FEATURE_1" and "AAM_FEATURE_2," for all activities in their Target account. This means that, regardless of the activity, "AAM_FEATURE_1" and "AAM_FEATURE_2" will not be included in the machine learning models for this account. Furthermore, the user is also globally blocking all features whose prefix is "AAM," "PRO," or "ENV."
-
-<InlineAlert variant="info" slots="header, text"/>
 
 Question: Isn't the code sample above, redundant?
 

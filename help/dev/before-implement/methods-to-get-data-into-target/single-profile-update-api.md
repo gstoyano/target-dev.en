@@ -4,7 +4,6 @@ description: Get data into Target using the single profile update API.
 title: How Do I Get Data into Target Using the Single Profile Update API?
 feature: Implementation
 role: Developer
-exl-id: 8331866c-0b84-4d08-83b4-f7f82c67cd21
 ---
 # Single profile update API
 
@@ -36,8 +35,6 @@ Updates generally occur in under 1 hour, but may take as long as 24 hours to be 
 
 GET and POST supported. `https://CLIENT.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr1=0&profile.attr2=1...`
 
-<Resources slots="heading, links"/>
-
-#### Resources
+## Resources
 
 * [Updating Profiles](https://developers.adobetarget.com/api/#updating-profiles)

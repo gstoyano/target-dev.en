@@ -4,7 +4,6 @@ description: View a list of functions that can be used with the 1.x and 2.x vers
 title: What Functions Can I Use with at.js?
 feature: at.js
 role: Developer
-exl-id: a386e478-16f4-4bf6-9771-6b1e75f2e362
 ---
 # at.js functions
 

@@ -4,7 +4,6 @@ description: Learn how Target uses the TLS (Transport Layer Security) protocol t
 title: How Does Target Use TLS to Provide Security?
 feature: Privacy & Security
 role: Developer
-exl-id: 964a642a-830a-4556-a92a-d300670cd2fa
 ---
 # TLS (Transport Layer Security) encryption changes
 

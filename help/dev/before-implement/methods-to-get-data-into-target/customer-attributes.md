@@ -4,7 +4,6 @@ description: Get data into Target using customer attributes.
 title: How Do I Get Data into Target Using Customer Attributes?
 feature: Implementation
 role: Developer
-exl-id: b6c4a286-7994-492d-bde9-346af7aa314f
 ---
 # Customer attributes
 

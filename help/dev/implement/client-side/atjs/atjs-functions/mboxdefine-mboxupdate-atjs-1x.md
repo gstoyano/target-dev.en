@@ -4,7 +4,6 @@ description: Use the mboxDefine() and mboxUpdate() functions for the Adobe Targe
 title: How Do I Use the mboxDefine() And mboxUpdate() Functions?
 feature: at.js
 role: Developer
-exl-id: 48261be0-c4d0-4961-9712-ef7e0d2cb1c0
 ---
 # mboxDefine() and mboxUpdate() - at.js 1.x
 

@@ -4,7 +4,6 @@ description: Learn about the procedures Adobe uses to bolster the security of yo
 title: How Does Target Handle Security of My Data?
 feature: Privacy & Security
 role: Developer
-exl-id: be93072f-2c21-40fa-8648-513348afacc8
 ---
 # Target security overview
 

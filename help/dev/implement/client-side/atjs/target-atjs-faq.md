@@ -4,7 +4,6 @@ description: Read answers to frequently asked questions about the Adobe Target a
 title: What Are Common Questions and Answers About at.js?
 feature: at.js
 role: Developer
-exl-id: 937f880a-1842-4655-be44-0a5614c2dbcc
 ---
 # at.js Frequently Asked Questions
 

@@ -4,7 +4,6 @@ description: Read frequently asked questions (FAQs) and answers about Adobe Targ
 title: What Are Frequently Asked Questions About the Global mbox?
 feature: at.js
 role: Developer
-exl-id: ec8399df-5222-44bd-9e61-dfce8fd1694d
 ---
 # Global mbox Frequently Asked Questions
 

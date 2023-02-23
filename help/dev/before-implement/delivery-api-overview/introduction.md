@@ -18,6 +18,6 @@ Through Adobe Target's Delivery API, you can:
 * Cache experiences for a user within a session in your server so that multiple API calls can be avoided and as a result achieve better performance.
 * Seamlessly integrate with Adobe Experience Cloud products such as Adobe Analytics, Adobe Audience Manager, and the Experience Cloud ID Service from the server side.
 
-<InlineAlert variant="info" slots="text" />
-
-You can still access the [legacy /v1/mbox and /v2/batchmbox API documentation](https://developers.adobetarget.com/api/legacy-api/index.html). However, features will be developed in the Delivery API (as documented here) that will not be backported to the legacy APIs.
+>[!NOTE]
+>
+>You can still access the [legacy /v1/mbox and /v2/batchmbox API documentation](https://developers.adobetarget.com/api/legacy-api/index.html). However, features will be developed in the Delivery API (as documented here) that will not be backported to the legacy APIs.

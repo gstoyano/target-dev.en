@@ -4,7 +4,6 @@ description: Use mobile preview links to perform end-to-end QA for mobile app ac
 title: How Do I Use the Mobile Preview Link in Target Mobile?
 feature: Implement Mobile
 role: Developer
-exl-id: c66325b3-3995-401e-a1e3-839fdb1cf762
 ---
 # Target mobile preview
 

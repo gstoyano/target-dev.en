@@ -4,7 +4,6 @@ description: Learn how to send additional information about the location or the 
 title: How Do I Send Custom User Data in an iOS app?
 feature: Implement Mobile
 role: Developer
-exl-id: c64219ec-8d60-4d05-b2b8-103e8ffcaefc
 ---
 # iOS - send custom user data
 

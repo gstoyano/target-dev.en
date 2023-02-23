@@ -4,7 +4,6 @@ description: Use adobe.target.sendNotifications() for at.js to send notification
 title: How Do I Use the adobe.target.sendNotifications() Function?
 feature: at.js
 role: Developer
-exl-id: 71b7167d-729c-4d43-8f54-f43619e14f32
 ---
 # adobe.target.sendNotifications(options)
 

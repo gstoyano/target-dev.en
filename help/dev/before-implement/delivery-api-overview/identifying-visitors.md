@@ -12,8 +12,8 @@ Target uses three identifiers:
 
 |Field Name|Description|
 | --- | --- |
-|`tntId`|The `tntId` is the primary identifier in Target for a user. You can supply this ID or Target will auto-generate it if the request doesn’t contain one.|
-|`thirdPartyId`|The `thirdPartyId` is your company’s identifier for the user that you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
+|`tntId`|The `tntId` is the primary identifier in Target for a user. You can supply this ID or Target will auto-generate it if the request doesn't contain one.|
+|`thirdPartyId`|The `thirdPartyId` is your company's identifier for the user that you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
 |`marketingCloudVisitorId`|The `marketingCloudVisitorId` is used to merge and share data between different Adobe solutions. The `marketingCloudVisitorId` is required for integrations with Adobe Analytics and Adobe Audience Manager.|
 |`customerIds`|Along with the Experience Cloud Visitor ID, additional [customer IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) and an authenticated status for each visitor can be utilized.|
 
@@ -217,7 +217,7 @@ The example call above demonstrates how to send a `customerId` with an `authenti
 
 ## Merged Profile
 
-You can combine `tntId`, `t`hirdPartyID`, and `marketingCloudVisitorId` in the same request. In this scenario, Adobe Target will maintain the mapping of all these IDs and pin it to a visitor. Learn how profiles are [merged and synced in real time](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) using the different identifiers.
+You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request. In this scenario, Adobe Target will maintain the mapping of all these IDs and pin it to a visitor. Learn how profiles are [merged and synced in real time](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) using the different identifiers.
 
 ```
 curl -X POST \

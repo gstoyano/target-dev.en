@@ -4,7 +4,6 @@ description: Learn how to use Adobe Target for mobile app optimization and perso
 title: Can I use Target with Mobile Apps?
 feature: Implement Mobile
 role: Developer
-exl-id: a0521ef9-b3f9-4e21-ab60-22a3d9c15576
 ---
 # Target for mobile apps
 

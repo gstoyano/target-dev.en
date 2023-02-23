@@ -4,7 +4,6 @@ description: Learn which features are supported for on-device decisioning.
 title: Which Features Are Supported in On-Device Decisioning
 feature: at.js
 role: Developer
-exl-id: 3531ff55-c3db-44c1-8d0a-d7ec2ccb6505
 ---
 # Supported features for on-device decisioning
 

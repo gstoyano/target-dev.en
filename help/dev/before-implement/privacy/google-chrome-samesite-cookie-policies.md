@@ -4,7 +4,6 @@ description: Discover how Adobe Target handles the SameSite IETF standard introd
 title: How Does Target Handle Google's Samesite Cookie Policies?
 feature: Privacy & Security
 role: Developer
-exl-id: 5abd2065-3692-4a6d-9ac9-6d416604c2d2
 ---
 # Google Chrome SameSite cookie policies
 

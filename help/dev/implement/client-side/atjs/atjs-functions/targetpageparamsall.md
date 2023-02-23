@@ -4,7 +4,6 @@ description: Use the targetPageParamsAll() function for the Adobe Target at.js J
 title: How Do I Use the targetPageParamsAll() Function?
 feature: at.js
 role: Developer
-exl-id: 58fbb62e-30da-486f-b771-6452ad5e27e6
 ---
 # targetPageParamsAll()
 

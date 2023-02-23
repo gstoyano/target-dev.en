@@ -4,7 +4,6 @@ description: Use the adobe.target.getOffers() function and its options for the A
 title: How Do I Use the adobe.target.getOffers() Function?
 feature: at.js
 role: Developer
-exl-id: ed5f06c8-d837-4ea1-a857-c6c46424aa1f
 ---
 # adobe.target.getOffers() - at.js 2.x
 

@@ -8,7 +8,6 @@ feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
 thumbnail:
 author: Judy Kim
-exl-id: 8060b69b-e8e5-4fe7-895f-742410d8ed45
 ---
 # Manage Your Recommendations Catalog using APIs
 

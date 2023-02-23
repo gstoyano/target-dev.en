@@ -4,7 +4,6 @@ description: View a list of hosts to help you allowlist Adobe Target edges (geog
 title: How Do I Allowlist Target Edge Nodes?
 feature: Privacy & Security
 role: Developer
-exl-id: 2d8399b9-eec8-40b0-8b35-2812f83ff4dc
 ---
 # Allowlist Target edge nodes
 
@@ -31,8 +30,6 @@ List of egress IP addresses of Target edges. Allowlist these IPs if you plan to 
 ## Target edge IP addresses
 
 List of IP addresses of Target edges. Allowlist these IPs if you want to make API calls to Target edges.
-
-<InlineAlert variant="warning" slots="text" />
 
 This list will change often, as the load balancers scale up and down based on traffic profiles.
 
