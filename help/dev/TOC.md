@@ -6,7 +6,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
 
 # Target Implementation Guide {#developer}
 
-* [Overview](overview.md)
++ [Overview](overview.md)
 + Implementation {#implementation}
   + Before you implement {#before-implement}
     + [Before you implement](before-implement/considerations-before-you-implement-target.md)
