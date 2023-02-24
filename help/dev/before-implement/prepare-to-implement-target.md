@@ -22,7 +22,7 @@ The objectives of the Business RFI document are as follows:
 * Understand the client's business goals 
 * Understand the client's optimization goals
 
-Download the [Business Request for Information](/business-rfi.docx) document.
+Download the [Business Request for Information](assets/business-rfi.docx) document.
 
 ## Adobe Target technical request for information
 
@@ -33,4 +33,4 @@ The objectives of the technical RFI document are as follows:
 * Understand the technical platform and any limitations 
 * Understand the technical environment as it pertains to people and processes.
 
-Download the [Technical Request for Information](/technical-rfi.docx) document.
+Download the [Technical Request for Information](assets/technical-rfi.docx) document.

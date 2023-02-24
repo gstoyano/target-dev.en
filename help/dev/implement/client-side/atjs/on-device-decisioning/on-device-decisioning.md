@@ -58,7 +58,7 @@ Lastly, server-side only lets you use the Adobe Experience Cloud and fine-tune a
 
 The following diagram illustrates the interaction between your visitor, the browser, at.js 2.5.0+, and the Adobe Target Edge network. This flow diagram captures new visitors and returning visitors.
 
-![Server-side only flow diagram](/assets/server-side-only.png)
+![Server-side only flow diagram](assets/server-side-only.png)
 
 The following list corresponds to the numbers in the diagram:
 
@@ -91,7 +91,7 @@ This decisioning method should be used only if performance is highly critical ac
 
 The following diagram illustrates the interaction between your visitor, the browser, at.js 2.5.0+, and the Akamai CDN. The Akamai CDN caches the rules artifact for the visitor's first visit. For the first page visit for a new visitor, the JSON rules artifact must be downloaded from the Akamai CDN to be cached locally on the visitor's browser. After the JSON rules artifact is downloaded, the decision is made immediately without a blocking network call. The following flow diagram captures new visitors.
 
-![On-device only flow diagram](/assets/on-device-only.png)
+![On-device only flow diagram](assets/on-device-only.png)
 
 The following list corresponds to the numbers in the diagram:
 
@@ -116,7 +116,7 @@ The following list corresponds to the numbers in the diagram:
 
 The following diagram illustrates the interaction between your visitor, the browser, at.js 2.5.0+, and the cached JSON rule artifact for the visitor's subsequent page hit or returning visit. Because the JSON rules artifact is already cached and available on the browser, the decision is made immediately without a blocking network call. This flow diagram captures subsequent page navigation or returning visitors.
 
-![On-device only flow diagram for subsequent page navigation and repeat visits](/assets/on-device-only-subsequent.png)
+![On-device only flow diagram for subsequent page navigation and repeat visits](assets/on-device-only-subsequent.png)
 
 The following list corresponds to the numbers in the diagram:
 
@@ -149,7 +149,7 @@ The following diagram illustrates the interaction between your visitor, the brow
 
 This approach ensures that the size of the artifact, which can include many activities, doesn't negatively influence the latency of the decision. Downloading the JSON rules artifact synchronously and making the decision thereafter can also have adverse effects to latency and can be inconsistent. Therefore, the hybrid decisioning method is a best practice recommendation to always make a server-side call for the decision for a new visitor, and as the JSON rules artifact is cached in parallel. For any subsequent page visits and return visits, the decisions are made from the cache and in-memory through the JSON rules artifact.
 
-![Hybrid flow diagram for a first-time visitor](/assets/hybrid-first-time-visitor.png)
+![Hybrid flow diagram for a first-time visitor](assets/hybrid-first-time-visitor.png)
 
 The following list corresponds to the numbers in the diagram:
 
@@ -177,7 +177,7 @@ The following list corresponds to the numbers in the diagram:
 
 The following diagram illustrates the interaction between your visitor, the browser, at.js 2.5.0+, and the cached JSON rules artifact for a subsequent page navigation or a return visit. In this diagram, focus only on the use case that an on-device decision is made for the subsequent page navigation or return visit. Keep in mind that depending on which activities are live for certain pages, a server-side call can be made to execute server-side decisions.
 
-![Hybrid flow diagram for subsequent page navigation and repeat visits](/assets/hybrid-subsequent.png)
+![Hybrid flow diagram for subsequent page navigation and repeat visits](assets/hybrid-subsequent.png)
 
 The following list corresponds to the numbers in the diagram:
 
@@ -212,7 +212,7 @@ To enable on-device decisioning:
 1. Click **Administration** > **Implementation** > **Account details**.
 1. Under **Account details**, slide the **On-Device Decisioning** toggle to the "on" position.
 
-   ![On-device decisioning toggle](/assets/on-device-decisioning-toggle.png)
+   ![On-device decisioning toggle](assets/on-device-decisioning-toggle.png)
 
    The "Include all existing on-device decisioning qualified activities in the artifact" option displays if you enable on-device decisioning.
 1. (Conditional) Slide the toggle to the "on" position if you want all your live Target activities that qualify for on-device decisioning to be automatically included in the artifact.
@@ -230,7 +230,7 @@ After enabling the On-Device Decisioning toggle, Target begins generating and pr
 1. Click **Administration** > **Implementation** > **Account details**.
 1. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
  
-   ![Edit Main Implementation Method settings](/assets/main-implementation-method.png)
+   ![Edit Main Implementation Method settings](assets/main-implementation-method.png)
 
 >[!WARNING]
 >
@@ -242,7 +242,7 @@ After enabling the On-Device Decisioning toggle, Target begins generating and pr
    * On-device only
    * Hybrid
 
-   ![Edit at.js settings panel](/assets/global-settings.png)
+   ![Edit at.js settings panel](assets/global-settings.png)
 
 ### Global settings
 
@@ -299,13 +299,13 @@ On subsequent visits to your site, the browser automatically checks whether it m
 
 After you create an activity that is on-device decisioning eligible, a label that reads On-Device Decisioning Eligible, is visible in the activity's Overview page. 
 
-![On-Device Decisioning Eligible label on the activity's Overview page.](/assets/on-device-decisioning-eligible-label.png)
+![On-Device Decisioning Eligible label on the activity's Overview page.](assets/on-device-decisioning-eligible-label.png)
 
 This label does not mean that the activity will always be delivered via on-device decisioning. Only when at.js 2.5.0+ is configured to use on-device decisioning will this activity be executed on-device. If at.js 2.5.0+ is not configured to use on-device, then this activity will still be delivered via a server call that is made from at.js.
 
 You can filter for all activities that are on-device decisioning eligible on the Activities page via the On-Device Decisioning Eligible filter.
 
-![On-Device Decisioning Eligible filter on Activities page.](/assets/on-device-decisioning-filter.png)
+![On-Device Decisioning Eligible filter on Activities page.](assets/on-device-decisioning-filter.png)
 
 >[!NOTE]
 >

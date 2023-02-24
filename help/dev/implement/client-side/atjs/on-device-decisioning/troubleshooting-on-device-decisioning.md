@@ -36,7 +36,7 @@ For example, to open DevTools in Google Chrome:
 
    In addition, you can filter by "/delivery|rules.json/" to display all Target calls and artifact rules.json.
 
-   ![Network tab in Google Chrome](/assets/rule-json.png)
+   ![Network tab in Google Chrome](assets/rule-json.png)
 
 ## Step 3: Verify the rule artifact download using at.js custom events
 

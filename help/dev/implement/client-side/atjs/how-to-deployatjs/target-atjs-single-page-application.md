@@ -9,7 +9,7 @@ role: Developer
 
 Traditional websites worked on "Page-to-Page" navigation models, otherwise known as Multi Page Applications, where website designs were tightly coupled to URLs and transitions from one webpage to another required a page load. Modern web applications, such as Single Page Applications (SPAs), instead adopt a model that propels rapid use of browser UI rendering, which is often independent of page reloads. These experiences are often triggered by customer interactions, such as scrolls, clicks, and cursor movements. As the paradigms of the modern web have evolved, the relevance of traditional generic events, such as page-load, to deploy personalization and experimentation no longer work.
 
-![Traditional page lifecycle vs. SPA lifecycle](/assets/trad-vs-spa.png)
+![Traditional page lifecycle vs. SPA lifecycle](assets/trad-vs-spa.png)
 
 at.js 2.x provides rich features that equip your business to execute personalization on next-generation, client-side technologies. This version is focused on improving at.js to have harmonious interactions with SPAs. 
 
@@ -27,27 +27,27 @@ To explain further about what Views are, let's navigate this hypothetical online
 
 **Link: [Home Site](https://target.enablementadobe.com/react/demo/#/)**
 
-![home site](/assets/home.png)
+![home site](assets/home.png)
 
 When we navigate to the home site, we can immediately see a hero image that promotes an Easter sale as well as the newest products that is selling on the site. In this case, a View can be defined as the entire home site. This is handy to note as we will expand on this more in the Implementing Adobe Target Views section below.
 
 **Link: [Product Site](https://target.enablementadobe.com/react/demo/#/products)**
 
-![product site](/assets/product-site.png)
+![product site](assets/product-site.png)
 
 As we become more interested in the products that the business is selling, we decide to click the Products link. Similar to the home site, the entirety of the products site can be defined as a View. We can name this View "products" just like the path name in `https://target.enablementadobe.com/react/demo/#/products)`.
 
-![product site 2](/assets/product-site-2.png)
+![product site 2](assets/product-site-2.png)
 
 In the beginning of this section, we defined Views as the whole site or even a group of visual elements on the site. As shown above, the four products shown on the site can also be grouped and considered as a View. If we wanted to name this View, we can name it to be "Products."
 
-![product site 3](/assets/product-site-3.png)
+![product site 3](assets/product-site-3.png)
 
 We decide to click the Load More button to explore more products on the site. The website URL does not change in this case. But a View here can represent only the second row of products shown above. The View name can be called "PRODUCTS-PAGE-2."
 
 **Link: [Checkout](https://target.enablementadobe.com/react/demo/#/checkout)**
 
-![check-out page](/assets/checkout.png)
+![check-out page](assets/checkout.png)
 
 Because we liked some products shown on the site, we decided to buy a couple. Now, on the checkout site we are given some options to choose normal delivery or express delivery. Because a View can be any group of visual elements on a site, we can name this "View Delivery Preferences." 
 
@@ -81,7 +81,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    **Link: [Home Site](https://target.enablementadobe.com/react/demo/#/)**
 
-   ![home-react-1](/assets/react1.png)
+   ![home-react-1](assets/react1.png)
 
    As marketers, if we want to run A/B tests on the whole home site, then we might want to name the view "home":
 
@@ -114,7 +114,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    Now, let's look at an example that is a little bit more complicated. Let's say as marketers, we want to personalize the second row of the products by changing the "Price" label color to red after a user clicked the Load More button.
 
-   ![react products](/assets/react4.png)
+   ![react products](assets/react4.png)
 
   ```
    function targetView(viewName) {
@@ -141,7 +141,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    **Link: [Checkout](https://target.enablementadobe.com/react/demo/#/checkout)**
 
-   ![react checkout](/assets/react6.png)
+   ![react checkout](assets/react6.png)
 
    If marketers want to personalize content on the site depending on which delivery preference is selected, a View can be created for each delivery preference. In this case, when we select Normal Delivery, the View can be named "Normal Delivery." If Express Delivery is selected, the View can be named "Express Delivery." 
 
