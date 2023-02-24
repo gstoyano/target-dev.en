@@ -127,8 +127,18 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
      + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
      + Node.js SDK Reference {#node-js}
        + [Node.js SDK overview](implement/server-side/node-js/overview.md)
+       + [Install SDK](implement/server-side/node-js/install-sdk.md)
+       + [Initialize SDK](implement/server-side/node-js/initialize-sdk.md)
+       + [Get Offers](implement/server-side/node-js/get-offers.md)
+       + [Get Attributes](implement/server-side/node-js/get-attributes.md)
+       + [Send Notifications](implement/server-side/node-js/send-notifications.md)
+       + [SDK Events](implement/server-side/node-js/sdk-events.md)
+       + [Logger](implement/server-side/node-js/logger.md)
+       + [Proxy Configuration](implement/server-side/node-js/proxy-configuration.md)
      + Java SDK Reference {#java}
+
      + .NET SDK Reference {#net}
+
      + Python SDK Reference {#python}
 
   + [Hybrid implementation](implement/hybrid/hybrid-overview.md)

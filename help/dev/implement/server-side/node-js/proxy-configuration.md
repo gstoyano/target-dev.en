@@ -1,3 +1,8 @@
+---
+title: Proxy Configuration
+description: To configure a proxy for the Node SDK's HTTP requests, override the fetch API used by the SDK during initialization.
+---
+
 # Proxy Configuration
 
 To configure a proxy for the Node SDK's HTTP requests, override the fetch API used by the SDK during initialization.

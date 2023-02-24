@@ -1,3 +1,8 @@
+---
+title: Get Attributes
+description: getAttributes() is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+---
+
 # Get Attributes
 
 ## Description

@@ -1,3 +1,8 @@
+---
+title: Logger
+description: When initializing the SDK, the options.logger object is an optional object. However, in order to debug effectively when an issue occurs, a logger object should be provided when initializing the SDK.
+---
+
 # Logger
 
 ## Description
