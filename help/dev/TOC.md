@@ -194,7 +194,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Manage Your Catalog with APIs](before-administer/recs-api/manage-catalog.md)
     + [Manage Custom Criteria](before-administer/recs-api/manage-custom-criteria.md)
     + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-  + [Admin API Overview](before-administer/admin-api-overview/overview.md)
+  + [Admin API Overview](before-administer/admin-api-overview/admin-api-overview.md)
   + [Model API (Blocklisting) Overview](before-administer/models-api.md)
   + [Admin API (placeholder)](/help/dev/administer/admin-api/overview.md)
   + [Models API (placeholder)](/help/dev/administer/models-api/overview.md)
