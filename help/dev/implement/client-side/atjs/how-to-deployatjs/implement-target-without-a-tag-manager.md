@@ -35,7 +35,7 @@ You can view the following account details. These settings cannot be changed.
 | --- | --- |
 |Client Code|The client code is a client-specific sequence of characters often required when using the Target APIs.|
 |IMS Organization ID|This ID ties your implementation to your Adobe Experience Cloud account.|
-|On-Device Decisioning|To enable on-device decisioning, slide the toggle to the "on" position.<br />On-device decisioning lets you cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency. For more information, see [Introduction to on-device decisioning](../../../server-side/sdk-guides/on-device-decisioning/index.md).|
+|On-Device Decisioning|To enable on-device decisioning, slide the toggle to the "on" position.<br />On-device decisioning lets you cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency. For more information, see [Introduction to on-device decisioning](../../../server-side/sdk-guides/on-device-decisioning/overview.md).|
 |Include all existing on-device decisioning qualified activities in the artifact|(Conditional) This option displays if you enable on-device decisioning.<br />Slide the toggle to the "on" position if you want all your live Target activities that qualify for on-device decisioning to be automatically included in the artifact.<br />Leaving this toggle off means you must re-create and activate any on-device decisioning activities in order for them to be included in the generated rules artifact.|
 
 ## Implementation methods
@@ -81,7 +81,7 @@ In addition to the settings explained above, the following specific at.js settin
 
 Enable or disable authentication for batch updates via API and generate a profile authentication token.
 
-For more information, see [Profile API settings](/src/pages/before-implement/methods-to-get-data-into-target/profile-api-settings.md).
+For more information, see [Profile API settings](/help/dev/before-implement/methods-to-get-data-into-target/profile-api-settings.md).
 
 ### Debugger tools
 
@@ -99,11 +99,11 @@ Choose the desired setting from the Obfuscate Visitor IP address drop-down list:
 * Entire IP obfuscation
 * None
 
-For more information, see [Privacy](/src/pages/before-implement/privacy/privacy.md).
+For more information, see [Privacy](/help/dev/before-implement/privacy/privacy.md).
 
 >[!NOTE]
 >
->The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/src/pages/before-implement/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
+>The Legacy Browser Support option was available in at.js version 0.9.3 and earlier. This option was removed in at.js version 0.9.4. For a list of browsers supported by at.js, see [Supported Browsers](/help/dev/before-implement/supported-browsers.md).<br />Legacy browsers are older browsers that do not fully support CORS (Cross Origin Resource Sharing). These browsers include: Internet Explorer browsers earlier than version 11 and Safari versions 6 and below. If Legacy Browser Support was disabled, Target did not deliver content or count visitors in reports on these browsers. If this option was enabled, it is recommended to do quality assurance across older browsers to ensure a good customer experience.
 
 ## Download at.js
 

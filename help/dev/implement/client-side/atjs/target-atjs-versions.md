@@ -177,7 +177,7 @@ This release of at.js is a maintenance release and includes the following enhanc
 
 This release includes the following features and enhancements:
 
-* **Adobe Opt-in support**: Adobe Opt-In is a way to simplify Adobe solutions integrations with consent management platforms. For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
+* **Adobe Opt-in support**: Adobe Opt-In is a way to simplify Adobe solutions integrations with consent management platforms. For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation (GDPR)](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
 
 * **Industry-standard CSP compliant**: at.js no longer uses eval() to execute JavaScript.
 
@@ -237,13 +237,13 @@ For more information, see [Upgrading from at.js 1.x to at.js 2.x](/help/dev/impl
 
 >[!NOTE]
 >
->If you require Adobe Opt-in support for the [General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
+>If you require Adobe Opt-in support for the [General Data Protection Regulation](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), you must currently use at.js 1.7.0, or at.js 2.1.0 or later.
 
 ## at.js Version 1.7.0
 
 at.js 1.7.0 brings Adobe Opt-In support. Adobe Opt-In is a way to simplify Adobe solutions integrations with consent management platforms.
 
-For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR).
+For more information about Adobe Opt-in, see [Privacy and General Data Protection Regulation](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR).
 
 This release also fixes an issue where Target might override redirect URL parameters with parameters that are coming from the redirect URL.
 
@@ -336,7 +336,7 @@ at.js version 1.3.0 is now available.
 * at.js has improved event and click tracking functionality. at.js uses `navigator.sendBeacon()` to send event tracking data and will fallback to synchronous XHR when `navigator.sendBeacon()` is not supported. This fallback mostly affects Internet Explorer 10 and 11 and some versions of Safari. Safari will add support for `navigator.sendBeacon()` in the upcoming iOS 11.3 release. 
 * at.js can now render offers even when a page is opened in background tabs. Some Target Customers encountered an issue when `requestAnimationFrame()` was disabled because of the browser throttling behavior for background tabs. 
 * This release adds many performance improvements, including shorter callstacks when inspecting a Chrome CPU profile. 
-* at.js 1.3.0 no longer supports content delivery on Microsoft Internet Explorer 9. For a list of supported browsers, see [Supported Browsers](/src/pages/before-implement/supported-browsers.md). Going forward, all requests are executed via `XMLHttpRequest` with CORS support with no JSONP requests. This change greatly improves security.
+* at.js 1.3.0 no longer supports content delivery on Microsoft Internet Explorer 9. For a list of supported browsers, see [Supported Browsers](/help/dev/before-implement/supported-browsers.md). Going forward, all requests are executed via `XMLHttpRequest` with CORS support with no JSONP requests. This change greatly improves security.
 
 ## at.js Version 1.2.3
 

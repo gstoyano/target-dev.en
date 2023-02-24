@@ -14,7 +14,7 @@ This reference guide shows how Adobe Target customers can install, initialize, a
 
 ## Getting Started
 
-To see how you can get started with the .NET SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/index.md).
+To see how you can get started with the .NET SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/getting-started.md).
 
 ## Sample App
 

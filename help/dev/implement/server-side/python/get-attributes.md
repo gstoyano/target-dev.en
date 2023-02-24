@@ -23,7 +23,7 @@ target_client_instance.get_attributes(mbox_names, options)
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
 |mbox_names|list[str]|Yes|None|A list of mbox names|
-|options|dict|No|None|The same options as used for [Get Offers​](/get-offers.md)|
+|options|dict|No|None|The same options as used for [Get Offers](get-offers.md)|
 
 ## AttributesProvider
 

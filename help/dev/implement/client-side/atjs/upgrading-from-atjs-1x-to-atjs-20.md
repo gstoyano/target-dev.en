@@ -364,7 +364,7 @@ The following tables explain at.js. 2.*x* compatibility with different activity 
 |[Adobe Experience Platform extension](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)|Yes|
 |Debugger|Yes|
 |Auditor|Rules have not yet been updated for at.js 2.*x*|
-|Opt-In support for [GDPR](/src/pages/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)|This is supported in [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) or later.|
+|Opt-In support for [GDPR](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)|This is supported in [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) or later.|
 | AEM Enhanced Personalization powered by Adobe Target | No|
 
 ### Features

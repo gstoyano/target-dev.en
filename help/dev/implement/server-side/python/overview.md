@@ -12,7 +12,7 @@ All currently maintained versions of Python are supported, see [Python Releases]
 
 ## Getting Started
 
-To see how you can get started with using the Python SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/index.md).
+To see how you can get started with using the Python SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/getting-started.md).
 
 ## Sample App
 

@@ -25,7 +25,7 @@ Here are the preliminary steps required to generate authentication tokens needed
 |Resource|Details|
 | --- | --- |
 |Postman|In order to complete these steps successfully, get the [Postman app](https://www.postman.com/downloads/) for your operating system. Postman basic is free with account creation. While not required in order to use Adobe Target APIs in general, Postman makes API workflows easier, and Adobe Target provides several Postman collections to help execute its APIs and learn how they operate. The rest of this guide assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).  |
-|References|Familiarity with the following resources is assumed throughout the rest of this guide:<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Admin and Profile API documentation](../administer/admin-api/overview.md)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></ul>|
+|References|Familiarity with the following resources is assumed throughout the rest of this guide:<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Admin and Profile API documentation](../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></ul>|
 
 ## Create an Adobe I/O project
 
@@ -174,4 +174,4 @@ In this exercise, you will use your new bearer access token by sending an API re
 1. Send your request, after ensuring you have selected the correct environment. You should receive a response containing your list of activities.
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
-Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](/recs-api/index.md) to create or manage recommendations, or you can use it with the [Target Delivery API](/help/dev/implement/delivery-api/overview.md).
+Congratulations! Now that you have verified your Adobe authentication, you may use it to interact with Adobe Target APIs (as well as other Adobe APIs). For example, you can [Use Recommendations APIs](recs-api/overview.md) to create or manage recommendations, or you can use it with the [Target Delivery API](/help/dev/implement/delivery-api/overview.md).

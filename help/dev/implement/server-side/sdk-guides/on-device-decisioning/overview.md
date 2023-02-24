@@ -10,7 +10,7 @@ role: Developer
 
 The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network.
 
-Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/index.md) to learn about use cases that warrant using one over the other.
+Adobe Target also offers the flexibility of delivering the most relevant and up-to-date experience from your experimentation and ML-driven personalization campaigns via a live server call. In other words, when performance is most important, you can choose to utilize on-device decisioning, but when the most relevant and up-to-date experience is needed, a server call can be made instead. See [when to use on-device vs. edge decisioning](../../sdk-guides/on-device-decisioning/supported-features.md) to learn about use cases that warrant using one over the other.
 
 >[!NOTE]
 >
@@ -103,11 +103,11 @@ You can also see all activities that are on-device decisioning capable on the **
 1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account details** to enable the **On-Device Decisioning** toggle.
 1. Enable the **Include all existing on-device decisioning qualified activities in the artifact** toggle.
 1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
-1. Install and initialize the [Node.js](../../node-js/index.md) or [Java](../../java/index.md) SDK with `decisioningMethod = on-device`.
+1. Install and initialize the [Node.js](../../node-js/overview.md) or [Java](../../java/overview.md) SDK with `decisioningMethod = on-device`.
 1. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
 1. Deploy your code.
 
-For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/index.md) section.
+For examples demonstrating how to get started with steps 1-3 above, see the [Getting started](../getting-started/getting-started.md) section.
 
 
 ## Additional Resources

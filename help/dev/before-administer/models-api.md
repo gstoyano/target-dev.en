@@ -20,11 +20,11 @@ Blocklists may be defined per activity (activity level), or for all activities w
 
 ## Models API specification
 
-View the Models API specification [here](../administer/models-api/index.md).
+View the Models API specification [here](../administer/models-api/models-api-overview.md).
 
 ## Prerequisites
 
-To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/overview.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
+To use the Models API, you must configure authentication using the [Adobe Developer Console](https://developer.adobe.com/console/home), just as you would with the [Target Admin API](../administer/admin-api/admin-api-overview-new.md). For more information, see [How to Configure Authentication](../before-administer/configure-authentication.md).
 
 ## Models API usage guidelines
 

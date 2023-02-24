@@ -38,7 +38,7 @@ For added security, you can require that the Bulk Update API call require a vali
 
    * Admin Rights (Sysadmin permission) on the Adobe Target product level
   
-  You can also generate a profile authentication token via API. For more information, see "Profiles" in the [Adobe Target Admin and Profile API guide](../../administer/admin-api/overview.md).
+  You can also generate a profile authentication token via API. For more information, see "Profiles" in the [Adobe Target Admin and Profile API guide](../../administer/admin-api/admin-api-overview-new.md).
 
 1. Copy the token and include it in the header of the request in the format: "Authorization" : "Bearer."
 

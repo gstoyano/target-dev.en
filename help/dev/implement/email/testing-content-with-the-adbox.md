@@ -41,7 +41,7 @@ For help selecting the right setup see [Non-JavaScript-Based Implementations](/h
 
 1. Create the activity.
 
-   See [Non-JavaScript-Based Implementations](/help/dev/implement/email/index.md) for the right set up to meet your goals. 
+   See [Non-JavaScript-Based Implementations](/help/dev/implement/email/overview.md) for the right set up to meet your goals. 
    
 1. Complete QA on the activity.
 

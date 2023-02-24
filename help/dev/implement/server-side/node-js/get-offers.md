@@ -48,7 +48,7 @@ The `options` object has the following structure:
 |responseTokens|Array|A list of [Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?).|
 |trace|Array|Aggregated trace data for all request mboxes/views|
 |status|Object|An object containing the status of the response.|
-|decisioningMethod|String|Determines which decisioning method to use ([on-device](../../sdk-guides/on-device-decisioning/index.md), server-side, hybrid)|
+|decisioningMethod|String|Determines which decisioning method to use ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-side, hybrid)|
 
 `targetCookie` and `targetLocationHintCookie` objects used for passing data back to the browser have the following structure:
 
@@ -63,7 +63,7 @@ The `status` object used for indicating the status of the target response has th
 |Name|Type|Description|
 | --- | --- | --- |
 |status|Number|HTTP status code|
-|message|String|A message about the response. For instance, it may indicate if the response was decided [on-device](../../sdk-guides/on-device-decisioning/index.md) or server-side|
+|message|String|A message about the response. For instance, it may indicate if the response was decided [on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) or server-side|
 |remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request is needed.|
 
 ## Example

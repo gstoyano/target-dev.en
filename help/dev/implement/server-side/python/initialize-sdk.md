@@ -29,11 +29,11 @@ TargetClient.create(options)
 |logger|object|No|INFO logger||Replaces the default INFO logger|
 |target_location_hint|str|No|None|Target location hint|
 |property_token|str|No|None|Target Property Token. If specified here, all get_offers calls will use this value.|
-|decisioning_method|str|No|server-side|Determines which decisioning method to use ([on-device](../../sdk-guides/on-device-decisioning/index.md), server-side, hybrid)|
-|polling_interval|int|No|300000 (5 minutes)|Polling interval for the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md) (in ms)|
-|artifact_location|str|No|None|A fully qualified url to the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md). Overrides internally determined location.|
-|artifact_payload|object|No|None|The JSON payload of the [on-device decisioning rule artifact](../../sdk-guides/on-device-decisioning/rule-artifact/index.md). If specified, it is used instead of requesting one from a URL.|
-​​|[events](../sdk-events.md)|dict <str, callable>|No|None|An optional object with event name keys and callback function values|
+|decisioning_method|str|No|server-side|Determines which decisioning method to use ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-side, hybrid)|
+|polling_interval|int|No|300000 (5 minutes)|Polling interval for the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (in ms)|
+|artifact_location|str|No|None|A fully qualified url to the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Overrides internally determined location.|
+|artifact_payload|object|No|None|The JSON payload of the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). If specified, it is used instead of requesting one from a URL.|
+|[events](sdk-events.md)|dict <str, callable>|No|None|An optional object with event name keys and callback function values|
 |environment_id|int|No|production|The Target environment ID|
 |environment_name|str|No|production|The Target environment name|
 |cdn_environment|str|No|production|The CDN environment name|

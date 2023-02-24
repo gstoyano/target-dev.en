@@ -11,7 +11,7 @@ Information to help you transition from the Target Classic APIs to the Target AP
 
 With the decommissioning of Adobe Target Classic, the APIs connected to your Target Classic account have also been made unavailable. This document will help you transition your Target Classic API-based integrations to the Target APIs powered by the [Adobe Developer Console](https://developer.adobe.com/console/home).
 
-For more information about Target APIs, see [Target APIs](/src/pages/before-administer/index.md). For more information about Target SDKs, see [Target Server-side Implementation](/help/dev/implement/server-side/index.md)
+For more information about Target APIs, see [Target APIs](/help/dev/before-administer/target-api-overview.md). For more information about Target SDKs, see [Target Server-side Implementation](/help/dev/implement/server-side/server-side-overview.md)
 
 ## Terminology
 
@@ -49,7 +49,7 @@ The Adobe Developer Console API methods are linked to the corresponding section 
 |Offers|Offer Create|[Create Offer](https://developers.adobetarget.com/api/#create-offer)||
 ||Offer Get|[Get Offer by ID](https://developers.adobetarget.com/api/#get-offer-by-id)||
 ||Offer List|[List Offers](https://developers.adobetarget.com/api/#list-offers)||
-||Folder List|N/A|Folders aren’t supported in Target Standard/Premium|
+||Folder List|N/A|Folders aren't supported in Target Standard/Premium|
 |Reporting|Campaign Performance Report|[Get AB Performance Report](https://developers.adobetarget.com/api/#get-ab-performance-report)<br />[Get XT Performance Report](https://developers.adobetarget.com/api/#get-xt-performance-report)||
 ||Audit Report|[Get Audit Report](https://developers.adobetarget.com/api/#get-audit-report)||
 ||1-1 Content Report|[Get AP Performance Report](https://developers.adobetarget.com/api/#get-ap-activity-performance-report)||
