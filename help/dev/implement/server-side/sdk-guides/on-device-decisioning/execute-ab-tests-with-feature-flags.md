@@ -1,3 +1,7 @@
+---
+title: Execute A/B tests with feature flags
+description: Execute A/B tests with feature flags
+---
 # Execute A/B tests with feature flags
 
 ## Summary of steps
@@ -13,7 +17,9 @@
 1. Implement code to execute A/B tests with feature flags
 1. Activate your A/B test with feature flags
 
-**NOTE**: Suppose you want to determine whether your fall-themed redesign of your homepage would be received well by your users. You decide to test it by running an A/B experiment in Adobe Target. You also want to make sure the experiment is delivered with great performance so that a negative or slow user experience does not skew the results.
+>[!NOTE]
+>
+>Suppose you want to determine whether your fall-themed redesign of your homepage would be received well by your users. You decide to test it by running an A/B experiment in Adobe Target. You also want to make sure the experiment is delivered with great performance so that a negative or slow user experience does not skew the results.
 
 ## Enable On-Device Decisioning for your organization
 

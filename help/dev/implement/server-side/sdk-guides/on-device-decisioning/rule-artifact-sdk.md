@@ -1,3 +1,8 @@
+---
+title: Downloading, Storing, and Updating the Rule Artifact Automatically via the Adobe Target SDK
+description: This approach is best when you are able to initialize the Adobe Target SDK at the same time you initialize and start your web server. The rule artifact will be downloaded by the Adobe Target SDK and cached into memory before your web server application starts serving requests.
+---
+
 # Downloading, Storing, and Updating the Rule Artifact Automatically via the Adobe Target SDK
 
 This approach is best when you are able to initialize the Adobe Target SDK at the same time you initialize and start your web server. The rule artifact will be downloaded by the Adobe Target SDK and cached into memory before your web server application starts serving requests. Once your web application is up and running, all Adobe Target decisions will be executed using the in-memory rule artifact. The cached rule artifact will be updated based on the `pollingInterval` you specify during the SDK initialization step.

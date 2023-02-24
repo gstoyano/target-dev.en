@@ -104,36 +104,49 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
        + [User ID & bucketing](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
        + [Audience targeting](implement/server-side/sdk-guides/core-principles/audience-targeting.md)
        + [Event tracking](implement/server-side/sdk-guides/core-principles/event-tracking.md)
+       + [User permissions & properties](implement/server-side/sdk-guides/core-principles/user-permissions-and-properties.md)
      + Integration {#integration}
+       + [Integration overview](implement/server-side/sdk-guides/integration-with-experience-cloud/overview.md)
+       + [Experience Cloud ID Service (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
+       + [Analytics for Target (A4T) reporting](implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)
+       + [AAM segments](implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)
      + On-Device Decisioning {#on-device-decisioning}
+       + [Introduction](implement/server-side/sdk-guides/on-device-decisioning/overview.md)
+       + Rule artifact {#rule-artifact}
+         + [Rule artifact](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
+         + [Download via Adobe Target SDK](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md)
+         + [Download via JSON payload](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-json.md)
+         + [Example rule artifact](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-example.md)
+       + [Execute A/B tests with feature flags](implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md)
+       + [Execute feature tests with attributes](implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md)
+       + [Manage rollouts for feature tests](implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md)
+       + [Deliver personalization](implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md)
+       + [Supported features overview](implement/server-side/sdk-guides/on-device-decisioning/supported-features.md)
+       + [Troubleshooting](implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md)
      + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
      + Node.js SDK Reference {#node-js}
-       + [Overview](overview.md)
+       + [Node.js SDK overview](implement/server-side/node-js/overview.md)
      + Java SDK Reference {#java}
      + .NET SDK Reference {#net}
      + Python SDK Reference {#python}
 
   + [Hybrid implementation](implement/hybrid/hybrid-overview.md)
+  + Target for mobile apps {#mobile-apps}
+  implement/mobile/overview.md
+     + [Target for mobile apps overview](implement/mobile/overview.md)
+     + [How Target works in mobile apps](implement/mobile/how-target-works-mobile-apps.md)
+     + [Enable Target in the SDK](implement/mobile/enable-target-in-sdk.md)
+     + [iOS - create a Target location and success metric](implement/mobile/mobile-create-location-and-metric.md)
+     + [iOS - send custom user data](implement/mobile/mobile-custom-user-data.md)
+     + [Target mobile preview](implement/mobile/target-mobile-preview.md)
+     + [Prefetch offer content](implement/mobile/prefetch-offer-content.md)
+     + [Target for mobile apps FAQ](implement/mobile/mobile-faq.md)
+     + [Use Location Service](implement/mobile/use-location-service.md)
+  + Email: implement Target {#implement-email}
+     + [Email: implement Target overview](implement/email/overview.md)
+     + [Create an Adbox for an image](implement/email/testing-content-with-the-adbox.md)
+     + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
+     + [Work with redirectors](implement/email/working-with-redirectors.md)
+
 + Administration {#administration}
   + [Overview](administer/admin-api/overview.md)
-
-<!--
-
-+ [Jump to Administration Guide](https://blah.html)
-
-+ Target for mobile apps {#mobile-apps}
-   + [Target for mobile apps overview](c-target-mobile-app/target-mobile-app.md)
-   + [How Target works in mobile apps](c-target-mobile-app/mobile-how-target-works-mobile-apps.md)
-   + [Enable Target in the SDK](c-target-mobile-app/mobile-enable-target-in-sdk.md)
-   + [iOS - create a Target location and success metric](c-target-mobile-app/mobile-create-location-and-metric.md)
-   + [iOS - send custom user data](c-target-mobile-app/mobile-custom-user-data.md)
-   + [Target mobile preview](c-target-mobile-app/target-mobile-preview.md)
-   + [Prefetch offer content](c-target-mobile-app/prefetch-offer-content.md)
-   + [Target for mobile apps FAQ](c-target-mobile-app/target-for-mobile-apps-faq.md)
-   + [Use Location Service](c-target-mobile-app/use-location-service.md)
-+ Email: implement Target {#implement-email}
-   + [Email: implement Target overview](c-non-javascript-based-implementation/non-javascript-based-implementation.md)
-   + [Create an Adbox for an image](c-non-javascript-based-implementation/testing-content-with-the-adbox.md)
-   + [Test an email image Adbox](c-non-javascript-based-implementation/testing-email-image-adbox.md)
-   + [Work with redirectors](c-non-javascript-based-implementation/working-with-redirectors.md)
--->

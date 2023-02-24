@@ -1,3 +1,8 @@
+---
+title: Experience Cloud ID (ECID) Service
+description: Although using the Target SDKs for fetching content from Target can be powerful, the added value of using the Experience Cloud ID (ECID) for user tracking extends beyond Adobe Target. The ECID enables you to leverage Adobe Experience Cloud products and features, such as A4T reporting and Adobe Audience Manager (AAM) segments.
+---
+
 # Experience Cloud ID (ECID) Service
 
 ## Experience Cloud ID (ECID) Integration

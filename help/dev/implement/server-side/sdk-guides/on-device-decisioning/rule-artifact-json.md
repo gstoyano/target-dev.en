@@ -1,3 +1,7 @@
+---
+title: Downloading, Storing, and Updating the Rule Artifact via JSON Payload
+description: This approach is best if your application is structured in a way that requires the SDK to be initialized on each file in which it uses SDK methods.
+---
 # Downloading, Storing, and Updating the Rule Artifact via JSON Payload
 
 This approach is best if your application is structured in a way that requires the SDK to be initialized on each file in which it uses SDK methods. Before your web application can use the JSON payload of the rule artifact during SDK initialization, you should ensure the JSON payload is downloaded and is available for your application to use.

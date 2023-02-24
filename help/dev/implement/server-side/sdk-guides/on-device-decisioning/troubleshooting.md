@@ -1,3 +1,7 @@
+---
+title: Troubleshooting on-device decisioning
+description: Troubleshooting on-device decisioning
+---
 # Troubleshooting on-device decisioning
 
 ## Validating Configuration

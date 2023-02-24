@@ -1,3 +1,8 @@
+---
+title: Audience targeting
+description: Audiences can be used to target your experimentation and personalization activities. Adobe Target supports myriad powerful audience targeting capabilities out of the box.
+---
+
 # Audience targeting
 
 ## Overview
