@@ -16,7 +16,7 @@ APIs relevant for Recommendations include [Admin APIs](../../before-administer/t
 * Manage your catalog of recommendable products or content
 * Manage your Recommendations algorithms and activities
 
-Using the Target [Delivery API](../../implement/delivery-api/) with Recommendations, you can also:
+Using the Target [Delivery API](../../implement/delivery-api/overview.md) with Recommendations, you can also:
 
 * Retrieve recommendations in JSON, HTML, or XML objects so they can be displayed in web, mobile, email, Internet of Things (IOT), and other channels.
 

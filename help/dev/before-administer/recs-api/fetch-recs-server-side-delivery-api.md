@@ -88,7 +88,7 @@ The following resources provide examples of various non-HTML focused implementat
 |[How Adobe Target Works in Mobile Apps](../../implement/mobile/how-target-works-mobile-apps.md)|How Target works with the Mobile SDK|
 |[Configuring the Target extension in Experience Platform Launch and Implementing Target APIs](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target)|Steps for configuring the Target extension in Experience Platform Launch, adding the Target Extension to your app, and implementing Target APIs to request activities, prefetch offers, and Enter visual preview mode.|
 |[Adobe Target Node Client](https://www.npmjs.com/package/@adobe/target-nodejs-sdk)|Open-sourced Target Node.js SDK v1.0|
-|[Server Side overview](../../implement/server-side/)|Information about Adobe Target Server Side Delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
+|[Server Side overview](../../implement/server-side/server-side-overview.md)|Information about Adobe Target Server Side Delivery APIs, Server Side Batch Delivery APIs, Node.js SDK, and Adobe Target Recommendations APIs.|
 |[Adobe Campaign Content Recommendations in Email](https://medium.com/adobetech/adobe-campaign-content-recommendations-in-email-b51ced771d7f )|Blog that describes how to leverage content recommendations in email via Adobe Target and Adobe I/O Runtime in Adobe Campaign.|
 
 ## Managing Recommendations Setup with APIs

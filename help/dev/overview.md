@@ -31,7 +31,7 @@ This portal provides resources and guides for Adobe Target Developers, including
 
 ### Before you implement
 
-[Before you implement](before-implement/)
+[Before you implement](before-implement/prepare-to-implement-target.md)
 
 Considerations before you implement Adobe Target.
 

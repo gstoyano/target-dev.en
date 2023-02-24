@@ -19,7 +19,7 @@ To see how you can get started with using the Node.js SDK, navigate to the [Targ
 Test drive the Node.js SDK:
 
 * By visiting the [Adobe Target On-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
-* In a [sample application](../sdk-guides/sample-apps/).
+* In a [sample application](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Reference
 

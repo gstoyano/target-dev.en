@@ -11,7 +11,7 @@ Use an AdBox to deliver images in an off-site implementation using Adobe Target.
 
 An AdBox is like an mbox, but it is controlled by a URL rather than JavaScript. AdBoxes are created with a special AdBox URL that loads an "ad" mbox (or AdBox) into your Adobe account. Use this AdBox in place of the mbox in your activities. Use the AdBox URL instead of a direct image reference in email or other non-JavaScript implementations.
 
-For help selecting the right setup see [Non-JavaScript-Based Implementations](/help/dev/implement/email/). 
+For help selecting the right setup see [Non-JavaScript-Based Implementations](/help/dev/implement/email/overview.md). 
 
 1. Create the AdBox URL:
 

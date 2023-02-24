@@ -6,7 +6,7 @@ keywords: delivery api
 
 # SDKs
 
-Adobe Target offers [server-side SDKs](../../implement/server-side/) to interact with the Target Delivery API and help ease the Adobe Target integration with other Experience Cloud solutions such as Adobe Analytics and Adobe Audience Manager
+Adobe Target offers [server-side SDKs](../../implement/server-side/server-side-overview.md) to interact with the Target Delivery API and help ease the Adobe Target integration with other Experience Cloud solutions such as Adobe Analytics and Adobe Audience Manager
 
 The SDKs help you to follow best practices in managing sessions and cookies. It is highly recommended to leverage an SDK to smooth away any complexities and prevent incorrect utilization of the API.
 

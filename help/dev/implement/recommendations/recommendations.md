@@ -17,7 +17,7 @@ Before setting up your first Recommendations activity in Adobe Target, complete 
 
 ## Implement Target
 
-Target Recommendations requires you to implement the Adobe Experience Platform Web SDK or at.js 0.9.2 (or later). See the [Target client-side implementation guides](../client-side/) for more information.
+Target Recommendations requires you to implement the Adobe Experience Platform Web SDK or at.js 0.9.2 (or later). See the [Target client-side implementation guides](../client-side/overview.md) for more information.
 
 ## Set up your Recommendations catalog
 
