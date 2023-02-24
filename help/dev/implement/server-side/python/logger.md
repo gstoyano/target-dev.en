@@ -1,3 +1,8 @@
+---
+title: Logger
+description: "When initializing the SDK, the options["logger"] object is an optional object. By default, an INFO level logger will be created under the adobe.target namespace."
+---
+
 # Logger
 
 ## Description

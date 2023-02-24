@@ -1,3 +1,7 @@
+---
+title: Initialize SDK
+description: Use the Create method in order to initialize the .NET SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+---
 # Initialize SDK
 
 ## Description

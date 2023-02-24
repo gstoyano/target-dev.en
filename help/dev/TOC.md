@@ -136,12 +136,39 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
        + [Logger](implement/server-side/node-js/logger.md)
        + [Proxy Configuration](implement/server-side/node-js/proxy-configuration.md)
      + Java SDK Reference {#java}
-
+       + [Java SDK overview](implement/server-side/java/overview.md)
+       + [Install SDK](implement/server-side/java/install-sdk.md)
+       + [Initialize SDK](implement/server-side/java/initialize-sdk.md)
+       + [Get Offers](implement/server-side/java/get-offers.md)
+       + [Get Attributes](implement/server-side/java/get-attributes.md)
+       + [Send Notifications](implement/server-side/java/send-notifications.md)
+       + [SDK Events](implement/server-side/java/sdk-events.md)
+       + [Logger](implement/server-side/java/logger.md)
+       + [Asynchronous Requests](implement/server-side/java/asynchronous-requests.md)
+       + [Proxy Configuration](implement/server-side/java/proxy-configuration.md)
+       + [Custom HTTP Client Configuration](implement/server-side/java/custom-http-client.md)
+       + [Utility Methods](implement/server-side/java/utility-methods.md)
      + .NET SDK Reference {#net}
-
+       + [.NET SDK overview](implement/server-side/net/overview.md)
+       + [Install SDK](implement/server-side/net/install-sdk.md)
+       + [Initialize SDK](implement/server-side/net/initialize-sdk.md)
+       + [Get Offers](implement/server-side/net/get-offers.md)
+       + [Get Attributes](implement/server-side/net/get-attributes.md)
+       + [Send Notifications](implement/server-side/net/send-notifications.md)
+       + [SDK Events](implement/server-side/net/sdk-events.md)
+       + [Asynchronous Requests](implement/server-side/java/asynchronous-requests.md)
      + Python SDK Reference {#python}
-
+       + [Python SDK overview](implement/server-side/python/overview.md)
+       + [Install SDK](implement/server-side/python/install-sdk.md)
+       + [Initialize SDK](implement/server-side/python/initialize-sdk.md)
+       + [Get Offers](implement/server-side/python/get-offers.md)
+       + [Get Attributes](implement/server-side/python/get-attributes.md)
+       + [Send Notifications](implement/server-side/python/send-notifications.md)
+       + [SDK Events](implement/server-side/python/sdk-events.md)
+       + [Asynchronous Requests](implement/server-side/python/asynchronous-requests.md)
+       + [Logger](implement/server-side/python/logger.md)
   + [Hybrid implementation](implement/hybrid/hybrid-overview.md)
+  + [Plan and implement Recommendations](implement/recommendations/recommendations.md)
   + Target for mobile apps {#mobile-apps}
   implement/mobile/overview.md
      + [Target for mobile apps overview](implement/mobile/overview.md)
@@ -158,6 +185,15 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
      + [Create an Adbox for an image](implement/email/testing-content-with-the-adbox.md)
      + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
      + [Work with redirectors](implement/email/working-with-redirectors.md)
-
 + Administration {#administration}
-  + [Overview](administer/admin-api/overview.md)
+  + [Overview](before-administer/target-api-overview.md)
+  + Before you administer {#before-administer}
+    + [Admin API overview](before-administer/admin-api-overview/overview.md)
+    + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
+  + Use Recommendations APIs {#recommendations-apis}
+    + [Recs API Overview](before-administer/recs-api/overview.md)
+    + [Manage Your Catalog with APIs](before-administer/recs-api/manage-catalog.md)
+    + [Manage Custom Criteria](before-administer/recs-api/manage-custom-criteria.md)
+    + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
+  + [Admin API Overview](before-administer/admin-api-overview/overview.md)
+  + [Model API (Blocklisting) Overview](before-administer/models-api.md)

@@ -1,3 +1,7 @@
+---
+title: Initialize SDK
+description: Use the create method in order to initialize the Python SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+---
 # Initialize SDK
 
 Description

@@ -1,3 +1,8 @@
+---
+title: .NET SDK overview
+description: This reference guide shows how Adobe Target customers can install, initialize, and use the .NET SDK.
+---
+
 # .NET SDK overview
 
 This reference guide shows how Adobe Target customers can install, initialize, and use the .NET SDK.

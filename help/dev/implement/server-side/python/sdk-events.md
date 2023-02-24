@@ -1,3 +1,8 @@
+---
+title: SDK Events
+description: "When initializing the SDK, the options["events"] dict is an optional object with event name keys and callback function values. It can be used to subscribe to various events that occur within the SDK."
+---
+
 # SDK Events
 
 ## Description

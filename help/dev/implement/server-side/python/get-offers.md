@@ -1,3 +1,8 @@
+---
+title: Get Offers
+description: get_offers() is used to execute a decision and retrieve an experience from Adobe Target.
+---
+
 # Get Offers
 
 ## Description

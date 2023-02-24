@@ -1,3 +1,8 @@
+---
+title: SDK Events
+description: When initializing the SDK, an optional OnDeviceDecisioningReady delegate can be provided on the TargetClientConfig object, which will be invoked when the SDK is ready for on-device method calls.
+---
+
 # SDK Events
 
 ## Description

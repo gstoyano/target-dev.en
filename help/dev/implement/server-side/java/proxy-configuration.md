@@ -1,3 +1,7 @@
+---
+title: Proxy Configuration
+description: If the application running the SDK requires a proxy to access the internet, the TargetClient will need to be configured with a proxy configuration.
+---
 # Proxy Configuration
 
 ## Basic Proxy

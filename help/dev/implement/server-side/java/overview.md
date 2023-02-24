@@ -1,3 +1,7 @@
+---
+title: Java SDK overview
+description: This reference guide shows how Adobe Target customers can install, initialize, and use the Java SDK.
+---
 # Java SDK overview
 
 This reference guide shows how Adobe Target customers can install, initialize, and use the Java SDK.

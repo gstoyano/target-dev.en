@@ -1,3 +1,8 @@
+---
+title: Get Offers
+description: GetOffers() is used to execute a decision and retrieve an experience from Adobe Target.
+---
+
 # Get Offers
 
 ## Description
@@ -30,7 +35,7 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 | --- | --- | --- | --- |
 |context|Context|Yes|Specifies the context for the request|
 |sessionId|String|No|Used for linking multiple Target requests|
-|thirdPartyId|String|No|Your company’s identifier for the user that you can send with every call|
+|thirdPartyId|String|No|Your company's identifier for the user that you can send with every call|
 |cookies|List|No|List of cookies returned in previous Target request of same user.|
 |customerIds|Map|No|Customer Ids in VisitorId-compatible format|
 |execute|ExecuteRequest|No|PageLoad or mboxes request to execute. Will be evaluated on server side immediately|

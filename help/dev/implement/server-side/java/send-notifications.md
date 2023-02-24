@@ -1,3 +1,7 @@
+---
+title: Send Notification
+description: sendNotifications() is used to send display or click notifications to Adobe Target for measurement and reporting.
+---
 # Send Notifications
 
 ## Description

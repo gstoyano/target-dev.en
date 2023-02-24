@@ -1,3 +1,7 @@
+---
+title: Python SDK overview
+description: This reference guide shows how Adobe Target customers can install, initialize, and use the Python SDK.
+---
 # Python SDK overview
 
 This reference guide shows how Adobe Target customers can install, initialize, and use the Python SDK.
