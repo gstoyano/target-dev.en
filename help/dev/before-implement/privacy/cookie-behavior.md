@@ -13,7 +13,7 @@ The cookie behavior depends on whether it is a first-party cookie, a third-party
 >
 >This topic contains information about `mboxSession` and `mboxPC`. Implementation best practices recommend that you do not link or store sensitive information with the cookie data: `mboxSession` or `mboxPC`.
 
-See also [Delete the Target cookie](/privacy/cookie-deleting.md).
+See also [Delete the Target cookie](cookie-deleting.md).
 
 ## When to Use First- or Third-Party Cookies
 
