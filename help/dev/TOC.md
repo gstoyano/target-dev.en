@@ -35,6 +35,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
   + [TLS (Transport Layer Security) encryption changes](before-implement/tls-transport-layer-security-encryption.md)
   + [CNAME and Adobe Target](before-implement/implement-cname-support-in-target.md)
   + Delivery API Overview {#delivery-api}
+    + [Delivery API Overview](implement/delivery-api/overview.md)
     + [Introduction](before-implement/delivery-api-overview/introduction.md)
     + [SDKs](before-implement/delivery-api-overview/sdks.md)
     + [Getting Started](before-implement/delivery-api-overview/getting-started.md)
@@ -96,8 +97,8 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
       + [Pass parameters to a global mbox](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [Global mbox frequently asked questions](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
   + Server Side: implement Target {#server-side}
-     + [Server Side: implement Target overview](implement/server-side/overview.md)
-     + [Getting started](implement/server-side/sdk-guides/getting-started/overview.md)
+     + [Server Side: implement Target overview](implement/server-side/server-side-overview.md)
+     + [Getting started](implement/server-side/sdk-guides/getting-started/getting-started.md)
      + [Sample apps](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
      + [Transition from Target legacy APIs to Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
      + Core principles {#core-principles}
@@ -156,7 +157,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
        + [Get Attributes](implement/server-side/net/get-attributes.md)
        + [Send Notifications](implement/server-side/net/send-notifications.md)
        + [SDK Events](implement/server-side/net/sdk-events.md)
-       + [Asynchronous Requests](implement/server-side/java/asynchronous-requests.md)
+       + [Asynchronous Requests](implement/server-side/net/asynchronous-requests.md)
      + Python SDK Reference {#python}
        + [Python SDK overview](implement/server-side/python/overview.md)
        + [Install SDK](implement/server-side/python/install-sdk.md)
@@ -187,9 +188,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
      + [Work with redirectors](implement/email/working-with-redirectors.md)
 + Administration {#administration}
   + [Overview](before-administer/target-api-overview.md)
-  + Before you administer {#before-administer}
-    + [Admin API overview](before-administer/admin-api-overview/overview.md)
-    + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
+  + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
   + Use Recommendations APIs {#recommendations-apis}
     + [Recs API Overview](before-administer/recs-api/overview.md)
     + [Manage Your Catalog with APIs](before-administer/recs-api/manage-catalog.md)
@@ -197,3 +196,6 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
   + [Admin API Overview](before-administer/admin-api-overview/overview.md)
   + [Model API (Blocklisting) Overview](before-administer/models-api.md)
+  + [Admin API (placeholder)](/help/dev/administer/admin-api/overview.md)
+  + [Models API (placeholder)](/help/dev/administer/models-api/overview.md)
+  + [Profile API (placeholder)](/help/dev/administer/profile-api/overview.md)
