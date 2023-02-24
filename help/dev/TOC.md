@@ -86,6 +86,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
          + [Use cloud-based instances with Target](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
       + [at.js FAQs](implement/client-side/atjs/target-atjs-faq.md)
       + [at.js version details](implement/client-side/atjs/target-atjs-versions.md)
+      + [User-agent and client hints](implement/client-side/atjs/user-agent-and-client-hints.md)
       + [Upgrading from at.js 1.x to at.js 2.x](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
       + [at.js cookies](implement/client-side/atjs/atjs-cookies.md)
    + Understand the Global mbox {#global-mbox}

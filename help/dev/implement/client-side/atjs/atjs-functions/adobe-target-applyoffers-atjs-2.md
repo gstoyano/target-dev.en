@@ -22,7 +22,7 @@ This function lets you apply more than one offer that was retrieved by `adobe.ta
 
 >[!NOTE]
 >
->Consult the [Delivery API documentation](../../../delivery-api/index.md) for information about the acceptable types for all fields listed below.
+>Consult the [Delivery API documentation](../../../delivery-api/overview.md) for information about the acceptable types for all fields listed below.
 
 |Field Name|Description|
 | --- | --- |

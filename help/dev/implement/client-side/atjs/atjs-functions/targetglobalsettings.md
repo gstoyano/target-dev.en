@@ -402,7 +402,7 @@ After `cspScriptNonce` and `cspStyleNonce` settings are specified, at.js 2.3.0+ 
 
 You must have a hybrid integration of Target.
 
-* **Server-side**:  You must use the [Delivery API](/help/dev/implement/delivery-api/index.md) or [Target SDKs](../../implement/server-side/sdk-guides/).
+* **Server-side**:  You must use the [Delivery API](/help/dev/implement/delivery-api/overview.md) or [Target SDKs](../../implement/server-side/sdk-guides/).
 * **Client-side**: You must use [at.js version 2.2 or later](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 
 ### Code samples

@@ -11,7 +11,7 @@ author: Judy Kim
 ---
 # Fetching Recommendations with the Delivery API
 
-The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](/help/dev/implement/delivery-api/index.md) still enables access to the full range of Target functionality, to deliver personalized experiences.
+The Adobe Target and Adobe Target Recommendations APIs can be used to deliver responses to web pages, but can also be used in non-HTML based experiences including apps, screens, consoles, emails, kiosks and other display devices. In other words, when Target libraries and JavaScript cannot be used, the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) still enables access to the full range of Target functionality, to deliver personalized experiences.
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ The Adobe Target and Adobe Target Recommendations APIs can be used to deliver re
 
 To retrieve recommendations, send an Adobe Target Delivery API POST call with the appropriate contextual information, which may include a user ID (for use with profile-specific recommendations such as the user's recently viewed items), relevant mbox name, mbox parameters, profile parameters, or other attributes. The response will include recommended entity.ids (and may include other entity data) in JSON or HTML format, which can then be displayed in the device.
 
-The [Delivery API](/help/dev/implement/delivery-api/index.md) for Adobe Target exposes all existing features that a standard Target request provides.
+The [Delivery API](/help/dev/implement/delivery-api/overview.md) for Adobe Target exposes all existing features that a standard Target request provides.
 
 The Delivery API:
 
@@ -54,13 +54,13 @@ To create recommendations that can be used with the Delivery API, use the [Form-
 
 ## Use the Delivery API
 
-The syntax for the [Delivery API](/help/dev/implement/delivery-api/index.md) is:
+The syntax for the [Delivery API](/help/dev/implement/delivery-api/overview.md) is:
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
 1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **Recommendations > Settings**. Note the **Client Code** value in the **Recommendation API Token** section.
    ![client-code.png](/assets/client-code.png)
-1. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](../../implement/delivery-api/index.md/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
+1. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](../../implement/delivery-api/overview.md/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
    * the **browser** and **address** objects were removed from the **Body**, since they are not required for non-HTML use cases
    * *api_charter* is listed as the location name in this example
    * the entity.id is specified, since this recommendation is based on Content Similarity, which requires a current item key to be passed to Target.
@@ -114,7 +114,7 @@ We learned in an [earlier section](manage-catalog.md) how to manage Adobe Target
 
 ## Reference documentation
 
-* [Adobe Target Delivery API documentation](/help/dev/implement/delivery-api/index.md)
+* [Adobe Target Delivery API documentation](/help/dev/implement/delivery-api/overview.md)
 * [Integrate Recommendations with email](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## Summary and Review

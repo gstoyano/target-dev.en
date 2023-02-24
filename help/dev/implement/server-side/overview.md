@@ -26,7 +26,7 @@ The following sections provide more information about the various APIs and the N
 
 ## Server Side Delivery APIs
 
-Link: [Server Side Delivery APIs](../delivery-api/index.md)
+Link: [Server Side Delivery APIs](../delivery-api/overview.md)
 
 `/rest/v1/delivery`
 

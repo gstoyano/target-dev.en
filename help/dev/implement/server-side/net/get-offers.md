@@ -52,7 +52,7 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 |trackingServerSecure|String|No|The Adobe Analytics Secure Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
 |decisioningMethod|DecisioningMethod|No|Can be used to explicitly set ON_DEVICE or HYBRID decisioning method for on-device decisioning|
 
-The values of each field should conform to [Target Delivery API](../../delivery-api/index.md) request specification.
+The values of each field should conform to [Target Delivery API](../../delivery-api/overview.md) request specification.
 
 ## Response
 
@@ -60,8 +60,8 @@ The `TargetDeliveryResponse` returned by `TargetClient.GetOffers()` has the foll
 
 |Name|Type|Description|
 | --- | --- | --- |
-|Request|TargetDeliveryRequest​|[Target Delivery API](../../delivery-api/index.md) request|
-|Response|DeliveryResponse​|[Target Delivery API](../../delivery-api/index.md)* response|
+|Request|TargetDeliveryRequest​|[Target Delivery API](../../delivery-api/overview.md) request|
+|Response|DeliveryResponse​|[Target Delivery API](../../delivery-api/overview.md)* response|
 |Status|HttpStatusCode|Response HTTP status code|
 |Message|string|Response status message or error message|
 |Locations|Locations|Target location names, including global mbox name and mboxes/views for which only remote decisioning is available|
