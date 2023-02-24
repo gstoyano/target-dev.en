@@ -11,7 +11,7 @@ author: Judy Kim
 ---
 # Adobe Recommendations API Overview
 
-APIs relevant for Recommendations include [Admin APIs](../../before-administer/) that allow you to:
+APIs relevant for Recommendations include [Admin APIs](../../before-administer/target-api-overview.md) that allow you to:
 
 * Manage your catalog of recommendable products or content
 * Manage your Recommendations algorithms and activities

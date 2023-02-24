@@ -139,4 +139,4 @@ The following options are available:
 
 ## Administer Recommendations using Admin APIs
 
-See the [Use Recommendations APIs](../../before-administer/recs-api/index.md) hands-on guide to learn how to configure and use the Target admin and delivery APIs for Recommendations.
+See the [Use Recommendations APIs](../../before-administer/recs-api/overview.md) hands-on guide to learn how to configure and use the Target admin and delivery APIs for Recommendations.

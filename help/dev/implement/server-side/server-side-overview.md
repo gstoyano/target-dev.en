@@ -42,10 +42,10 @@ Through the Target Delivery API, you can:
 
 The Adobe Target server-side SDK documentation helps you implement Target on your servers in your language of choice.
 
-* [Node.js](node-js/)
-* [Java](java/)
-* [.NET](net/)
-* [Python](python/)
+* [Node.js](node-js/overview.md)
+* [Java](java/overview.md)
+* [.NET](net/overview.md)
+* [Python](python/overview.md)
 
 Through Adobe Target's server-side SDKs, you can:
 
@@ -54,12 +54,12 @@ Through Adobe Target's server-side SDKs, you can:
 * Deliver **Machine Learning (ML) driven personalized experiences** to a user, no matter which channel or device the user has engaged with your business.
 * **Seamlessly integrate with Adobe Experience Cloud** products such as **Adobe Analytics**, **Adobe Audience Manager**, and the **Experience Cloud ID Service** from the server side.
 
-See the [Getting Started](sdk-guides/getting-started/) page to learn how to run a simple feature flagging use case via [on-device decisioning](sdk-guides/on-device-decisioning/).
+See the [Getting Started](sdk-guides/getting-started/getting-started.md) page to learn how to run a simple feature flagging use case via [on-device decisioning](sdk-guides/on-device-decisioning/).
 
-Check out our [Sample Apps](sdk-guides/sample-apps/) to have fun and play around!
+Check out our [Sample Apps](sdk-guides/sample-apps/sample-apps.md) to have fun and play around!
 
 ## Target Recommendations APIs
 
-Link: [Target Recommendations APIs](https://developers.adobetarget.com/api/recommendations) and [Adobe Recommendations API Overview](../../before-administer/recs-api/index.md).
+Link: [Target Recommendations APIs](https://developers.adobetarget.com/api/recommendations) and [Adobe Recommendations API Overview](../../before-administer/recs-api/overview.md).
 
 The Recommendations APIs let you programmatically interact with Target recommendations servers. These APIs can be integrated with a range of application stacks to perform functions that you would typically do via the Target user interface.
