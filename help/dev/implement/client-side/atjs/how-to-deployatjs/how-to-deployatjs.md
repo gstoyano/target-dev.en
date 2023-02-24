@@ -24,7 +24,7 @@ You can deploy at.js using the following methods:
 
   Here are two relevant topics that will help you implement Target with a third-party tag manager:
 
-  * [Before you implement](/help/dev/before-implement/)
+  * [Before you implement](/help/dev/before-implement/prepare-to-implement-target.md)
   * [Implement Target without a tag manager](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
 
   Be sure to check the documentation for your third-party tag manager for more information.
