@@ -46,4 +46,4 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 var notificationResponse = await this.targetClient.SendNotificationsAsync(notificationRequest);
 ```
 
-This example assumes you have [initialized the SDK](../initialize-sdk.md).
+This example assumes you have [initialized the SDK](initialize-sdk.md).

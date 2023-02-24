@@ -12,7 +12,7 @@ When utilizing prefetch, it's important to be familiar with the following terms:
 
 |Field Name|Description|
 | --- | --- |
-|`prefetch`|List of mboxes and views that should be fetched but shouldn’t be marked as visited. The Target Edge returns an `eventToke`n for each mbox or view that exist in the prefetch array.|
+|`prefetch`|List of mboxes and views that should be fetched but shouldn't be marked as visited. The Target Edge returns an `eventToke`n for each mbox or view that exist in the prefetch array.|
 |`notifications`|List of mboxes and views that were previously prefetched and should be marked as visited.|
 |`eventToken`|A hashed encrypted token that is returned when content is prefetched. This token should be sent back to Target in the `notifications` array.|
 
@@ -117,7 +117,7 @@ Within the response, you will see the `content` field containing the experience 
 
 ## Prefetch Views
 
-Views support Single Page Applications (SPA) and Mobile Applications more seamlessly. Views can be seen as a logical group of visual elements that together make up a SPA or Mobile experience. Now, through the Delivery API, VEC created AB & XT activities with modifications on [Views for SPA](../client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) can now be prefetched.
+Views support Single Page Applications (SPA) and Mobile Applications more seamlessly. Views can be seen as a logical group of visual elements that together make up a SPA or Mobile experience. Now, through the Delivery API, VEC created AB & XT activities with modifications on [Views for SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) can now be prefetched.
 
 ```
 curl -X POST \

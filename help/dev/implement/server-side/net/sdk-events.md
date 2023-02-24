@@ -7,7 +7,7 @@ description: When initializing the SDK, an optional OnDeviceDecisioningReady del
 
 ## Description
 
-When [initializing the SDK](../initialize-sdk.md), an optional `OnDeviceDecisioningReady` delegate can be provided on the `TargetClientConfig` object, which will be invoked when the SDK is ready for on-device method calls.
+When [initializing the SDK](initialize-sdk.md), an optional `OnDeviceDecisioningReady` delegate can be provided on the `TargetClientConfig` object, which will be invoked when the SDK is ready for on-device method calls.
 There are also a couple other delegates available for handling the on-device decisioning artifact download.
 
 ## Events

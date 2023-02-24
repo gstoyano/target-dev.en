@@ -236,7 +236,7 @@ Note that for response tokens and session IDs transmitted in these requests:
 
 It is expected to see the `Access-Control-Allow-Origin` header with value "*" in at.js requests, due to the fact they are public, authentication is not required, and the Adobe Edge Network needs to be accessed from any domain via JavaScript calls.
 
-However, Content Security Policy (CSP) needs to be enforced on the page. For more information on CSP requirements for at.js, see [Content Security Policy](src/pages/before-implement/privacy/content-security-policy.md) and [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+However, Content Security Policy (CSP) needs to be enforced on the page. For more information on CSP requirements for at.js, see [Content Security Policy](/help/dev/before-implement/privacy/content-security-policy.md) and [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
 ## How often does at.js fire a network request?
 

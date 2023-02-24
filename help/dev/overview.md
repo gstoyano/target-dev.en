@@ -69,7 +69,7 @@ How to use the Target Python SDK.
 
 ### Hybrid Implementation
 
-[Hybrid Deployment](implement/hybrid/overview.md)
+[Hybrid Deployment](implement/hybrid/hybrid-overview.md)
 
 Implement Target using a combination of client- and server-side implementation.
 
@@ -142,9 +142,3 @@ Manage blocklists to define the features used in Target machine learning models.
 [Admin Console APIs](https://developer.adobe.com/umapi/)
 
 Manage users and product entitlements through the Adobe User Management and User Sync APIs.
-
-## Contributing
-
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions
-or deletions for this documentation, check out the source from [this GitHub repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).

@@ -280,7 +280,7 @@ The following table contains description of the illustrative profile JSON fields
 
 | Field | Description |
 |--- |--- |
-|Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
+|Sample_Parameter|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a parameter was uploaded into the Target profile using the Profile Update API. For more information, see [Methods to get Data into Target](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md).|
 |user.ReturnTimeOfDay|This standard field includes the time of day of a user's most recent return visit.|
 |firstSessionStart|This standard field includes the time of day the user's first session began.|
 |user.sessionCountScript|Many pieces of information in the Target profile are uploaded or directly provided by the Data Controller. In this example, a profile script is incrementing the number of sessions this visitor has made to the Data Controller's site. For more information, see [Profile Script Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).|

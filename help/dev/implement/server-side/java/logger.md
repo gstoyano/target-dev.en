@@ -7,7 +7,7 @@ description: When initializing the SDK, there are several options on the ClientC
 
 ## Description
 
-When [initializing the SDK](../initialize-sdk.md), there are several options on the `ClientConfig` object, which can be set to log requests.
+When [initializing the SDK](initialize-sdk.md), there are several options on the `ClientConfig` object, which can be set to log requests.
 
 |Option|Description|
 | --- | --- |

@@ -7,7 +7,7 @@ description: When initializing the SDK, an optional OnDeviceDecisioningHandler o
 
 ## Description
 
-When [initializing the SDK](../initialize-sdk.md), an optional `OnDeviceDecisioningHandler` object can be provided on the `ClientConfig` object. It can be used to subscribe to various events that occur within the SDK. For instance, the `onDeviceDecisioningReady` event may be used with a callback function that will be invoked when the SDK is ready for method calls.
+When [initializing the SDK](initialize-sdk.md), an optional `OnDeviceDecisioningHandler` object can be provided on the `ClientConfig` object. It can be used to subscribe to various events that occur within the SDK. For instance, the `onDeviceDecisioningReady` event may be used with a callback function that will be invoked when the SDK is ready for method calls.
 
 ## Events
 

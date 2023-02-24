@@ -35,7 +35,7 @@ TargetClient.create(options: Object): TargetClient
 |pollingInterval|Number|No|300000 (5 minutes)|Polling interval for the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (in milliseconds)|
 |artifactLocation|String|No|None|A fully qualified url to the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Overrides internally determined location.|
 |artifactPayload|Object|No|None|The JSON payload of the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). If specified, it is used instead of requesting one from a URL.|
-|[events](../sdk-events.md)|Object<String,Function>|No|None|An optional object with event name keys and callback function values|
+|[events](sdk-events.md)|Object<String,Function>|No|None|An optional object with event name keys and callback function values|
 |telemetryEnabled|Boolean|No|true|When enabled, Adobe will collect SDK feature usage and performance telemetry data. Personal data is not collected.|
 
 ## Example

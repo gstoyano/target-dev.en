@@ -21,4 +21,4 @@ This section includes information for developers specific to their implementatio
 - [Supported browsers](supported-browsers.md)
 - [TLS (Transport Layer Security) encryption changes](tls-transport-layer-security-encryption.md)
 - [CNAME and Adobe Target](implement-cname-support-in-target.md)
-- [Allowlist Target edge nodes](allowlist-edges.md)
+- [Allowlist Target edge nodes](privacy/allowlist-edges.md)

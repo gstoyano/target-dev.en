@@ -7,7 +7,7 @@ description: When initializing the SDK], the options.events object is an optiona
 
 ## Description
 
-When [initializing the SDK](../initialize-sdk.md), the `options.events` object is an optional object with event name keys and callback function values. It can be used to subscribe to various events that occur within the SDK. For instance the `clientReady` event may be used with a callback function that will be invoked when the SDK is ready for method calls.
+When [initializing the SDK](initialize-sdk.md), the `options.events` object is an optional object with event name keys and callback function values. It can be used to subscribe to various events that occur within the SDK. For instance the `clientReady` event may be used with a callback function that will be invoked when the SDK is ready for method calls.
 
 When the callback function is called, an event object is passed in. Each event has a `type` corresponding to the event name. Some events include additional properties with pertinent information.
 
