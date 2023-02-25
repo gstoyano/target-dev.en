@@ -216,7 +216,7 @@ function startWebServer() {
 }
 ```
 
->[!TAB Java] Java
+>[!TAB Java]
 
 ```javascript
 import com.adobe.target.edge.client.ClientConfig;
