@@ -12,15 +12,17 @@ This approach is best if your application is structured in a way that requires t
 1. Initialize the SDK
 1. Store and Use the JSON Payload
 
-## Install the SDK
+## Install the 
 
-### NPM
+>[!BEGINTABS]
+
+>[!TAB NPM]
 
 ```javascript
 npm i @adobe/target-nodejs-sdk -P
 ```
 
-### MVN
+>[!TAB MVN]
 
 ```javascript
 <dependency>
@@ -30,76 +32,86 @@ npm i @adobe/target-nodejs-sdk -P
 </dependency>
 ```
 
+>[!ENDTABS]
+
 ## Initialize the SDK
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-### Node.js
+   >[!BEGINTABS]
 
-```javascript
-const TargetClient = require("@adobe/target-nodejs-sdk");
-```
+   >[!TAB Node.js]
 
-### Java
+   ```javascript
+   const TargetClient = require("@adobe/target-nodejs-sdk");
+   ```
 
-```javascript
-import com.adobe.target.edge.client.ClientConfig;
-import com.adobe.target.edge.client.TargetClient;
-```
+   >[!TAB Java]
+
+   ```javascript
+   import com.adobe.target.edge.client.ClientConfig;
+   import com.adobe.target.edge.client.TargetClient;
+   ```
+
+   >[!ENDTABS]
 
 1. To configure the SDK, use the create method.
 
-### Node.js
+   >[!BEGINTABS]
 
-```javascript
-const CONFIG = {
-    client: "<your target client code>",
-    organizationId: "your EC org id",
-    decisioningMethod: "on-device",
-    pollingInterval : 300000,
-    events: {
-        artifactDownloadSucceeded: onArtifactDownloadSucceeded,
-        artifactDownloadFailed: onArtifactDownloadFailed
-    }
-};
+   >[!TAB Node.js]
 
-const TargetClient = TargetClient.create(CONFIG);
+   ```javascript
+   const CONFIG = {
+       client: "<your target client code>",
+       organizationId: "your EC org id",
+       decisioningMethod: "on-device",
+       pollingInterval : 300000,
+       events: {
+           artifactDownloadSucceeded: onArtifactDownloadSucceeded,
+           artifactDownloadFailed: onArtifactDownloadFailed
+       }
+   };
 
-function onArtifactDownloadSucceeded(event) {
-    //Adobe Target SDK has now downloaded the JSON Artifact/Payload
-    console.log(event.artifactLocation) // Location from where the Artifact is downloaded.
-    console.log(event.artifactPayload) // JSON Payload which we can store locally.
-}
+   const TargetClient = TargetClient.create(CONFIG);
 
-function onArtifactDownloadFailed(event) {
-    //Adobe Target SDK has failed to download the JSON Artifact/Payload.
-    console.log(event.artifactLocation) // Location from where the Artifact is downloaded.
-    console.log(event.error.message) // Error message
-}
-```
+   function onArtifactDownloadSucceeded(event) {
+       //Adobe Target SDK has now downloaded the JSON Artifact/Payload
+       console.log(event.artifactLocation) // Location from where the Artifact is downloaded.
+       console.log(event.artifactPayload) // JSON Payload which we can store locally.
+   }
+   
+   function onArtifactDownloadFailed(event) {
+       //Adobe Target SDK has failed to download the JSON Artifact/Payload.
+       console.log(event.artifactLocation) // Location from where the Artifact is downloaded.
+       console.log(event.error.message) // Error message
+   }
+   ```
 
-### Java
+   >[!TAB Java]
 
-```javascript
-package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
+   ```javascript
+   package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
+   
+   ClientConfig config = ClientConfig.builder()
+       .client("<you target client code>")
+       .organizationId("<your EC org id>")
+       .onDeviceDecisioningHandler(
+         new OnDeviceDecisioningHandler() {
+           void onDeviceDecisioningReady() {
+             // On-Device Decision is ready.
+           }
+           void artifactDownloadSucceeded(byte[] artifactData) {
+             // Store artifactData to local disk.        
+             // ...
+           }
+         }
+       )
+       .build();
+   TargetClient targetClient = TargetClient.create(config);
+   ```
 
-ClientConfig config = ClientConfig.builder()
-    .client("<you target client code>")
-    .organizationId("<your EC org id>")
-    .onDeviceDecisioningHandler(
-      new OnDeviceDecisioningHandler() {
-        void onDeviceDecisioningReady() {
-          // On-Device Decision is ready.
-        }
-        void artifactDownloadSucceeded(byte[] artifactData) {
-          // Store artifactData to local disk.        
-          // ...
-        }
-      }
-    )
-    .build();
-TargetClient targetClient = TargetClient.create(config);
-```
+   >![ENDTABS]
 
 1. Both client and `organizationId` can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
 

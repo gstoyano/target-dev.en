@@ -1,10 +1,10 @@
 ---
-title: Adobe Target Delivery API Introduction
+title: Adobe Target Delivery API Overview
 description: Adobe Target Delivery API Introduction
 keywords: delivery api
 ---
 
-# Introduction
+# Delivery API overview
 
 Welcome to the documentation for the Adobe Target Delivery API!
 

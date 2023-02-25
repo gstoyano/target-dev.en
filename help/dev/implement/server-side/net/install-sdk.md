@@ -8,14 +8,20 @@ The .NET SDK is distributed by [NuGet](https://www.nuget.org/packages/Adobe.Targ
 
 ## Package Manager
 
+>[!BEGINTABS]
+
+>[!TAB Package Manager]
+
 ```csharp
 Install-Package Adobe.Target.Client
 ```
 
-## .NET CLI
+>[!TAB .NET CLI]
 
 ```csharp
 dotnet add package Adobe.Target.Client
 ```
+
+>[!ENDTABS]
 
 The open sourced code can be found at [https://github.com/adobe/target-dotnet-sdk](https://github.com/adobe/target-dotnet-sdk).

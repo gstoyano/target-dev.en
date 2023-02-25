@@ -20,7 +20,9 @@ Adobe Target also offers the flexibility of delivering the most relevant and up-
 
 When you install and initialize an Adobe Target SDK with on-device decisioning enabled, a *rule artifact* is downloaded and cached locally on your server, from the Akamai CDN closest to your server. When a request to retrieve an Adobe Target experience is made within your server-side application, the decision regarding which content to return is made in-memory, based on the metadata encoded in the cached rule artifact, which defines all of your on-device decisioning A/B and XT activities.
 
-![alt image](assets/asset-sdk-local-decisioning-architecture-diagram.png)
+The following diagram shows the on-device decisioning architecture. Click to expand the image. 
+
+![On-device decisioning architecture diagram image](assets/asset-sdk-local-decisioning-architecture-diagram.png "On-device decisioning architecture"){width="300" zoomable="yes"}
 
 ## What are the benefits?
 

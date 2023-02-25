@@ -45,78 +45,78 @@ For example, Save Entities may be used to update items whenever certain threshol
 
     ![SaveEntities4.png](assets/SaveEntities04.png)
 
-Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
+   Below is sample JSON that adds entity.id kit2001 with associated entity values for a Toaster Oven product, into environment 6781.
    
-   ```
-       {
-       "entities": [{
-               "name": "Toaster Oven",
-               "id": "kit2001",
-               "environment": 6781,
-               "categories": [
-                   "housewares:appliances"
-               ],
-               "attributes": {
-                   "inventory": 77,
-                   "margin": 23,
-                   "message": "crashing helicopter",
-                   "pageUrl": "www.foobar.foo.com/helicopter.html",
-                   "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
-                   "value": 19.2
-               }
-           }]
-       }
-   ```
+      ```
+          {
+          "entities": [{
+                  "name": "Toaster Oven",
+                  "id": "kit2001",
+                  "environment": 6781,
+                  "categories": [
+                      "housewares:appliances"
+                  ],
+                  "attributes": {
+                      "inventory": 77,
+                      "margin": 23,
+                      "message": "crashing helicopter",
+                      "pageUrl": "www.foobar.foo.com/helicopter.html",
+                      "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
+                     "value": 19.2
+                  }
+              }]
+          }
+      ```
 
 1. Click **Send**. You should receive the following response.
 
-    ![SaveEntities5.png](assets/SaveEntities05.png)
+   ![SaveEntities5.png](assets/SaveEntities05.png)
 
-The JSON object can be scaled to send multiple products. For example, this JSON specifies two entities.
+   The JSON object can be scaled to send multiple products. For example, this JSON specifies two entities.
 
-```
-    {
-        "entities": [{
-                "name": "Toaster Oven",
-                "id": "kit2001",
-                "environment": 6781,
-                "categories": [
-                    "housewares:appliances"
-                ],
-                "attributes": {
-                    "inventory": 89,
-                    "margin": 11,
-                    "message": "Toaster Oven",
-                    "pageUrl": "www.foobar.foo.com/helicopter.html",
-                    "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
-                    "value": 102.5
-                }
-            },
-            {
-                "name": "Blender",
-                "id": "kit2002",
-                "environment": 6781,
-                "categories": [
-                    "housewares:appliances"
-                ],
-                "attributes": {
-                    "inventory": 36,
-                    "margin": 5,
-                    "message": "Blender",
-                    "pageUrl": "www.foobar.foo.com/helicopter.html",
-                    "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
-                    "value": 54.5
-                }
-            }
-        ]
-    }
-```
+   ```
+       {
+           "entities": [{
+                   "name": "Toaster Oven",
+                   "id": "kit2001",
+                   "environment": 6781,
+                   "categories": [
+                       "housewares:appliances"
+                   ],
+                   "attributes": {
+                       "inventory": 89,
+                       "margin": 11,
+                       "message": "Toaster Oven",
+                       "pageUrl": "www.foobar.foo.com/helicopter.html",
+                       "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
+                       "value": 102.5
+                   }
+               },
+               {
+                   "name": "Blender",
+                   "id": "kit2002",
+                   "environment": 6781,
+                   "categories": [
+                       "housewares:appliances"
+                   ],
+                   "attributes": {
+                       "inventory": 36,
+                       "margin": 5,
+                       "message": "Blender",
+                       "pageUrl": "www.foobar.foo.com/helicopter.html",
+                       "thumbnailUrl": "www.foobar.foo.com/helicopter.jpg",
+                       "value": 54.5
+                   }
+               }
+           ]
+       }
+   ```
 
 1. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
 
     ![SaveEntities6.png](assets/SaveEntities06.png)
 
-Whoops, looks like those last two items don't belong. Let's inspect them using the **Get Entity** API, and if necessary, delete them using the **Delete Entities** API.
+Looks like those last two items don't belong. Let's inspect them using the **Get Entity** API, and if necessary, delete them using the **Delete Entities** API.
 
 ## Getting item details with the Get Entity API
 
@@ -195,6 +195,6 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
     ![DeleteEntities6](assets/DeleteEntities7.png)
 
-Congrats! You can now use the Recommendations APIs to create, update, delete, and obtain details on the entities in your catalog. In the next section, you will learn how to manage custom criteria.
+Congratulations! You can now use the Recommendations APIs to create, update, delete, and obtain details on the entities in your catalog. In the next section, you will learn how to manage custom criteria.
 
 <!--- [Next "Manage Custom Criteria" >](manage-custom-criteria.md) --->
