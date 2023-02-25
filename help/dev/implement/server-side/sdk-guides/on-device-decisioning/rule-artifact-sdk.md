@@ -23,7 +23,7 @@ This approach is best when you are able to initialize the Adobe Target SDK at th
 npm i @adobe/target-nodejs-sdk -P
 ```
 
->[TAB MVN]
+>[!TAB MVN]
 
 ```javascript
 <dependency>
@@ -39,28 +39,22 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-   >[!BEGINTABS]
-
-   >[!TAB Node.js]
+   **Node.js**
 
    ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   >[TAB Java]
+   **Java**
 
    ```javascript
    import com.adobe.target.edge.client.ClientConfig;
    import com.adobe.target.edge.client.TargetClient;
    ```
 
-   >[!ENDTABS]
-
 1. To configure the SDK, use the create method.
 
-   >[!BEGINTABS]
-
-   >[!TAB Node.js]
+   **Node.js**
 
    ```javascript
    const CONFIG = {
@@ -81,7 +75,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   >[!TAB Java]
+   **Java**
 
    ```javascript
    ClientConfig config = ClientConfig.builder()
@@ -90,8 +84,6 @@ npm i @adobe/target-nodejs-sdk -P
        .build();
    TargetClient targetClient = TargetClient.create(config);
    ```
-
-   >[!ENDTABS]
 
 1. Both client and organizationId can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
 
@@ -224,7 +216,7 @@ function startWebServer() {
 }
 ```
 
->[TAB Java] Java
+>[!TAB Java] Java
 
 ```javascript
 import com.adobe.target.edge.client.ClientConfig;
