@@ -81,7 +81,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   [!TAB Java]
+   >[!TAB Java]
 
    ```javascript
    ClientConfig config = ClientConfig.builder()
@@ -91,7 +91,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-   <[!ENDTABS]
+   >[!ENDTABS]
 
 1. Both client and organizationId can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
 

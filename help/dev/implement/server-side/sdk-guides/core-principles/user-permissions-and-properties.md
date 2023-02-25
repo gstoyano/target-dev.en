@@ -27,7 +27,7 @@ const targetClient = TargetClient.create(CONFIG);
 targetClient.getOffers({...})
 ```
 
-[!TAB Java]
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -39,7 +39,7 @@ ClientConfig clientConfig = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(clientConfig);
 ```
 
-[!ENDTABS]
+>[!ENDTABS]
 
 ## Incidental Property Token in getOffers call
 
