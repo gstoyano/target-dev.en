@@ -69,7 +69,7 @@ targetClient.getOffers({
 })
 ```
 
-[TAB Java]
+>[!TAB Java]
 
 ```
 ExecuteRequest executeRequest = new ExecuteRequest()
