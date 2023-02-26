@@ -20,13 +20,17 @@ Target Java SDK uses `slf4j` logging. You need to provide your implementation of
 
 Add the `slf4j` dependency.
 
+>[!BEGINTABS]
+
+>[!TAB Gradle]
+
 ### Gradle
 
 ```javascript
 compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 ```
 
-### Maven
+>[!TAB Maven]
 
 ```javascript
 <dependency>
@@ -35,6 +39,8 @@ compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
     <version>2.0.0-alpha0</version>
 </dependency>
 ```
+
+>[!ENDTABS]
 
 Enable the `DEBUG` logs based on your implementation, and mark the request logging flags.
 

@@ -33,7 +33,11 @@ Updates generally occur in under 1 hour, but may take as long as 24 hours to be 
 
 ## Code examples
 
-GET and POST supported. `https://CLIENT.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr1=0&profile.attr2=1...`
+GET and POST supported. 
+
+```
+https://CLIENT.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr1=0&profile.attr2=1...
+```
 
 ## Resources
 

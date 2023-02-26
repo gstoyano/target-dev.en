@@ -11,7 +11,9 @@ The client can make use of a property token in one of two ways.
 
 ## Global Property Token
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const CONFIG = {
@@ -25,7 +27,7 @@ const targetClient = TargetClient.create(CONFIG);
 targetClient.getOffers({...})
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -37,11 +39,15 @@ ClientConfig clientConfig = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(clientConfig);
 ```
 
+>[!ENDTABS]
+
 ## Incidental Property Token in getOffers call
 
 A property token can also be specified in an individual `getOffers` call. This is done by adding a property object to the request. A property token specified in this way takes precedent over one set in the config.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const CONFIG = {
@@ -63,7 +69,7 @@ targetClient.getOffers({
 })
 ```
 
-### Java
+[TAB Java]
 
 ```
 ExecuteRequest executeRequest = new ExecuteRequest()
@@ -78,4 +84,6 @@ TargetDeliveryRequest targetDeliveryRequest = TargetDeliveryRequest.builder()
 
 TargetDeliveryResponse targetResponse = targetClient.getOffers(targetDeliveryRequest);
 ```
+
+>[!ENDTABS]
 

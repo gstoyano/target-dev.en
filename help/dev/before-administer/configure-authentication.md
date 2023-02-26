@@ -101,10 +101,6 @@ There are many ways to specify the details of your project in Postman, but in th
 1. Note `CLIENT_SECRET` and `API_KEY` (along with other variables) have their values pre-populated, taken from your integration as defined in the Adobe Developer Console. (The Postman `CLIENT_SECRET` variable should match the `CLIENT SECRET` Adobe credential as displayed in the Developer Console, and `API_KEY` in Postman should likewise match `CLIENT ID` in the Developer Console.) By contrast, note `PRIVATE_KEY`, `JWT_TOKEN`, and `ACCESS_TOKEN` are blank. Let's start by providing the `PRIVATE_KEY` value.
    ![JWT7](assets/configure-io-target-jwt7.png)
 
-Pop quiz! Can you remember where your private key is?
-
-That's right, it's in the `config` file downloaded earlier from the Adobe Developer Console!
-
 1. From your file system, open your `config` file, and open the `private` key file.
    ![JWT8](assets/configure-io-target-jwt8.png)
 1. Select and copy the entire contents of the `private` key file.
@@ -142,7 +138,7 @@ In this section, you generate your bearer access token, which is required for au
 
 Q: Do I have to use the Adobe I/O Access Token Generation Postman collection to generate the JSON Web Token (JWT) and bearer access token?
 
-A: Nope! The Adobe I/O Access Token Generation Postman collection is available as a convenience to more easily generate the JWT and bearer access token in Postman. Alternatively, you can use capabilities within the Adobe Developer Console to manually generate the bearer access token.
+A: No. The Adobe I/O Access Token Generation Postman collection is available as a convenience to more easily generate the JWT and bearer access token in Postman. Alternatively, you can use capabilities within the Adobe Developer Console to manually generate the bearer access token.
 
 ## Test the bearer access token
 

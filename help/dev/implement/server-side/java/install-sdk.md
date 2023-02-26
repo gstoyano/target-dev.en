@@ -6,13 +6,15 @@ description: The Java SDK is distributed by Maven Central. To get started, add i
 
 The Java SDK is distributed by [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). To get started, add it as a dependency by installing in `gradle` or `maven`:
 
-## Gradle
+>[!BEGINTABS]
+
+>[!TAB Gradle]
 
 ```javascript
 compile 'com.adobe.target:java-sdk:1.0'
 ```
 
-## Maven
+>[!TAB Maven]
 
 ```markup
 <dependency>
@@ -21,5 +23,7 @@ compile 'com.adobe.target:java-sdk:1.0'
     <version>2.0</version>
 </dependency>
 ```
+
+>[!ENDTABS]
 
 The open sourced code can be found at <https://github.com/adobe/target-java-sdk>.
