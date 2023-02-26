@@ -7,7 +7,6 @@ contributors: https://github.com/icaraps
 # Adobe Target Developer Guide
 
 Resources and Guides for Adobe Target Developers
-[//]: # (Adobe Target APIs and SDKs offer limitless ways to integrate your most important customer data into key business processes.)
 
 ## Resources
 
