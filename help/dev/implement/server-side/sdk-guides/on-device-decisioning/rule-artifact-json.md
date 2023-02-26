@@ -1,6 +1,8 @@
 ---
-title: Downloading, Storing, and Updating the Rule Artifact via JSON Payload
+title: Download, store, and update the on-device decisioning rule artifact via JSON payload
 description: This approach is best if your application is structured in a way that requires the SDK to be initialized on each file in which it uses SDK methods.
+feature: APIs/SDKs
+role: Developer
 ---
 # Downloading, Storing, and Updating the Rule Artifact via JSON Payload
 

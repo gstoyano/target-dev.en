@@ -1,6 +1,8 @@
 ---
 title: Getting Started with Target SDKs
 description: In order to get up and running, we encourage you to create your first on-device decisioning feature flag activity in the language of your choice.
+feature: APIs/SDKs
+role: Developer
 ---
 # Getting Started with Target SDKs
 

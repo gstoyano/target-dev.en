@@ -1,6 +1,8 @@
 ---
-title: Install SDK
-description: The Node.js SDK is distributed by npm.
+title: Install the Node.js SDK
+description: Learn how t install the [!DNL Adobe Target] Node.js SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 # Install SDK
 

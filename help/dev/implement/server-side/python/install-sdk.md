@@ -1,6 +1,8 @@
 ---
-title: Install SDK
-description: The Python SDK is distributed by pypi. To get started, add it as a dependency by installing it via pip.
+title: Install the Python SDK
+description: Learn how t install the [!DNL Adobe Target] Python SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 # Install SDK
 

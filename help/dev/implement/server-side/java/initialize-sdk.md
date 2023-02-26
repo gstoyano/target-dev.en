@@ -1,6 +1,8 @@
 ---
-title: Initialize SDK
-description: Use the create method in order to initialize the Java SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+title: Initialize the Java SDK using the create method
+description: Learn how to use the create method to initialize the Java SDK and instantiate the TargetClient to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
+feature: APIs/SDKs
+role: Developer
 ---
 # Initialize SDK
 

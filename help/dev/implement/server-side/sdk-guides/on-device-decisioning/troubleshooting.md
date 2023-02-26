@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting on-device decisioning
-description: Troubleshooting on-device decisioning
+title: Troubleshoot on-device decisioning
+description: Learn how to troubleshoot on-device decisioning
 ---
 # Troubleshooting on-device decisioning
 

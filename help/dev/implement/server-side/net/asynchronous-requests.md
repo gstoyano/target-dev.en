@@ -1,6 +1,8 @@
 ---
-title: Asynchronous Requests
-description: One benefit of server-side integration is that one can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target .NET SDK supports asynchronous requests, making it easy to integrate Target into an app's existing async workflow.
+title: How to use asynchronous requests in the [!DNL Adobe Target] .NET SDK
+description: Learn how [!DNL Target] Java SDK supports asynchronous requests, which can reduce the effective target time to zero.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Asynchronous Requests

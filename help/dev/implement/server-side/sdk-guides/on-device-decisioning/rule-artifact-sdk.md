@@ -1,6 +1,8 @@
 ---
-title: Downloading, Storing, and Updating the Rule Artifact Automatically via the Adobe Target SDK
-description: This approach is best when you are able to initialize the Adobe Target SDK at the same time you initialize and start your web server. The rule artifact will be downloaded by the Adobe Target SDK and cached into memory before your web server application starts serving requests.
+title: Automatically download, store, and update the on-device decisioning rule artifact
+description: Learn how to work with the on-device decisioning rule artifact while initializing the [!DNL Adobe Target] SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Downloading, Storing, and Updating the Rule Artifact Automatically via the Adobe Target SDK

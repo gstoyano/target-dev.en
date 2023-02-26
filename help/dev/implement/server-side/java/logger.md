@@ -1,6 +1,8 @@
 ---
-title: Logger
-description: When initializing the SDK, there are several options on the ClientConfig object, which can be set to log requests.
+title: Initialize the [!DNL Adobe Target] Java SDK to log requests
+description: Learn how to log requests in the [!DNL Adobe Target] Java SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Logger

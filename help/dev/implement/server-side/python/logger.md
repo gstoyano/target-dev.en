@@ -1,6 +1,8 @@
 ---
-title: Logger
-description: When initializing the SDK, the options['logger'] object is an optional object. By default, an INFO level logger will be created under the adobe.target namespace.
+title: Initialize the [!DNL Adobe Target] Python SDK to log requests
+description: Learn how to log requests in the [!DNL Adobe Target] Python SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Logger

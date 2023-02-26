@@ -1,6 +1,8 @@
 ---
-title: Custom HTTP Client Configuration
-description: If the application running the SDK requires a custom HTTP Client, to enable features such as configuring SSL or adding default headers to requests, then the TargetClient will need to be configured using ClientConfig.builder().httpClient().
+title: Learn how to configure the Custom HTTP Client
+description: Learn how to configure TargetClient using ClientConfig.builder().httpClient().
+feature: APIs/SDKs
+role: Developer
 ---
 # Custom HTTP Client Configuration
 

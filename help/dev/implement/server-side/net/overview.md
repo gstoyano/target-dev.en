@@ -1,6 +1,8 @@
 ---
-title: .NET SDK overview
-description: This reference guide shows how Adobe Target customers can install, initialize, and use the .NET SDK.
+title: Get started with the [!DNL Adobe Target] .NET SDK
+description: Learn how [!DNL Adobe Target] customers can install, initialize, and use the .NET SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # .NET SDK overview

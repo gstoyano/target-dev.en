@@ -1,6 +1,8 @@
 ---
-title: Best practices
-description: Adobe recommends the following best practices when using on-device decisioning
+title: Best practices when using on-device decisioning
+description: Learn best practices when using on-device decisioning in [!DNL Adobe Target]
+feature: Implement Server-side
+role: Developer
 ---
 # Best practices
 

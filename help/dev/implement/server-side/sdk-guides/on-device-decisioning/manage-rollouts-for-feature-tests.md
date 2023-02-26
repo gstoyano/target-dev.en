@@ -1,6 +1,8 @@
 ---
 title: Manage rollouts for feature tests
-description: Manage rollouts for feature tests
+description: Learn how to manage rollouts for feature tests using on-device decisioning.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Manage rollouts for feature tests

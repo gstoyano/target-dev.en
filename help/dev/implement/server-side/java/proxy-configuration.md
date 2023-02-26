@@ -1,6 +1,8 @@
 ---
-title: Proxy Configuration
-description: If the application running the SDK requires a proxy to access the internet, the TargetClient will need to be configured with a proxy configuration.
+title: Implement proxy configuration in the [!DNL Adobe Target] Java SDK
+description: Learn how to configure the TargetClient proxy configuration in the [!DNL Adobe Target] Java SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 # Proxy Configuration
 
