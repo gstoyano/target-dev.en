@@ -114,7 +114,9 @@ npm i @adobe/target-nodejs-sdk -P
 
 The mechanism you use to store the JSON payload depends on your system architecture. You can use a local file, a database, or a memory object caching system such as Memcached . You need to be able to read this JSON from your application for consumption. In this guide, we use a local file as the storage.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```javascript
 //... Code removed for brevity
@@ -137,7 +139,7 @@ function onArtifactDownloadFailed(event) {
 //... Code removed for brevity
 ```
 
-### Java
+>[!TAB Java]
 
 ```javascript
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
@@ -148,13 +150,17 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
 
+>[!ENDTABS]
+
 >[!NOTE]
 >
 >By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
 
 Here is an example demonstrating the JSON payload-initializing capability.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```javascript
 const express = require("express");
@@ -241,7 +247,7 @@ function startWebServer() {
 }
 ```
 
-### Java
+>[!TAB Java]
 
 ```javascript
 import com.adobe.target.edge.client.ClientConfig;
@@ -291,3 +297,5 @@ public class TargetController {
   }
 }
 ```
+
+>[!ENDTABS]
