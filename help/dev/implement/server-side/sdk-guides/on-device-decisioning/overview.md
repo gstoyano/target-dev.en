@@ -22,7 +22,7 @@ When you install and initialize an Adobe Target SDK with on-device decisioning e
 
 The following diagram shows the on-device decisioning architecture. Click to expand the image. 
 
-![On-device decisioning architecture diagram image](assets/asset-sdk-local-decisioning-architecture-diagram.png "On-device decisioning architecture"){width="300" zoomable="yes"}
+![On-device decisioning architecture diagram image](assets/asset-sdk-local-decisioning-architecture-diagram.png "On-device decisioning architecture"){width="600" zoomable="yes"}
 
 ## What are the benefits?
 

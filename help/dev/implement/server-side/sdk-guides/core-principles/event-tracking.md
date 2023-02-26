@@ -38,17 +38,21 @@ Target SDKs call the underlying [Delivery API](../../../delivery-api/overview.md
 
 The `sendNotifications` method can be used to manually send events to Adobe Target and trigger an impression.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 TargetClient.sendNotifications(options: Object): Promise
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 ```
+
+>[!ENDTABS]
 
 ## Sample Code
 
@@ -62,9 +66,11 @@ The notification `type` property is set to `display`.
 
 To indicate a page was viewed, it is important to specify the the address object in the notification payload. Be sure to set the URL accordingly.
 
-For mboxes, you must set the mbox property on the notification object and provide an array of tokens based on the options array in the targetResult.
+For mboxes, you must set the mbox property on the notification object and provide an array of tokens based on the options array in the `targetResult`.
 
-#### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -119,7 +125,7 @@ async function onTargetReady() {
 }
 ```
 
-#### Java
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -167,15 +173,19 @@ TargetDeliveryRequest notificationRequest = TargetDeliveryRequest.builder()
 targetJavaClient.sendNotifications(notificationRequest);
 ```
 
+>[!ENDTABS]
+
 ### Clicked an Mbox
 
 This sample first gets a target mbox offer using `getOffers`. It then constructs a request with a notification based on that mbox offer.
 
 The notification `type` property is set to `click`.
 
-You must set the `mbox` property on the notification object and provide an array of tokens based on the metrics array in the targetResult.
+You must set the `mbox` property on the notification object and provide an array of tokens based on the metrics array in the `targetResult`.
 
-#### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -232,7 +242,7 @@ async function onTargetReady() {
 }
 ```
 
-#### Java
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -283,6 +293,8 @@ TargetDeliveryRequest notificationRequest = TargetDeliveryRequest.builder()
 targetJavaClient.sendNotifications(notificationRequest);
 ```
 
+>[!ENDTABS]
+
 ### Viewed a View
 
 This sample first gets target views using `getOffers`. It then constructs a request with a notification based on those views.
@@ -291,7 +303,9 @@ The notification `type` property is set to `display`.
 
 For views, you must set the `view` property on the notification object and provide an array of tokens based on the options array in the targetResult.
 
-#### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -341,7 +355,7 @@ async function onTargetReady() {
 }
 ```
 
-#### Java
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -389,6 +403,8 @@ TargetDeliveryRequest notificationRequest = TargetDeliveryRequest.builder()
 targetJavaClient.sendNotifications(notificationRequest);
 ```
 
+>[!ENDTABS]
+
 ### Clicked a View
 
 This sample first gets target views using `getOffers`. It then constructs a request with notifications based on those views.
@@ -397,7 +413,9 @@ The notification `type` property is set to `click`.
 
 You must set the `view` property on the notification object and provide an array of tokens based on the metrics array in the targetResult.
 
-#### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -449,7 +467,7 @@ async function onTargetReady() {
 }
 ```
 
-#### Java
+>[!TAB Java]
 
 ```
 ClientConfig clientConfig = ClientConfig.builder()
@@ -499,3 +517,5 @@ TargetDeliveryRequest notificationRequest = TargetDeliveryRequest.builder()
 
 targetJavaClient.sendNotifications(notificationRequest);
 ```
+
+>[!ENDTABS]

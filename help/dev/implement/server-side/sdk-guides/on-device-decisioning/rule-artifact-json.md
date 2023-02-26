@@ -107,8 +107,8 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. Both client and `organizationId` can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
 
-<!--- Insert image-client-code.png --->
-![alt image](assets/asset-rule-artifact-3.png)
+   <!--- Insert image-client-code.png --->
+   ![alt image](assets/asset-rule-artifact-3.png)
 
 ## Store and Use the JSON Payload
 
