@@ -139,7 +139,7 @@ function onArtifactDownloadFailed(event) {
 //... Code removed for brevity
 ```
 
->[!Tab Java]
+>[!TAB Java]
 
 ```javascript
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
