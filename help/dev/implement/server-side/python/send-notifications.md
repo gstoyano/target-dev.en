@@ -1,6 +1,8 @@
 ---
-title: Send Notifications
-description: send_notifications() is used to send display or click notifications to Adobe Target for measurement and reporting.
+title: Send display or click notifications to [!DNL Adobe Target] using the Python SDK
+description: Learn how to use sendNotifications() to send display or click notifications to [!DNL Adobe Target] for measurement and reporting.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Send Notifications

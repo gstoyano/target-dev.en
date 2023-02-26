@@ -1,6 +1,8 @@
 ---
-title: Proxy Configuration
-description: To configure a proxy for the Node SDK's HTTP requests, override the fetch API used by the SDK during initialization.
+title: Implement proxy configuration in the [!DNL Adobe Target] Node.js SDK
+description: Learn how to configure the TargetClient proxy configuration in the [!DNL Adobe Target] Node.js SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Proxy Configuration

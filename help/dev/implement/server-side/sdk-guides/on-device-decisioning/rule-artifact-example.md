@@ -1,6 +1,8 @@
 ---
-title: Example rule artifact
-description: Example rule artifact
+title: Example on-decisioning rule artifact
+description: View an example rule artifact for on-device decisioning.
+feature: APIs/SDKs
+role: Developer
 ---
 # Example rule artifact
 

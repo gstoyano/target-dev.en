@@ -1,6 +1,8 @@
 ---
-title: Get Attributes
-description: GetAttributes() is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+title: Use getAttributes in [!DNL Adobe Target] with the .NET SDK
+description: Learn how to use getAttributes() to fetch experimentation and personalized experiences from [!DNL Target] and extract attribute values.
+feature: APIs/SDKs
+role: Developer
 ---
 # Get Attributes
 

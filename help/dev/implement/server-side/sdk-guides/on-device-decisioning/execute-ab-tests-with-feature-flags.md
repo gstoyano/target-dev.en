@@ -1,6 +1,8 @@
 ---
-title: Execute A/B tests with feature flags
-description: Execute A/B tests with feature flags
+title: Execute A/B tests with feature flags and on-device decisioning
+description: Execute A/B tests with feature flags using on-device decisioning.
+feature: APIs/SDKs
+role: Developer
 ---
 # Execute A/B tests with feature flags
 

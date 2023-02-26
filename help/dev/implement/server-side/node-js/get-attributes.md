@@ -1,6 +1,8 @@
 ---
-title: Get Attributes
-description: getAttributes() is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+title: How to use asynchronous requests in the [!DNL Adobe Target] Node.js SDK
+description: Learn how [!DNL Target] Node.js SDK supports asynchronous requests, which can reduce the effective target time to zero.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Get Attributes

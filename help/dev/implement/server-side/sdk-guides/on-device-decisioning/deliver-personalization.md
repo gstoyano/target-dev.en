@@ -1,6 +1,8 @@
 ---
-title: Deliver personalization
-description: Deliver personalization
+title: Deliver personalization using [!DNL Adobe Target] SDKs
+description: Learn how to deliver personalization using on-device decisioning.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Deliver personalization

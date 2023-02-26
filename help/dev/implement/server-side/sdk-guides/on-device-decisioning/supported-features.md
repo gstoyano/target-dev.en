@@ -1,6 +1,8 @@
 ---
-title: Supported features overview
-description: Adobe Target's server-side SDKs give developers the flexibility to choose between performance and freshness of data for decisions. In other words, if delivering the most relevant and engaging personalized content via machine learning is most important to you, a live server call should be made.
+title: What features are supported in on-device decisioning?
+description: Learn how to deliver the most relevant and engaging personalized content via machine learning using a live server call.
+feature: APIs/SDKs
+role: Developer
 ---
 # Supported features overview
 

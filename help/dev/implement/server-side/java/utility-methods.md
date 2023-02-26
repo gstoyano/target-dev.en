@@ -1,6 +1,8 @@
 ---
-title: Utility Methods
-description: These helper methods are reusable across controllers and can be moved to a separate utility class.
+title: Use utility methods in the [!DNL Adobe Target] Java SDK
+description: Learn how to use helper methods, which are reusable across controllers and can be moved to a separate utility class.
+feature: APIs/SDKs
+role: Developer
 ---
 # Utility Methods
 

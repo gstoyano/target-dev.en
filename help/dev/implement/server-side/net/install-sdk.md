@@ -1,6 +1,8 @@
 ---
-title: Install SDK
-description: The .NET SDK is distributed by NuGet. To get started, add it as a dependency by installing via Package Manage or .NET CLI.
+title: Install the .NET SDK
+description: Learn how t install the [!DNL Adobe Target] .NET SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 # Install SDK
 

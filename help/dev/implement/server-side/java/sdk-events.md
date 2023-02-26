@@ -1,6 +1,8 @@
 ---
-title: SDK Events
-description: When initializing the SDK, an optional OnDeviceDecisioningHandler object can be provided on the ClientConfig object. It can be used to subscribe to various events that occur within the SDK.
+title: Subscribe to events in the Adobe Target Java SDK
+description: Learn how to subscribe to various events that occur within the Java SDK using the OnDeviceDecisioningHandler object.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # SDK Events

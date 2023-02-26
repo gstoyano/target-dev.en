@@ -1,6 +1,8 @@
 ---
-title: Install SDK
-description: The Java SDK is distributed by Maven Central. To get started, add it as a dependency by installing in gradle or maven.
+title: Install the Java SDK
+description: Learn how t install the [!DNL Adobe Target] Java SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 # Install SDK
 

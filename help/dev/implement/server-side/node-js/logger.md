@@ -1,6 +1,8 @@
 ---
-title: Logger
-description: When initializing the SDK, the options.logger object is an optional object. However, in order to debug effectively when an issue occurs, a logger object should be provided when initializing the SDK.
+title: Initialize the [!DNL Adobe Target] Node.js SDK to log requests
+description: Learn how to log requests in the [!DNL Adobe Target] Node.js SDK.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Logger
