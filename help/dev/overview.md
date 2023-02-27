@@ -10,11 +10,11 @@ role: Developer
 
 ![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)
 
-This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to [implement](#implementation-guides) and [administer](#administration-guides) [!DNL Target].
+This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to implement and administer [!DNL Target].
 
 In addition to this guide, the [*Target Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} helps you tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
-## Implementation guides
+## Getting started
 
 [**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into [!DNL Target], security considerations, and information about TLS (Transport Layer Security) Encryption.
 
