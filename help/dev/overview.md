@@ -1,5 +1,5 @@
 ---
-title: Adobe Target Developer Guide
+title: [!DNL Adobe Target] Developer Guide
 description: How do I implement and administer [!DNL Adobe Target] and work with its APIs and SDKs?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
@@ -28,7 +28,7 @@ In addition to this guide, the [*Target Business Practitioner Guide*](https://ex
 
 ## Server-Side implementation
 
-[**Target SDK Overview**](implement/server-side/server-side-overview.md): Get started with [!DNL Adobe Target] SDKs, including On-device decisioning.
+[**Target SDK overview**](implement/server-side/server-side-overview.md): Get started with [!DNL Adobe Target] SDKs, including On-device decisioning.
 
 [**Node.js SDK**](implement/server-side/node-js/overview.md): How to use the [!DNL Target] Node.js SDK.
 
@@ -38,23 +38,23 @@ In addition to this guide, the [*Target Business Practitioner Guide*](https://ex
 
 [**Python SDK**](implement/server-side/python/overview.md): How to use the [!DNL Target] Python SDK.
 
-## Hybrid Implementation
+## Hybrid implementation
 
-[**Hybrid Deployment**](implement/hybrid/hybrid-overview.md): Implement [!DNL Target] using a combination of client-side and server-side implementation.
+[**Hybrid deployment**](implement/hybrid/hybrid-overview.md): Implement [!DNL Target] using a combination of client-side and server-side implementation.
 
-## Recommendations Implementation
+## Recommendations implementation
 
-[**Recommendations Implementation**](implement/recommendations/recommendations.md): Plan and implement [!DNL Adobe Target Recommendations].
+[**Recommendations implementation**](implement/recommendations/recommendations.md): Plan and implement [!DNL Adobe Target Recommendations].
 
-## Mobile Apps
+## Mobile App implementation
 
-[**AEP Mobile SDK Overview**](implement/mobile/overview.md): Overview of how to implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
+[**AEP Mobile SDK overview**](implement/mobile/overview.md): Overview of how to implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
-[**AEP Mobile SDK Reference**](https://developer.adobe.com/client-sdks/documentation/): Implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
+[**AEP Mobile SDK reference**](https://developer.adobe.com/client-sdks/documentation/): Implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
-## Email
+## Email implementation
 
-[**Email Overview**](implement/email/overview.md): Overview of how to implement [!DNL Adobe Target] in emails.
+[**Email overview**](implement/email/overview.md): Overview of how to implement [!DNL Adobe Target] in emails.
 
 ## APIs for implementation
 
@@ -64,7 +64,7 @@ In addition to this guide, the [*Target Business Practitioner Guide*](https://ex
 
 [**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
-## API Administration Guides
+## API Administration guides
 
 [**Introduction**](before-administer/target-api-overview.md): Overview and configuration requirements for [!DNL Adobe Target] Admin and Profile APIs, including [!DNL Recommendations] APIs.
 
