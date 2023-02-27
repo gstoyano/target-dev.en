@@ -1,32 +1,20 @@
 ---
-title: Overview - Adobe Target
-description: This is the overview page for Adobe Target APIs and SDKs
+title: Adobe Target Developer Guide
+description: How do I implement and administer [!DNL Adobe Target] and work with its APIs and SDKs?
 contributors: https://github.com/icaraps
+feature: APIs/SDKs
+role: Developer
 ---
 
-# Adobe Target Developer Guide
+# [!DNL Adobe Target] Developer Guide
 
-Resources and Guides for Adobe Target Developers
+This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to [implement](#implementation-guides) and [administer](#administration-guides) [!DNL Target].
 
-## Resources
-
-* [Adobe open source repo](https://github.com/adobe)
-* [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
-* [Target Node JS SDK Examples Repo](https://github.com/adobe/target-nodejs-sdk-samples)
-* [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
-* [Target Java SDK Example Repo](https://github.com/adobe/target-java-sdk-samples)
-* [Target Implementation](./before-implement/prepare-to-implement-target.md)
-* [Target Administration](./before-administer/target-api-overview.md)
-* [Adobe Target Dev Docs GitHub Repo](https://github.com/AdobeDocs/target-developers)
-* [Adobe Target Release Notes](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
-* [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html)
-
-## Description
-
-This portal provides resources and guides for Adobe Target Developers, including API and SDK documentation to [implement](#implementation-guides) Target, as well as links to guides to [administer](#administration-guides) Target.
+In addition to this guide, the [Target Business Practitioner Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} helps learn how to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 ## Implementation Guides
 
+The following links help you implement [!DNL Target]:
 
 ### Before you implement
 
@@ -34,7 +22,7 @@ This portal provides resources and guides for Adobe Target Developers, including
 
 Considerations before you implement Adobe Target.
 
-### Client-Side SDKs
+## Client-Side SDKs
 
 [AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
 
@@ -141,3 +129,16 @@ Manage blocklists to define the features used in Target machine learning models.
 [Admin Console APIs](https://developer.adobe.com/umapi/)
 
 Manage users and product entitlements through the Adobe User Management and User Sync APIs.
+
+## Resources
+
+* [Adobe open source repo](https://github.com/adobe)
+* [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
+* [Target Node JS SDK Examples Repo](https://github.com/adobe/target-nodejs-sdk-samples)
+* [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
+* [Target Java SDK Example Repo](https://github.com/adobe/target-java-sdk-samples)
+* [Target Implementation](./before-implement/prepare-to-implement-target.md)
+* [Target Administration](./before-administer/target-api-overview.md)
+* [Adobe Target Dev Docs GitHub Repo](https://github.com/AdobeDocs/target-developers)
+* [Adobe Target Release Notes](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
+* [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html)
