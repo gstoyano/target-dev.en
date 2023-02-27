@@ -4,7 +4,7 @@ description: Learn how to use the create method to initialize the Python SDK and
 feature: APIs/SDKs
 role: Developer
 ---
-# Initialize SDK
+# Initialize the Python SDK
 
 Description
 Use the `create` method in order to initialize the Python SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.

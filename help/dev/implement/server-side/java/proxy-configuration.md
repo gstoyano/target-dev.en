@@ -4,7 +4,7 @@ description: Learn how to configure the TargetClient proxy configuration in the 
 feature: APIs/SDKs
 role: Developer
 ---
-# Proxy Configuration
+# Proxy Configuration (Java)
 
 ## Basic Proxy
 

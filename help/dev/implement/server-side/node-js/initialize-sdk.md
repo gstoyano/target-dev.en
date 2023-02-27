@@ -4,7 +4,7 @@ description: Learn how to use the create method to initialize the Node.js SDK an
 feature: APIs/SDKs
 role: Developer
 ---
-# Initialize SDK
+# Initialize the Node.js SDK
 
 ## Description
 

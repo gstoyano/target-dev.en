@@ -5,7 +5,7 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Get Offers
+# Get Offers (.NET)
 
 ## Description
 
