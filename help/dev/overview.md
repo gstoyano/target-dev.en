@@ -1,5 +1,5 @@
 ---
-title: [!DNL Adobe Target] Developer Guide
+title: Adobe Target Developer Guide
 description: How do I implement and administer [!DNL Adobe Target] and work with its APIs and SDKs?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
