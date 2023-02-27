@@ -190,17 +190,17 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
   + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
   + Admin API {#admin-api}
     + [Admin API overview](before-administer/admin-api-overview/admin-api-overview.md)
-    + [Adobe Target Admin and Reporting APIs](https://developer.adobe.com/target/administer/admin-api/){target=_blank}
-  + [Profile API](https://developers.adobetarget.com/api/#profiles){target=_blank}
-  + [Reporting API](https://developer.adobe.com/target/administer/admin-api/#tag/Reports){target=_blank}
+    + Adobe Target Admin and Reporting APIs (Placeholder)
+  + Profile API (Placeholder)
+  + Reporting API (Placeholder)
   + Recommendations API {#recommendations-apis}
     + [Recommendations API overview](before-administer/recs-api/overview.md)
     + [Manage your catalog with APIs](before-administer/recs-api/manage-catalog.md)
     + [Manage custom criteria](before-administer/recs-api/manage-custom-criteria.md)
     + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-    + [Recommendations API](http://developers.adobetarget.com/api/recommendations/){target=_blank}
+    + Recommendations API (Placeholder)
   + Models API {#models-api}
     + [Models API (Blocklisting) overview](before-administer/models-api.md)
-    + [Models API](https://developer.adobe.com/target/administer/models-api/){target=_blank}
-  + [Admin Console APIs](https://auth.services.adobe.com/en_US/deeplink.html#/jump/complete){target=_blank}
+    + Models API (Placeholder)
+  + Admin Console APIs (Placeholder)
 
