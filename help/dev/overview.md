@@ -18,7 +18,7 @@ In addition to this guide, the [*Target Business Practitioner Guide*](https://ex
 
 [**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into [!DNL Target], security considerations, and information about TLS (Transport Layer Security) Encryption.
 
-## Client-Side SDKs
+## Client-Side implementation
 
 [**Adobe Experience Platform Web SDK**](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html): The [!DNL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network].
 
