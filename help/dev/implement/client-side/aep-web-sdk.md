@@ -14,12 +14,17 @@ For more information, see the following links in the *Adobe Experience Platform 
 * For comprehensive information: [What is Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * For information specific to Target: [Target Overview](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
 
-## Tutorials Implement Adobe Experience Cloud with Platform Web SDK
+## Tutorials
 
 The following tutorials help you  with your implementation:
 
-* **Implement Adobe Experience Cloud with Platform Web SDK**: Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). For information specific to Target, see the tutorial section titled [Set up Target with Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
-* **Migrate Target from at.js 2.*x* to Platform Web SDK**: Learn how to migrate your Target implementation from at.js 2.*x* to the Adobe Experience Platform Web SDK with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html).
+### Implement [!DNL Adobe Experience Cloud] with [!DNL Platform Web SDK]
+
+Learn how to implement [!DNL Experience Cloud] applications using [!DNL Adobe Experience Platform Web SDK] with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). For information specific to [!DNL Target], see the tutorial section titled [Set up Target with Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
+
+### Migrate [!DNL Target] from at.js 2.*x* to [!DNL Platform Web SDK]
+
+Learn how to migrate your [!DNL Target] implementation from at.js 2.*x* to the [!DNL Adobe Experience Platform Web SDK] with [this tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html).
 
 ## Recommended documentation
 
