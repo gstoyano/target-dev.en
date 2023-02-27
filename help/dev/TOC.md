@@ -186,15 +186,21 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
     + [Work with redirectors](implement/email/working-with-redirectors.md)
 + API administration guides {#administration}
-  + [Target API Overview](before-administer/target-api-overview.md)
+  + [Target API overview](before-administer/target-api-overview.md)
   + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
-+ Use Recommendations APIs {#recommendations-apis}
-  + [Recommendations API overview](before-administer/recs-api/overview.md)
-  + [Manage your catalog with APIs](before-administer/recs-api/manage-catalog.md)
-  + [Manage custom criteria](before-administer/recs-api/manage-custom-criteria.md)
-  + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-  + [Admin API overview](before-administer/admin-api-overview/admin-api-overview.md)
-  + [Model API (Blocklisting) overview](before-administer/models-api.md)
-  + [Admin API (placeholder)](/help/dev/administer/admin-api/admin-api-overview-new.md)
-  + [Models API (placeholder)](/help/dev/administer/models-api/models-api-overview.md)
-  + [Profile API (placeholder)](/help/dev/administer/profile-api/profile-api-overview.md)
+  + Admin API {#admin-api}
+    + [Admin API overview](before-administer/admin-api-overview/admin-api-overview.md)
+    + [Adobe Target Admin and Reporting APIs](https://developer.adobe.com/target/administer/admin-api/){target=_blank}
+  + [Profile API](https://developers.adobetarget.com/api/#profiles){target=_blank}
+  + [Reporting API](https://developer.adobe.com/target/administer/admin-api/#tag/Reports){target=_blank}
+  + Recommendations API {#recommendations-apis}
+    + [Recommendations API overview](before-administer/recs-api/overview.md)
+    + [Manage your catalog with APIs](before-administer/recs-api/manage-catalog.md)
+    + [Manage custom criteria](before-administer/recs-api/manage-custom-criteria.md)
+    + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
+    + [Recommendations API](http://developers.adobetarget.com/api/recommendations/){target=_blank}
+  + Models API {#models-api}
+    + [Models API (Blocklisting) overview](before-administer/models-api.md)
+    + [Models API](https://developer.adobe.com/target/administer/models-api/){target=_blank}
+  + [Admin Console APIs](https://auth.services.adobe.com/en_US/deeplink.html#/jump/complete){target=_blank}
+

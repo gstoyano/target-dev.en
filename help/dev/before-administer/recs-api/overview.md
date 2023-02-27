@@ -9,7 +9,7 @@ kt: 3815
 thumbnail:
 author: Judy Kim
 ---
-# Adobe Recommendations API Overview
+# Adobe Recommendations API overview
 
 APIs relevant for Recommendations include [Admin APIs](../../before-administer/target-api-overview.md) that allow you to:
 
