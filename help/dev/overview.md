@@ -8,127 +8,77 @@ role: Developer
 
 # [!DNL Adobe Target] Developer Guide
 
+![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)
+
 This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to [implement](#implementation-guides) and [administer](#administration-guides) [!DNL Target].
 
-In addition to this guide, the [Target Business Practitioner Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} helps learn how to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
+In addition to this guide, the [*Target Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} helps you tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
-## Implementation Guides
+## Implementation guides
 
-The following links help you implement [!DNL Target]:
-
-### Before you implement
-
-[Before you implement](before-implement/prepare-to-implement-target.md)
-
-Considerations before you implement Adobe Target.
+[**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into [!DNL Target], security considerations, and information about TLS (Transport Layer Security) Encryption.
 
 ## Client-Side SDKs
 
-[AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
+[**Adobe Experience Platform Web SDK**](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html): The [!DNL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network].
 
-Implement Target using the AEP Web SDK.
+[**Target at.js JavaScript library**](/help/dev/implement/client-side/overview.md): The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single-page applications. 
 
-[Target Web SDK](implement/client-side/overview.md)
+[**Migrate Target from at.js 2.x to Platform Web SDK**](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target=_blank}: This tutorial is for experienced [!DNL Adobe Target] implementers to learn how to migrate an at.js implementation to [!DNL Adobe Experience Platform Web SDK].
 
-Implement Target using at.js.
+## Server-Side implementation
 
-### Server-Side Implementation
+[**Target SDK Overview**](implement/server-side/server-side-overview.md): Get started with [!DNL Adobe Target] SDKs, including On-device decisioning.
 
-[Target SDK Overview](implement/server-side/server-side-overview.md)
+[**Node.js SDK**](implement/server-side/node-js/overview.md): How to use the [!DNL Target] Node.js SDK.
 
-Get started with Adobe Target SDKs, including On-Device Decisioning.
+[**Java SDK**](implement/server-side/java/overview.md): How to use the [!DNL Target] Java SDK.
 
-[Node.js SDK](implement/server-side/node-js/overview.md)
+[**.NET SDK**](implement/server-side/net/overview.md): How to use the [!DNL Target] .NET SDK.
 
-How to use the Target Node.js SDK.
+[**Python SDK**](implement/server-side/python/overview.md): How to use the [!DNL Target] Python SDK.
 
-[Java SDK](implement/server-side/java/overview.md)
+## Hybrid Implementation
 
-How to use the Target Java SDK.
+[**Hybrid Deployment**](implement/hybrid/hybrid-overview.md): Implement [!DNL Target] using a combination of client-side and server-side implementation.
 
-[.NET SDK](implement/server-side/net/overview.md)
+## Recommendations Implementation
 
-How to use the Target .NET SDK.
+[**Recommendations Implementation**](implement/recommendations/recommendations.md): Plan and implement [!DNL Adobe Target Recommendations].
 
-[Python SDK](implement/server-side/python/overview.md)
+## Mobile Apps
 
-How to use the Target Python SDK.
+[**AEP Mobile SDK Overview**](implement/mobile/overview.md): Overview of how to implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
-### Hybrid Implementation
+[**AEP Mobile SDK Reference**](https://developer.adobe.com/client-sdks/documentation/): Implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
-[Hybrid Deployment](implement/hybrid/hybrid-overview.md)
+## Email
 
-Implement Target using a combination of client- and server-side implementation.
+[**Email Overview**](implement/email/overview.md): Overview of how to implement [!DNL Adobe Target] in emails.
 
-### Recommendations Implementation
+## APIs for implementation
 
-[Recommendations Implementation](implement/recommendations/recommendations.md)
+[**Introduction**](before-administer/target-api-overview.md): Overview of [!DNL Adobe Target] APIs.
 
-Plan and implement Adobe Target Recommendations.
+[**Target Delivery API**](implement/delivery-api/overview.md): Use the [!DNL Adobe Target] Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
-### Mobile Apps
+[**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
-[AEP Mobile SDK Overview](implement/mobile/overview.md)
+## API Administration Guides
 
-Overview of how to implement Adobe Target with Adobe Experience Platform Mobile SDKs.
+[**Introduction**](before-administer/target-api-overview.md): Overview and configuration requirements for [!DNL Adobe Target] Admin and Profile APIs, including [!DNL Recommendations] APIs.
 
-[AEP Mobile SDK Reference](https://developer.adobe.com/client-sdks/documentation/)
+[**Admin API**](administer/admin-api/admin-api-overview-new.md): Use the [!DNL Adobe Target] Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
 
-Implement Adobe Target with Adobe Experience Platform Mobile SDKs.
+[**Profile API**](https://developers.adobetarget.com/api/#profiles): Retrieve [!DNL Adobe Target] user profile information.
 
-### Email
+[**Reporting API**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): Retrieve [!UICONTROL A/B Test] and [!UICONTROL Automated Personalization] activity report data.
 
-[Email Overview](implement/email/overview.md)
+[**Recommendations API**](http://developers.adobetarget.com/api/recommendations/): Use the [!DNL Target Recommendations] API.
 
-Overview of how to implement Adobe Target in emails.
+[**Models API**](administer/models-api/models-api-overview.md): Manage blocklists to define the features used in [!DNL Target] machine learning models.
 
-### APIs for implementation
-
-[Introduction](before-administer/target-api-overview.md)
-
-Overview of Adobe Target APIs.
-
-[Target Delivery API](implement/delivery-api/overview.md)
-
-Use Adobe Target's Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
-
-[AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
-
-Use the AEP Edge Network Server API for a variety of data collection, personalization, advertising and marketing use cases.
-
-## Administration Guides
-
-### What are the Target Admin APIs?
-
-[Introduction](before-administer/target-api-overview.md)
-
-Overview and configuration requirements for Adobe Target Admin and Profile APIs, including Recommendations APIs.
-
-### Admin APIs
-
-[Admin API](administer/admin-api/admin-api-overview-new.md)
-
-Use Adobe Target's Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
-
-[Profile API](https://developers.adobetarget.com/api/#profiles)
-
-Retrieve Adobe Target user profile information.
-
-[Reporting API](https://developer.adobe.com/target/administer/admin-api/#tag/Reports)
-
-Retrieve A/B and AP activity report data.
-
-[Recommendations API](http://developers.adobetarget.com/api/recommendations/)
-
-Use the Recommendations API.
-
-[Models API](administer/models-api/models-api-overview.md)
-
-Manage blocklists to define the features used in Target machine learning models.
-
-[Admin Console APIs](https://developer.adobe.com/umapi/)
-
-Manage users and product entitlements through the Adobe User Management and User Sync APIs.
+[**Admin Console APIs**](https://developer.adobe.com/umapi/): Manage users and product entitlements through the Adobe User Management and User Sync APIs.
 
 ## Resources
 
