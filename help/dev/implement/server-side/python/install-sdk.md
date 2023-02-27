@@ -4,7 +4,7 @@ description: Learn how t install the [!DNL Adobe Target] Python SDK.
 feature: APIs/SDKs
 role: Developer
 ---
-# Install SDK
+# Install the Python SDK
 
 The Python SDK is distributed by [pypi](https://pypi.org/project/target-python-sdk). To get started, add it as a dependency by installing it via pip:
 

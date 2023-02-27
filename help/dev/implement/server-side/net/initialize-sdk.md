@@ -4,7 +4,7 @@ description: Learn how to use the create method to initialize the Java SDK and i
 feature: APIs/SDKs
 role: Developer
 ---
-# Initialize SDK
+# Initialize the .NET SDK
 
 ## Description
 

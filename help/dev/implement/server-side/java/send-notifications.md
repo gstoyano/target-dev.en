@@ -4,7 +4,7 @@ description: Learn how to use sendNotifications() to send display or click notif
 feature: APIs/SDKs
 role: Developer
 ---
-# Send Notifications
+# Send Notifications (Java)
 
 ## Description
 

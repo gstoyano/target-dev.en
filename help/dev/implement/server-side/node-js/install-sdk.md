@@ -4,7 +4,7 @@ description: Learn how t install the [!DNL Adobe Target] Node.js SDK.
 feature: APIs/SDKs
 role: Developer
 ---
-# Install SDK
+# Install the Node js. SDK
 
 The Node.js SDK is distributed by [npm](https://www.npmjs.com/package/@adobe/target-nodejs-sdk).
 

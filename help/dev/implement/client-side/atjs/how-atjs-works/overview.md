@@ -3,7 +3,7 @@ title: at.js Overview
 description: The at.js library is the implementation library for client-side implementation of Adobe Target.
 ---
 
-# Overview
+# at.js overview
 
 The at.js library is the implementation library for client-side implementation of Adobe Target.
 

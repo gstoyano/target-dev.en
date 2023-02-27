@@ -5,7 +5,7 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Send Notifications
+# Send Notifications (Node.js)
 
 ## Description
 

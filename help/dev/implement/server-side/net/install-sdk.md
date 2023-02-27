@@ -4,7 +4,7 @@ description: Learn how t install the [!DNL Adobe Target] .NET SDK.
 feature: APIs/SDKs
 role: Developer
 ---
-# Install SDK
+# Install the .NET SDK
 
 The .NET SDK is distributed by [NuGet](https://www.nuget.org/packages/Adobe.Target.Client). To get started, add it as a dependency by installing via `Package Manage` or `.NET CLI`:
 
