@@ -14,7 +14,7 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 In addition to this guide, the [*Target Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} helps you tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
-## Getting started
+## Getting started with implementation
 
 [**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into [!DNL Target], security considerations, and information about TLS (Transport Layer Security) Encryption.
 
@@ -64,7 +64,7 @@ In addition to this guide, the [*Target Business Practitioner Guide*](https://ex
 
 [**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
-## API Administration guides
+## API administration guides
 
 [**Introduction**](before-administer/target-api-overview.md): Overview and configuration requirements for [!DNL Adobe Target] Admin and Profile APIs, including [!DNL Recommendations] APIs.
 
