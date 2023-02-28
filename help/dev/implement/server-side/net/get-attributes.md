@@ -4,7 +4,7 @@ description: Learn how to use getAttributes() to fetch experimentation and perso
 feature: APIs/SDKs
 role: Developer
 ---
-# Get Attributes
+# Get Attributes (.NET)
 
 ## Description
 

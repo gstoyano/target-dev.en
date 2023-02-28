@@ -5,7 +5,7 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Proxy Configuration
+# Proxy Configuration (Node.js)
 
 To configure a proxy for the Node SDK's HTTP requests, override the fetch API used by the SDK during initialization.
 

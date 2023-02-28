@@ -5,7 +5,7 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Logger
+# Logger (Java)
 
 ## Description
 

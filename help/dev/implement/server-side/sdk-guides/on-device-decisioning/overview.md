@@ -6,7 +6,7 @@ feature: Implement Server-side
 role: Developer
 ---
 
-# Introduction to on-device decisioning
+# On-device decisioning overview
 
 The next-generation Adobe Target SDKs now offer on-device decisioning, which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to Adobe Target's Edge Network.
 

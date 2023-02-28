@@ -4,7 +4,7 @@ description: Learn how t install the [!DNL Adobe Target] Java SDK.
 feature: APIs/SDKs
 role: Developer
 ---
-# Install SDK
+# Install the Java SDK
 
 The Java SDK is distributed by [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). To get started, add it as a dependency by installing in `gradle` or `maven`:
 

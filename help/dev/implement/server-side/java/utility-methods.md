@@ -4,7 +4,7 @@ description: Learn how to use helper methods, which are reusable across controll
 feature: APIs/SDKs
 role: Developer
 ---
-# Utility Methods
+# Utility Methods (Java)
 
 These helper methods are reusable across controllers and can be moved to a separate utility class.
 

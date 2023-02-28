@@ -5,7 +5,7 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Get Attributes
+# Get Attributes (Node.js)
 
 ## Description
 

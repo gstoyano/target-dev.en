@@ -4,7 +4,7 @@ description: Learn how to use getOffers() to execute a decision and retrieve an 
 feature: APIs/SDKs
 role: Developer
 ---
-# Get Offers
+# Get Offers (Java)
 
 ## Description
 

@@ -3,7 +3,7 @@ title: Adobe Target API Overview
 description: Overview of the different Adobe Target APIs, including delivery api, reporting api, admin api, profile api, recommendations api, and links to postman collections.
 ---
 
-# Target API Overview
+# Target API overview
 
 This article describes the different Target APIs in general, before focusing on requirements specific to the Admin and Profile APIs. If you wish to administer Target via the UI, see the [administration section of the *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 
