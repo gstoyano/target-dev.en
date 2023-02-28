@@ -190,13 +190,17 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
   + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
   + Admin API {#admin-api}
     + [Admin API overview](before-administer/admin-api-overview/admin-api-overview.md)
-    + Adobe Target Admin and Reporting APIs (Placeholder) {#admin-reporting}
+    + [Adobe Target Admin API](/help/dev/administer/admin-api/admin-api-overview-new.md)
+  + [Profiles API](/help/dev/administer/profile-api/profile-api-overview.md)
+  + [Reporting API](/help/dev/administer/reporting-api/reporting-api.md)
   + Recommendations API {#recommendations-apis}
     + [Recommendations API overview](before-administer/recs-api/overview.md)
     + [Manage your catalog with APIs](before-administer/recs-api/manage-catalog.md)
     + [Manage custom criteria](before-administer/recs-api/manage-custom-criteria.md)
     + [Use the Delivery API with Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
+    + [Recommendations API](/help/dev/administer/recommendations-api/recommendations-api.md)
   + Models API {#models-api}
     + [Models API (Blocklisting) overview](before-administer/models-api.md)
+    + [Models API](/help/dev/administer/models-api/models-api-overview.md)
 
 
