@@ -38,7 +38,7 @@ curl -X POST \
     }'
 ```
 
-The `clientCode` can be retrieved from the Target UI by navigating to **Adninistration** > **Implementation**.
+The `clientCode` can be retrieved from the Target UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
 Before making a Target Delivery API call, follow these steps to ensure a response contains the relevant experience to show end users:
 

@@ -17,9 +17,9 @@ Add the Adobe Mobile Services SDK to your app.
 
 1. Add client code, timeout and enable SSL.
 
-   In the Experience Cloud, open Mobile Services, then go to **Manage App Settings** > **SDK Target Options**.
+   In the Experience Cloud, open Mobile Services, then go to **[!UICONTROL Manage App Settings]** > **[!UICONTROL SDK Target Options]**.
 
-   Add your Target clientcode and timeout. The clientcode is unique to your account or company. The timeout is the time in number of seconds until which Target will wait for a response before showing the default content. Make sure the **Use HTTPS** option is checked in the Manage App Settings page in Adobe Mobile Services. If HTTPS isn't enabled, all calls in iOS9+ will be blocked unless you allowlist the Target server.
+   Add your Target clientcode and timeout. The clientcode is unique to your account or company. The timeout is the time in number of seconds until which Target will wait for a response before showing the default content. Make sure the **[!UICONTROL Use HTTPS]** option is checked in the Manage App Settings page in Adobe Mobile Services. If HTTPS isn't enabled, all calls in iOS9+ will be blocked unless you allowlist the Target server.
 
    ![alt image](assets/mobile-clientcode.png)
 

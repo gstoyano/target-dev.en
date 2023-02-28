@@ -209,8 +209,8 @@ To enable on-device decisioning:
 >
 >You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
-1. Click **Administration** > **Implementation** > **Account details**.
-1. Under **Account details**, slide the **On-Device Decisioning** toggle to the "on" position.
+1. Click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**.
+1. Under **[!UICONTROL Account details]**, slide the **[!UICONTROL On-Device Decisioning]** toggle to the "on" position.
 
    ![On-device decisioning toggle](assets/on-device-decisioning-toggle.png)
 
@@ -227,8 +227,8 @@ After enabling the On-Device Decisioning toggle, Target begins generating and pr
 
 ## How do I configure at.js 2.5.0+ to use on-device decisioning?
 
-1. Click **Administration** > **Implementation** > **Account details**.
-1. Under **Implementation Methods** > **Main Implementation Method**, click **Edit** next to your at.js version (must be at.js 2.5.0 or later).
+1. Click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**.
+1. Under **[!UICONTROL Implementation Methods]** > **[!UICONTROL Main Implementation Method]**, click **[!UICONTROL Edit]** next to your at.js version (must be at.js 2.5.0 or later).
  
    ![Edit Main Implementation Method settings](assets/main-implementation-method.png)
 
@@ -313,11 +313,11 @@ You can filter for all activities that are on-device decisioning eligible on the
 
 ## Summary of steps to ensure my on-device decisioning activities are delivered via At.js 2.5.0+?
 
-1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account Details** to enable the **On-Device Decisioning** toggle. 
-1. Enable the **"Include all existing on-device decisioning qualified activities in the artifact"** toggle. 
+1. Access the Adobe Target UI and navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account Details]** to enable the **[!UICONTROL On-Device Decisioning]** toggle. 
+1. Enable the **[!UICONTROL "Include all existing on-device decisioning qualified activities in the artifact"]** toggle. 
 
    The first JSON rules artifact generation can take up to 10 minutes. 
 
 1. Create and activate an [activity type that is supported by on-device decisioning](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md), and verify that it is on-device decisioning eligible. 
-1. Set the **Decisioning Method** to either **"Hybrid"** or **"On-device only"** through the at.js settings UI. 
+1. Set the **[!UICONTROL Decisioning Method]** to either **[!UICONTROL "Hybrid"]** or **[!UICONTROL "On-device only"]** through the at.js settings UI. 
 1. Download and deploy At.js 2.5.0+ to your pages.

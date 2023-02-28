@@ -23,58 +23,60 @@ Suppose you are a touring company. You want to deliver a personalized offer of 2
 
 ## Enable On-Device Decisioning for your organization
 
-1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** in Adobe Target, and enable the **On-Device Decisioning** toggle.
+1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in Adobe Target, and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
-  ![alt image](assets/asset-odd-toggle.png)
+   ![alt image](assets/asset-odd-toggle.png)
 
-   **NOTE**: You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+   >[!NOTE]
+   >
+   >You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
-   After enabling the **On-Device Decisioning** toggle, Adobe Target begins generating *rule artifacts* for your client.
+   After enabling the **[!UICONTROL On-Device Decisioning]** toggle, Adobe Target begins generating *rule artifacts* for your client.
 
 ## Create an Experience Targeting (XT) activity
 
-1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **Experience Targeting**.
+1. In Adobe Target, navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL Experience Targeting]**.
 
   ![alt image](assets/asset-xt.png)
 
 
-1. In the **Create Experience Targeting Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select a workspace and property (3), and click **Next** (4).
+1. In the **[!UICONTROL Create Experience Targeting Activity]** modal, leave the default **[!UICONTROL Web]** option selected (1), select **[!UICONTROL Form]** as your experience composer (2), select a workspace and property (3), and click **[!UICONTROL Next]** (4).
 
    ![alt image](assets/asset-xt-next.png)
 
 ## Define a personalized experience per audience
 
-1. In the **Experiences** step of activity creation, click **Change Audience** to create an audience of those visitors who want to travel to San Francisco, California.
+1. In the **[!UICONTROL Experiences]** step of activity creatio, click **[!UICONTROL Change Audience]** to create an audience of those visitors who want to travel to San Francisco, California.
 
    ![alt image](assets/asset-change-audience.png)
 
-1. In the **Create Audience** modal, define a custom rule where `destinationCity = San Francisco`. This defines the group of users who want to travel to San Francisco.
+1. In the **[!UICONTROL Create Audience]** modal, define a custom rule where `destinationCity = San Francisco`. This defines the group of users who want to travel to San Francisco.
 
    ![alt image](assets/asset-audience-sf.png)
 
-1. Still in the **Experiences** step, enter the name of the location (1) within your application where you want to render a special offer regarding the Golden Gate Bridge, but only for those headed to San Francisco. In the example shown here, homepage is the location selected for the HTML offer (2), which is defined in the **Content** area.
+1. Still in the **[!UICONTROL Experiences]** step, enter the name of the location (1) within your application where you want to render a special offer regarding the Golden Gate Bridge, but only for those headed to San Francisco. In the example shown here, homepage is the location selected for the HTML offer (2), which is defined in the **[!UICONTROL Content]** area.
 
    ![alt image](assets/asset-content-sf.png)
 
-1. Add another targeting audience by clicking **Add Experience Targeting**. This time, target an audience that would like to travel to New York by defining an audience rule where `destinationCity = New York`. Define the location within your application where you want to render a special offer regarding the Empire State Building. In the example shown here, `homepage` is the location selected for the HTML offer (2), which is defined in the **Content** area.
+1. Add another targeting audience by clicking **[!UICONTROL Add Experience Targeting]**. This time, target an audience that would like to travel to New York by defining an audience rule where `destinationCity = New York`. Define the location within your application where you want to render a special offer regarding the Empire State Building. In the example shown here, `homepage` is the location selected for the HTML offer (2), which is defined in the **[!UICONTROL Content]** area.
 
    ![alt image](assets/asset-content-ny.png)
 
 ## Verify personalized experience per audience
 
-In the **Targeting** step, verify you have configured the desired personalized experience per audience.
+In the **[!UICONTROL Targeting]** step, verify you have configured the desired personalized experience per audience.
 
   ![alt image](assets/asset-verify-sf-ny.png)
 
 ## Set up reporting
 
-In the **Goals & Settings** step, choose **Adobe Target** as the **Reporting Source** to view activity results in the Adobe Target UI, or choose **Adobe Analytics** to view them in the Adobe Analytics UI.
+In the **[!UICONTROL Goals & Settings]** step, choose **[!UICONTROL Adobe Target]** as the **[!UICONTROL Reporting Source]** to view activity results in the Adobe Target UI, or choose **[!UICONTROL Adobe Analytics]** to view them in the Adobe Analytics UI.
 
 ![alt image](assets/asset-reporting-sf-ny.png)
 
 ## Add metrics for tracking KPIs
 
-Choose a **Goal Metric** to measure the success of the activity. In this example, a successful conversion is based on whether the user clicks on the personalized destination offer.
+Choose a **[!UICONTROL Goal Metric]** to measure the success of the activity. In this example, a successful conversion is based on whether the user clicks on the personalized destination offer.
 
 ## Implement your personalized offers in your application
 

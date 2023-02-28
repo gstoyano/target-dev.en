@@ -19,51 +19,53 @@ role: Developer
 
 ## Enable On-Device Decisioning for your organization
 
-Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** in Adobe Target, and enable the **On-Device Decisioning** toggle.
+Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in Adobe Target, and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
 ![alt image](assets/asset-odd-toggle.png)
 
-**NOTE**: You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+>[!NOTE]
+>
+>You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
 After enabling the On-Device Decisioning toggle, Adobe Target begins generating *rule artifacts* for your client.
 
 ## Create an A/B activity
 
-1. In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**.
+1. In Adobe Target, navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**.
 
    ![alt image](assets/asset-ab.png)
 
-1. In the **Create A/B Test Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with **No Property Restrictions** (3), and click **Next** (4).
+1. In the **[!UICONTROL Create A/B Test Activity]** modal, leave the default **[!UICONTROL Web]** option selected (1), select **[!UICONTROL Form]** as your experience composer (2), select **[!UICONTROL Default Workspace]** with **[!UICONTROL No Property Restrictions]** (3), and click **[!UICONTROL Next]** (4).
 
    ![alt image](assets/asset-form.png)
 
 ## Define your feature and rollout settings
 
-In the **Experiences** step of activity creation, provide a name for your activity (1). Enter the name of the location (2) within your application where you want to manage rollouts for your feature. For example,  `ondevice-rollout` or `homepage-addtocart-rollout` are location names indicating the destinations for managing feature rollouts. In the example shown below, `ondevice-rollout` is the location defined for Experience A. You can optionally add Audience refinements (4) to restrict qualification to the activity.
+In the **[!UICONTROL Experiences]** step of activity creation, provide a name for your activity (1). Enter the name of the location (2) within your application where you want to manage rollouts for your feature. For example,  `ondevice-rollout` or `homepage-addtocart-rollout` are location names indicating the destinations for managing feature rollouts. In the example shown below, `ondevice-rollout` is the location defined for Experience A. You can optionally add Audience refinements (4) to restrict qualification to the activity.
 
 ![alt image](assets/asset-location-rollout.png)
 
-1. In the **Content** section on the same page, select **Create JSON Offer** in the drop-down (1) as shown.
+1. In the **[!UICONTROL Content]** section on the same page, select **[!UICONTROL Create JSON Offer]** in the drop-down (1) as shown.
 
    ![alt image](assets/asset-offer.png)
 
-1. In the **JSON Data** text box that appears, enter the feature flag variable for the feature you intend to roll out with this activity in Experience A (1), using a valid JSON object (2).
+1. In the **[!UICONTROL JSON Data]** text box that appears, enter the feature flag variable for the feature you intend to roll out with this activity in Experience A (1), using a valid JSON object (2).
 
    ![alt image](assets/asset-json-a-rollout.png)
 
-1. Click **Next** (1) to advance to the **Targeting** step of activity creation.
+1. Click **[!UICONTROL Next]** (1) to advance to the **[!UICONTROL Targeting]** step of activity creation.
 
    ![alt image](assets/asset-next-2-t-rollout.png)
 
-1. In the **Targeting** step, keep the **All Visitors** audience (1), for simplicity. But adjust the traffic allocation (2) to 10%. This will restrict the feature to only 10% of your site visitors. Click Next (3) to advance to the **Goals & Settings** step.
+1. In the **[!UICONTROL Targeting]** step, keep the **[!UICONTROL All Visitors]** audience (1), for simplicity. But adjust the traffic allocation (2) to 10%. This will restrict the feature to only 10% of your site visitors. Click Next (3) to advance to the **[!UICONTROL Goals & Settings]** step.
 
    ![alt image](assets/asset-next-2-g-rollout.png)
 
-1. In the **Goals & Settings** step, choose **Adobe Target** (1) as the **Reporting Source** to view your activity results in the Adobe Target UI.
+1. In the **[!UICONTROL Goals & Settings]** step, choose **[!UICONTROL Adobe Target]** (1) as the **[!UICONTROL Reporting Source]** to view your activity results in the Adobe Target UI.
 
-1. Choose a **Goal Metric** to measure the activity. In this example, a successful conversion is based on whether the user purchases an item, as indicated by whether the user reached the orderConfirm (2) location.
+1. Choose a **[!UICONTROL Goal Metric]** to measure the activity. In this example, a successful conversion is based on whether the user purchases an item, as indicated by whether the user reached the orderConfirm (2) location.
 
-1. Click **Save & Close** (3) to save the activity.
+1. Click **[!UICONTROL Save & Close]** (3) to save the activity.
 
    ![alt image](assets/asset-conv-rollout.png)
 

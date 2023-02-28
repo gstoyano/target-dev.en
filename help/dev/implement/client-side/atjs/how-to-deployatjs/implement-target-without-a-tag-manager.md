@@ -13,7 +13,7 @@ Information about implementing Adobe Target without using a tag manager or tags 
 >
 >Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method for implementing Target and the at.js library. The following information is not applicable when using tags in Adobe Experience Platform to implement Target.
 
-To access the Implementation page, click **Administration** > **Implementation**.
+To access the Implementation pag, click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
 You can specify the following settings on this page:
 
@@ -63,7 +63,7 @@ The following settings can be configured in the Implementation methods panel:
 
 To download the desired at.js version, click the appropriate **Download** button.
 
-To edit at.js settings, click **Edit** next to the desired at.js version. 
+To edit at.js setting, click **[!UICONTROL Edit]** next to the desired at.js version. 
 
 >[!WARNING]
 >
@@ -85,7 +85,7 @@ For more information, see [Profile API settings](/help/dev/before-implement/meth
 
 ### Debugger tools
 
-Generate an authorization token to use advanced Target debugging tools. Click **Generate New Authentication Token**.
+Generate an authorization token to use advanced Target debugging tools. Click **[!UICONTROL Generate New Authentication Token]**.
 
 ![Generate New Authentication Token](../../../../before-implement/methods-to-get-data-into-target/assets/debugger-auth-token.png)
 
@@ -119,8 +119,8 @@ Instructions to download the library using the Target interface or the Download 
 
 To download at.js from the Target interface:
 
-1. Click **Administration** > **Implementation**. 
-1. From the Implementation Methods section, click the **Download** button next to the desired at.js version.
+1. Click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. 
+1. From the Implementation Methods section, click the **[!UICONTROL Download]** button next to the desired at.js version.
 
 ### Download at.js using the Target Download API
 
@@ -128,7 +128,7 @@ To download at.js using the API.
 
 1. Get your client code.
 
-   Your client code is available at the top of the **Administration** > **Implementation** page of the Target interface. 
+   Your client code is available at the top of the **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** page of the Target interface. 
 
 1. Get your admin number.
 
@@ -227,7 +227,7 @@ A typical implementation of Target not using a tag manager, such as tags in [Ado
 Consider the following important notes:
 
 * The HTML5 Doctype (for example, `<!doctype html>`) should be used. Unsupported or older doctypes could result in Target not being able to make a request. 
-* Preconnect and Prefetch are options that might help your web pages load faster. If you use these configurations, ensure that you replace `<client code>` with your own client code, which you can obtain from the **Administration** > **Implementation page. 
+* Preconnect and Prefetch are options that might help your web pages load faster. If you use these configurations, ensure that you replace `<client code>` with your own client code, which you can obtain from the **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** page. 
 * If you have a data layer, it is optimal to define as much of it as possible in the `<head>` of your pages before at.js loads. This placement provides the maximum ability to use this information in Target for personalization. 
 * Special Target functions, such as `targetPageParams()`, `targetPageParamsAll()`, Data Providers, and `targetGlobalSettings()` should be defined after your data layer and before at.js loads. Alternatively, these functions could be saved in the Library Header section of the Edit at.js Settings page and saved as part of the at.js library itself. For more information on these functions, see [at.js functions](/help/dev/implement/client-side/atjs/atjs-functions/atjs-functions.md). 
 * If you use JavaScript helper libraries, such as jQuery, include them before Target so you can use their syntax and methods when building Target experiences. 
@@ -244,7 +244,9 @@ The Order Confirmation mbox records details about orders on your site and allows
 1. In your order details page, insert the mbox script following the model below.
 1. Replace the WORDS IN CAPITAL LETTERS with either dynamic or static values from your catalog.
 
-   **Tip:** You can also pass order information in any mbox (it does not need to be named `orderConfirmPage`). You can also pass order information in multiple mboxes within the same campaign.
+   >[!TIP]
+   >
+   >You can also pass order information in any mbox (it does not need to be named `orderConfirmPage`). You can also pass order information in multiple mboxes within the same campaign.
 
    ```
    <script type="text/javascript"> 

@@ -87,7 +87,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Both client and organizationId can be retrieved from Adobe Target by navigating to **Administration** > **Implementation**, as shown here.
+1. Both client and organizationId can be retrieved from Adobe Target by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
 
    <!--- Insert image-client-code.png --->
    ![Implementation page under Administration in Target](assets/asset-rule-artifact-3.png)

@@ -17,7 +17,7 @@ You can now use the [Recommendations APIs](https://developers.adobetarget.com/ap
 
 >[!NOTE]
 >
->Send the **IMS: JWT Generate + Auth via User Token** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../configure-authentication.md) for instructions.
+>Send the **[!UICONTROL IMS: JWT Generate + Auth via User Token]** request whenever you need to refresh your access token for authentication, since it expires after 24 hours. See [Configure Adobe API Authentication](../configure-authentication.md) for instructions.
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
@@ -33,7 +33,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
 
 For example, Save Entities may be used to update items whenever certain thresholds are met—such as thresholds for inventory or price—in order to flag those items and prevent them from being recommended.
 
-1. Navigate to **Target > Setup > Hosts > CONTROL Environments** to obtain the Target Environment ID in which you want to add or update an item.
+1. Navigate to **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL CONTROL Environments]** to obtain the Target Environment ID in which you want to add or update an item.
 
     ![SaveEntities1](assets/SaveEntities01.png)
 
@@ -68,7 +68,7 @@ For example, Save Entities may be used to update items whenever certain threshol
           }
       ```
 
-1. Click **Send**. You should receive the following response.
+1. Click **[!UICONTROL Send]**. You should receive the following response.
 
    ![SaveEntities5.png](assets/SaveEntities05.png)
 
@@ -112,11 +112,11 @@ For example, Save Entities may be used to update items whenever certain threshol
        }
    ```
 
-1. Now it's your turn! Use the **Save Entities** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
+1. Now it's your turn! Use the **[!UICONTROL Save Entities]** API to add the following items to your catalog. Use the sample JSON above as a starting point. (You will need to extend the JSON to include additional entities.)
 
     ![SaveEntities6.png](assets/SaveEntities06.png)
 
-Looks like those last two items don't belong. Let's inspect them using the **Get Entity** API, and if necessary, delete them using the **Delete Entities** API.
+Looks like those last two items don't belong. Let's inspect them using the **[!UICONTROL Get Entity]** API, and if necessary, delete them using the **[!UICONTROL Delete Entities]** API.
 
 ## Getting item details with the Get Entity API
 
@@ -151,11 +151,11 @@ Entity details can only be retrieved for a single entity at a time. You can use 
 
    ![GetEntity4](assets/GetEntity4.png)
 
-1. Send another **Get Entity** request, this time to inspect the entity whose entityId=kit2005.
+1. Send another **[!UICONTROL Get Entity]** request, this time to inspect the entity whose entityId=kit2005.
 
    ![GetEntity5](assets/GetEntity5.png)
 
-Suppose you decide these entities need to be removed from your catalog. Let's use the **Delete Entities** API.
+Suppose you decide these entities need to be removed from your catalog. Let's use the **[!UICONTROL Delete Entities]** API.
 
 ## Deleting items with the Delete Entities API
 
@@ -169,7 +169,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 >
 >The Delete Entities API deletes entities referenced by IDs you specify. If no entity IDs are provided, all entities in the given environment are deleted. If no environment ID is given, entities will be deleted from all environments. Use this with caution!
 
-1. Navigate to **Target > Setup > Hosts > Environments** to obtain the Target Environment ID from which you want to delete items.
+1. Navigate to **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL Environments]** to obtain the Target Environment ID from which you want to delete items.
 
     ![DeleteEntities1](assets/SaveEntities01.png)
 
@@ -189,7 +189,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
     ![DeleteEntities5](assets/DeleteEntities5.png)
 
-1. Verify your results using **Get Entity**, which should now indicate the deleted entities cannot be found.
+1. Verify your results using **[!UICONTROL Get Entity]**, which should now indicate the deleted entities cannot be found.
 
     ![DeleteEntities6](assets/DeleteEntities6.png)
 

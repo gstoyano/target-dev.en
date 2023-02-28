@@ -38,7 +38,7 @@ Before you can use a redirector, you must create it.
 
    * Where `yourclientcode` is your company's client code. Your company's client code is all lower case and has no special characters.
 
-     Your client code is available at the top of the **Administration > Implementation** page of the Target interface.
+     Your client code is available at the top of the **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** page of the Target interface.
 
    * `redirectorlink_456` is the name of the Redirector mbox that appears in your account to use in campaigns and tests.
 
@@ -88,7 +88,7 @@ Use a redirector to pass the costs per click.
 
 >[!NOTE]
 >
->Best practice is to determine the cost value using the **Score per visit** engagement metric.
+>Best practice is to determine the cost value using the **[!UICONTROL Score per visit]** engagement metric.
 
 Add `&mboxPageValue=-value` to the URL. Note the negative value.
 
@@ -105,7 +105,7 @@ Use a redirector to pass the revenue per click.
 
 >[!NOTE]
 >
->Best practice is to determine the revenue value using the **Score per visit** engagement metric.
+>Best practice is to determine the revenue value using the **[!UICONTROL Score per visit]** engagement metric.
 
 Add `&mboxPageValue=value` to the URL.
 

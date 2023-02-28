@@ -56,7 +56,7 @@ Enabling traces will output additional information from Adobe Target in regards 
 
    ![alt image](assets/asset-target-ui-1.png)
 
-1. Navigate to **Administration** > **Implementation** and click **Generate New Authorization Token**.
+1. Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** and click **[!UICONTROL Generate New Authorization Token]**.
 
    ![alt image](assets/asset-target-ui-2.png)
 

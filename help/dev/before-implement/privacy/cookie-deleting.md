@@ -19,10 +19,10 @@ If there is no Target cookie (mbox), you are considered a new visitor and shown 
 
 Version 84.0.4147.105
 
-1. Click the **Chrome** menu > **Preferences**.
-1. Click the **Privacy and Security** tab.
-1. Click **Cookies and other site data**.
-1. Click **See all cookies and site data**.
+1. Click the **[!UICONTROL Chrome]** menu > **[!UICONTROL Preferences]**.
+1. Click the **[!UICONTROL Privacy and Security]** tab.
+1. Click **[!UICONTROL Cookies and other site data]**.
+1. Click **[!UICONTROL See all cookies and site data]**.
 1. Expand the `adobe.com` section, select the **mbox** cookie, then click the delete icon (X).
 
 ## Delete the Target cookie from Mozilla Firefox
@@ -31,10 +31,10 @@ Version 79.0
 
 ### Delete all cookies associated with `adobe.com`
 
-1. Click the **Firefox** menu > **Preferences**.
-1. Click the **Privacy and Security** tab. 
-1. Under **Cookies and Site Data**, click **Manage Data**.
-1. Select the `adobe.com` site, then click **Remove Selected**.
+1. Click the **[!UICONTROL Firefox]** menu > **[!UICONTROL Preferences]**.
+1. Click the **[!UICONTROL Privacy and Security]** tab. 
+1. Under **Cookies and Site Data*, click **[!UICONTROL Manage Data]**.
+1. Select the `adobe.com` site, then click **[!UICONTROL Remove Selected]**.
 
 >[!WARNING]
 >
@@ -42,20 +42,20 @@ Version 79.0
 
 ### Delete an individual cookie (mbox)
 
-1. In Firefox, click **Tools** > **Web Developer** > **Storage Inspector**.
-1. Click the **Advanced** tab.
+1. In Firefo, click **[!UICONTROL Tools]** > **[!UICONTROL Web Developer]** > **[!UICONTROL Storage Inspector]**.
+1. Click the **[!UICONTROL Advanced]** tab.
 1. Navigate to the webpage that holds the cookie you want to delete.
-1. Expand the **Cookies** section, then click `https://experience.adobe.com`.
-1. Right-click the **mbox** cookie, then click **Delete**.
+1. Expand the **[!UICONTROL Cookies]** section, then click `https://experience.adobe.com`.
+1. Right-click the **[!UICONTROL mbox]** cookie, then click **[!UICONTROL Delete]**.
 
 ## Delete the Target cookie from Microsoft Edge
 
 Version 84.0.522.52
 
-1. Click the **Microsoft Edge** menu > **Preferences**.
-1. Click the **Site Permissions** tab.
-1. Click **Cookies and site data**.
-1. Click **See all cookies and site data**.
+1. Click the **[!UICONTROL Microsoft Edge]** menu > **[!UICONTROL Preferences]**.
+1. Click the **[!UICONTROL Site Permissions]** tab.
+1. Click **[!UICONTROL Cookies and site data]**.
+1. Click **[!UICONTROL See all cookies and site data]**.
 1. Expand the `adobe.com` section, select the **mbox** cookie, then click the delete icon (X).
 
 ## Delete the Target cookie from Apple Safari
@@ -64,10 +64,10 @@ Version 13.1.2
 
 ### Delete all cookies associated with `adobe.com`
 
-1. Click the **Safari** menu > **Preferences**.
-1. Click the **Privacy** tab.
-1. Click **Manage Website Data**.
-1. Select the sites for the cookies you want to delete, then click **Remove**.
+1. Click the **[!UICONTROL Safari]** menu > **[!UICONTROL Preferences]**.
+1. Click the **[!UICONTROL Privacy]** tab.
+1. Click **[!UICONTROL Manage Website Data]**.
+1. Select the sites for the cookies you want to delete, then click **[!UICONTROL Remove]**.
 
 >[!WARNING]
 >
@@ -75,11 +75,11 @@ Version 13.1.2
 
 ### Delete an individual cookie (mbox)
 
-1. Click the **Safari** menu > **Preferences**.
-1. Click the **Advanced** tab.
-1. Select the **Show Develop menu in menu bar** option.
+1. Click the **[!UICONTROL Safari]** menu > **[!UICONTROL Preferences]**.
+1. Click the **[!UICONTROL Advanced]** tab.
+1. Select the **[!UICONTROL Show Develop menu in menu bar]** option.
 1. Navigate to the webpage that holds the cookie you want to delete.
-1. Click the **Develop** menu > **Show Web Inspector**.
-1. Click the **Storage** tab.
-1. Expand the **Cookies** section, then click `www.adobe.com`.
-1. Right-click the **mbox** cookie, then click **Delete**.
+1. Click the **[!UICONTROL Develop]** menu > **[!UICONTROL Show Web Inspector]**.
+1. Click the **[!UICONTROL Storage]** tab.
+1. Expand the **[!UICONTROL Cookies]** section, then click `www.adobe.com`.
+1. Right-click the **mbox** cookie, then click **[!UICONTROL Delete]**.

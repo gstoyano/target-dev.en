@@ -8,7 +8,9 @@ keywords: delivery api, server-side, serverside, integration, audience manager, 
 
 Adobe Audience Manager segments can be leveraged via Adobe Target SDKs. In order to leverage AAM segments, the following fields need to be provided:
 
-**NOTE**: AAM segments are not supported for on-device decisioning activities.
+>[!NOTE]
+>
+>AAM segments are not supported for on-device decisioning activities.
 
 |Field Name|Required|Description|
 | --- | --- | --- |

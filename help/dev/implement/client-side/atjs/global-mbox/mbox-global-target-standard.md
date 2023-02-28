@@ -15,15 +15,15 @@ By default, Target creates a global mbox called target-global-mbox, which is use
 
 To use your existing global mbox for both Target and your legacy implementation, you must set a few parameters. 
 
-1. Go to Target, then click **Administration** > **Implementation**.
+1. Go to Target, then click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
-   By default, **Page load enabled (Auto-create global mbox** is enabled, and the custom global mbox is named `target-global-mbox`.
+   By default, **[!UICONTROL Page load enabled (Auto-create global mbox]** is enabled, and the custom global mbox is named `target-global-mbox`.
 
-1. If you want to use an existing mbox, disable **Page load enabled (Auto-create global mbox**, and specify the name of a previously created global mbox in the **Global Mbox** field.
+1. If you want to use an existing mbox, disable **[!UICONTROL Page load enabled (Auto-create global mbox]**, and specify the name of a previously created global mbox in the **[!UICONTROL Global Mbox]** field.
 
    The Global Mbox drop-down lists all mboxes in your account. If you want to use an mbox that does not yet exist, create the mbox.
 
-1. Click **Save**.
+1. Click **[!UICONTROL Save]**.
 
    The settings for your account are updated.
 

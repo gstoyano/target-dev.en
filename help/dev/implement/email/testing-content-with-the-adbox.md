@@ -23,7 +23,7 @@ For help selecting the right setup see [Non-JavaScript-Based Implementations](/h
 
    * Where `myClientCode` is your company's client code. Your company's client code is all lower case and has no special characters.
    
-     Your client code is available at the top of the **Administation > Implementation** page of the Target interface.
+     Your client code is available at the top of the **[!UICONTROL Administation]** > **[!UICONTROL Implementation]** page of the Target interface.
    
    * Where `image` is the call type. In this case it is an image.
    

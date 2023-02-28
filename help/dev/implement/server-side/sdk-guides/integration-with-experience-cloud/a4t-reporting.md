@@ -11,7 +11,9 @@ Adobe Target supports A4T reporting for both on-device decisioning and server-si
 * Adobe Target automatically forwards the analytics payload to Adobe Analytics, or
 * The user requests the analytics payload from Adobe Target. (Adobe Target returns the Adobe Analytics payload back to the caller.)
 
-**NOTE**: On-device decisioning only supports A4T reporting of which Adobe Target automatically forwards the analytics payload to Adobe Analytics. Retrieving the analytics payload from Adobe Target is not supported.
+>[!NOTE]
+>
+>On-device decisioning only supports A4T reporting of which Adobe Target automatically forwards the analytics payload to Adobe Analytics. Retrieving the analytics payload from Adobe Target is not supported.
 
 ## Pre-requisites
 
