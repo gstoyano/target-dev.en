@@ -6,4 +6,6 @@ contributors: https://github.com/icaraps
 
 # Adobe Target Profile API
 
-Placeholder / This page is not currently used: Adobe Target Profile API Overview page
+The Adobe Target Profiles API can be found here:
+
+* https://developers.adobetarget.com/api/#profiles
