@@ -31,7 +31,7 @@ To create custom criteria using the [Create Custom Criteria API](https://develop
 
 Only proceed with the following steps after you have read the warning above and are comfortable creating new custom criteria that cannot subsequently be deleted from the UI.
 
-1. Verify `TENANT_ID` and `API_KEY` for **Create custom criteria** reference the Postman environment variables established earlier. Use the image below for comparison.
+1. Verify `TENANT_ID` and `API_KEY` for **[!UICONTROL Create custom criteria]** reference the Postman environment variables established earlier. Use the image below for comparison.
 
     ![CreateCustomCriteria1](assets/CreateCustomCriteria1.png)
 
@@ -43,11 +43,11 @@ Only proceed with the following steps after you have read the warning above and 
 
     ![CreateCustomCriteria3](assets/CreateCustomCriteria3.png)
 
-1. To verify your custom criteria has been created, navigate within Adobe Target to **Recommendations > Criteria** and search for your criteria by name, or use the **List Custom Criteria API** in the next step.
+1. To verify your custom criteria has been created, navigate within Adobe Target to **[!UICONTROL Recommendations > Criteria]** and search for your criteria by name, or use the **[!UICONTROL List Custom Criteria API]** in the next step.
 
     ![CreateCustomCriteria4](assets/CreateCustomCriteria4.png)
 
-In this case, we have an error. Let's investigate the error by examining the custom criteria more closely, using the **List Custom Criteria API**.
+In this case, we have an error. Let's investigate the error by examining the custom criteria more closely, using the **[!UICONTROL List Custom Criteria API]**.
 
 ## List Custom Criteria
 
@@ -78,7 +78,7 @@ To change the details of a custom criteria definition, use the [Edit Custom Crit
 1. Send the request and note the response.
 ![EditCustomCriteria4](assets/EditCustomCriteria4.png)
 
-Let's verify the success of the updated custom criteria, using the **Get Custom Criteria API**.
+Let's verify the success of the updated custom criteria, using the **[!UICONTROL Get Custom Criteria API]**.
 
 ## Get Custom Criteria
 
@@ -99,7 +99,7 @@ Using the criteria ID noted earlier, delete your custom criteria, using the [Del
 
 `DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
-1. Specify the criteria ID of the (single) custom criteria you would like to delete. Click **Send**.
+1. Specify the criteria ID of the (single) custom criteria you would like to delete. Click **[!UICONTROL Send]**.
    ![DeleteCustomCriteria1](assets/DeleteCustomCriteria1.png)
 
 1. Verify the criteria has been deleted using Get Custom Criteria.

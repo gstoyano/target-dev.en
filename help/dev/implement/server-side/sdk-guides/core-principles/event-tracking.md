@@ -21,8 +21,8 @@ The following table defines the combination of goals and events you can define a
 
 |Primary Goal|Event|
 | --- | --- |
-|Conversion|Viewed a page, Viewed an mbox, and Clicked on mbox|
-|Revenue|Viewed an mbox and Clicked on mbox|
+|Conversion|Viewed a page, Viewed an mbox, and clicked on mbox|
+|Revenue|Viewed an mbox and clicked on mbox|
 |Engagement|Page Views, Customer Scoring, and Time on Site|
 
 ## How impressions are triggered

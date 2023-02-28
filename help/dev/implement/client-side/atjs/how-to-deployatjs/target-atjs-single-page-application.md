@@ -63,7 +63,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    First, we need to install at.js 2.x. This version of at.js was developed with SPAs in mind. Previous versions of at.js and mbox.js (now deprecated) do not support Adobe Target Views and the VEC for SPAs.
 
-   Download at.js 2.x via the Adobe Target UI located in **Administration > Implementation**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
+   Download at.js 2.x via the Adobe Target UI located in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
 
 1. Implement at.js 2.x's newest function, `triggerView()` on your sites.
 
@@ -73,7 +73,7 @@ Now that we have covered what Adobe Target Views are, we can leverage this conce
 
    |Parameter|Type|Required?|Validation|Description|
    | --- | --- | --- | --- | --- |
-   |viewName|String|Yes|1. No trailing spaces.<br />2. Cannot be empty.<br />3. View name should be unique for all pages.<br />4. **Warning**: View name should not start or end with '`/`'. This is because the customer would generally extract the View name from URL path. For us, "home" and "`/home`" are different.<br />5. **Warning**: Same view should not be consecutively triggered multiple times with the  `{page: true}` option.|Pass in any name as a string type that you want to represent your View. This View name displays in the **Modifications** panel of the VEC for marketers to create actions and run their A/B and XT activities.|
+   |viewName|String|Yes|1. No trailing spaces.<br />2. Cannot be empty.<br />3. View name should be unique for all pages.<br />4. **Warning**: View name should not start or end with '`/`'. This is because the customer would generally extract the View name from URL path. For us, "home" and "`/home`" are different.<br />5. **Warning**: Same view should not be consecutively triggered multiple times with the  `{page: true}` option.|Pass in any name as a string type that you want to represent your View. This View name displays in the **[!UICONTROL Modifications]** panel of the VEC for marketers to create actions and run their A/B and XT activities.|
    |options|Object|No|||
    |options > page|Boolean|No||**TRUE**: Default value of page is true. When `page=true`, notifications will be sent to the Edge servers for incrementing impression count.<br />**FALSE**: When `page=false`, notifications will not be sent for incrementing impression count. This should be used when you want to only re-render a component on a page with an offer.|
 

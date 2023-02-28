@@ -242,7 +242,7 @@ Essentially the global mbox concept was introduced to let Target know whether to
 
 ### Does the global mbox name in at.js matter anymore?
 
-Customers are able to specify a global mbox name via **Target > Administration > Implementation > Edit at.js Settings**. This setting is used by the Target edge severs to translate execute > pageLoad to the global mbox name that appears in the Target UI. This allows customers to continue to use server-side APIs, the form-based composer, profile scripts, and create audiences using the global mbox name. We strongly recommend that you also make sure the same global mbox name is configured on the **Administration > Visual Experience Composer** page, as well, in case you still have pages using at.js 1.*x*, as shown in the following illustrations.
+Customers are able to specify a global mbox name via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit at.js Settings]**. This setting is used by the Target edge severs to translate execute > pageLoad to the global mbox name that appears in the Target UI. This allows customers to continue to use server-side APIs, the form-based composer, profile scripts, and create audiences using the global mbox name. We strongly recommend that you also make sure the same global mbox name is configured on the **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]** page, as well, in case you still have pages using at.js 1.*x*, as shown in the following illustrations.
 
 ![Modify at.js dialog](../assets/modify-atjs.png)
 
@@ -286,7 +286,7 @@ To use cross-domain tracking for at.js v2.10 or later, you may do either of the 
 
 1. Install the [ECID library v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html) in conjunction with at.js 2.*x*. The ECID library exists to manage persistent IDs that are used to identify a visitor even across domains. After installing the ECID library v4.3.0+ and at.js 2.*x*, you will be able to create activities that span unique domains as well as track users. It is important to note this functionality works only after the session expires.
 
-1. Instead of installing the ECID library, if you have at.js v2.10 or later, you may enable the Cross-Domain setting in the Target UI in **Administration** > **Implementation**. (Alternatively, you may set the _crossDomain_ option to _enabled_ in the at.js code.)
+1. Instead of installing the ECID library, if you have at.js v2.10 or later, you may enable the Cross-Domain setting in the Target UI in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. (Alternatively, you may set the _crossDomain_ option to _enabled_ in the at.js code.)
 
 To use cross-domain tracking for versions of at.js v2.*x* prior to 2.10, you may implement option #1 above (install the ECID library).
 
@@ -296,7 +296,7 @@ This setting tells at.js 2.*x* to fire a request to the Target edge servers on p
 
 ### Global Mbox Name is supported
 
-Customers are able to specify a global mbox name via **Target > Administration > Implementation > Edit**. This setting is used by the Target edge severs to translate execute > pageLoad to the inputted global mbox name. This allows for customers to continue to use server-side APIs, the form-based composer, profile scripts, and create audiences that target the global mbox.
+Customers are able to specify a global mbox name via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]**. This setting is used by the Target edge severs to translate execute > pageLoad to the inputted global mbox name. This allows for customers to continue to use server-side APIs, the form-based composer, profile scripts, and create audiences that target the global mbox.
 
 ### Are the below at.js custom events applicable to `triggerView()` or is it only for `applyOffer()` or `applyOffers()`?
 

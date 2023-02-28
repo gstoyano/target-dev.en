@@ -66,7 +66,7 @@ On-device decisioning supports the following audience rules:
 
 ## How do I provision my client to use on-device decisioning?
 
-On-device decisioning is available for all Adobe Target customers who use Adobe Target server-side SDKs. In order to enable this feature, navigate to **Administration** > **Implementation** > **Account details** in the Adobe Target UI, and enable the **On-Device Decisioning** toggle.
+On-device decisioning is available for all Adobe Target customers who use Adobe Target server-side SDKs. In order to enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in the Adobe Target UI, and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ Leaving this toggle **off** means you will need to re-create and activate any on
 
 ## How do I know an activity is on-device decisioning capable?
 
-After you create an activity, a label called **Decisioning Method**, visible in the activity detail page, indicates whether the activity is on-device decisioning capable.
+After you create an activity, a label called **[!UICONTROL Decisioning Method]**, visible in the activity detail page, indicates whether the activity is on-device decisioning capable.
 
 ![alt image](assets/asset-odd9.png)
 
-You can also see all activities that are on-device decisioning capable on the **Activities** page by adding the column **Decisioning Method** to the list of activities.
+You can also see all activities that are on-device decisioning capable on the **[!UICONTROL Activities]** page by adding the column **[!UICONTROL Decisioning Method]** to the list of activities.
 
 ![alt image](assets/asset-odd7.png)
 
@@ -102,9 +102,9 @@ You can also see all activities that are on-device decisioning capable on the **
 
 ## What is the summary of steps I need to follow to ensure my on-device decisioning activities are delivered successfully via Adobe Target's server-side SDK?
 
-1. Access the Adobe Target UI and navigate to **Administration** > **Implementation** > **Account details** to enable the **On-Device Decisioning** toggle.
-1. Enable the **Include all existing on-device decisioning qualified activities in the artifact** toggle.
-1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **Decisioning Method** is **On-Device Decisioning** for that activity.
+1. Access the Adobe Target UI and navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** to enable the **[!UICONTROL On-Device Decisioning]** toggle.
+1. Enable the **[!UICONTROL Include all existing on-device decisioning qualified activities in the artifact]** toggle.
+1. Create and activate an activity type that is supported by on-device decisioning, and verify that the **[!UICONTROL Decisioning Method]** is **[!UICONTROL On-Device Decisioning]** for that activity.
 1. Install and initialize the [Node.js](../../node-js/overview.md) or [Java](../../java/overview.md) SDK with `decisioningMethod = on-device`.
 1. Implement `getOffers()` or `getAttributes()` in your code to retrieve an experience on-device.
 1. Deploy your code.

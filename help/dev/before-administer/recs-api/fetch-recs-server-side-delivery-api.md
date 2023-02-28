@@ -43,11 +43,11 @@ To create recommendations that can be used with the Delivery API, use the [Form-
 1. First, create and save a JSON-based design to use in your recommendation. For sample JSON, plus background information regarding how JSON responses can be returned when configuring a form-based activity, see the documentation on [Creating Recommendation Designs](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html). In this example, the design is named *Simple JSON.*
    ![server-side-create-recs-json-design.png](assets/server-side-create-recs-json-design.png)
 
-1. In Target, navigate to **Activities > Create Activity > Recommendations**, then select **Form**.
+1. In Target, navigate to **[!UICONTROL Activities]** > **[!UICONTROL Create Activity]** > **[!UICONTROL Recommendations]**, then select **[!UICONTROL Form]**.
 
    ![server-side-create-recs.png](assets/server-side-create-recs.png)
 
-1. Select a Property, and click **Next**.
+1. Select a Property, and click **[!UICONTROL Next]**.
 1. Define the location where you would like users to receive the recommendation's response. The example below uses a location named *api_charter*. Select your JSON-based design, created earlier, named *Simple JSON.*
    ![server-side-create-recs-form.png](assets/server-side-create-recs-form1.png)
 1. Save and activate the recommendation. It will generate results. [Once the results are ready](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html), you can use the Delivery API to retrieve them.
@@ -58,9 +58,9 @@ The syntax for the [Delivery API](/help/dev/implement/delivery-api/overview.md) 
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
-1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **Recommendations > Settings**. Note the **Client Code** value in the **Recommendation API Token** section.
+1. Note the client code is required. As a reminder, your client code may be found in Adobe Target by navigating to **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]**. Note the **Client Code** value in the **Recommendation API Token** section.
    ![client-code.png](assets/client-code.png)
-1. Once you have your client code, construct your Delivery API call. The example below begins with the **Web Batched Mboxes Delivery API Call** provided in the [Delivery API Postman collection](../../implement/delivery-api/overview.md/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
+1. Once you have your client code, construct your Delivery API call. The example below begins with the **[!UICONTROL Web Batched Mboxes Delivery API Call]** provided in the [Delivery API Postman collection](../../implement/delivery-api/overview.md/#section/Getting-Started/Postman-Collection), making relevant modifications. For example:
    * the **browser** and **address** objects were removed from the **Body**, since they are not required for non-HTML use cases
    * *api_charter* is listed as the location name in this example
    * the entity.id is specified, since this recommendation is based on Content Similarity, which requires a current item key to be passed to Target.

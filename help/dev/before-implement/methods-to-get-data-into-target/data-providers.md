@@ -9,7 +9,9 @@ role: Developer
 
 Data providers are a capability that allows you to easily pass data from third parties to Adobe Target.
 
-Note: Data providers require at.js 1.3 or later.
+>[!NOTE]
+>
+>Data providers require at.js 1.3 or later.
 
 ## Format
 

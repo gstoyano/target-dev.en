@@ -9,9 +9,9 @@ role: Developer
 
 Information to help you customize an Adobe Target global mbox for at.js.
 
-1. Click **Administration** > **Implementation**.
+1. Click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
-1. Disable **Page load enabled (Auto create global mbox)**, then add the name of the custom global mbox that you would like to use to deliver activities from Target.
+1. Disable **[!UICONTROL Page load enabled (Auto create global mbox)]**, then add the name of the custom global mbox that you would like to use to deliver activities from Target.
 
 >[!WARNING]
 >

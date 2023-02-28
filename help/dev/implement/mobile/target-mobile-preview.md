@@ -84,11 +84,11 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
 ## Generating a Preview Link
 
-1. In the Target UI, click the **More Options** icon (three vertical ellipses), then select **Create Mobile Preview**.
+1. In the Target UI, click the **[!UICONTROL More Options]** icon (three vertical ellipses), then select **[!UICONTROL Create Mobile Preview]**.
 
    ![alt image](assets/mobile-preview-create.png)
 
-1. Select the activities that you want to preview, then click **Generate Mobile Preview Link**.
+1. Select the activities that you want to preview, then click **[!UICONTROL Generate Mobile Preview Link]**.
 
    >[!NOTE]
    >
@@ -102,7 +102,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    ![alt image](assets/mobile-preview-enter-url-scheme.png)
 
-1. Click **Generate Mobile Preview Link**, then copy the link.
+1. Click **[!UICONTROL Generate Mobile Preview Link]**, then copy the link.
 
    ![alt image](assets/mobile-preview-generate-and-copy.png)
 
@@ -118,12 +118,12 @@ Open the link in a mobile browser on a device where you have your app installed.
 
     Your app opens and starts the Target Mobile Preview Mode. 
 
-1. Select the combination of experiences that you want to see, then click **Launch Experiences**.
+1. Select the combination of experiences that you want to see, then click **[!UICONTROL Launch Experiences]**.
 
    |![mobile preview 1](assets/mobile-preview-experience-selection-1.png)|![mobile preview 2](assets/mobile-preview-experience-result-1-france.png)|![mobile preview 3](assets/mobile-preview-experience-result-1-shipfree.png)|
    |![mobile preview 4](assets/mobile-preview-experience-selection-2.png)|![mobile preview 5](assets/mobile-preview-experience-result-2-aus.png)|![mobile preview 6](assets/mobile-preview-experience-result-2-10off.png)|
 
 ## Limitations
 
-* The view must load again for the new content to display after the **Launch Experiences** button is clicked. The easiest way is to switch to a different screen and then come back to the screen where you are expecting the change to happen. 
+* The view must load again for the new content to display after the **[!UICONTROL Launch Experiences]** button is clicked. The easiest way is to switch to a different screen and then come back to the screen where you are expecting the change to happen. 
 * Mobile preview is not supported for Android versions earlier than API-19 (KitKat).

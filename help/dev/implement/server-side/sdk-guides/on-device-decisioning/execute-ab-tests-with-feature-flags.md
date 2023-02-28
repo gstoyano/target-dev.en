@@ -25,28 +25,30 @@ role: Developer
 
 ## Enable On-Device Decisioning for your organization
 
-Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **Administration** > **Implementation** > **Account details** in Adobe Target, and enable the **On-Device Decisioning** toggle.
+Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in Adobe Target, and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
 <!--- Insert image-odd4.png --->
 ![alt image](assets/asset-odd-toggle.png)
 
-**NOTE**: You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+>[!NOTE]
+>
+>You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
 
-After enabling the **On-Device Decisioning** toggle, Adobe Target begins generating rule artifacts for your client.
+After enabling the **[!UICONTROL On-Device Decisioning]** toggle, Adobe Target begins generating rule artifacts for your client.
 
 ## Create an A/B activity
 
-In Adobe Target, navigate to the **Activities** page, then select **Create Activity** > **A/B test**.
+In Adobe Target, navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**.
 
 ![alt image](assets/asset-ab.png)
 
-In the **Create A/B Test Activity** modal, leave the default **Web** option selected (1), select **Form** as your experience composer (2), select **Default Workspace** with No **Property Restrictions** (3), and click **Next** (4).
+In the **[!UICONTROL Create A/B Test Activity]** modal, leave the default **[!UICONTROL Web]** option selected (1), select **[!UICONTROL Form]** as your experience composer (2), select **[!UICONTROL Default Workspace]** with No **[!UICONTROL Property Restrictions]** (3), and click **[!UICONTROL Next]** (4).
 
 ![alt image](assets/asset-form.png)
 
 ## Define your A and B
 
-1. In the **Experiences** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking the **Add Experience** (2) button. Enter the name of the location (3) within your application where you want to execute your A/B test. In the example shown below, homepage is the location defined for Experience A. (It is also the location defined for Experience B.) 
+1. In the **[!UICONTROL Experiences]** step of activity creation, provide a name for your activity (1) and add a second experience, Experience B, by clicking the **[!UICONTROL Add Experience]** (2) button. Enter the name of the location (3) within your application where you want to execute your A/B test. In the example shown below, homepage is the location defined for Experience A. (It is also the location defined for Experience B.) 
 
    Experience A defines the control, which is the current homepage design.
 
@@ -56,14 +58,16 @@ In the **Create A/B Test Activity** modal, leave the default **Web** option sele
 
    ![alt image](assets/asset-exp-b.png)
 
-1. In Experience B, click to change the content from **Default Content** to the redesigned content by selecting **Create JSON Offer** as shown below (1).
+1. In Experience B, click to change the content from **[!UICONTROL Default Content]** to the redesigned content by selecting **[!UICONTROL Create JSON Offer]** as shown below (1).
 
    ![alt image](assets/asset-offer.png)
 
 1. Define the JSON with attributes that will be utilized as flags to enable your business logic to render the newly redesigned homepage, rather than the current homepage in production.
 
 
-   **NOTE**: When Adobe Target buckets a user to see Experience B (the redesigned homepage), the JSON with the attributes defined in the example will be returned. In your code, you will need to check the attribute values to decide whether to execute the business logic to render the redesigned homepage. You get to define the names, values, and number of attributes in this JSON response.
+   >[!NOTE]
+   >
+   >When Adobe Target buckets a user to see Experience B (the redesigned homepage), the JSON with the attributes defined in the example will be returned. In your code, you will need to check the attribute values to decide whether to execute the business logic to render the redesigned homepage. You get to define the names, values, and number of attributes in this JSON response.
 
    ![alt image](assets/asset-homepage.png)
 
@@ -71,11 +75,11 @@ In the **Create A/B Test Activity** modal, leave the default **Web** option sele
 
 Suppose you want to first test the redesign on your loyal customers, whom you can identify based on whether or not they are logged in.
 
-1. In the **Targeting** step, click to replace the **All Visitors** audience, as shown.
+1. In the **[!UICONTROL Targeting]** step, click to replace the **[!UICONTROL All Visitors]** audience, as shown.
 
    ![alt image](assets/asset-all-audiences.png)
 
-1. In the **Create Audience** modal, define a custom rule where `logged-in = true`. This defines the group of users who are logged in. Use this audience in your activity.
+1. In the **[!UICONTROL Create Audience]** modal, define a custom rule where `logged-in = true`. This defines the group of users who are logged in. Use this audience in your activity.
 
    ![alt image](assets/asset-audience.png)
 
@@ -93,13 +97,13 @@ Define the percentage of your logged-in users that will see the current design o
 
 ## Set up reporting
 
-In the **Goals & Settings** step, choose **Adobe Target** as the **Reporting Source** to view activity results in the Adobe Target UI, or choose **Adobe Analytics** to view them in the Adobe Analytics UI.
+In the **[!UICONTROL Goals & Settings]** step, choose **[!UICONTROL Adobe Target]** as the **[!UICONTROL Reporting Source]** to view activity results in the Adobe Target UI, or choose **[!UICONTROL Adobe Analytics]** to view them in the Adobe Analytics UI.
 
 ![alt image](assets/asset-reporting.png)
 
 ## Add metrics for tracking KPIs
 
-Choose a **Goal Metric** to measure the A/B test. In this example, a successful conversion is based on whether the user reaches the bottom of the page, indicating engagement. Therefore, **Conversion** is determined based on whether the user viewed the location named bottom-of-the-page.
+Choose a **[!UICONTROL Goal Metric]** to measure the A/B test. In this example, a successful conversion is based on whether the user reaches the bottom of the page, indicating engagement. Therefore, **[!UICONTROL Conversion]** is determined based on whether the user viewed the location named bottom-of-the-page.
 
 ## Implement code to execute A/B tests with feature flags into your application
 

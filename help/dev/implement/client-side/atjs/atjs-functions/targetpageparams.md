@@ -9,7 +9,7 @@ role: Developer
 
 This method allows you to attach parameters to the global mbox from outside of the request code.
 
-This function is very useful for including the same set of parameters on multiple mbox calls. The function needs to be defined by the customer. It should return an array of parameters that will be passed only to the global mbox request. This function can be defined before at.js is loaded or in **Administration** > **Implementation** > **Edit** > **Library Header**.
+This function is very useful for including the same set of parameters on multiple mbox calls. The function needs to be defined by the customer. It should return an array of parameters that will be passed only to the global mbox request. This function can be defined before at.js is loaded or in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]** > **[!UICONTROL Library Header]**.
 
 You can pass in parameters to target-global-mbox using the `targetPageParams()` function in any of the following ways:
 

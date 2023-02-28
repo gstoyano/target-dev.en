@@ -10,7 +10,7 @@ The Models API, also called the Blocklist API, enables users to view and manage 
 
 Definition
 
-A **blocklist** defines the set of features that will be excluded by Adobe Target from its machine learning models. For more information on features, see [Data used by Target machine-learning algorithms](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
+A **[!UICONTROL blocklist]** defines the set of features that will be excluded by Adobe Target from its machine learning models. For more information on features, see [Data used by Target machine-learning algorithms](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
 
 Blocklists may be defined per activity (activity level), or for all activities within a Target account (global level).
 
@@ -94,9 +94,9 @@ In the example shown here, the user is checking to see the list of features bein
 >
 >To find your activity's Activity ID, navigate to the Activities List in the Target UI. Click on the activity of interest. The Activity ID will be displayed in the body of the resulting Activities Overview page, as well as at the end of the URL for that page.
 
-The **externalName** is a user-friendly name for a feature. It is created by Target, and it is possible this value may change over time. Users can view these user-friendly names in the [Personalization Insights report](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
+The **[!UICONTROL externalName]** is a user-friendly name for a feature. It is created by Target, and it is possible this value may change over time. Users can view these user-friendly names in the [Personalization Insights report](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
 
-The **internalName** is the feature's actual identifier. It is also created by Target, but it cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
+The **[!UICONTROL internalName]** is the feature's actual identifier. It is also created by Target, but it cannot be changed. This is the value you will need to reference in order to identify the feature(s) you would like to blocklist.
 
 Note that in order for the features list to populate with values (that is, in order for it to be non-null), an activity:
 
