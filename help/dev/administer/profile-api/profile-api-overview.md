@@ -8,4 +8,4 @@ contributors: https://github.com/icaraps
 
 The Adobe Target Profiles API can be found here:
 
-* [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles)
+* [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles){target=_blank}

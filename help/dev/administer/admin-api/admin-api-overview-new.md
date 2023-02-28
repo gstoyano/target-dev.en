@@ -8,6 +8,6 @@ openAPISpec: https://raw.githubusercontent.com/AdobeDocs/target-developers/main/
 
 The [!DNL Adobe Target] Admin and Reporting APIs can be found here: 
 
-* [https://developer.adobe.com/target/administer/admin-api/](https://developer.adobe.com/target/administer/admin-api/)
+* [https://developer.adobe.com/target/administer/admin-api/](https://developer.adobe.com/target/administer/admin-api){target=_blank}
 
 
