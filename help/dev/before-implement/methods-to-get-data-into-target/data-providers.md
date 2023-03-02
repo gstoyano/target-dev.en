@@ -1,13 +1,13 @@
 ---
 keywords: implement, implementing, setting up, setup, data providers
-description: Get data into Target using data providers.
-title: How Do I Get Data into Target Using Data Providers?
+description: Get data into [!DNL Target] using data providers.
+title: How Do I Get Data into [!DNL Target] Using Data Providers?
 feature: Implementation
 role: Developer
 ---
 # Data providers
 
-Data providers are a capability that allows you to easily pass data from third parties to Adobe Target.
+Data providers are a capability that allows you to easily pass data from third parties to [!DNL Adobe Target].
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Collect data from a third party, such as a weather service, a DMP, or even your 
 
 ## Benefits of method
 
-This setting lets customers gather data from third-party data providers, such as Demandbase, BlueKai, and custom services, and pass the data to Target as mbox parameters in the global mbox request.
+This setting lets customers gather data from third-party data providers, such as Demandbase, BlueKai, and custom services, and pass the data to [!DNL Target] as mbox parameters in the global mbox request.
 
 It supports the collection of data from multiple providers via async and sync requests.
 

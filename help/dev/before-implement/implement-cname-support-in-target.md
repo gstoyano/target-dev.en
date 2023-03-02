@@ -1,19 +1,19 @@
 ---
 keywords: client care, cname, certificate program, canonical name, cookies, certificate, amc, adobe managed certificate, digicert, domain control validation, dcv, client care2
-description: Work with Adobe Client Care to implement CNAME (Canonical Name) support in Adobe Target to handle ad-blocking issues.
+description: Work with [!UICONTROL Adobe Client Care] to implement CNAME (Canonical Name) support in [!DNL Adobe Target] to handle ad-blocking issues.
 title: How Do I Use CNAME in Target?
 feature: Privacy & Security
 role: Developer
 ---
 # CNAME and Target
 
-Instructions for working with Adobe Client Care to implement CNAME (Canonical Name) support in Adobe Target. Use CNAME to handle ad blocking issues or ITP-related (Intelligent Tracking Prevention) cookie policies. With CNAME, calls are made to a domain owned by the customer rather than a domain owned by Adobe.
+Instructions for working with [!DNL Adobe Client Care] to implement CNAME (Canonical Name) support in [!DNL Adobe Target]. Use CNAME to handle ad blocking issues or ITP-related (Intelligent Tracking Prevention) cookie policies. With CNAME, calls are made to a domain owned by the customer rather than a domain owned by Adobe.
 
 ## Request CNAME support in Target
 
 1. Determine the list of hostnames you need for your SSL certificate (see FAQ below).
 
-1. For each hostname, create a CNAME record in your DNS pointing to your regular Target hostname `clientcode.tt.omtrdc.net`. 
+1. For each hostname, create a CNAME record in your DNS pointing to your regular [!DNL Target] hostname `clientcode.tt.omtrdc.net`. 
 
    For example, if your client code is "cnamecustomer" and your proposed hostname is `target.example.com`, your DNS CNAME record looks similar to:
 
@@ -27,7 +27,7 @@ Instructions for working with Adobe Client Care to implement CNAME (Canonical Na
 
 1. [Fill out this form](assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
-   * Adobe Target client code:
+   * [!DNL Adobe Target] client code:
    * SSL certificate hostnames (example: `target.example.com target.example.org`):
    * SSL certificate purchaser (Adobe is highly recommended, see FAQ): Adobe/customer
    * If the customer is purchasing the certificate, also known as "Bring Your Own Certificate" (BYOC), fill out these additional details:
@@ -51,11 +51,11 @@ The following information answers frequently asked questions about requesting an
 
 ### Can I provide my own certificate (Bring Your Own Certificate or BYOC)?
 
-You can provide your own certificate. However, Adobe does not recommend this practice. Management of the SSL certificate lifecycle is easier for both Adobe and you if Adobe purchases and controls the certificate. SSL certificates must be renewed every year. Therefore, Adobe Client Care must contact you every year to obtain a new certificate in a timely manner. Some customers can have difficulty producing a renewed certificate in a timely manner. Your Target implementation is jeopardized when the certificate expires because browsers refuse connections.
+You can provide your own certificate. However, Adobe does not recommend this practice. Management of the SSL certificate lifecycle is easier for both Adobe and you if Adobe purchases and controls the certificate. SSL certificates must be renewed every year. Therefore, Adobe Client Care must contact you every year to obtain a new certificate in a timely manner. Some customers can have difficulty producing a renewed certificate in a timely manner. Your [!DNL Target] implementation is jeopardized when the certificate expires because browsers refuse connections.
 
 >[!WARNING]
 >
->If you request a Target bring-your-own-certificate CNAME implementation, you are responsible for providing renewed certificates to Adobe Client Care every year. Allowing your CNAME certificate to expire before Adobe can deploy a renewed certificate results in an outage for your specific Target implementation.
+>If you request a [!DNL Target] bring-your-own-certificate CNAME implementation, you are responsible for providing renewed certificates to Adobe Client Care every year. Allowing your CNAME certificate to expire before Adobe can deploy a renewed certificate results in an outage for your specific [!DNL Target] implementation.
 
 ### How long until my new SSL certificate expires?
 
@@ -65,21 +65,21 @@ All Adobe-purchased certificates are valid for one year. See [DigiCert's article
 
 Target CNAME implementations require only one hostname per domain on the SSL certificate and in the customer's DNS. Adobe recommends one hostname per domain. Some customers require more hostnames per domain for their own purposes (testing in staging, for example), which is supported.
 
-Most customers choose a hostname like `target.example.com`. Adobe recommends following this practice, but the choice is ultimately yours. Do not request a hostname of an existing DNS record. Doing so causes a conflict and delays time to resolution of your Target CNAME request.
+Most customers choose a hostname like `target.example.com`. Adobe recommends following this practice, but the choice is ultimately yours. Do not request a hostname of an existing DNS record. Doing so causes a conflict and delays time to resolution of your [!DNL Target] CNAME request.
 
 ### I already have a CNAME implementation for Adobe Analytics, can I use the same certificate or hostname?
 
-No, Target requires a separate hostname and certificate.
+No, [!DNL Target] requires a separate hostname and certificate.
 
-### Is my current implementation of Target impacted by ITP 2.x?
+### Is my current implementation of [!DNL Target] impacted by ITP 2.x?
 
-Apple Intelligent Tracking Prevention (ITP) version 2.3 introduced its CNAME Cloaking Mitigation feature, which is able to detect Adobe Target CNAME implementations and reduces the cookie's expiration to seven days. Currently Target has no workaround for ITP's CNAME Cloaking Mitigation. For more information about ITP, see [Apple Intelligent Tracking Prevention (ITP) 2.x](../before-implement/privacy/apple-itp-2x.md).
+Apple Intelligent Tracking Prevention (ITP) version 2.3 introduced its CNAME Cloaking Mitigation feature, which is able to detect [!DNL Target] CNAME implementations and reduces the cookie's expiration to seven days. Currently [!DNL Target] has no workaround for ITP's CNAME Cloaking Mitigation. For more information about ITP, see [Apple Intelligent Tracking Prevention (ITP) 2.x](../before-implement/privacy/apple-itp-2x.md).
 
 ### What kind of service disruptions can I expect when my CNAME implementation is deployed?
 
 There is no service disruption when the certificate is deployed (including certificate renewals). 
 
-However, after you change the hostname in your Target implementation code (`serverDomain` in at.js) to the new CNAME hostname (`target.example.com`), web browsers treat returning visitors as new visitors. Returning visitors' profile data is lost because the previous cookie is inaccessible under the old hostname (`clientcode.tt.omtrdc.net`). The previous cookie is inaccessible due to browser security models. This disruption occurs only on the initial cut-over to the new CNAME. Certificate renewals do not have the same effect because the hostname doesn't change.
+However, after you change the hostname in your [!DNL Target] implementation code (`serverDomain` in at.js) to the new CNAME hostname (`target.example.com`), web browsers treat returning visitors as new visitors. Returning visitors' profile data is lost because the previous cookie is inaccessible under the old hostname (`clientcode.tt.omtrdc.net`). The previous cookie is inaccessible due to browser security models. This disruption occurs only on the initial cut-over to the new CNAME. Certificate renewals do not have the same effect because the hostname doesn't change.
 
 ### What key type and certificate signature algorithm is used for my CNAME implementation?
 
@@ -334,4 +334,4 @@ Replace `clientcode` with your client code, then add the text or image to be lin
 ## Known limitations
 
 * QA mode is not sticky when you have CNAME and at.js 1.x because it is based on a third-party cookie. The workaround is to add the preview parameters to each URL you navigate to. QA mode is sticky when you have CNAME and at.js 2.x.
-* When using CNAME, it becomes more likely that the size of the cookie header for Target calls increase. Adobe recommends keeping the cookie size under 8 KB.
+* When using CNAME, it becomes more likely that the size of the cookie header for [!DNL Target] calls increase. Adobe recommends keeping the cookie size under 8 KB.
