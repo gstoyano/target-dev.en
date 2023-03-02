@@ -1,24 +1,24 @@
 ---
-title: Adobe Target Delivery API Prefetch
-description: Adobe Target Delivery API Prefetch
+title: [!UICONTROL Adobe Target Delivery API] Prefetch
+description: How do I use prefetch in the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---
 
 # Prefetch
 
-Prefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify Target when the user visits those mboxes or views.
+Prefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify [!DNL Target] when the user visits those mboxes or views.
 
 When utilizing prefetch, it's important to be familiar with the following terms:
 
 |Field Name|Description|
 | --- | --- |
-|`prefetch`|List of mboxes and views that should be fetched but shouldn't be marked as visited. The Target Edge returns an `eventToke`n for each mbox or view that exist in the prefetch array.|
+|`prefetch`|List of mboxes and views that should be fetched but shouldn't be marked as visited. The [!DNL Target] Edge returns an `eventToke`n for each mbox or view that exist in the prefetch array.|
 |`notifications`|List of mboxes and views that were previously prefetched and should be marked as visited.|
-|`eventToken`|A hashed encrypted token that is returned when content is prefetched. This token should be sent back to Target in the `notifications` array.|
+|`eventToken`|A hashed encrypted token that is returned when content is prefetched. This token should be sent back to [!DNL Target] in the `notifications` array.|
 
 ## Prefetch Mboxes
 
-Clients like mobile apps and servers can prefetch multiple mboxes for a given user within a session and cache it in order to avoid multiple calls to Adobe Target Delivery API.
+Clients like mobile apps and servers can prefetch multiple mboxes for a given user within a session and cache it in order to avoid multiple calls to [!UICONTROL Adobe Target Delivery API].
 
 ```
 curl -X POST \
@@ -113,7 +113,7 @@ Within the `prefetch` field, add one or more `mboxes` you want to prefetch for a
 }
 ```
 
-Within the response, you will see the `content` field containing the experience to show to the user for a particular `mbox`. This is very useful when cached on your server so that when a user interacts with your web or mobile application within a session and visits an `mbox` on any particular page of your application, the experience can be delivered from the cache instead of making another Adobe Target Delivery API call. However, when an experience is delivered to the user from the `mbox`, a `notification` will be sent via a Delivery API call in order for impression logging to occur. This is because the response of `prefetch` calls are cached, which means that the user has not seen the experiences at the time the `prefetch` call happens. In order to learn more about the `notification` process, please see [Notifications](notifications.md).
+Within the response, you will see the `content` field containing the experience to show to the user for a particular `mbox`. This is very useful when cached on your server so that when a user interacts with your web or mobile application within a session and visits an `mbox` on any particular page of your application, the experience can be delivered from the cache instead of making another [!UICONTROL Adobe Target Delivery API] call. However, when an experience is delivered to the user from the `mbox`, a `notification` will be sent via a Delivery API call in order for impression logging to occur. This is because the response of `prefetch` calls are cached, which means that the user has not seen the experiences at the time the `prefetch` call happens. In order to learn more about the `notification` process, please see [Notifications](notifications.md).
 
 ## Prefetch Views
 

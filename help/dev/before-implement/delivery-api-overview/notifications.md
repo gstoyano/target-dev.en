@@ -1,6 +1,6 @@
 ---
-title: Adobe Target Delivery API Notifications
-description: Adobe Target Delivery API Notifications
+title: [!UICONTROL Adobe Target Delivery API] Notifications
+description: How do I fire notifications using the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---
 
@@ -12,7 +12,7 @@ In order for notifications to be fired off for the right mbox or view, be sure t
 
 ## Notifications for Prefetched Mboxes
 
-One or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the `type` of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the Adobe Target Delivery API. The `timestamp` is also important to be forwarded to Adobe Target to indicate when the `click` or `display` occurred for a given mbox for reporting purposes.
+One or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the `type` of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the[!UICONTROL  Adobe Target Delivery API]. The `timestamp` is also important to be forwarded to [!DNL Target] to indicate when the `click` or `display` occurred for a given mbox for reporting purposes.
 
 ```
 curl -X POST \
@@ -99,11 +99,11 @@ The example call above will result in a response that indicates the `notificatio
 }
 ```
 
-If all the `notifications` sent to Adobe Target are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular `notification` did not go through. In this scenario, a retry logic could be put into place until a successful `notification` response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.
+If all the `notifications` sent to [!DNL Target] are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular `notification` did not go through. In this scenario, a retry logic could be put into place until a successful `notification` response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.
 
 ## Notifications for Prefetched Views
 
-One or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the type of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the Adobe Target Delivery API. The timestamp is also important to be forwarded to Adobe Target to indicate when the `click` or `display` occurred for a given view for reporting purposes.
+One or multiple notifications can be sent via a single delivery call. Determine whether the metric that needs to be tracked is either a `click` or `display` for each mbox so that the type of the notification can be reflected correctly. Also, pass in an `id` for each notification so that one can determine whether a notification was sent correctly thru the [!UICONTROL Adobe Target Delivery API]. The timestamp is also important to be forwarded to [!DNL Target] to indicate when the `click` or `display` occurred for a given view for reporting purposes.
 
 ```
 curl -X POST \
@@ -179,4 +179,4 @@ The example call above will result in a response that indicates the `notificatio
 }
 ```
 
-If all the `notifications` sent to Adobe Target are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular notification did not go through. In this scenario, a retry logic could be put into place until a successful notification response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.
+If all the `notifications` sent to  [!DNL Target] are correctly processed, they will appear in the `notifications` array in the response. However, if a `notifications` `id` is missing, that particular notification did not go through. In this scenario, a retry logic could be put into place until a successful notification response is retrieved. Ensure the retry logic has a timeout specified so the API call does not block and cause performance delays.
