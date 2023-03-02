@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Identifying Visitors
+title: Adobe Target Delivery API Identifying Visitors
 description: How can I identify user within [!DNL Adobe Target]?
 keywords: delivery api
 ---

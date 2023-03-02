@@ -1,9 +1,9 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Client Hints
+title: Adobe Target Delivery API Client Hints
 description: How do I use Client Hints in the Adobe Target Delivery API?
 ---
 
-# Client Hints and the T[!UICONTROL arget Delivery API]
+# Client Hints and the [!UICONTROL Adobe Target Delivery API]
 
 Client Hints must be sent to [!DNL Adobe Target] on the offers request.
 

@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Known Limitations
+title: Adobe Target Delivery API Known Limitations
 description: What are the known limitations with the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---

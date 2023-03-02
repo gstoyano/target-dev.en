@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Notifications
+title: Adobe Target Delivery API Notifications
 description: How do I fire notifications using the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---

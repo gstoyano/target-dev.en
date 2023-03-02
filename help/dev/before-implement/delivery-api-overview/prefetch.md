@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Prefetch
+title: Adobe Target Delivery API Prefetch
 description: How do I use prefetch in the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---

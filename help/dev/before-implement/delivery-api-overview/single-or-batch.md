@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Single or Batch Delivery
+title: Adobe Target Delivery API Single or Batch Delivery
 description: How do I use [!UICONTROL Adobe Target Delivery API] Single or Batch Delivery calls?
 keywords: delivery api
 ---
