@@ -1,21 +1,21 @@
 ---
 keywords: implement, implementing, whitelist, white list, allowlist, allow list, edge, edges, $9
-description: View a list of hosts to help you allowlist Adobe Target edges (geographically distributed serving nodes that ensure optimum response times end users).
-title: How Do I Allowlist Target Edge Nodes?
+description: View a list of hosts to help you allowlist [!DNL Adobe Target] edges (geographically distributed serving nodes that ensure optimum response times end users).
+title: How Do I Allowlist [!DNL Target] Edge Nodes?
 feature: Privacy & Security
 role: Developer
 ---
-# Allowlist Target edge nodes
+# Allowlist [!DNL Target] edge nodes
 
-Information and an up-to-date list of hosts to help you allowlist Adobe Target edges.
+Information and an up-to-date list of hosts to help you allowlist [!DNL Adobe Target] edges.
 
 An edge is a geographically distributed serving architecture that ensures optimum response times for end-users requesting content, regardless of where they are located. Each edge node has all the information required to respond to the user's content request and to track analytics data on that request. User requests are routed to the nearest edge node. For more information, see [The edge network](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
 
-You can allowlist Target edge nodes, if desired.
+You can allowlist [!DNL Target] edge nodes, if desired.
 
-## Network Address Translation (NAT) IP addresses of Target edges
+## Network Address Translation (NAT) IP addresses of [!DNL Target] edges
 
-List of egress IP addresses of Target edges. Allowlist these IPs if you plan to have Target reach out to your services.
+List of egress IP addresses of [!DNL Target] edges. Allowlist these IPs if you plan to have [!DNL Target] reach out to your services.
 
 |Edge Location|Egress IP Addresses|
 | --- | --- |
@@ -27,15 +27,15 @@ List of egress IP addresses of Target edges. Allowlist these IPs if you plan to 
 |Edge37 (Ireland)|54.72.21.68<br />52.208.139.19|
 |Edge38 (Singapore)|18.141.132.96<br />54.179.187.167|
 
-## Target edge IP addresses
+## [!DNL Target] edge IP addresses
 
-List of IP addresses of Target edges. Allowlist these IPs if you want to make API calls to Target edges.
+List of IP addresses of [!DNL Target] edges. Allowlist these IPs if you want to make API calls to [!DNL Target] edges.
 
 This list will change often, as the load balancers scale up and down based on traffic profiles.
 
 |Edge Location|Domain|IP Addresses|
 | --- | --- | --- |
-||`CLIENTCODE.tt.omtrdc.net`<br />(where CLIENTCODE is your Target client ID)||
+||`CLIENTCODE.tt.omtrdc.net`<br />(where CLIENTCODE is your [!DNL Target] client ID)||
 |Edge31 (Mumbai)|`mboxedge31.tt.omtrdc.net`|13.235.211.15<br />35.154.193.2<br />35.154.53.50<br />15.206.4.195<br />13.234.45.112<br />3.7.14.31<br />3.7.182.1<br />52.66.52.225<br />3.6.64.110<br />65.0.222.85<br />65.1.67.35<br />43.205.52.220|
 |Edge32 (Tokyo)|`mboxedge32.tt.omtrdc.net`|3.112.121.190<br />54.65.158.134<br />52.199.9.11<br />54.95.35.22<br />52.68.152.188<br />52.196.181.152<br />54.150.112.230<br />52.198.235.210|
 |Edge34 (East Coast US)|`mboxedge34.tt.omtrdc.net`|44.195.255.231<br />52.207.142.243<br />52.54.50.225<br />35.169.35.160<br />52.71.135.138<br />35.169.227.120<br />23.22.33.42<br />52.54.152.40<br />54.243.116.94<br />3.233.250.116<br />50.16.29.53<br />54.86.98.238<br />44.210.41.177<br />3.211.200.163<br />54.210.15.1<br />34.199.251.113|
