@@ -1,19 +1,19 @@
 ---
 keywords: implement, implementing, setting up, setup, script profile attributes
-description: Get data into Target using script profile attributes.
-title: How Do I Get Data into Target Using Script Profile Attributes?
+description: Get data into [!DNL Target] using script profile attributes.
+title: How Do I Get Data into [!DNL Target] Using Script Profile Attributes?
 feature: Implementation
 role: Developer
 ---
 # Script profile attributes
 
-Script profile attributes are name/value pairs defined in the Adobe Target solution. The value is determined from executing a JavaScript snippet on Target's server per server call.
+Script profile attributes are name/value pairs defined in the [!DNL Adobe Target] solution. The value is determined from executing a JavaScript snippet on Target's server per server call.
 
 Users write small code snippets that execute per mbox call, and before a visitor is evaluated for audience and activity membership.
 
 ## Format
 
-Script profile attributes are created in the Audiences section of Target. Any attribute name is valid, and the value is the result of a JavaScript function written by the Target user. The attribute name is automatically prefixed by " user. " in Target to distinguish them from in-page profile attributes.
+Script profile attributes are created in the Audiences section of Target. Any attribute name is valid, and the value is the result of a JavaScript function written by the [!DNL Target] user. The attribute name is automatically prefixed by " user. " in [!DNL Target] to distinguish them from in-page profile attributes.
 
 The code snippet is written in the Rhino JS language and can reference tokens and other values.
 
@@ -42,7 +42,9 @@ Can be difficult to debug.
 
 Profile scripts are quite flexible:
 
-`user.purchase_recency: var dayInMillis = 3600 * 24 * 1000; if (mbox.name == 'orderThankyouPage') {  user.setLocal('lastPurchaseTime', new Date().getTime()); } var lastPurchaseTime = user.getLocal('lastPurchaseTime'); if (lastPurchaseTime) {  return ((new Date()).getTime()-lastPurchaseTime)/dayInMillis; }`
+```
+user.purchase_recency: var dayInMillis = 3600 * 24 * 1000; if (mbox.name == 'orderThankyouPage') {  user.setLocal('lastPurchaseTime', new Date().getTime()); } var lastPurchaseTime = user.getLocal('lastPurchaseTime'); if (lastPurchaseTime) {  return ((new Date()).getTime()-lastPurchaseTime)/dayInMillis; }
+```
 
 ### Links to relevant information
 
