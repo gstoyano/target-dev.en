@@ -1,12 +1,13 @@
 ---
 title: Adobe Target Delivery API User Permissions
 description: Adobe Target Delivery API User Permissions
+badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="See what's included in Target Premium."
 keywords: delivery api
 ---
 
 # User Permissions (Premium)
 
-We allow customers to manage permissions for their users when using Adobe Target. In order to make a successful Adobe Target Delivery API call, a token with the right permissions must be passed within the API call. In order to learn more about user permissioning and how to retrieve the token visit [this documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+[!DNL Adobe] allows customers to manage permissions for their users when using Adobe Target. In order to make a successful [!UICONTROL Adobe Target Delivery API] call, a token with the right permissions must be passed within the API call. In order to learn more about user permissioning and how to retrieve the token visit [this documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ```
 curl -X POST \
