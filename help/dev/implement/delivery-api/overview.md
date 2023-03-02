@@ -1,5 +1,5 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API] Overview
+title: Adobe Target Delivery API Overview
 description: How do I use the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---
