@@ -1,6 +1,5 @@
 ---
-keywords: tls, tls 1.0, tran
-sport layer security, encryption, tls 1.1, tls 1.2
+keywords: tls, tls 1.0, transport layer security, encryption, tls 1.1, tls 1.2
 description: Learn how [!DNL Target] uses the TLS (Transport Layer Security) protocol to maintain the highest security standards and promote the safety of your customer data.
 title: How Does [!DNL Target] Use TLS to Provide Security?
 feature: Privacy & Security
