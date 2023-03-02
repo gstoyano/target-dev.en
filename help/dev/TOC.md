@@ -36,7 +36,6 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
   + [CNAME and Adobe Target](before-implement/implement-cname-support-in-target.md)
   + Delivery API Overview {#delivery-api}
     + [Delivery API Overview](implement/delivery-api/overview.md)
-    + [Introduction](before-implement/delivery-api-overview/introduction.md)
     + [SDKs](before-implement/delivery-api-overview/sdks.md)
     + [Getting Started](before-implement/delivery-api-overview/getting-started.md)
     + [User Permissions (Premium)](before-implement/delivery-api-overview/user-permissions.md)

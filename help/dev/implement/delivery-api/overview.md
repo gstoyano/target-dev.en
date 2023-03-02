@@ -1,22 +1,20 @@
 ---
-title: Adobe Target Delivery API Overview
-description: Adobe Target Delivery API Introduction
+title: [!UICONTROL Adobe Target Delivery API Overview]
+description: [!UICONTROL Adobe Target Delivery API] Introduction
 keywords: delivery api
 ---
 
 # Delivery API overview
 
-Welcome to the documentation for the Adobe Target Delivery API!
+The [!UICONTROL Adobe Target Delivery API] is based on REST. This documentation describes the resources that make up the [!UICONTROL Adobe Target Delivery API]. HTTP methods are utilized to execute operations on those resources.
 
-The Adobe Target Delivery API is based on REST. This documentation describes the resources that make up the Adobe Target Delivery API. HTTP methods are utilized to execute operations on those resources.
-
-Through Adobe Target's Delivery API, you can:
+Through [!UICONTROL Adobe Target's Delivery API], you can:
 
 * Deliver experiences across web, including SPAs, and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 * Deliver experiences from any server side platform or application that can make HTTP/s calls.
 * Deliver consistent and personalized experiences to a user no matter which channel or devices the user has engaged with your business.
 * Cache experiences for a user within a session in your server so that multiple API calls can be avoided and as a result achieve better performance.
-* Seamlessly integrate with Adobe Experience Cloud products such as Adobe Analytics, Adobe Audience Manager, and the Experience Cloud ID Service from the server side.
+* Seamlessly integrate with [!DNL Adobe Experience Cloud] products such as [!DNL Adobe Analytics], [!DNL Adobe Audience Manager], and the [!DNL Experience Cloud ID Service] from the server side.
 
 >[!NOTE]
 >
