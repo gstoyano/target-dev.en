@@ -1,7 +1,7 @@
 ---
 keywords: implement, implementing, setting up, setup, page parameters
-description: Get data into Target using page parameters.
-title: How Do I Get Data into Target Using Page Parameters?
+description: Get data into [!DNL Target] using page parameters.
+title: How Do I Get Data into [!DNL Target] Using Page Parameters?
 feature: Implementation
 role: Developer
 ---
@@ -9,13 +9,13 @@ role: Developer
 
 Page parameters (also called "mbox parameters") are name/value pairs passed in directly through page code that are not stored in the visitor's profile for future use.
 
-Page parameters are useful to send page data to Target that does not need to be stored with the visitor's profile for future targeting use. These values are instead used to describe the page or the action the user took on the specific page.
+Page parameters are useful to send page data to [!DNL Adobe Target] that does not need to be stored with the visitor's profile for future targeting use. These values are instead used to describe the page or the action the user took on the specific page.
 
 ## Format
 
-Page parameters are passed into Target via a server call as a string name/value pair. Parameter names and values are customizable (although there are some "reserved names" for specific uses).
+Page parameters are passed into [!DNL Target] via a server call as a string name/value pair. Parameter names and values are customizable (although there are some "reserved names" for specific uses).
 
-### Examples
+Here are some examples of page parameters
 
 * `page=productPage`
 
@@ -25,12 +25,12 @@ Page parameters are passed into Target via a server call as a string name/value 
 
 * **Product pages**: Send information about the specific product viewed (this method is how Recommendations works)
 * **Order details**: Send order ID, orderTotal, and so forth, for order collection
-* **Category affinity**: Send category-viewed information to Target to build knowledge of the user's affinity to particular site categories
+* **Category affinity**: Send category-viewed information to [!DNL Target] to build knowledge of the user's affinity to particular site categories
 * **3rd-party data**: Send information from 3rd-party data sources, such as weather targeting providers, account data (for example, DemandBase), demographic data (for example Experian), and more.
 
 ## Benefits of method
 
-Data gets sent to Target in real time, and can be used on the same server call the data on which it comes in.
+Data gets sent to [!DNL Target] in real time, and can be used on the same server call the data on which it comes in.
 
 ## Caveats
 
@@ -38,7 +38,7 @@ Data gets sent to Target in real time, and can be used on the same server call t
 * If the data must be used for targeting on a subsequent page/server call, it must be translated to a profile script.
 * Query strings can contain only characters as per the [Internet Engineering Task Force (IETF) standard](https://www.ietf.org/rfc/rfc3986.txt) .
 
-  In addition to those characters mentioned on the IETF site, Target allows the following characters in query strings:
+  In addition to those characters mentioned on the IETF site, [!DNL Target] allows the following characters in query strings:
 
   ```< > # % " { } | \ ^ [ ] ` ```
   
