@@ -1,19 +1,19 @@
 ---
 keywords: Browsers, Prerequisites, Requirements, internet explorer, chrome, firefox, safari, android, surface, Browsers0
-description: Learn which internet browsers Adobe Target supports for its interface and for content delivery.
-title: What Browsers Does Target Support?
+description: Learn which internet browsers [!DNL Adobe Target] supports for its interface and for content delivery.
+title: What Browsers Does [!DNL Target] Support?
 feature: Implementation
 role: Developer
 ---
 # Supported browsers
 
-The Adobe Target application and content delivery has been tested across a wide range of browsers and devices.
+The [!DNL Adobe Target] application and content delivery has been tested across a wide range of browsers and devices.
 
 For more important information about TLS, see [TLS (Transport Layer Security) Encryption Changes](tls-transport-layer-security-encryption.md).
 
-## Target Standard/Premium interface
+## [!DNL Target] Standard/Premium interface
 
-The Target interface supports the following browsers and devices:
+The [!DNL Target] interface supports the following browsers and devices:
 
 | Device Type | Browser Version |
 |--- |--- |
@@ -32,7 +32,7 @@ Content delivery has been tested across the following browsers and devices:
 
 Note the following:
 
-* For at.js implementations, Target displays default content in earlier versions of Internet Explorer and possibly in earlier versions of the above-listed browsers.
+* For at.js implementations, [!DNL Target] displays default content in earlier versions of Internet Explorer and possibly in earlier versions of the above-listed browsers.
 * Internet Explorer treats all unknown elements (such as custom elements) as the same element type. As a result, delivery does not work with custom elements.
-* Target displays default content in browsers not listed above and in browsers using [quirks mode](https://en.wikipedia.org/wiki/Quirks_mode). at.js requires a doctype that renders in standard mode, for example: `<!DOCTYPE html>` .
-* Adobe Delivery infrastructure is being secured to NOT support TLS 1.0 devices and browsers after September 12, 2018. See [TLS (Transport Layer Security) Encryption Changes](../before-implement/tls-transport-layer-security-encryption.md) to understand the overall impact of this change.
+* [!DNL Target] displays default content in browsers not listed above and in browsers using [quirks mode](https://en.wikipedia.org/wiki/Quirks_mode). at.js requires a doctype that renders in standard mode, for example: `<!DOCTYPE html>` .
+* [!DNL Adobe] Delivery infrastructure is being secured to NOT support TLS 1.0 devices and browsers after September 12, 2018. See [TLS (Transport Layer Security) Encryption Changes](../before-implement/tls-transport-layer-security-encryption.md) to understand the overall impact of this change.
