@@ -15,6 +15,10 @@ Details about changes in each version of the Adobe Target at.js JavaScript libra
 
 Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) are the preferred method to upgrade at.js. Extension developers continually add new features to their extensions, and frequently fix bugs. These updates are packaged into new versions of an extension and made available in the Adobe Experience Platform catalog as upgrades. For more information, see [Extension upgrades](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in the *Tags overview* guide.
 
+## at.js version 2.10.2 (March 7, 2023)
+
+* Fixed an issue that caused the `trackEvent` function to always return an error.
+
 ## at.js version 2.10.1 (February 2, 2023)
 
 * Fixed a bug in which activities involving audience rules containing parameters with dots in their names were not returning the expected experience, for on-device decisioning.
