@@ -6,9 +6,7 @@ keywords: delivery api
 
 # Delivery API overview
 
-The [!UICONTROL Adobe Target Delivery API] is based on REST. This documentation describes the resources that make up the [!UICONTROL Adobe Target Delivery API]. HTTP methods are utilized to execute operations on those resources.
-
-Through [!UICONTROL Adobe Target's Delivery API], you can:
+Using [!UICONTROL Adobe Target's Delivery API], you can:
 
 * Deliver experiences across web, including SPAs, and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 * Deliver experiences from any server side platform or application that can make HTTP/s calls.

@@ -1,18 +1,18 @@
 ---
 title: Adobe Target Delivery API Single or Batch Delivery
-description: Adobe Target Delivery API Single or Batch Delivery
+description: How do I use [!UICONTROL Adobe Target Delivery API] Single or Batch Delivery calls?
 keywords: delivery api
 ---
 
 # Single or Batch Delivery
 
-The Adobe Target Delivery API supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes.
+The [!UICONTROL Adobe Target Delivery API] supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes.
 
 Weigh performance costs when deciding to make a single call versus a batched call. If you know all the content that needs to be shown for a user, the best practice is to retrieve content for all mboxes with a single batch delivery call, in order to avoid making multiple single delivery calls.
 
 ## Single Delivery Call
 
-You can retrieve an experience to display to the user for one mbox via the Adobe Target Delivery API. Note that if you are making a single delivery call, you would need to initiate another server call to retrieve additional content for an mbox for a user. This can become very costly over time, so please make sure to evaluate your approach when using the single Delivery API call.
+You can retrieve an experience to display to the user for one mbox via the [!UICONTROL Adobe Target Delivery API]. Note that if you are making a single delivery call, you would need to initiate another server call to retrieve additional content for an mbox for a user. This can become very costly over time, so please make sure to evaluate your approach when using the single Delivery API call.
 
 ```
 curl -X POST \
