@@ -1,12 +1,12 @@
 ---
-title: at.js Overview
+title: at.js JavaScript Library Overview
 description: The at.js library is the implementation library for client-side implementation of [!DNL Adobe Target].
 title: What is the at.js Javascript Library?
 feature: at.js
 role: Developer
 ---
 
-# at.js overview
+# at.js JavaScript library overview
 
 The at.js library is the implementation library for client-side implementation of [!DNL Adobe Target].
 
