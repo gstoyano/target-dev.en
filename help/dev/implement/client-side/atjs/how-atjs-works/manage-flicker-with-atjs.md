@@ -1,21 +1,21 @@
 ---
 keywords: flicker, at.js, implementation, asynchronously, asynchronous, synchronously, synchronous, $8
-description: Learn how at.js and Adobe Target prevent flicker (default content momentarily displays before being replaced by activity content) during page or app load.
+description: Learn how at.js and [!DNL Target] prevent flicker (default content momentarily displays before being replaced by activity content) during page or app load.
 title: How does at.js Manage Flicker?
 feature: at.js
 role: Developer
 ---
 # How at.js manages flicker
 
-Information about how the Target at.js JavaScript library prevents flicker during page or app load.
+Information about how the [!DNL Adobe Target] at.js JavaScript library prevents flicker during page or app load.
 
 Flicker happens when default content momentarily displays to visitors before it is replaced by the activity content. Flicker is undesirable because it can be confusing to visitors.
 
 ## Using an auto-created global mbox
 
-If you enable the [Auto Create Global Mbox](/help/dev/implement/client-side/atjs/global-mbox/customize-global-mbox.md) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the `<body>` element to "0", making the page initially invisible to visitors. After a response from Target is received—or if an error with the Target request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
+If you enable the [Auto Create Global Mbox](/help/dev/implement/client-side/atjs/global-mbox/customize-global-mbox.md) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the `<body>` element to "0", making the page initially invisible to visitors. After a response from [!DNL Target] is received—or if an error with the [!DNL Target] request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
 
-If you enable the setting when configuring at.js, at.js will set HTML BODY style opacity to 0. After a response from Target is received, at.js resets HTML BODY opacity to 1.
+If you enable the setting when configuring at.js, at.js will set HTML BODY style opacity to 0. After a response from [!DNL Target] is received, at.js resets HTML BODY opacity to 1.
 
 Opacity set to 0 keeps the page content hidden to prevent flicker, but the browser still renders the page and loads all the necessary assets like CSS, images, etc.
 
@@ -25,11 +25,15 @@ The following illustration shows the Hide Body and Show Body calls in both at.js
 
 **at.js 2.x**
 
-![Target flow: at.js page load request](assets/atjs-20-flow-page-load-request.png)
+(Click image to expand to full width.)
+
+![Target flow: at.js page load request](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Target flow: at.js page load request"){zoomable="yes"}
 
 **at.js 1.*x***
 
-![alt image](assets/target-flow2.png)
+(Click image to expand to full width.)
+
+![Target flow: Auto-created global mbox](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "arget flow: Auto-created global mbox"){zoomable="yes"}
 
 For more information about the `bodyHiddenStyle` override, see [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
