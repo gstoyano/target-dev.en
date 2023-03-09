@@ -1,12 +1,12 @@
 ---
 title: Adobe Target Delivery API Getting Started
-description: Adobe Target Delivery API Getting Started
+description: How do I use the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---
 
-# Getting Started
+# Getting Started with the [!UICONTROL Adobe Target Delivery API]
 
-A Target Delivery API call looks like this:
+A [!UICONTROL Target Delivery API] call looks like this:
 
 ```
 curl -X POST \
@@ -38,12 +38,12 @@ curl -X POST \
     }'
 ```
 
-The `clientCode` can be retrieved from the Target UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
+The `clientCode` can be retrieved from the [!DNL Target] UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
-Before making a Target Delivery API call, follow these steps to ensure a response contains the relevant experience to show end users:
+Before making a [!UICONTROL Target Delivery API] call, follow these steps to ensure a response contains the relevant experience to show end users:
 
-1. Create a Target Activity (A/B, XT, AP or Recommendations) using the [Form-Based Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) or the [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
-1. Use the Delivery API to get a response for the mboxes used in the Target Activity created in step 2.
+1. Create a [!DNL Target] activity (A/B, XT, AP or Recommendations) using the [Form-Based Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) or the [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
+1. Use the Delivery API to get a response for the mboxes used in the [!DNL Target] activity created in Step 2.
 1. Present the experience to the visitor.
 
 ## Postman Collection

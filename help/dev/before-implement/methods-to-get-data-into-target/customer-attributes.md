@@ -1,35 +1,35 @@
 ---
 keywords: implement, implementing, setting up, setup, customer attributes
-description: Get data into Target using customer attributes.
-title: How Do I Get Data into Target Using Customer Attributes?
+description: Get data into [!DNL Target] using customer attributes.
+title: How Do I Get Data into [!DNL Target] Using Customer Attributes?
 feature: Implementation
 role: Developer
 ---
 # Customer attributes
 
-Customer attributes let you upload visitor profile data via FTP to the Adobe Experience Cloud. Once uploaded, use the data in Adobe Analytics and Adobe Target.
+Customer attributes let you upload visitor profile data via FTP to the [!DNL Adobe Experience Cloud]. Once uploaded, use the data in [!DNL Adobe Analytics] and [!DNL Adobe Target].
 
-Target Standard customers can apply five attributes, Target Premium customers can apply 200 attributes.
+Target Standard customers can apply five attributes, [!DNL Target Premium] customers can apply 200 attributes.
 
 ## Format
 
-A .csv file with Experience Cloud IDs (ECIDs) and attribute name/value pairs is uploaded via FTP or manually in the Experience Cloud UI.
+A .csv file with [!DNL Experience Cloud] IDs (ECIDs) and attribute name/value pairs is uploaded via FTP or manually in the Experience Cloud UI.
 
 ## Example use cases
 
-Your CRM or other internal system stores valuable information you want to share with Adobe's Experience Cloud, including Target and Analytics.
+Your CRM or other internal system stores valuable information you want to share with [!DNL Adobe Experience Cloud], including [!DNL Target] and [!DNL Analytics].
 
 ## Benefits of method
 
-Uploading customer data creates a profile entry for that visitor in Target, even if Target has yet to see the visitor.
+Uploading customer data creates a profile entry for that visitor in Target, even if [!DNL Target] has yet to see the visitor.
 
-Same data is automatically available in Target and Analytics.
+Same data is automatically available in [!DNL Target] and [!DNL Analytics].
 
 FTP can be a simpler implementation method than API.
 
 ## Caveats
 
-Target Standard customers can apply five attributes, Target Premium customers can apply 200 attributes
+Target Standard customers can apply five attributes, [!DNL Target Premium] customers can apply 200 attributes
 
 Can only update values via Customer Attributes, not on page.
 

@@ -1,10 +1,14 @@
 ---
-title: Integration with Experience Cloud
-description: Integration with Experience Cloud
+title: Integration with [!DNL Adobe Experience Cloud]
+description: How do I integrate [!DNL Target] with the [!DNL Adobe Experience Cloud]?
 keywords: delivery api, server-side, serverside, integration, a4t
 ---
 
-# Integration with Experience Cloud
+# Integration with [!DNL Adobe Experience Cloud]
 
-For information on Adobe Target server-side integration with Analytics (Analytics for Target, or "A4T"), see the article on [Implement > Server-side > Integration > A4T Reporting](../../implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md). For information on Adobe Target server-side integration with Adobe Audience Manager (AAM), see the article on [Implement > Server-side > Integration > AAM Segments](../../implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md). 
+For information on [!DNL Adobe Target] server-side integration with [!DNL Analytics] ([!UICONTROL Analytics for Target], or "A4T"), see [Analytics for Target (A4T) reporting](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md).
+
+For information on Adobe Target server-side integration with [!DNL Adobe Audience Manager] (AAM), see [AAM segments](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md).
+
+For information about server-side integration with [!DNL Experience Cloud ID (ECID) Service], see [Experience Cloud ID (ECID) Service](/help/dev/implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md).
 

@@ -1,25 +1,25 @@
 ---
 title: Adobe Target Delivery API Identifying Visitors
-description: Adobe Target Delivery API Identifying Visitors
+description: How can I identify user within [!DNL Adobe Target]?
 keywords: delivery api
 ---
 
 # Identifying Visitors
 
-There are multiple ways in which a visitor can be identified within Target.
+There are multiple ways in which a visitor can be identified within [!DNL Adobe Target].
 
 Target uses three identifiers:
 
 |Field Name|Description|
 | --- | --- |
-|`tntId`|The `tntId` is the primary identifier in Target for a user. You can supply this ID or Target will auto-generate it if the request doesn't contain one.|
+|`tntId`|The `tntId` is the primary identifier in [!DNL Target] for a user. You can supply this ID or [!DNL Target] will auto-generate it if the request doesn't contain one.|
 |`thirdPartyId`|The `thirdPartyId` is your company's identifier for the user that you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
 |`marketingCloudVisitorId`|The `marketingCloudVisitorId` is used to merge and share data between different Adobe solutions. The `marketingCloudVisitorId` is required for integrations with Adobe Analytics and Adobe Audience Manager.|
 |`customerIds`|Along with the Experience Cloud Visitor ID, additional [customer IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) and an authenticated status for each visitor can be utilized.|
 
-## Target ID
+## [!DNL Target] ID
 
-The Target ID or `tntId` can be seen as a device ID. This `tntId` is generated automatically by Adobe Target if it isn't provided in the request. Thereafter, subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the user.
+The [!DNL Target] ID or `tntId` can be seen as a device ID. This `tntId` is generated automatically by [!DNL Target] if it isn't provided in the request. Thereafter, subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the user.
 
 ```http
 curl -X POST \
@@ -51,7 +51,7 @@ curl -X POST \
 }'
 ```
 
-The example call above demonstrates that a `tntId` does not need to be passed in. In this scenario, Adobe Target will generate a `tntId` and provide it in the response, as shown here:
+The example call above demonstrates that a `tntId` does not need to be passed in. In this scenario, [!DNL Target]  generates a `tntId` and provide it in the response, as shown here:
 
 ```URI
 {
@@ -66,7 +66,7 @@ The example call above demonstrates that a `tntId` does not need to be passed in
 }
 ```
 
-The generated `tntId` is `10abf6304b2714215b1fd39a870f01afc.28_20`. Please note this `tntId` needs to be used when calling the Adobe Target Delivery API for the same user across sessions.
+The generated `tntId` is `10abf6304b2714215b1fd39a870f01afc.28_20`. Please note this `tntId` needs to be used when calling the [!UICONTROL Adobe Target Delivery API] for the same user across sessions.
 
 ## Marketing Cloud Visitor ID
 
@@ -105,11 +105,11 @@ curl -X POST \
 }'
 ```
 
-The above example call demonstrates how a `marketingCloudVisitorId` that was retrieved from the Experience Cloud ID Service is passed to Adobe Target. In this scenario, Adobe Target will generate a `tntId` since it was not passed in to the original call which will be mapped to the provided `marketingCloudVisitorId` as seen in the response below.
+The above example call demonstrates how a `marketingCloudVisitorId` that was retrieved from the Experience Cloud ID Service is passed to Adobe Target. In this scenario, [!DNL Target] generates a `tntId` since it was not passed in to the original call which will be mapped to the provided `marketingCloudVisitorId` as seen in the response below.
 
 ## Third Party ID
 
-If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. However, you must provide the `thirdPartyID` for every Adobe Target Delivery API call you make.
+If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. However, you must provide the `thirdPartyID` for every [!UICONTROL Adobe Target Delivery API] call you make.
 
 ```
 curl -X POST \
@@ -144,7 +144,7 @@ curl -X POST \
 }'
 ```
 
-The example call above shows a `thirdPartyId`, which is a persistent ID that your business utilizes to identify an end user regardless of whether they are interacting with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` will reference user profile data that can be utilized across channels. In this scenario, Adobe Target will generate a `tntId`, since it was not passed in to the original call, which will be mapped to the provided `thirdPartyId` as seen in the response below.
+The example call above shows a `thirdPartyId`, which is a persistent ID that your business utilizes to identify an end user regardless of whether they are interacting with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` will reference user profile data that can be utilized across channels. In this scenario, [!DNL Target] generates a `tntId`, since it was not passed in to the original call, which will be mapped to the provided `thirdPartyId` as seen in the response below.
 
 ```
 {

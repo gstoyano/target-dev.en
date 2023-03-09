@@ -1,36 +1,36 @@
 ---
 keywords: implement, implementing, setting up, setup, page parameter
-description: Get data into Target using in-page profile attributes.
-title: How Do I Get Data into Target Using In-Page Profile Attributes?
+description: Get data into [!DNL Target] using in-page profile attributes.
+title: How Do I Get Data into [!DNL Target] Using In-Page Profile Attributes?
 feature: Implementation
 role: Developer
 ---
 # In-page profile attributes
 
-In-page profile attributes in Adobe Target (also called "in-mbox profile attributes") are name/value pairs passed directly through page code that are stored in the visitor's profile for future use.
+In-page profile attributes in [!DNL Adobe Target] (also called "in-mbox profile attributes") are name/value pairs passed directly through page code that are stored in the visitor's profile for future use.
 
 In-page profile attributes allow user-specific data to be stored in Target's profile for later targeting and segmentation.
 
 ## Format
 
-In-page profile attributes are passed into Target via a server call as a string name/value pair with the prefix "profile." before the Attribute name.
+In-page profile attributes are passed into [!DNL Target] via a server call as a string name/value pair with the prefix "profile." before the Attribute name.
 
 Attribute names and values are customizable (although there are some "reserved names" for specific uses).
 
-### Examples
+Here are some exampes on in-page profile attributes:
 
 * `profile.membershipLevel=silver`
 * `profile.visitCount=3`
 
 ## Example use cases
 
-* **Login information**: Share non-PII (Personally Identifiable Information) data to Target based on the user's login. This data could be membership status, order history, or more.
+* **Login information**: Share non-PII (Personally Identifiable Information) data to [!DNL Target] based on the user's login. This data could be membership status, order history, or more.
 * **Store info**: Track which store is this user's preferred location.
 * **Previous interactions**: Track what the user has done on the site previously to inform future personalization.
 
 ## Benefits of method
 
-Data gets sent to Target in real time, and can be used on the same server call on which the data comes in.
+Data gets sent to [!DNL Target] in real time, and can be used on the same server call on which the data comes in.
 
 ## Caveats
 

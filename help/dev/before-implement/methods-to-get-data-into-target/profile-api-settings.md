@@ -1,19 +1,19 @@
 ---
 keywords: implementation, api, profile, profile api settings, authentication token
-description: Learn how to configure authentication for batch updates via Adobe Target APIs and generate a profile authentication token.
+description: Learn how to configure authentication for batch updates via [!DNL Adobe Target] APIs and generate a profile authentication token.
 title: How Do I Use Profile API Settings to Enable or Disable Batch Updates?
 feature: APIs/SDKs
 role: Developer
 ---
 # Profile API settings
 
-Enable or disable authentication for batch updates via Adobe Target APIs and generate a profile authentication token.
+Enable or disable authentication for batch updates via [!DNL Adobe Target] APIs and generate a profile authentication token.
 
-Adobe Target creates and maintains a profile for every individual user. This profile is stored on the Target edge cluster and is updated in real time after every visit. You can also update a profile individually or in bulk via API.
+[!DNL Adobe Target] creates and maintains a profile for every individual user. This profile is stored on the [!DNL Target] edge cluster and is updated in real time after every visit. You can also update a profile individually or in bulk via API.
 
 For added security, you can require that the Bulk Update API call require a valid access token to be passed in the header of the request.
 
-**To require authentication and to generate an access token using the Target UI:**
+**To require authentication and to generate an access token using the [!DNL Target] UI:**
 
 1. Click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 1. Under **[!UICONTROL Profile API]** slide the **[!UICONTROL Require Authentication]** toggle to the enabled or disabled position.
@@ -30,13 +30,13 @@ For added security, you can require that the Bulk Update API call require a vali
 
    * Admin role or have at least Approver rights
 
-     For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for Target Premium customers, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     For more information for Target Standard customers, see [Specify roles and Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Users*. For more information for [!DNL Target Premium] customers, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Admin role on the workspace/product profile level
 
-     Workspaces are available to Target Premium customers only. For more information, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Workspaces are available to [!DNL Target Premium] customers only. For more information, see [Configure enterprise permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
-   * Admin Rights (Sysadmin permission) on the Adobe Target product level
+   * Admin Rights (Sysadmin permission) on the [!DNL Adobe Target] product level
   
   You can also generate a profile authentication token via API. For more information, see "Profiles" in the [Adobe Target Admin and Profile API guide](../../administer/admin-api/admin-api-overview-new.md).
 
