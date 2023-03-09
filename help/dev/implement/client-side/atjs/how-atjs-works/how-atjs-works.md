@@ -32,9 +32,9 @@ From a high level view, there are a couple of differences between the two versio
 
 The following diagrams help you understand the workflow of at.js 2.x with [!UICONTROL Views] and how this enhances the SPA integration. To get a better introduction of the concepts used in at.js 2.x, see [Single Page Application implementation](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow with at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Target flow with at.js 2.x"){zoomable="yes"}
+(Click image to expand to full width.)
 
-![Target flow with at.js 2.x](../../assets/system-diagram-atjs-20.png)
+![Target flow with at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Target flow with at.js 2.x"){zoomable="yes"}
 
 |Step|Details|
 | --- | --- |
@@ -49,7 +49,9 @@ The following diagrams help you understand the workflow of at.js 2.x with [!UICO
 
 Now, wherever `triggerView()` is implemented on your SPA, the [!UICONTROL Views] and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the [!DNL Target] backend in order to increment and record impression counts. For more information on at.js for SPAs with Views, see [Single Page Application implementation](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
-![Target flow at.js 2.x triggerView](../../assets/atjs-20-triggerview.png)
+(Click image to expand to full width.)
+
+![Target flow at.js 2.x triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Target flow at.js 2.x triggerView"){zoomable="yes"}
 
 |Step|Details|
 | --- | --- |
@@ -70,7 +72,11 @@ See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/
 
 ## at.js 1.x diagram
 
-![Target flow - at.js 1.x](assets/target-flow.png)
+The following diagrams help you understand the workflow of at.js 1.x.
+
+(Click image to expand to full width.)
+
+![Target flow at.js 1.x](/help/dev/implement/client-side/assets/target-flow.png "Target flow at.js 1.x"){zoomable="yes"}
 
 | Step | Description | Call | Description |
 |--- |--- |--- |--- |
