@@ -1,6 +1,6 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API Overview]
-description: [!UICONTROL Adobe Target Delivery API] Introduction
+title: Adobe Target Delivery API Overview
+description: Adobe Target Delivery API] Introduction
 keywords: delivery api
 ---
 
@@ -19,7 +19,6 @@ Through [!UICONTROL Adobe Target's Delivery API], you can:
 >[!NOTE]
 >
 >You can still access the [legacy /v1/mbox and /v2/batchmbox API documentation](https://developers.adobetarget.com/api/legacy-api/index.html). However, features will be developed in the Delivery API (as documented here) that will not be backported to the legacy APIs.
-
 
 <!--
 
