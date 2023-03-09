@@ -1,20 +1,20 @@
 ---
 keywords: implement, implementation, at.js, adobe experience platform web sdk, aep web sdk
-description: Learn how to implement Adobe Target for client-side web using the Adobe Experience Platform Web SDK  (AEP Web SDK) or the Target at.js JavaScript library.
-title: How Do I Implement Target for Client-Side Web
+description: Learn how to implement [!DNL Adobe Target] for client-side web using the [!DNL Adobe Experience Platform Web SDK] (AEP Web SDK) or the at.js JavaScript library.
+title: How Do I Implement [!DNL Target] for Client-Side Web
 feature: at.js
 role: Developer
 ---
-# Overview: implement Target for client-side web
+# Overview: implement [!DNL Target] for client-side web
 
-In a client-side implementation of Adobe Target, Target delivers the experiences associated with an activity directly to the client browser. The browser decides which experience to display and displays it. With a client-side implementation, you can use a WYSIWYG editor, the [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC), or a non-visual interface, the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), to create your activity and personalization experiences.
+In a client-side implementation of [!DNL Adobe Target], [!DNL Target] delivers the experiences associated with an activity directly to the client browser. The browser decides which experience to display and displays it. With a client-side implementation, you can use a WYSIWYG editor, the [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC), or a non-visual interface, the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), to create your activity and personalization experiences.
 
-To implement Adobe Target client-side, you must use one of the following JavaScript libraries:
+To implement [!DNL Target] client-side, you must use one of the following JavaScript libraries:
 
 * [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk.md)
 
-  The Adobe Experience Platform Web SDK lets you interact with the various services in the Experience Cloud (including Target) through the Adobe Experience Edge Network. If you choose to migrate to the Adobe Experience Platform Web SDK, see [What is Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk.md).
+  The [!UICONTROL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Adobe Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network]. If you choose to migrate to the [!UICONTROL Adobe Experience Platform Web SDK], see [What is [!UICONTROL Adobe Experience Platform Web SDK]](/help/dev/implement/client-side/aep-web-sdk.md).
 
-* [Target at.js JavaScript library](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
+* [[!DNL Target] at.js JavaScript library](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
 
-  The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single page applications. If you choose to migrate to at.js, see [How At.js Works](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) and [Adobe Target Skill Builder: Developer chat, migrate Adobe Target's mbox.js to at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
+  The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single page applications. If you choose to migrate to at.js, see [How At.js Works](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) and [[!DNL Adobe Target] Skill Builder: Developer chat, migrate Adobe Target's mbox.js to at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
