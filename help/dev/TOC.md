@@ -1,10 +1,10 @@
 ---
-user-guide-title: Adobe [!DNL Target] Developer Guide
+user-guide-title: [!DNL Adobe Target] Developer Guide
 breadcrumb-title: Target Developer Guide
 user-guide-description: Learn how to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 ---
 
-# Target Implementation Guide {#developer}
+# Adobe Target Developer Guide {#developer}
 
 + [Adobe Target Developer Guide](overview.md)
 + Getting started {#implementation}

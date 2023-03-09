@@ -1,12 +1,12 @@
 ---
-title: [!UICONTROL Adobe Target Delivery API Overview]
-description: [!UICONTROL Adobe Target Delivery API] Introduction
+title: Adobe Target Delivery API Overview
+description: [!UICONTROL Adobe Target Delivery API] Overiew.
+title: Adobe Target Delivery API Overview
+description: How do I use the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
 ---
 
 # Delivery API overview
-
-The [!UICONTROL Adobe Target Delivery API] is based on REST. This documentation describes the resources that make up the [!UICONTROL Adobe Target Delivery API]. HTTP methods are utilized to execute operations on those resources.
 
 Through [!UICONTROL Adobe Target's Delivery API], you can:
 
