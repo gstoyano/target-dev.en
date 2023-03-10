@@ -1,7 +1,7 @@
 ---
 keywords: single page application implementation, implement single page application, spa, at.js 2.x, at.js, single page application, single page app, spa, SPAs, single page application implementation0
-description: Learn how to use Adobe Target at.js 2.x to implement Target for Single Page Applications (SPAs).
-title: Can I implement Target for Single Page Applications (SPAs)?
+description: Learn how to use [!DNL Adobe Target] at.js 2.x to implement [!DNL Target] for Single Page Applications (SPAs).
+title: Can I implement [!DNL Target] for Single Page Applications (SPAs)?
 feature: Implement Server-side
 role: Developer
 ---
@@ -19,9 +19,9 @@ Here are some benefits to using at.js 2.x that are not available in previous ver
 * Tremendously improve your end-users' experiences on your site because offers are shown immediately via the cache without lag time introduced by traditional server calls.
 * A simple one-line of code and one-time developer setup to enable your marketers to create and run A/B and Experience Targeting (XT) activities via the VEC on your SPA. 
 
-## Adobe Target Views and Single Page Applications
+## [!DNL Adobe Target] Views and Single Page Applications
 
-The Adobe Target VEC for SPAs takes advantage of a new concept called Views: a logical group of visual elements that together make up an SPA experience. A SPA can, therefore, be considered as transitioning through views, instead of URLs, based on user interactions. A View can typically represent a whole site or grouped visual elements within a site.
+The [!DNL Adobe Target] VEC for SPAs takes advantage of a new concept called Views: a logical group of visual elements that together make up an SPA experience. A SPA can, therefore, be considered as transitioning through views, instead of URLs, based on user interactions. A View can typically represent a whole site or grouped visual elements within a site.
 
 To explain further about what Views are, let's navigate this hypothetical online e-commerce site implemented in React and explore some example Views. Click the links below to open this site in a new browser tab.
 
@@ -29,7 +29,7 @@ To explain further about what Views are, let's navigate this hypothetical online
 
 ![home site](assets/home.png)
 
-When we navigate to the home site, we can immediately see a hero image that promotes an Easter sale as well as the newest products that is selling on the site. In this case, a View can be defined as the entire home site. This is handy to note as we will expand on this more in the Implementing Adobe Target Views section below.
+When we navigate to the home site, we can immediately see a hero image that promotes an Easter sale as well as the newest products that is selling on the site. In this case, a View can be defined as the entire home site. This is handy to note as we will expand on this more in the Implementing [!DNL Adobe Target] Views section below.
 
 **Link: [Product Site](https://target.enablementadobe.com/react/demo/#/products)**
 
@@ -55,15 +55,15 @@ Furthermore, the Views concept can be extended much further than this. If market
 
 Now, marketers might want to run an A/B Test to see whether changing the color from blue to red when Express Delivery is selected can boost conversions, as opposed to keeping the button color blue for both delivery options. 
 
-## Implementing Adobe Target Views
+## Implementing [!DNL Adobe Target] Views
 
-Now that we have covered what Adobe Target Views are, we can leverage this concept in Target to empower marketers to run A/B and XT tests on SPAs via the VEC. This will require a one-time developer setup. Let's go through the steps to set this up.
+Now that we have covered what [!DNL Adobe Target] Views are, we can leverage this concept in [!DNL Target] to empower marketers to run A/B and XT tests on SPAs via the VEC. This will require a one-time developer setup. Let's go through the steps to set this up.
 
 1. Install at.js 2.x.
 
-   First, we need to install at.js 2.x. This version of at.js was developed with SPAs in mind. Previous versions of at.js and mbox.js (now deprecated) do not support Adobe Target Views and the VEC for SPAs.
+   First, we need to install at.js 2.x. This version of at.js was developed with SPAs in mind. Previous versions of at.js and mbox.js (now deprecated) do not support [!DNL Adobe Target] Views and the VEC for SPAs.
 
-   Download at.js 2.x via the Adobe Target UI located in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
+   Download at.js 2.x via the [!DNL Adobe Target] UI located in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
 
 1. Implement at.js 2.x's newest function, `triggerView()` on your sites.
 
@@ -190,12 +190,12 @@ The following diagrams help you understand the workflow of at.js 2.x with Views 
 |2|The at.js library loads synchronously and hides the document body.<br />at.js can also be loaded asynchronously with an option prehiding snippet implemented on the page.|
 |3|A page load request is made including all configured parameters (MCID, SDID, and customer ID).|
 |4|Profile scripts execute and then feed into the Profile Store. The Store requests qualified audiences from the Audience Library (for example, audiences shared from Adobe Analytics, Audience Management, etc.).<br />Customer attributes are sent to the Profile Store in a batch process.|
-|5|Based on URL request parameters and profile data, Target decides which activities and experiences to return to the visitor for the current page and future views.|
+|5|Based on URL request parameters and profile data, [!DNL Target] decides which activities and experiences to return to the visitor for the current page and future views.|
 |6|Targeted content is sent back to the page, optionally including profile values for additional personalization.<br />Targeted content on the current page is revealed as quickly as possible without flicker of default content.<br />Targeted content for views that are shown as a result to user actions in a SPA that is cached in the browser so it can be instantly applied without an additional server call when the views are triggered through `triggerView()`.|
 |7|Analytics data is sent to Data Collection servers.|
-|8|Targeted data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage.<br />Analytics data can then be viewed in both Analytics and Target via Analytics for Target (A4T) reports.|
+|8|Targeted data is matched to [!DNL Analytics] data via the SDID and is processed into the [!DNL Analytics] reporting storage.<br />Analytics data can then be viewed in both [!DNL Analytics] and [!DNL Target] via [!DNL Analytics] for [!DNL Target] (A4T) reports.|
 
-Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the Target backend in order to increment and record impression counts.
+Now, wherever `triggerView()` is implemented on your SPA, the Views and actions are retrieved from cache and shown to the user without a server call. `triggerView()` also makes a notifications request to the [!DNL Target] backend in order to increment and record impression counts.
 
 ![Target flow at.js 2.x triggerView](../../assets/atjs-20-triggerview.png)
 
@@ -204,9 +204,9 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 |1|`triggerView()` is called in the SPA to render the View and apply actions to modify visual elements.|
 |2|Targeted content for the view is read from the cache.|
 |3|Targeted content is revealed as quickly as possible without flicker of default content.|
-|4|Notification request is sent to the Target Profile Store to count the visitor in the activity and increment metrics.|
+|4|Notification request is sent to the [!DNL Target] Profile Store to count the visitor in the activity and increment metrics.|
 |5|Analytics data sent to Data Collection Servers.|
-|6|Target data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage. Analytics data can then be viewed in both Analytics and Target via A4T reports.|
+|6|Target data is matched to [!DNL Analytics] data via the SDID and is processed into the [!DNL Analytics] reporting storage. [!DNL Analytics] data can then be viewed in both [!DNL Analytics] and [!DNL Target] via A4T reports.|
 
 ## Single Page App Visual Experience Composer
 
@@ -218,7 +218,7 @@ After you have completed installing at.js 2.x and adding `triggerView()` to your
 
 ## Use TriggerView to ensure that A4T works correctly with at.js 2.x and SPAs
 
-To ensure that [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) works correctly with at.js 2.x, be sure to send the same SDID in the Target request and in the Analytics request.
+To ensure that [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) works correctly with at.js 2.x, be sure to send the same SDID in the [!DNL Target] request and in the [!DNL Analytics] request.
 
 As best practices related to SPAs:
 
@@ -267,7 +267,7 @@ If the preceding steps are followed you should have a robust A4T solution for SP
 
 ## Implementation best practices
 
-at.js 2.x APIs let you customize your Target implementation in many ways, but it is important to follow the correct order of operations during this process.
+at.js 2.x APIs let you customize your [!DNL Target] implementation in many ways, but it is important to follow the correct order of operations during this process.
 
 The following information describes the order of operations that you must follow when loading a Single Page Application for the first time in a browser and for any view change that happens afterwards.
 
@@ -276,40 +276,40 @@ The following information describes the order of operations that you must follow
 |Step|Action|Details|
 | --- | --- | --- |
 |1|Load VisitorAPI JS|This library is responsible for assigning an ECID to the visitor. This ID is later consumed by other Adobe solutions on the web page.|
-|2|Load at.js 2.x|at.js 2.x loads all the necessary APIs that you use to implement Target requests and views.|
-|3|Execute Target request|If you have a data layer, we recommend that you load critical data that is required to send to Target before executing a Target request. This lets you use `targetPageParams` to send any data you want to use for targeting. You must ensure that you request for execute > pageLoad as well as prefetch > views in this API call. if you have set `pageLoadEnabled` and `viewsEnabled`, then both execute > pageLoad and prefetch > views automatically happen with Step 2; otherwise, you need to use the `getOffers()` API to make this request.|
-|4|Call `triggerView()`|Because the Target request you initiated in Step 3 could return experiences for both Page Load execution as well as Views, ensure that `triggerView()` is called after the Target request is returned and finishes applying the offers to cache. You must execute this step only once per view.|
-|5|Call the Analytics page view beacon|This beacon sends the SDID associated with Step 3 and 4 to Analytics for data stitching.|
-|6|Call additional `triggerView({"page": false})`|This is an optional step for SPA frameworks that could potentially re-render certain components on the page without a view change happening. On such occasions, it is important that you invoke this API to ensure that Target experiences are re-applied after the SPA framework has re-rendered the components. You can execute this step as many times as you want to ensure that Target experiences persist in your SPA views.|
+|2|Load at.js 2.x|at.js 2.x loads all the necessary APIs that you use to implement [!DNL Target] requests and views.|
+|3|Execute [!DNL Target] request|If you have a data layer, we recommend that you load critical data that is required to send to [!DNL Target] before executing a [!DNL Target] request. This lets you use `targetPageParams` to send any data you want to use for targeting. You must ensure that you request for execute > pageLoad as well as prefetch > views in this API call. if you have set `pageLoadEnabled` and `viewsEnabled`, then both execute > pageLoad and prefetch > views automatically happen with Step 2; otherwise, you need to use the `getOffers()` API to make this request.|
+|4|Call `triggerView()`|Because the [!DNL Target] request you initiated in Step 3 could return experiences for both Page Load execution as well as Views, ensure that `triggerView()` is called after the [!DNL Target] request is returned and finishes applying the offers to cache. You must execute this step only once per view.|
+|5|Call the [!DNL Analytics] page view beacon|This beacon sends the SDID associated with Step 3 and 4 to [!DNL Analytics] for data stitching.|
+|6|Call additional `triggerView({"page": false})`|This is an optional step for SPA frameworks that could potentially re-render certain components on the page without a view change happening. On such occasions, it is important that you invoke this API to ensure that [!DNL Target] experiences are re-applied after the SPA framework has re-rendered the components. You can execute this step as many times as you want to ensure that [!DNL Target] experiences persist in your SPA views.|
 
 ### Order of operations for SPA view change (no full page reload)
 
 |Step|Action|Details|
 | --- | --- | --- |
 |1|Call `visitor.resetState()`|This API ensures that the SDID is re-generated for the new view as it loads.|
-|2|Update cache by calling the `getOffers()` API|This is an optional step to take if this view change has a potential to qualify the current visitor for more Target activities or disqualify them from activities. At this point, you can also choose to send additional data to Target for enabling further targeting capabilities.|
-|3|Call `triggerView()`|If you have executed Step 2, then you must wait for the Target request and apply the offers to cache before execute this step. You must execute this step only once per view.|
+|2|Update cache by calling the `getOffers()` API|This is an optional step to take if this view change has a potential to qualify the current visitor for more [!DNL Target] activities or disqualify them from activities. At this point, you can also choose to send additional data to [!DNL Target] for enabling further targeting capabilities.|
+|3|Call `triggerView()`|If you have executed Step 2, then you must wait for the [!DNL Target] request and apply the offers to cache before execute this step. You must execute this step only once per view.|
 |4|Call `triggerView()`|If you have not executed Step 2, then you can execute this step as soon as you complete Step 1. If you have executed Step 2 and Step 3, then you should skip this step. You must execute this step only once per view.|
-|5|Call the Analytics page view beacon|This beacon sends the SDID associated with Step 2, 3, and 4 to Analytics for data stitching.|
-|6|Call additional `triggerView({"page": false})`|This is an optional step for SPA frameworks that could potentially re-render certain components on the page without a view change happening. On such occasions, it is important that you invoke this API to ensure that Target experiences are re-applied after the SPA framework has re-rendered the components. You can execute this step as many times as you want to ensure that Target experiences persist in your SPA views.|
+|5|Call the [!DNL Analytics] page view beacon|This beacon sends the SDID associated with Step 2, 3, and 4 to [!DNL Analytics] for data stitching.|
+|6|Call additional `triggerView({"page": false})`|This is an optional step for SPA frameworks that could potentially re-render certain components on the page without a view change happening. On such occasions, it is important that you invoke this API to ensure that [!DNL Target] experiences are re-applied after the SPA framework has re-rendered the components. You can execute this step as many times as you want to ensure that [!DNL Target] experiences persist in your SPA views.|
 
 ## Training videos
 
 The following videos contain more information:
 
-### Understanding how at.js 2.x works ![Overview badge](../../../assets/overview.png)
+### Understanding how at.js 2.x works
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
 See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
-### Implement at.js 2.x in a SPA ![Tutorial badge](../../../assets/tutorial.png)
+### Implement at.js 2.x in a SPA
 
 >[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
 See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.
 
-### Using the VEC for SPAs in Adobe Target ![Tutorial badge](../../../assets/tutorial.png)
+### Using the VEC for SPAs in [!DNL Adobe Target]
 
 >[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
