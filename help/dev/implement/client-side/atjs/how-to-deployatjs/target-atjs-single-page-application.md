@@ -297,19 +297,19 @@ The following information describes the order of operations that you must follow
 
 The following videos contain more information:
 
-### Understanding how at.js 2.x works ![Overview badge](../../../assets/overview.png)
+### Understanding how at.js 2.x works
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
 See [Understanding how at.js 2.x works](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) for more information.
 
-### Implement at.js 2.x in a SPA ![Tutorial badge](../../../assets/tutorial.png)
+### Implement at.js 2.x in a SPA
 
 >[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
 See [Implement Adobe Target's at.js 2.x in a Single Page Application (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) for more information.
 
-### Using the VEC for SPAs in [!DNL Adobe Target] ![Tutorial badge](../../../assets/tutorial.png)
+### Using the VEC for SPAs in [!DNL Adobe Target]
 
 >[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
