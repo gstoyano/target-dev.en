@@ -1,27 +1,27 @@
 ---
 keywords: adobe.target.getOffer, getOffer, getoffer, get offer, at.js, functions, function, $8
-description: Use the adobe.target.getOffer() function and its options for the Adobe Target at.js library to fire requests to get a Target offer.
-title: How Do I Use the adobe.target.getOffer() Function?
+description: Use the [!UICONTROL adobe.target.getOffer()] function and its options for the [!DNL Adobe Target] at.js library to fire requests to get a [!DNL Target] offer.
+title: How Do I Use the [!UICONTROL adobe.target.getOffer()] Function?
 feature: at.js
 role: Developer
 ---
-# adobe.target.getOffer(options)
+# [!DNL adobe.target.getOffer(options)]
 
-This function fires a request to get a Target offer.
+This function fires a request to get a [!DNL Target] offer.
 
-Use with `adobe.target.applyOffer()` to process the response or use your own success handling. The options parameter is mandatory and has the following structure:
+Use with `[!UICONTROL adobe.target.applyOffer()]` to process the response or use your own success handling. The options parameter is mandatory and has the following structure:
 
 | Key | Type | Required | Description |
 |--- |--- |--- |--- |
 |mbox|String|Yes|Mbox name|
-|params|Object|No|Mbox parameters. An object of key-value pairs that has the following structure:<br />`{ "param1": "value1", "param2": "value2"}`|
-|success|Function|Yes|Callback to be executed when we got a response from the server. The success callback function will receive a single parameter that represents an array of offer objects. Here is a success callback example:<br />`function handleSuccess(response){......}`<br />See Responses below for details.|
+|params|Object|No|Mbox parameters. An object of key-value pairs that has the following structure:<P>`{ "param1": "value1", "param2": "value2"}`|
+|success|Function|Yes|Callback to be executed when we got a response from the server. The success callback function will receive a single parameter that represents an array of offer objects. Here is a success callback example:<P>`function handleSuccess(response){......}`<P>See Responses below for details.|
 |error|Function|Yes|Callback to be executed when we got an error. There are a few cases that are considered erroneous:<ul><li>HTTP status code different from 200 OK</li><li>Response can not be parsed. For example we poorly constructed JSON or HTML instead of JSON.</li><li>Response contains the "error" key. For example an exception was thrown on the edge a request could not be properly processed. We could get an error when an mbox is blocked and we could not retrieve any content for it, etc. The error callback function will receive two parameters: status and error. Here is an error callback example: `function handleError(status, error){......}`</li></ul>See Error Responses below for details.|
-|timeout|Number|No|Timeout in milliseconds. If not specified, the default timeout in at.js will be used.<br />The default timeout can be set from the Target UI under Administration > Implementation.|
+|timeout|Number|No|Timeout in milliseconds. If not specified, the default timeout in at.js will be used.<P>The default timeout can be set from the [!DNL Target] UI under [!UICONTROL Administration] > [!UICONTROL Implementation].|
 
 ## Examples
 
-Adding parameters with getOffer() and using applyOffer() for success-handling:
+Adding parameters with [!UICONTROL getOffer()] and using [!UICONTROL applyOffer()] for success-handling:
 
 ```javascript
 adobe.target.getOffer({   
@@ -42,7 +42,7 @@ adobe.target.getOffer({
 });
 ```
 
-Adding parameters and profile parameters with getOffer() and using applyOffer() for success-handling:
+Adding parameters and profile parameters with [!UICONTROL getOffer()] and using [!UICONTROL applyOffer()] for success-handling:
 
 ```javascript
 adobe.target.getOffer({   
@@ -65,7 +65,7 @@ adobe.target.getOffer({
 });
 ```
 
-Using custom timeout and custom success-handling with getOffer():
+Using custom timeout and custom success-handling with [!UICONTROL getOffer()]:
 
 "YOUR_OWN_CUSTOM_HANDLING_FUNCTION" is a placeholder for a function the customer would define.
 
