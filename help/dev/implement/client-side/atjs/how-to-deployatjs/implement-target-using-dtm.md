@@ -1,15 +1,15 @@
 ---
 keywords: implement, implementing, implementation, tag manager, dtm, at.js, dynamic tag management, $8
-description: Learn how to implement the Adobe Target at.js library using the legacy Dynamic Tag Management (DTM). Tags in Adobe Experience Platform are the preferred method to implement Target.
-title: Can I Implement Target using Dynamic Tag Manager (DTM)?
+description: Learn how to implement the [!DNL Adobe Target] at.js library using the legacy [!DNL Dynamic Tag Management] (DTM). Tags in [!DNL Adobe Experience Platform] are the preferred method to implement [!DNL Target].
+title: Can I Implement [!DNL Target] using [!DNL Dynamic Tag Manager] (DTM)?
 feature: Implement Server-side
 role: Developer
 ---
-# Implement Target using Dynamic Tag Manager (DTM)
+# Implement [!DNL Target] using [!DNL Dynamic Tag Manager] (DTM)
 
-Adobe Dynamic Tag Manager is a legacy product and is no longer supported. For the best implementation experience, Adobe recommends using tags in Adobe Experience Platform.
+[!DNL Adobe Dynamic Tag Manager] is a legacy product and is no longer supported. For the best implementation experience, [!DNL Adobe] recommends using tags in [!DNL Adobe Experience Platform].
 
-Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
+Tags in [!DNL Adobe Experience Platform] are the next generation of tag management capabilities from [!DNL Adobe]. Tags give customers a simple way to deploy and manage the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
-For more information, see [Implement Target using Adobe Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md).
+For more information, see [Implement [!DNL Target] using [!DNL Adobe Platform]](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md).
 
