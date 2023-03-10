@@ -1,13 +1,13 @@
 ---
 keywords: implementation, javascript library, js, atjs, on-device decisioning, on device decisioning, at.js, on-device, on device, troubleshooting, trouble shooting, implementation2
-description: Learn how to troubleshoot [!UICONTROL on-device decisioning]] with the at.js library.
+description: Learn how to troubleshoot [!UICONTROL on-device decisioning] with the at.js library.
 title: How Do I Troubleshoot On-Device Decisioning with the at.js JavaScript Library?
 feature: at.js
 role: Developer
 ---
-# Troubleshooting [!UICONTROL on-device decisioning]] for at.js
+# Troubleshooting [!UICONTROL on-device decisioning] for at.js
 
-Complete the following steps to troubleshoot [!UICONTROL on-device decisioning]] in [!UICONTROL Adobe Target] with the at.js JavaScript library:
+Complete the following steps to troubleshoot [!UICONTROL on-device decisioning] in [!UICONTROL Adobe Target] with the at.js JavaScript library:
 
 ## Step 1: Enable the console log for at.js
 
@@ -42,7 +42,7 @@ For example, to open DevTools in Google Chrome:
 
 ## Step 3: Verify the rule artifact download using at.js custom events
 
-The at.js library dispatches two new custom events to support [!UICONTROL on-device decisioning]]. 
+The at.js library dispatches two new custom events to support [!UICONTROL on-device decisioning]. 
 
 * `adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED`
 * `adobe.target.event.ARTIFACT_DOWNLOAD_FAILED` 
