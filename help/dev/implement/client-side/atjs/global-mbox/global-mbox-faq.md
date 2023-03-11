@@ -1,6 +1,6 @@
 ---
 keywords: troubleshooting, frequently asked questions, FAQ, FAQs, global, global mbox
-description: Read frequently asked questions (FAQs) and answers about Adobe Target global mboxes.
+description: Read frequently asked questions (FAQs) and answers about Adobe [!DNL Target] global mboxes.
 title: What Are Frequently Asked Questions About the Global mbox?
 feature: at.js
 role: Developer
@@ -9,7 +9,7 @@ role: Developer
 
 List of Frequently Asked Questions (FAQs) about global mboxes.
 
-## Can I have more than one global mbox if my Target account is set across multiple domains?
+## Can I have more than one global mbox if my [!DNL Target] account is set across multiple domains?
 
 Only one global mbox is supported across your account.
 
@@ -17,15 +17,15 @@ You can limit where your activities run by adding URL rules to your activities. 
 
 You could also pass a parameter on the page using [targetPageParams](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html) and then select those parameters in the "configure URL" section in the Visual Experience Composer (VEC) or by adding the parameters as "refinements" in the Form-Based Experience Composer.
 
-## How do I pass revenue data on a Target global mbox?
+## How do I pass revenue data on a [!DNL Target] global mbox?
 
-To collect revenue and order information on the target-global-mbox, "mbox parameters" must be sent to Target. These parameters are name/value pairs used to send more information to Target. Target automatically looks for these parameters (reserved names) to populate revenue data.
+To collect revenue and order information on the target-global-mbox, "mbox parameters" must be sent to [!DNL Target]. These parameters are name/value pairs used to send more information to [!DNL Target]. [!DNL Target] automatically looks for these parameters (reserved names) to populate revenue data.
 
 For the `orderConfirmPage`, you should pass in `orderTotal`, `orderId`, and `productPurchasedId`.
 
 These parameters must be sent to the target-global-mbox via `targetPageParams()`. For more information, see [Passing Parameters to a Global mbox](/help/dev/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md).
 
-You'll also want to add targeting to the conversion piece so that Target only counts conversions on the target-global-mbox when the order confirmation page has been viewed, as shown below:
+You'll also want to add targeting to the conversion piece so that [!DNL Target] only counts conversions on the target-global-mbox when the order confirmation page has been viewed, as shown below:
 
 ![alt image](assets/revenue1.png)
 
