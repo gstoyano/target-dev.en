@@ -25,7 +25,7 @@ The following diagrams help you understand the workflow of at.js 2.*x* with View
 
 |Call|Details|
 | --- | --- |
-|1|Call returns the Experience Cloud ID if the user is authenticated; another call syncs the customer ID.|
+|1|Call returns the [!UICONTROL Experience Cloud ID] if the user is authenticated; another call syncs the customer ID.|
 |2|The at.js library loads synchronously and hides the document body.<P>at.js can also be loaded asynchronously with an option prehiding snippet implemented on the page.|
 |3|A page load request is made including all configured parameters (MCID, SDID, and customer ID).|
 |4|Profile scripts execute and then feed into the Profile Store. The Store requests qualified audiences from the Audience Library (for example, audiences shared from [!DNL Adobe Analytics], [!DNL Audience Manager], etc.).<P>Customer attributes are sent to the Profile Store in a batch process.|
