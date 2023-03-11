@@ -7,22 +7,24 @@ description: User identification and bucketing
 
 ## User Identification
 
-There are multiple ways in which a user can be identified within Adobe Target. Target uses the following identifiers:
+There are multiple ways in which a user can be identified within [!DNL Adobe Target]. [!UICONTROL Target] uses the following identifiers:
 
 |Field Name|Description|
 | --- | --- |
-|`tntID`|The `tntId` is the primary identifier in Target for a user. You can supply this ID, or Target will auto-generate it if the request doesn't contain one.|
+|`tntID`|The `tntId` is the primary identifier in [!DNL Target] for a user. You can supply this ID, or [!DNL Target] will auto-generate it if the request doesn't contain one.|
 |`thirdPartyId`|The `thirdPartyId` is your company's identifier for the user, which you can send with every call. When a user logs in to a company's site, the company typically creates an ID that is tied to the visitor's account, loyalty card, membership number, or other applicable identifiers for that company.|
 |`marketingCloudVisitorId`|The `marketingCloudVisitorId` is used to merge and share data between different Adobe solutions. The marketingCloudVisitorId is required for integrations with Adobe Analytics and Adobe Audience Manager.|
 |`customerIds`|Along with the Experience Cloud Visitor ID, additional [customer IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) and an authenticated status for each visitor can also be utilized.|
 
-## Target ID (tntID)
+## [!DNL Target] ID (tntID)
 
-The Target ID, or `tntId`, can be considered a device ID. This `tntId` is generated automatically by Adobe Target if it is not provided in the request. Subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the same user.
+The [!DNL Target] ID, or `tntId`, can be considered a device ID. This `tntId` is generated automatically by [!DNL Adobe Target] if it is not provided in the request. Subsequent requests need to include this `tntId` in order for the right content to be delivered to a device used by the same user.
 
-The following sample call demonstrates a situation in which a `tntId` is not passed to Target.
+The following sample call demonstrates a situation in which a `tntId` is not passed to [!DNL Target].
 
-### Node.js SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -47,7 +49,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java SDK
+>[!TAB Java SDK]
 
 ```Java
 ClientConfig config = ClientConfig.builder()
@@ -71,7 +73,9 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-In the absence of a `tntId`, Adobe Target generates a `tntId` and provides it in the response, as follows.
+>[!ENDTABS]
+
+In the absence of a `tntId`, [!DNL Adobe Target] generates a `tntId` and provides it in the response, as follows.
 
 ```JSON
 {
@@ -90,11 +94,13 @@ In this example, the generated `tntId` is `10abf6304b2714215b1fd39a870f01afc.35_
 
 ## Third Party ID (thirdPartyId)
 
-If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. A `thirdPartyID` is a persistent ID that your business utilizes to identify an end user, regardless of whether they interact with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` references user profile data that can be utilized across channels. However, you must provide the `thirdPartyID` for every Adobe Target Delivery API call you make.
+If your organization uses an ID to identify your visitor, you can use `thirdPartyID` to deliver content. A `thirdPartyID` is a persistent ID that your business utilizes to identify an end user, regardless of whether they interact with your business from web, mobile, or IoT channels. In other words, the `thirdPartyId` references user profile data that can be utilized across channels. However, you must provide the `thirdPartyID` for every [!DNL Adobe Target] Delivery API call you make.
 
 The following sample call demonstrates the use of a `thirdPartyId`.
 
-### Node.js SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -122,7 +128,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java SDK
+>[!TAB Java SDK]
 
 ```Java
 ClientConfig config = ClientConfig.builder()
@@ -148,15 +154,19 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-In this scenario, Adobe Target will generate a `tntId` since it was not passed into the original call, which will be mapped to the provided `thirdPartyId`.
+>[!ENDTABS]
+
+In this scenario, [!DNL Adobe Target] will generate a `tntId` since it was not passed into the original call, which will be mapped to the provided `thirdPartyId`.
 
 ## Marketing Cloud Visitor ID (marketingCloudVisitorId)
 
-The `marketingCloudVisitorId` is a universal and persistent ID that identifies your visitors across all solutions in the Adobe Experience Cloud. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions, including Adobe Target, Adobe Analytics, and Adobe Audience Manager. Please note the `marketingCloudVisitorId` is required when integrating Target with Analytics and Audience Manager.
+The `marketingCloudVisitorId` is a universal and persistent ID that identifies your visitors across all solutions in the Adobe Experience Cloud. When your organization implements the ID service, this ID lets you identify the same site visitor and their data in different Experience Cloud solutions, including [!DNL Adobe Target], Adobe Analytics, and Adobe Audience Manager. Please note the `marketingCloudVisitorId` is required when integrating [!DNL Target] with [!DNL Adobe Analytics] and [!DNL Adobe Audience Manager].
 
-The following sample call demonstrates how a `marketingCloudVisitorId` that was retrieved from the Experience Cloud ID Service is passed to Target.
+The following sample call demonstrates how a `marketingCloudVisitorId` that was retrieved from the Experience Cloud ID Service is passed to [!DNL Target].
 
-### Node.js SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -184,7 +194,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java SDK
+>[!TAB Java SDK]
 
 ```Java
 ClientConfig config = ClientConfig.builder()
@@ -210,7 +220,9 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-In this scenario, Target will generate a `tntId` since it was not passed into the original call, which will be mapped to the provided `marketingCloudVisitorId`.
+>[!ENDTABS]
+
+In this scenario, [!DNL Target] will generate a `tntId` since it was not passed into the original call, which will be mapped to the provided `marketingCloudVisitorId`.
 
 ## Customer ID (customerIds)
 
@@ -222,9 +234,11 @@ In this scenario, Target will generate a `tntId` since it was not passed into th
 |`authenticated`|The user is currently authenticated with an active session on your website or app.|
 |`logged_out`|The user was authenticated but actively logged out. The user intended to disconnect from the authenticated state. The user no longer wants to be treated as authenticated.|
 
-Please note that only when the `customerId` is in an authenticated state will Target reference the user profile data that is stored and linked to the customerId. If the `customerId` is in an unknown or `logged_out` state, it will be ignored, and any user profile data that may be associated with that `customerId` will not be leveraged for audience targeting.
+Please note that only when the `customerId` is in an authenticated state will [!DNL Target] reference the user profile data that is stored and linked to the customerId. If the `customerId` is in an unknown or `logged_out` state, it will be ignored, and any user profile data that may be associated with that `customerId` will not be leveraged for audience targeting.
 
-### Node.js SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -257,7 +271,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java SDK
+>[!TAB Java SDK]
 
 ```Java
 ClientConfig config = ClientConfig.builder()
@@ -288,13 +302,17 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
+>[!ENDTABS]
+
 The example above demonstrates how to send a `customerId` with an `authenticatedState`. When sending a `customerId`, the `integrationCode`, `id`, and `authenticatedState` as well as the `marketingCloudVisitorId` are required. The `integrationCode` is the alias of the [customer attributes file](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) you provided through CRS.
 
 ## Merged Profile
 
-You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request. In this scenario, Adobe Target will maintain the mapping of all these IDs and pin it to a visitor. Learn how profiles are [merged and synced in real time](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) using the different identifiers.
+You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request. In this scenario, [!DNL Adobe Target] will maintain the mapping of all these IDs and pin it to a visitor. Learn how profiles are [merged and synced in real time](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) using the different identifiers.
 
-### Node JS SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -324,7 +342,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java SDK
+>[!TAB Java SDK]
 
 ```Java
 ClientConfig config = ClientConfig.builder()
@@ -352,14 +370,16 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
+>[!ENDTABS]
+
 The example above demonstrates how you can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the same request.
 
 ## Bucketing
 
-Your users are bucketed into seeing an experience depending on how you set up your Adobe Target activities. In Adobe Target, bucketing is:
+Your users are bucketed into seeing an experience depending on how you set up your [!DNL Adobe Target] activities. In [!DNL Adobe Target], bucketing is:
 
 * **Deterministic**: MurmurHash3 is used to ensure that your user is bucketed and sees the right variation every single time as long as the user ID is consistent.
-* **Sticky**: Adobe Target stores the variation that your user sees in the user profile to ensure the variation is consistently shown to that user across sessions and channels. Variations and stickiness are guaranteed when using server-side decisioning. When on-device decisioning is used, stickiness is not guaranteed.
+* **Sticky**: [!DNL Adobe Target] stores the variation that your user sees in the user profile to ensure the variation is consistently shown to that user across sessions and channels. Variations and stickiness are guaranteed when using server-side decisioning. When on-device decisioning is used, stickiness is not guaranteed.
 
 ## End-to-end bucketing workflow
 
