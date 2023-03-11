@@ -1,6 +1,8 @@
 ---
 title: Sample apps overview
-description: Sample apps overview
+description: See [!DNL Adobe Target] sample apps for Node.js, Java, .NET, and Python.
+feature: APIs/SDKs
+role: Developer
 ---
 
 # Sample apps overview
