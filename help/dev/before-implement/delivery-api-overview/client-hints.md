@@ -1,13 +1,13 @@
 ---
 title: Adobe Target Delivery API Client Hints
-description: How do I use Client Hints in the Adobe Target Delivery API?
+description: How do I use Client Hints in the [!DNL Adobe Target] Delivery API?
 ---
 
 # Client Hints and the [!UICONTROL Adobe Target Delivery API]
 
 Client Hints must be sent to [!DNL Adobe Target] on the offers request.
 
-Generally, it is recommended to send all available Client Hints to Target. For more information, see [User-agent and Client Hints](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/overview.md) section.
+Generally, it is recommended to send all available Client Hints to [!DNL Target]. For more information, see [User-agent and Client Hints](/help/dev/implement/client-side/atjs/user-agent-and-client-hints.md) in the [Client-side Implementation](../../implement/client-side/overview.md) section.
 
 ## Delivery API direct calls
 
