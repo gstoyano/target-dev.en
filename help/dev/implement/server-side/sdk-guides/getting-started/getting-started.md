@@ -69,6 +69,8 @@ dotnet add package Adobe.Target.Client
 pip install target-python-sdk
 ```
 
+>[!ENDTABS]
+
 The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
 
 >[!BEGINTABS]
