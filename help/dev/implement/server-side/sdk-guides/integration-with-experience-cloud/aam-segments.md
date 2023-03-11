@@ -6,7 +6,7 @@ keywords: delivery api, server-side, serverside, integration, audience manager, 
 
 # AAM segments
 
-Adobe Audience Manager segments can be leveraged via Adobe Target SDKs. In order to leverage AAM segments, the following fields need to be provided:
+[!DNL Adobe Audience Manager] segments can be leveraged via [!DNL Adobe Target] SDKs. In order to leverage AAM segments, the following fields need to be provided:
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ The SDK will automatically populate these fields for you when making a `getOffer
 
 ### Use of Cookies
 
-Cookies are used to correlate Adobe Audience Manager requests with Adobe Target requests. These are the cookies used in this implementation.
+Cookies are used to correlate [!DNL Adobe Audience Manager] requests with [!DNL Adobe Target] requests. These are the cookies used in this implementation.
 
 |Cookie|Name|Description|
 | --- | --- | --- |
@@ -33,10 +33,10 @@ Cookies are used to correlate Adobe Audience Manager requests with Adobe Target 
 
 ### Overview of steps
 
-Suppose a user enters a URL into a browser which sends a request to your web server. When fulfilling that request...
+Suppose a user enters a URL into a browser which sends a request to your web server. When fulfilling that request:
 
 1. The server reads the visitor and target cookies from the request.
-1. The server makes a call to the `getOffers` method of the Target SDK, specifying the visitor and target cookies if available.
+1. The server makes a call to the `getOffers` method of the [!DNL Target] SDK, specifying the visitor and target cookies if available.
 1. When the `getOffers` call is fulfilled, values for `targetCookie` and `visitorState` from the response are used.
    1. A cookie is set on the response with values taken from `targetCookie`. This is done using the `Set-Cookie` response header, which tells the browser to persist the target cookie.
    1. An HTML response is prepared that initializes `VisitorAPI.js` and passes in `visitorState` from the target response.
@@ -52,7 +52,9 @@ The following code sample implements each of the steps outlined above. Each step
 
 This sample relies on [express, a Node.js web framework](https://expressjs.com/).
 
-**server.js**
+>[!BEGINTABS]
+
+>[!TAB server.js]
 
 ```
 const fs = require("fs");
@@ -139,7 +141,7 @@ app.listen(3000, function () {
 });
 ```
 
-**index.handlebars**
+>[!TAB index.handlebars]
 
 ```
 <!doctype html>
@@ -162,11 +164,15 @@ app.listen(3000, function () {
 </html>
 ```
 
+>[!ENDTABS]
+
 #### Java
 
 This sample uses [spring, a Java web framework](https://spring.io/).
 
-**ClientSampleApplication.java**
+>[!BEGINTABS]
+
+>[!TAB ClientSampleApplication.java]
 
 ```
 @SpringBootApplication
@@ -190,7 +196,7 @@ public class ClientSampleApplication {
 }
 ```
 
-**TargetController.java**
+>[!TAB TargetController.java]
 
 ```
 @Controller
@@ -225,7 +231,7 @@ public class TargetController {
 }
 ```
 
-**TargetClientService.java**
+>[!TAB TargetClientService.java]
 
 ```
 @Service
@@ -260,9 +266,7 @@ public class TargetClientService {
 }
 ```
 
-**[TargetRequestUtils.java](../../java/utility-methods.md)**
-
-index.html
+>[!TAB ClientRequestUtils.java]
 
 ```
 <!DOCTYPE HTML>
@@ -284,3 +288,7 @@ index.html
 </body>
 </html>
 ```
+
+>[!ENDTABS]
+
+For more information about TargetRequestUtils.java, see [Utility Methods (Java)](https://experienceleague.corp.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}
