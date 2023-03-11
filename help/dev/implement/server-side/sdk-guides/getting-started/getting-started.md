@@ -268,7 +268,7 @@ def target_client_ready():
 
 ## 6. Implement additional tracking for events in your application
 
-Optionally, you may send additional events for tracking conversions using the sendNotification() function.
+Optionally, you can send additional events for tracking conversions using the sendNotification() function.
 
 >[!BEGINTABS]
 
@@ -300,8 +300,6 @@ TargetClient.sendNotifications({
 })
 ```
 
->[!BEGINTABS]
-
 >[!TAB Java (Maven)]
 
 ```javascript
@@ -324,8 +322,6 @@ TargetDeliveryRequest notificationRequest =
 NotificationDeliveryService notificationDeliveryService = new NotificationDeliveryService();
 notificationDeliveryService.sendNotification(notificationRequest);
 ```
-
->[!BEGINTABS]
 
 >[!TAB .NET (C#)]
 
@@ -353,8 +349,6 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 ​
 targetClient.SendNotifications(notificationRequest);
 ```
-
->[!BEGINTABS]
 
 >[!TAB Python]
 
