@@ -1,21 +1,21 @@
 ---
 keywords: global mbox, target classic, use global mbox from target classic
-description: Learn how to use a legacy global mbox for your Adobe Target activities if you have already created a global mbox on your pages for your legacy implementations.
+description: Learn how to use a legacy global mbox for your [!DNL Adobe Target] activities if you have already created a global mbox on your pages for your legacy implementations.
 title: Can I Use a Global mbox from a Legacy Implementation?
 feature: at.js
 role: Developer
 ---
 # Use a Global mbox from a legacy implementation
 
-By default, Target creates a global mbox called target-global-mbox, which is used to run activities created in Target. However, if you have already created a global mbox on your pages for your legacy implementations, you can use that mbox for your Target activities.
+By default, [!DNL Target] creates a global mbox called target-global-mbox, which is used to run activities created in [!DNL Target]. However, if you have already created a global mbox on your pages for your legacy implementations, you can use that mbox for your [!DNL Target] activities.
 
 >[!NOTE]
 >
 >You can have only one global mbox per account.
 
-To use your existing global mbox for both Target and your legacy implementation, you must set a few parameters. 
+To use your existing global mbox for both [!DNL Target] and your legacy implementation, you must set a few parameters. 
 
-1. Go to Target, then click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
+1. Go to [!DNL Target], then click **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
 
    By default, **[!UICONTROL Page load enabled (Auto-create global mbox]** is enabled, and the custom global mbox is named `target-global-mbox`.
 
