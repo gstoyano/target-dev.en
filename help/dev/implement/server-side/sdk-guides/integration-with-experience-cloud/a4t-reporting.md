@@ -6,28 +6,30 @@ keywords: delivery api, server-side, serverside, integration, a4t
 
 # Analytics for Target (A4T) reporting
 
-Adobe Target supports A4T reporting for both on-device decisioning and server-side Target activities. There are two configuration options for enabling A4T reporting:
+[!DNL Adobe Target] supports A4T reporting for both on-device decisioning and server-side Target activities. There are two configuration options for enabling A4T reporting:
 
-* Adobe Target automatically forwards the analytics payload to Adobe Analytics, or
-* The user requests the analytics payload from Adobe Target. (Adobe Target returns the Adobe Analytics payload back to the caller.)
+* [!DNL Adobe Target] automatically forwards the analytics payload to [!DNL Adobe Analytics], or
+* The user requests the analytics payload from [!DNL Adobe Target]. ([!DNL Adobe Target] returns the [!DNL Adobe Analytics] payload back to the caller.)
 
 >[!NOTE]
 >
->On-device decisioning only supports A4T reporting of which Adobe Target automatically forwards the analytics payload to Adobe Analytics. Retrieving the analytics payload from Adobe Target is not supported.
+>On-device decisioning only supports A4T reporting of which [!DNL Adobe Target] automatically forwards the analytics payload to [!DNL Adobe Analytics]. Retrieving the analytics payload from [!DNL Adobe Target] is not supported.
 
 ## Pre-requisites
 
-1. Configure the activity in the Adobe Target UI with Adobe Analytics as the reporting source, and ensure the accounts are enabled for A4T.
+1. Configure the activity in the [!DNL Adobe Target] UI with [!DNL Adobe Analytics] as the reporting source, and ensure the accounts are enabled for A4T.
 1. The API user generates the Adobe Marketing Cloud Visitor ID and ensures this ID is available when the Target request is executed.
 
-## Adobe Target automatically forwards the Analytics payload
+## [!DNL Adobe Target] automatically forwards the Analytics payload
 
-Adobe Target can automatically forward the analytics payload to Adobe Analytics if the following identifiers are provided:
+[!DNL Adobe Target] can automatically forward the analytics payload to [!DNL Adobe Analytics] if the following identifiers are provided:
 
-1. `supplementalDataId`: The ID that is utilized to stitch between Adobe Analytics and Adobe Target. In order for Adobe Target and Adobe Analytics to correctly stitch data together, the same `supplementalDataId` needs to be passed to both Adobe Target and Adobe Analytics.
-1. `trackingServer`: The Adobe Analytics Server.
+1. `supplementalDataId`: The ID that is utilized to stitch between [!DNL Adobe Analytics] and [!DNL Adobe Target]. In order for [!DNL Adobe Target] and [!DNL Adobe Analytics] to correctly stitch data together, the same `supplementalDataId` needs to be passed to both [!DNL Adobe Target] and [!DNL Adobe Analytics].
+1. `trackingServer`: The [!DNL Adobe Analytics] Server.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -64,7 +66,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 ClientConfig config = ClientConfig.builder()
@@ -102,11 +104,15 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-## User retrieves analytics payload from Adobe Target
+>[!ENDTABS]
 
-A user can retrieve the Adobe Analytics payload for a given mbox, then send it to Adobe Analytics via the [Data Insertion API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). When an Adobe Target request is fired, pass `client_side` to the `logging` field in the request. This will return a payload if the specified mbox is present in an activity that is using Analytics as the reporting source.
+## User retrieves analytics payload from [!DNL Adobe Target]
 
-### Node.js
+A user can retrieve the [!DNL Adobe Analytics] payload for a given mbox, then send it to [!DNL Adobe Analytics] via the [Data Insertion API](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). When an [!DNL Adobe Target] request is fired, pass `client_side` to the `logging` field in the request. This will return a payload if the specified mbox is present in an activity that is using Analytics as the reporting source.
+
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -138,7 +144,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 ClientConfig config = ClientConfig.builder()
@@ -174,9 +180,11 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
+>[!ENDTABS]
+
 Once you have specified `logging = client_side`, you will receive the payload in the mbox field.
 
-If the response from Target contains anything in the `analytics -> payload` property, forward it as it is to Adobe Analytics. Adobe Analytics knows how to process this payload. This can be done in a GET request using the following format:
+If the response from Target contains anything in the `analytics -> payload` property, forward it as it is to [!DNL Adobe Analytics]. [!DNL Adobe Analytics] knows how to process this payload. This can be done in a GET request using the following format:
 
 ```
 https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mid={mid}&vid={vid}&aid={aid}

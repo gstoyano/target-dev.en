@@ -1,15 +1,15 @@
 ---
 title: Experience Cloud ID (ECID) Service
-description: Although using the Target SDKs for fetching content from Target can be powerful, the added value of using the Experience Cloud ID (ECID) for user tracking extends beyond Adobe Target. The ECID enables you to leverage Adobe Experience Cloud products and features, such as A4T reporting and Adobe Audience Manager (AAM) segments.
+description: Although using the [!DNL Target] SDKs for fetching content from [!DNL Target] can be powerful, the added value of using the [!UICONTROL Experience Cloud ID] (ECID) for user tracking extends beyond Adobe [!DNL Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] products and features, such as A4T reporting and [!DNL Adobe Audience Manager] (AAM) segments.
 ---
 
-# Experience Cloud ID (ECID) Service
+# [!UICONTROL Experience Cloud ID] (ECID) Service
 
-## Experience Cloud ID (ECID) Integration
+## [!UICONTROL Experience Cloud ID] (ECID) Integration
 
-Although using the Target SDKs for fetching content from Target can be powerful, the added value of using the Experience Cloud ID (ECID) for user tracking extends beyond Adobe Target. The ECID enables you to leverage Adobe Experience Cloud products and features, such as A4T reporting and Adobe Audience Manager (AAM) segments.
+Although using the [!DNL Target] SDKs for fetching content from [!DNL Target] can be powerful, the added value of using the [!UICONTROL Experience Cloud ID] (ECID) for user tracking extends beyond [!DNL Adobe Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] products and features, such as A4T reporting and [!DNL Adobe Audience Manager] (AAM) segments.
 
-The ECID is generated and maintained by `visitor.js`, which maintains its own state. The `visitor.js` file creates a cookie named `AMCV_{organizationId}`, which is used by Target SDKs for ECID integration. When the Target response is returned, you need to update the Visitor instance on the client side with `thevisitorState` returned by the Target SDKs.
+The ECID is generated and maintained by `visitor.js`, which maintains its own state. The `visitor.js` file creates a cookie named `AMCV_{organizationId}`, which is used by [!DNL Target] SDKs for ECID integration. When the [!DNL Target] response is returned, you need to update the Visitor instance on the client side with `thevisitorState` returned by the [!DNL Target] SDKs.
 
 ```
 <!doctype html>
@@ -28,7 +28,9 @@ The ECID is generated and maintained by `visitor.js`, which maintains its own st
 </html>
 ```
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const express = require("express");
@@ -105,7 +107,7 @@ app.get("/abtest", async (req, res) => {
       }};
 ```
 
-### Java
+>[!TAB Java]
 
 ```
   console.log("Request", request);
@@ -145,9 +147,11 @@ public class TargetControllerSample {
 }
 ```
 
+>[!ENDTABS]
+
 ## ECID with Customer ID Integration
 
-In order to track visitor user accounts and login status details, `customerIds` may be passed via Target SDKs.
+In order to track visitor user accounts and login status details, `customerIds` may be passed via [!DNL Target] SDKs.
 
 ```
 <!doctype html>
@@ -166,7 +170,9 @@ In order to track visitor user accounts and login status details, `customerIds` 
 </html>
 ```
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const express = require("express");
@@ -261,7 +267,7 @@ app.listen(3000, function () {
 });
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 @Controller
@@ -292,18 +298,20 @@ public class TargetControllerSample {
 }
 ```
 
-## ECID and Analytics Integration
+>[!ENDTABS]
 
-To get the most out of the Target SDKs, and to use the powerful analytics capabilities provided by Adobe Analytics, you can use integrations across ECID, Analytics, and Target.
+## ECID and [!DNL Analytics] Integration
 
-Using integrations across ECID, Analytics, and Target lets you:
+To get the most out of the [!DNL Target] SDKs, and to use the powerful analytics capabilities provided by [!DNL Adobe Analytics], you can use integrations across ECID, [!DNL Analytics], and [!DNL Target].
+
+Using integrations across ECID, [!DNL Analytics], and [!DNL Target] lets you:
 
 * Use segments from Adobe Audience Manager (AAM)
-* Customize the user experience based on the content retrieved from Target
-* Ensure that all events and success metrics are collected in Analytics
-* Use Analytics' powerful queries and benefit from its awesome report visualizations
+* Customize the user experience based on the content retrieved from [!DNL Target]
+* Ensure that all events and success metrics are collected in [!DNL Analytics]
+* Use [!DNL Analytics]' powerful queries and benefit from its awesome report visualizations
 
-Integrations across ECID, Analytics, and Target do not require any special handling for analytics on the server side. Instead, once you have the ECID integrated, add `AppMeasurement.js` (Analytics library) on the client side. Analytics then uses the Visitor instance to synchronize with Target.
+Integrations across ECID, [!DNL Analytics], and [!DNL Target] do not require any special handling for analytics on the server side. Instead, once you have the ECID integrated, add `AppMeasurement.js` ([!DNL Analytics] library) on the client side. [!DNL Analytics] then uses the Visitor instance to synchronize with [!DNL Target].
 
 ```
 <!doctype html>
@@ -324,7 +332,9 @@ Integrations across ECID, Analytics, and Target do not require any special handl
 </html>
 ```
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const express = require("express");
@@ -416,7 +426,7 @@ app.listen(3000, function () {
 });
 ```
 
-### Java
+>[!TAB Java]
 
 ```
 @Controller
@@ -446,3 +456,5 @@ public class TargetControllerSample {
         return "targetAnalytics";
     }
 ```
+
+>[!ENDTABS]

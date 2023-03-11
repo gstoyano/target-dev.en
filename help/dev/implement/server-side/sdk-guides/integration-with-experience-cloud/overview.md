@@ -1,11 +1,11 @@
 ---
-title: Integration with Experience Cloud overview
-description: Adobe Target server-side SDKs support a seamless integration with Adobe Analytics and Adobe Audience Manager so that you can leverage the power of Adobe Experience Cloud. 
+title: Integration with [!DNL Experience Cloud] overview
+description: Adobe [!DNL Target] server-side SDKs support a seamless integration with Adobe Analytics and Adobe Audience Manager so that you can leverage the power of Adobe Experience Cloud. 
 ---
 
-# Integration with Experience Cloud overview
+# Integration with [!DNL Experience Cloud] overview
 
-Adobe Target server-side SDKs support a seamless integration with [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) and [Adobe Audience Manager](https://business.adobe.com/products/audience-manager/adobe-audience-manager.html) so that you can leverage the power of Adobe Experience Cloud. 
+[!DNL Adobe Target] server-side SDKs support a seamless integration with [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) and [Adobe Audience Manager](https://business.adobe.com/products/audience-manager/adobe-audience-manager.html) so that you can leverage the power of [!DNL Adobe Experience Cloud]. 
 
 To learn more about these integrations, explore the references below:
 
