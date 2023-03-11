@@ -1,13 +1,13 @@
 ---
 keywords: global mbox parameters, targetPageParams, query string, array, json, dtm
-description: Learn how to use the targetPageParams function to pass additional targeting or context information into the Adobe Target global mbox.
+description: Learn how to use the [!UICONTROL targetPageParams] function to pass additional targeting or context information into the [!DNL Adobe Target] global mbox.
 title: How Do I Pass Parameters to a Global mbox?
 feature: at.js
 role: Developer
 ---
 # Pass Parameters to a global mbox
 
-The JavaScript `targetPageParams` function is used to pass parameters to the global mbox in Adobe Target. This is needed in any scenario where additional targeting/context information is to be passed into Target.
+The JavaScript `targetPageParams` function is used to pass parameters to the global mbox in [!DNL Adobe Target]. This is needed in any scenario where additional targeting/context information is to be passed into [!DNL Target].
 
  For example, in a Recommendations activity, use the parameters to represent the current product or category that is being viewed.
 
@@ -83,7 +83,7 @@ This example sends the following data to the mbox edge:
 
 ## JSON
 
-JSON is a powerful way to pass parameters. Target uses the JSON object keys to flatten complicated structures into simple parameters.
+JSON is a powerful way to pass parameters. [!DNL Target] uses the JSON object keys to flatten complicated structures into simple parameters.
 
 ```json
 <!--window.-->targetPageParams = function() { 
