@@ -1,11 +1,11 @@
 ---
 keywords: mboxCreate, mboxcreate, mbox create, at.js, functions, function
-description: Use the mboxCreate() function for the Adobe Target at.js JavaScript library to apply offers to the closest DIV with the mboxDefault class name. (at.js 1.x)
-title: How Do I Use the mboxCreate() Function?
+description: Use the [!UICONTROL mboxCreate()] function for the [!DNL Adobe Target] at.js JavaScript library to apply offers to the closest DIV with the mboxDefault class name. (at.js 1.x)
+title: How Do I Use the [!UICONTROL mboxCreate()] Function?
 feature: at.js
 role: Developer
 ---
-# mboxCreate(mbox,params) - at.js 1.x 
+# [!UICONTROL mboxCreate(mbox,params)] - at.js 1.x 
 
 Executes a request and applies the offer to the closest DIV with mboxDefault class name.
 
@@ -13,7 +13,7 @@ Executes a request and applies the offer to the closest DIV with mboxDefault cla
 >
 >This function is available for at.js versions 1.*x* only. This function was deprecated with the release of at.js 2.x. This function returns default content if used with at.js 2.x.
 
-This function is built into at.js mostly to ease the transition from mbox.js (now deprecated) to at.js. A newer alternative to `mboxCreate()` is `adobe.target.getOffer()`/ `adobe.target.applyOffer()` or the Angular directive.
+This function is built into at.js mostly to ease the transition from mbox.js (now deprecated) to at.js. A newer alternative to `[!UICONTROL mboxCreate()]` is `[!UICONTROL adobe.target.getOffer()]`/ `[!UICONTROL adobe.target.applyOffer()]` or the Angular directive.
 
 ## Example
 
@@ -35,8 +35,8 @@ This function is built into at.js mostly to ease the transition from mbox.js (no
 
   For example, offers that set JavaScript variables that are used by site code or other mboxes that come later on the page.
   
-* Be sure to have a `<div class="mboxDefault"></div>`before invoking `mboxCreate()`, because at.js will not add one for you. 
+* Be sure to have a `<div class="mboxDefault"></div>`before invoking `[!UICONTROL mboxCreate()]`, because at.js will not add one for you. 
 
-* Empty, top-of-page `mboxCreate()` functions are not recommended as a global mbox.
+* Empty, top-of-page `[!UICONTROL mboxCreate()]` functions are not recommended as a global mbox.
 
   The auto-created global mbox in at.js is a better option because it fires from the `<head>` and can return content earlier.

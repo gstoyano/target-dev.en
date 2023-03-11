@@ -1,17 +1,17 @@
 ---
 keywords: targetPageParamsAll, targetpageparamsall, PageParamsAll, pageparamsall, page params, page parameters, at.js, functions, function, targetPageParamsAll0
-description: Use the targetPageParamsAll() function for the Adobe Target at.js JavaScript library to attach parameters to all mboxes from outside of the request code.
-title: How Do I Use the targetPageParamsAll() Function?
+description: Use the [!UICONTROL targetPageParamsAll()] function for the [!DNL Adobe Target] at.js JavaScript library to attach parameters to all mboxes from outside of the request code.
+title: How Do I Use the [!UICONTROL targetPageParamsAll()] Function?
 feature: at.js
 role: Developer
 ---
-# targetPageParamsAll()
+# [!UICONTROL targetPageParamsAll()]
 
 This method allows you to attach parameters to all mboxes from outside of the request code.
 
 This is very useful for including the same set of parameters on multiple mbox calls. The function needs to be defined by the customer. It should return an array of parameters that will be passed to all mbox requests on the page. This function can be defined before at.js is loaded or in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]** > **[!UICONTROL Code Settings]** > **[!UICONTROL Library Header]**.
 
-You can pass in parameters to target-global-mbox using the targetPageParamsAll() function in any of the following ways:
+You can pass in parameters to target-global-mbox using the [!UICONTROL targetPageParamsAll()] function in any of the following ways:
 
 * An ampersand-delimited list 
 * An array 
