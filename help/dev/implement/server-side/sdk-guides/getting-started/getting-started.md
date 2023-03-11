@@ -1,10 +1,10 @@
 ---
 title: Getting Started with Target SDKs
-description: In order to get up and running, we encourage you to create your first on-device decisioning feature flag activity in the language of your choice.
+description: How do I use the Adobe Target SDKs?
 feature: APIs/SDKs
 role: Developer
 ---
-# Getting Started with Target SDKs
+# Getting Started with [!DNL Target] SDKs
 
 In order to get up and running, we encourage you to create your first [on-device decisioning](../on-device-decisioning/overview.md) feature flag activity in the language of your choice:
 
@@ -15,37 +15,39 @@ In order to get up and running, we encourage you to create your first [on-device
   
 ## Summary of steps
 
-1. Enable On-Device Decisioning for your organization
+1. Enable on-device decisioning for your organization
 1. Install the SDK
 1. Initialize the SDK
-1. Set up the feature flags in an Adobe Target A/B Test
+1. Set up the feature flags in an [!DNL Adobe Target] [!UICONTROL A/B Test] activity
 1. Implement and render the feature in your application
 1. Implement tracking for events in your application
-1. Activate your A/B activity
+1. Activate your [!UICONTROL A/B Test] activity
 
-## 1. Enable On-Device Decisioning for your organization
+## 1. Enable on-device decisioning for your organization
 
-Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** and enable the **[!UICONTROL On-Device Decisioning]** toggle.
+Enabling on-device decisioning ensures an [!UICONTROL A/B Test] activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
-   ![alt image](assets/asset-odd-toggle.png)
+![alt image](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
 >You must have the **[!UICONTROL Admin]** or **[!UICONTROL Approver]** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the **[!UICONTROL On-Device Decisioning]** toggle.
 
-After enabling the **[!UICONTROL On-Device Decisioning]** toggle, Adobe Target begins generating [rule artifacts](../on-device-decisioning/rule-artifact-overview.md) for your client.
+After enabling the **[!UICONTROL On-Device Decisioning]** toggle, [!DNL Adobe Target] begins generating [rule artifacts](../on-device-decisioning/rule-artifact-overview.md) for your client.
 
 ## 2. Install the SDK
 
 For Node.js, Java, and Python, run the following command in your project directory in the terminal. For .NET, add it as a dependency by [installing from NuGet](https://www.nuget.org/packages/Adobe.Target.Client).
 
-### Node.js (NPM)
+>[!BEGINTABS]
+
+>[!TAB Node.js (NPM)]
 
 ```js
 npm i @adobe/target-nodejs-sdk -P
 ```
 
-### Java (Maven)
+>[!TAB Java (Maven)]
 
 ```javascript
 <dependency>
@@ -55,17 +57,19 @@ npm i @adobe/target-nodejs-sdk -P
 </dependency>
 ```
 
-### .NET (Bash)
+>[!TAB .NET (Bash)]
 
 ```bash
 dotnet add package Adobe.Target.Client
 ```
 
-### Python (pip)
+>[!TAB Python (pip)]
 
 ```python
 pip install target-python-sdk
 ```
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
@@ -132,9 +136,9 @@ CONFIG = {
 target_client = TargetClient.create(CONFIG)
 ```
 
-## 4. Set up the feature flags in an Adobe Target A/B Test
+## 4. Set up the feature flags in an [!DNL Adobe Target] [!UICONTROL A/B Test] activity
 
-1. In Adobe Target, navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**. 
+1. In [!DNL Target], navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**. 
 
    ![alt image](assets/asset-ab.png)
 
@@ -193,7 +197,7 @@ target_client = TargetClient.create(CONFIG)
 
 ## 5. Implement and render the feature in your application
 
-After setting up the feature flag variables in Adobe Target, modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
+After setting up the feature flag variables in [!DNL Target], modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
 
 ### Node.js
 
