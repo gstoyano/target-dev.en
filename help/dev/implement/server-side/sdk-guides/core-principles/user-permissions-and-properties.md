@@ -1,11 +1,11 @@
 ---
 title: User Permissions and Properties
-description: The Target SDKs include support for user permissions and properties.
+description: The [!DNL Target] SDKs include support for user permissions and properties.
 ---
 
 # User Permissions and Properties
 
-The Target SDKs include support for user permissions and properties. If you are unfamiliar with how Adobe Target handles enterprise permissions via workspaces and properties, you can read more about it in [Enterprise user permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
+The [!DNL Target] SDKs include support for user permissions and properties. If you are unfamiliar with how [!DNL Adobe Target] handles enterprise permissions via workspaces and properties, you can read more about it in [Enterprise user permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
 
 The client can make use of a property token in one of two ways.
 

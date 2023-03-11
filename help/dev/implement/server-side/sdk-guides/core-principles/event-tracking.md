@@ -1,23 +1,23 @@
 ---
 title: Event tracking
-description: Use Adobe Target's event tracking capabilities to effectively measure metrics that matter most for your business and use cases.
+description: Use [!DNL Adobe Target]'s event tracking capabilities to effectively measure metrics that matter most for your business and use cases.
 ---
 
 # Event tracking
 
-Use Adobe Target's event tracking capabilities to effectively measure metrics that matter most for your business and use cases. Tracking events is key to measuring the success of your experimentation or personalization activities, since they tell you which variation or experience is winning or losing. Understanding this will help you understand how your users are engaging with your product or evolving in an ever-changing landscape.
+Use [!DNL Adobe Target]'s event tracking capabilities to effectively measure metrics that matter most for your business and use cases. Tracking events is key to measuring the success of your experimentation or personalization activities, since they tell you which variation or experience is winning or losing. Understanding this will help you understand how your users are engaging with your product or evolving in an ever-changing landscape.
 
-In order to track events through Adobe Target's SDKs, follow this 2-step process:
+In order to track events through [!DNL Adobe Target]'s SDKs, follow this 2-step process:
 
-1. Install the SDK and deploy code that sends events to Adobe Target.
+1. Install the SDK and deploy code that sends events to [!DNL Adobe Target].
 
-1. Create and activate an Adobe Target activity with a goal metric in the UI.
+1. Create and activate an [!DNL Adobe Target] activity with a goal metric in the UI.
 
    ![alt image](./assets/report-settings.png)
 
 ## Goal Metrics and Events
 
-The following table defines the combination of goals and events you can define and measure with a Target Activity using Target's reporting capabilities:
+The following table defines the combination of goals and events you can define and measure with a [!DNL Target] activity using [!DNL Target]'s reporting capabilities:
 
 |Primary Goal|Event|
 | --- | --- |
@@ -36,7 +36,7 @@ Target SDKs call the underlying [Delivery API](../../../delivery-api/overview.md
 >
 >When a prefetch object is passed within the request, the impression is not automatically incremented for the activities with mboxes within the prefetch object.
 
-The `sendNotifications` method can be used to manually send events to Adobe Target and trigger an impression.
+The `sendNotifications` method can be used to manually send events to [!DNL Adobe Target] and trigger an impression.
 
 >[!BEGINTABS]
 
