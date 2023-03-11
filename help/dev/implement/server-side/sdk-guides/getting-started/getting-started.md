@@ -71,6 +71,8 @@ pip install target-python-sdk
 
 >[!ENDTABS]
 
+## 3. Initialize the SDK
+
 The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
 
 >[!BEGINTABS]
@@ -154,7 +156,6 @@ target_client = TargetClient.create(CONFIG)
 
 1. In the **[!UICONTROL CONTENT]** section on the same page, select **[!UICONTROL Create JSON Offer]** in the drop-down (1) as shown.
 
-
    ![alt image](assets/asset-offer.png)
 
 1. In the **[!UICONTROL JSON Data]** text box that appears, type your feature flag variables for each experience (1), using a valid JSON object (2).
@@ -201,7 +202,9 @@ target_client = TargetClient.create(CONFIG)
 
 After setting up the feature flag variables in [!DNL Target], modify your application code to use them. For example, after getting the feature flag in the application, you can use it to enable features and render the experience for which the visitor qualified.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```js
 //... Code removed for brevity
@@ -221,7 +224,7 @@ function targetClientReady() {
 }
 ```
 
-#### Java (Maven)
+>[!TAB Java (Maven)]
 
 ```javascript
 MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
@@ -233,7 +236,7 @@ Attributes attributes = targetClient.getAttributes(request, "ondevice-featurefla
 String flag = attributes.getString("ondevice-featureflag", "flag");
 ```
 
-#### .NET (C#)
+>[!TAB .NET (C#)]
 
 ```csharp
 var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
@@ -245,7 +248,7 @@ var attributes = targetClient.GetAttributes(request, "ondevice-featureflag");
 var flag = attributes.GetString("ondevice-featureflag", "flag");
 ```
 
-### Python
+>[!TAB Python]
 
 ```python
 # ... Code removed for brevity
@@ -261,11 +264,15 @@ def target_client_ready():
       print("Render default experience")
 ```
 
+>[!ENDTABS]
+
 ## 6. Implement additional tracking for events in your application
 
 Optionally, you may send additional events for tracking conversions using the sendNotification() function.
 
-### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```js
 //... Code removed for brevity
@@ -293,7 +300,9 @@ TargetClient.sendNotifications({
 })
 ```
 
-### Java (Maven)
+>[!BEGINTABS]
+
+>[!TAB Java (Maven)]
 
 ```javascript
 Notification notification = new Notification();
@@ -316,7 +325,9 @@ NotificationDeliveryService notificationDeliveryService = new NotificationDelive
 notificationDeliveryService.sendNotification(notificationRequest);
 ```
 
-#### .NET (C#)
+>[!BEGINTABS]
+
+>[!TAB .NET (C#)]
 
 ```csharp
 var order = new Order
@@ -343,7 +354,9 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 targetClient.SendNotifications(notificationRequest);
 ```
 
-### Python
+>[!BEGINTABS]
+
+>[!TAB Python]
 
 ```python
 # ... Code removed for brevity
@@ -367,12 +380,14 @@ target_client.send_notifications({
 })
 ```
 
-## 7. Activate your A/B activity
+>[!ENDTABS]
 
-1. Click **[!UICONTROL Activate]** (1) to activate your A/B activity.
+## 7. Activate your [!UICONTROL A/B Test] activity
 
->[!NOTE]
->
->You must have the **[!UICONTROL Approver]** or **[!UICONTROL Publisher]** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
+1. Click **[!UICONTROL Activate]** (1) to activate your [!UICONTROL A/B Test] activity.
 
-![alt image](assets/asset-activate.png)
+   >[!NOTE]
+   >
+   >You must have the **[!UICONTROL Approver]** or **[!UICONTROL Publisher]** [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to perform this step.
+
+   ![alt image](assets/asset-activate.png)
