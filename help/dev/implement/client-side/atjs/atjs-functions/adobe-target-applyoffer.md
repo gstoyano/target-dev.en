@@ -1,13 +1,13 @@
 ---
 keywords: adobe.target.applyOffer, applyOffer, applyoffer, apply offer, at.js, functions, function, $8
-description: Use the adobe.target.applyOffer() function for the Adobe Target at.js JavaScript library to apply the response content.
-title: How Do I Use the adobe.target.applyOffer() Function?
+description: Use the [!UICONTROL adobe.target.applyOffer()] function for the [!DNL Adobe Target] at.js JavaScript library to apply the response content.
+title: How Do I Use the [!UICONTROL adobe.target.applyOffer()] Function?
 feature: at.js
 role: Developer
 ---
-# adobe.target.applyOffer(options)
+# [!UICONTROL adobe.target.applyOffer(options)]
 
-This function is for applying the response content with Adobe Target.
+This function is for applying the response content with [!DNL Adobe Target].
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ The options parameter is mandatory and has the following structure:
 
 ## Example
 
-The following example shows how to use `getOffer` and `applyOffer` together:
+The following example shows how to use `[!UICONTROL getOffer]` and `[!UICONTROL applyOffer]` together:
 
 ```javascript
 adobe.target.getOffer({   
