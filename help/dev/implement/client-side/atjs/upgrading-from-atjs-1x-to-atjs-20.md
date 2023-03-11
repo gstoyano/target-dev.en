@@ -21,7 +21,7 @@ The following diagrams help you understand the workflow of at.js 2.*x* with View
 
 (Click image to expand to full width.)
 
-![[!DNL Target] flow with at.js 2.*x*](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png"[!DNL Target] flow with at.js 2.*x*"){zoomable="yes"}
+![Target flow with at.js 2.*x*](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png"Target flow with at.js 2.*x*"){zoomable="yes"}
 
 |Call|Details|
 | --- | --- |
@@ -38,7 +38,7 @@ Now, wherever `triggerView()` is implemented on your SPA, the Views and actions 
 
 (Click image to expand to full width.)
 
-![[!DNL Target] flow at.js 2.*x* triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png"[!DNL Target] flow at.js 2.*x* triggerView"){zoomable="yes"}
+![Target flow at.js 2.*x* triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png"Target flow at.js 2.*x* triggerView"){zoomable="yes"}
 
 |Call|Details|
 | --- | --- |
@@ -55,7 +55,7 @@ Deploy at.js 2.*x* via tags in [Adobe Experience Platform](/help/dev/implement/c
 
 >[!NOTE]
 >
->Deploying at.js using tags in Adobe Experience Platform is the preferred method.
+>Deploying at.js using tags in [!DNL Adobe Experience Platform] is the preferred method.
 >
 >Or
 >
