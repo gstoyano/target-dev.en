@@ -1,6 +1,6 @@
 ---
 title: Core principles overview
-description: [!DNL Adobe Target] operates according to several core principles, which are important to understand in order to run effective experimentation or personalization activities.
+description: Adobe Target operates according to several core principles, which are important to understand in order to run effective experimentation or personalization activities.
 role: Developer
 ---
 # Core principles overview
