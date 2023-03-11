@@ -69,13 +69,11 @@ dotnet add package Adobe.Target.Client
 pip install target-python-sdk
 ```
 
->[!ENDTABS]
+The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
 
->[!NOTE]
->
->The rule artifact is downloaded during the SDK initialization step. You can customize the initialization step to determine how the artifact is downloaded and used.
+>[!BEGINTABS]
 
-### Node.js
+>[!TAB Node.js]
 
 ```js
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -97,7 +95,7 @@ function targetClientReady() {
 }
 ```
 
-### Java (Maven)
+>[!TAB Java (Maven)]
 
 ```javascript
 ClientConfig config = ClientConfig.builder()
@@ -107,7 +105,7 @@ ClientConfig config = ClientConfig.builder()
 TargetClient targetClient = TargetClient.create(config);
 ```
 
-### .NET (C#)
+>[!TAB .NET (C#)]
 
 ```csharp
 var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -115,7 +113,7 @@ var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012
 this.targetClient.Initialize(targetClientConfig);
 ```
 
-### Python
+>[!TAB Python]
 
 ```python
 from target_python_sdk import TargetClient
@@ -135,6 +133,8 @@ CONFIG = {
 
 target_client = TargetClient.create(CONFIG)
 ```
+
+>[!ENDTABS]
 
 ## 4. Set up the feature flags in an [!DNL Adobe Target] [!UICONTROL A/B Test] activity
 
