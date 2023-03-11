@@ -1,17 +1,18 @@
 ---
 title: Audience targeting
-description: Audiences can be used to target your experimentation and personalization activities. Adobe Target supports myriad powerful audience targeting capabilities out of the box.
+description: Audiences can be used to target your experimentation and personalization activities. [!DNL Adobe Target] supports myriad powerful audience targeting capabilities out of the box.
+role: Developer
 ---
 
 # Audience targeting
 
 ## Overview
 
-Audiences can be used to target your experimentation and personalization activities. Adobe Target supports myriad powerful audience targeting capabilities out of the box. The following attributes are available for [audience targeting](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
+Audiences can be used to target your experimentation and personalization activities. [!DNL Adobe Target] supports myriad powerful audience targeting capabilities out of the box. The following attributes are available for [audience targeting](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
 
-### Target Library
+### [!DNL Target] Library
 
-For more information, see [Target Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html).
+For more information, see [[!DNL Target] Library](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html).
 ​
 * Referred from Bing
 * Chrome Browser
@@ -119,13 +120,15 @@ For more information, see [Time Frame](https://experienceleague.adobe.com/docs/t
 
 ## Client Hints
 
-Adobe Target requires Client Hints for correct segmentation of Browser, Operating System, and Mobile audience attributes, as well as certain instances of Profile Scripts. For more background information, see [User Agent and Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
+[!DNL Adobe Target] requires Client Hints for correct segmentation of Browser, Operating System, and Mobile audience attributes, as well as certain instances of Profile Scripts. For more background information, see [User Agent and Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
 
-### How to Pass Client Hints to Adobe Target
+### How to Pass Client Hints to [!DNL Adobe Target]
 
-Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent to Target via `getOffers()` calls. Client Hints should be included on the `request.context` object, along with User Agent.
+Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent to [!DNL Target] via `getOffers()` calls. Client Hints should be included on the `request.context` object, along with User Agent.
 
-#### Node.js SDK
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```js
 targetClient.getOffers({ 
@@ -154,7 +157,7 @@ targetClient.getOffers({
 });
 ```
 
-#### Java SDK
+>[!TAB Java SDK]
 
 ```javascript
 import com.adobe.target.delivery.v1.model.ClientHints; 
@@ -180,6 +183,8 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
         .build(); 
 ```
 
+>[!ENDTABS]
+
 ## On-device decisioning
 
 The following table indicates which audience rules are supported or not supported for on-device decisioning.
@@ -202,7 +207,9 @@ The following table indicates which audience rules are supported or not supporte
 
 In order to maintain near-zero latency for on-device decisioning activities with geo-based audiences, Adobe recommends you provide the geo values yourself in the call to `getOffers`. Do this by setting the `Geo` object in the `Context` of the request. This means your server will need a way to determine the location of each end user. For example, your server may perform an IP-to-Geo lookup, using a service you configure. Some hosting providers, such as Google Cloud, provide this functionality via custom headers in each `HttpServletRequest`.
 
-#### Node.js
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```js
 const CONFIG = {
@@ -231,7 +238,7 @@ targetClient.getOffers({
 })
 ```
 
-#### Java
+>[!TAB Java SDK]
 
 ```javascript
 public class TargetRequestUtils {
@@ -255,9 +262,13 @@ public class TargetRequestUtils {
 }
 ```
 
-However, if you do not have the ability to perform IP-to-Geo lookups on your server, but you still want to perform on-device decisioning for `getOffers` requests that contain geo-based audiences, this is also supported. The downside of this approach is that it will use a remote IP-to-Geo lookup, which will add latency to each `getOffers` call. This latency should be lower than a remote `getOffers` call, since it hits a CDN that is located close to your server. You must **only** provide the `ipAddress` field in the `Geo` object in the `Context` of your request, in order for the SDK to retrieve the geo-location of your user's IP address. If any other field in addition to the `ipAddress` is provided, the Target SDK will not fetch the geo-location metadata for resolution.
+>[!ENDTABS]
 
-#### Node.js
+However, if you do not have the ability to perform IP-to-Geo lookups on your server, but you still want to perform on-device decisioning for `getOffers` requests that contain geo-based audiences, this is also supported. The downside of this approach is that it will use a remote IP-to-Geo lookup, which will add latency to each `getOffers` call. This latency should be lower than a remote `getOffers` call, since it hits a CDN that is located close to your server. You must **only** provide the `ipAddress` field in the `Geo` object in the `Context` of your request, in order for the SDK to retrieve the geo-location of your user's IP address. If any other field in addition to the `ipAddress` is provided, the [!DNL Target] SDK will not fetch the geo-location metadata for resolution.
+
+>[!BEGINTABS]
+
+>[!TAB Node.js SDK]
 
 ```js
 const CONFIG = {
@@ -282,7 +293,7 @@ targetClient.getOffers({
 })
 ```
 
-#### Java
+>[!TAB Java SDK]
 
 ```javascript
 public class TargetRequestUtils {
@@ -298,6 +309,8 @@ public class TargetRequestUtils {
 
 }
 ```
+
+>[!ENDTABS]
 
 ## Server-side decisioning
 
