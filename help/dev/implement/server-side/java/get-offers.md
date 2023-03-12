@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-`getOffers()` is used to execute a decision and retrieve an experience from Adobe Target.
+`getOffers()` is used to execute a decision and retrieve an experience from [!DNL Adobe Target].
 
 ## Method
 
@@ -32,14 +32,14 @@ TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 
 ## Parameters
 
-The `TargetDeliveryRequestBuilder` object has the following structure:
+The `[!UICONTROL TargetDeliveryRequestBuilder]` object has the following structure:
 
 |Name|Type|Required|Description|
 | --- | --- | --- | --- |
 |context|Context|Yes|Specifies the context for the request|
-|sessionId||String|No|Used for linking multiple Target requests|
+|sessionId||String|No|Used for linking multiple [!DNL Target] requests|
 |thirdPartyId|String|No|Your company's identifier for the user that you can send with every call|
-|cookies|List|No|List of cookies returned in previous Target request of same user.|
+|cookies|List|No|List of cookies returned in previous [!DNL Target] request of same user.|
 |customerIds|Map|No|Customer Ids in VisitorId-compatible format|
 |execute|ExecuteRequest|No|PageLoad or mboxes request to execute. Will be evaluated on server side immediately|
 |prefetch|PrefetchRequest|No|Views, PageLoad or mboxes request to prefetch. Returns with notification token to be returned on conversion.|
@@ -50,17 +50,17 @@ The `TargetDeliveryRequestBuilder` object has the following structure:
 |property|Property|No|Specifies the at_property via the token field. It can be used to control the scope for the delivery.|
 |trace|Trace|No|Enables trace for Delivery API.|
 |qaMode|QAMode|No|Use this object to enable the QA mode in the request.|
-|locationHint|String|No|Target edge cluster location hint. Used to target given edge cluster for this request.|
+|locationHint|String|No|[!DNL Target] edge cluster location hint. Used to target given edge cluster for this request.|
 |visitor|Visitor|No|Used to provide custom Visitor API object.|
 |id|VisitorId|No|Object that contains the identifiers for the visitor. Eg. tntId, thirdParyId, mcId, customerIds.|
 |experienceCloud|ExperienceCloud|No|Specifies integrations with Audience Manager and Analytics. Automatically populated using cookies, if not provided.|
-|tntId|String|No|Primary identifier in Target for a user. Fetched from targetCookies. Auto-generated if not provided.|
-|mcId|String|No|Used to merge and share data between different Adobe solutions(ECID). Fetched from targetCookies. Auto-generated if not provided.|
-|trackingServer|String|No|The Adobe Analytics Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
-|trackingServerSecure|String|No|The Adobe Analytics Secure Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
+|tntId|String|No|Primary identifier in [!DNL Target] for a user. Fetched from targetCookies. Auto-generated if not provided.|
+|mcId|String|No|Used to merge and share data between different [!DNL Adobe] solutions(ECID). Fetched from targetCookies. Auto-generated if not provided.|
+|trackingServer|String|No|The Adobe Analytics Server in order for [!DNL Adobe Target] and [!DNL Adobe Analytics] to correctly stitch the data together.|
+|trackingServerSecure|String|No|The [!UICONTROL Adobe Analytics Secure Server] in order for [!DNL Adobe Target] and [!DNL Adobe Analytics] to correctly stitch the data together.|
 |decisioningMethod|DecisioningMethod|No|Can be used to explicitly set ON_DEVICE or HYBRID decisioning method for on-device decisioning|
 
-The values of each field should conform to *Target View Delivery API* request specification. To learn more about the *Target View Delivery API*, see [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
+The values of each field should conform to *[!UICONTROL Target View Delivery API]* request specification. To learn more about the *[!UICONTROL Target View Delivery API]*, see [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
 
 
 ## Response
@@ -69,8 +69,8 @@ The `TargetDeliveryResponse` returned by `TargetClient.getOffers(`) has the foll
 
 |Name|Type|Description|
 | --- | --- | --- |
-|request|TargetDeliveryRequest​|*Target View Delivery API* request|
-|response|DeliveryResponse|*Target View Delivery API* response|
+|request|TargetDeliveryRequest​|*[!DNL Target]* request|
+|response|DeliveryResponse|*[!DNL Target]* response|
 |cookies|List|List of session metadata for this user. Need to be passed in next target request for this user.|
 |visitorState|Map|Visitor state to be set on client side to be used by Visitor API|
 |responseStatus|ResponseStatus|An object representing the status of the response|
@@ -79,7 +79,7 @@ The `ResponseStatus` in the response contains the following fields:
 
 |Name|Type|Description|
 | --- | --- | --- |
-|status|int|HTTP status returned from Target|
+|status|int|HTTP status returned from [!DNL Target]|
 |message|String|Status message in case HTTP status is not 200|
 |remoteMboxes|List of Strings|Used for on-device decisioning. Contains a list of mboxes that have remote activities that cannot be decided entirely on-device.|
 |remoteViews|List of Strings|Used for on-device decisioning. Contains a list of views that have remote activities that cannot be decided entirely on-device.|
