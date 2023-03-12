@@ -42,13 +42,13 @@ npm i @adobe/target-nodejs-sdk -P
 
    >[!BEGINTABS]
 
->  [!TAB Node.js]
+   >[!TAB Node.js]
 
    ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   [!TAB Java]
+   >[!TAB Java]
 
    ```javascript
    import com.adobe.target.edge.client.ClientConfig;
@@ -61,7 +61,7 @@ npm i @adobe/target-nodejs-sdk -P
 
    >[!BEGINTABS]
 
->  [!TAB Node.js]
+   >[!TAB Node.js]
 
    ```javascript
    const CONFIG = {
@@ -90,7 +90,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   [!TAB Java]
+   >[!TAB Java]
 
    ```javascript
    package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
