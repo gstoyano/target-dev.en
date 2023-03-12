@@ -1,6 +1,6 @@
 ---
-title: Deliver personalization using [!DNL Adobe Target] SDKs
-description: Learn how to deliver personalization using on-device decisioning.
+title: Deliver personalization using Adobe Target SDKs
+description: Learn how to deliver personalization using [!UICONTROL on-device decisioning].
 feature: APIs/SDKs
 role: Developer
 ---
@@ -9,42 +9,41 @@ role: Developer
 
 ## Summary of steps
 
-1. Enable On-Device Decisioning for your organization
-1. Create an Experience Targeting (XT) activity
+1. Enable [!UICONTROL on-device decisioning] for your organization
+1. Create an [!UICONTROL Experience Targeting] (XT) activity
 1. Define personalized experience per audience
 1. Verify personalized experience per audience
 1. Set up reporting
 1. Add metrics for tracking KPIs
 1. Implement personalized offers in your application
 1. Implement code to track conversion events
-1. Activate your XT personalization activity
+1. Activate your [!UICONTROL Experience Targeting] (XT) personalization activity
 
 Suppose you are a touring company. You want to deliver a personalized offer of 25% off certain travel packages. In order for the offer to resonate with your users, you decide to show a landmark of the destination city. You also want to ensure that delivery of your personalized offers is executed at near-zero latency so it doesn't negatively impact user experiences and skew the results.
 
-## Enable On-Device Decisioning for your organization
+## 1. Enable [!UICONTROL on-device decisioning] for your organization
 
-1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in Adobe Target, and enable the **[!UICONTROL On-Device Decisioning]** toggle.
+1. Enabling on-device decisioning ensures an A/B activity is executed at near-zero latency. To enable this feature, navigate to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** in [!DNL Adobe Target], and enable the **[!UICONTROL On-Device Decisioning]** toggle.
 
    ![alt image](assets/asset-odd-toggle.png)
 
    >[!NOTE]
    >
-   >You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the On-Device Decisioning toggle.
+   >You must have the Admin or Approver [user role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) to enable or disable the [!UICONTROL On-Device Decisioning] toggle.
 
-   After enabling the **[!UICONTROL On-Device Decisioning]** toggle, Adobe Target begins generating *rule artifacts* for your client.
+   After enabling the **[!UICONTROL On-Device Decisioning]** toggle, [!DNL Adobe Target] begins generating *rule artifacts* for your client.
 
-## Create an Experience Targeting (XT) activity
+## 2. Create an [!UICONTROL Experience Targeting] (XT) activity
 
-1. In Adobe Target, navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL Experience Targeting]**.
+1. In [!DNL Adobe Target], navigate to the **[!UICONTROL Activities]** page, then select **[!UICONTROL Create Activity]** > **[!UICONTROL Experience Targeting]**.
 
-  ![alt image](assets/asset-xt.png)
-
+   ![alt image](assets/asset-xt.png)
 
 1. In the **[!UICONTROL Create Experience Targeting Activity]** modal, leave the default **[!UICONTROL Web]** option selected (1), select **[!UICONTROL Form]** as your experience composer (2), select a workspace and property (3), and click **[!UICONTROL Next]** (4).
 
    ![alt image](assets/asset-xt-next.png)
 
-## Define a personalized experience per audience
+## 3. Define a personalized experience per audience
 
 1. In the **[!UICONTROL Experiences]** step of activity creatio, click **[!UICONTROL Change Audience]** to create an audience of those visitors who want to travel to San Francisco, California.
 
@@ -62,25 +61,27 @@ Suppose you are a touring company. You want to deliver a personalized offer of 2
 
    ![alt image](assets/asset-content-ny.png)
 
-## Verify personalized experience per audience
+## 4. Verify personalized experience per audience
 
 In the **[!UICONTROL Targeting]** step, verify you have configured the desired personalized experience per audience.
 
   ![alt image](assets/asset-verify-sf-ny.png)
 
-## Set up reporting
+## 5. Set up reporting
 
-In the **[!UICONTROL Goals & Settings]** step, choose **[!UICONTROL Adobe Target]** as the **[!UICONTROL Reporting Source]** to view activity results in the Adobe Target UI, or choose **[!UICONTROL Adobe Analytics]** to view them in the Adobe Analytics UI.
+In the **[!UICONTROL Goals & Settings]** step, choose **[!UICONTROL Adobe Target]** as the **[!UICONTROL Reporting Source]** to view activity results in the [!DNL Adobe Target] UI, or choose **[!UICONTROL Adobe Analytics]** to view them in the Adobe Analytics UI.
 
 ![alt image](assets/asset-reporting-sf-ny.png)
 
-## Add metrics for tracking KPIs
+## 6. Add metrics for tracking KPIs
 
 Choose a **[!UICONTROL Goal Metric]** to measure the success of the activity. In this example, a successful conversion is based on whether the user clicks on the personalized destination offer.
 
-## Implement your personalized offers in your application
+## 7. Implement your personalized offers in your application
 
-**Node.js**
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -107,7 +108,7 @@ targetClient.getOffers({
 .catch(console.error);
 ```
 
-**Java**
+>[!TAB Java]
 
 ```
 ClientConfig config = ClientConfig.builder()
@@ -138,9 +139,13 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 TargetDeliveryResponse offers = targetClient.getOffers(request);
 ```
 
-## Implement code to track conversion events
+>[!ENDTABS]
 
-**Node.js**
+## 8. Implement code to track conversion events
+
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```
 //... Code removed for brevity
@@ -163,7 +168,7 @@ TargetClient.sendNotifications({
 })
 ```
 
-**Java**
+>[!TAB Java]
 
 ```
 ClientConfig config = ClientConfig.builder()
@@ -207,6 +212,8 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 notificationDeliveryService.sendNotification(request);
 ```
 
-## Activate your experience targeting (XT) activity
+>[!ENDTABS]
+
+## 9. Activate your Experience Targeting (XT) activity
 
 ![alt image](assets/asset-xt-activate.png)
