@@ -10,7 +10,7 @@ feature: APIs/SDKs, Administration & Configuration
 
 The [!DNL Adobe Target] Admin APIs, including [!DNL Recommendations Admin] APIs, are secured by authentication to ensure only authorized users use them to access [!DNL Adobe Target]. Use the [Adobe Developer Console](https://developer.adobe.com/console/home) to manage this authentication for all [!DNL Adobe Experience Cloud solutions], including [!DNL Adobe Target].
 
-Here are the preliminary steps required to generate authentication tokens needed to successfully interact with [!DNL Adobe Target] APIs. In the sections that follow, you will:
+Here are the preliminary steps required to generate authentication tokens needed to successfully interact with [!DNL Adobe Target] APIs:
 
 1. Create a project (previously called integration) in the [!DNL Adobe Developer Console].
 1. Export project details to Postman.
