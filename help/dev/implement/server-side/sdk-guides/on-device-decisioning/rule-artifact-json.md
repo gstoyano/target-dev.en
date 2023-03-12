@@ -40,28 +40,22 @@ npm i @adobe/target-nodejs-sdk -P
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-   >[!BEGINTABS]
-
-   >[!TAB Node.js]
+   **Node.js**
 
    ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   >[!TAB Java]
+   **Java**
 
    ```javascript
    import com.adobe.target.edge.client.ClientConfig;
    import com.adobe.target.edge.client.TargetClient;
    ```
 
-   >[!ENDTABS]
-
 1. To configure the SDK, use the create method.
 
-   >[!BEGINTABS]
-
-   >[!TAB Node.js]
+   **Node.js**
 
    ```javascript
    const CONFIG = {
@@ -90,7 +84,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   >[!TAB Java]
+   **Java**
 
    ```javascript
    package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
@@ -112,8 +106,6 @@ npm i @adobe/target-nodejs-sdk -P
        .build();
    TargetClient targetClient = TargetClient.create(config);
    ```
-
-   >[!ENDTABS]
 
 1. Both client and `organizationId` can be retrieved from [!DNL Adobe Target]by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
 
