@@ -1,6 +1,6 @@
 ---
-title: Subscribe to events in the Adobe Target Java SDK
-description: Learn how to subscribe to various events that occur within the Java SDK using the OnDeviceDecisioningHandler object.
+title: Subscribe to events in the [!DNL Adobe Target] Java SDK
+description: Learn how to subscribe to various events that occur within the Java SDK using the [!UICONTROL OnDeviceDecisioningHandler] object.
 feature: APIs/SDKs
 role: Developer
 ---
@@ -17,9 +17,9 @@ The `OnDeviceDecisioningHandler` object contains the following callbacks, which 
 
 |Name|Arguments|Description|
 | --- | --- | --- |
-|onDeviceDecisioningReady|None|Called only once the first time the client is ready for on-device decisioning|
-|artifactDownloadSucceeded|byte[] contents of artifact file|Called every time a on-device decisioning artifact is downloaded|
-|artifactDownloadFailed|Exception|Called every time there is a failure to download a on-device decisioning artifact|
+|onDeviceDecisioningReady|None|Called only once the first time the client is ready for [!UICONTROL on-device decisioning]|
+|artifactDownloadSucceeded|byte[] contents of artifact file|Called every time a [!UICONTROL on-device decisioning] artifact is downloaded|
+|artifactDownloadFailed|Exception|Called every time there is a failure to download a [!UICONTROL on-device decisioning] artifact|
 
 ## Example
 

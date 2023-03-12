@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target Java SDK supports asynchronous requests, which can reduce the effective target time to zero.
+One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. [!DNL Target] Java SDK supports asynchronous requests, which can reduce the effective target time to zero.
 
 ## Supported Methods
 
@@ -69,4 +69,4 @@ public class TargetRestController {
 
 This example assumes you have [initialized the SDK](initialize-sdk.md) as a spring bean and that you have [utility methods](utility-methods.md) available.
 
-The Target request is fired before `simulateIO` and by the time it is executed target result should also be ready. Even if it is not, you will have significant savings in most cases.
+The [!DNL Target] request is fired before `simulateIO` and by the time it is executed target result should also be ready. Even if it is not, you will have significant savings in most cases.
