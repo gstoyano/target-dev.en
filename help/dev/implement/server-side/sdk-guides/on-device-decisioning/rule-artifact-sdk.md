@@ -5,9 +5,9 @@ feature: APIs/SDKs
 role: Developer
 ---
 
-# Downloading, Storing, and Updating the Rule Artifact Automatically via the Adobe Target SDK
+# Downloading, storing, and updating the rule artifact automatically via the [!DNL Adobe Target] SDK
 
-This approach is best when you are able to initialize the Adobe Target SDK at the same time you initialize and start your web server. The rule artifact will be downloaded by the Adobe Target SDK and cached into memory before your web server application starts serving requests. Once your web application is up and running, all Adobe Target decisions will be executed using the in-memory rule artifact. The cached rule artifact will be updated based on the `pollingInterval` you specify during the SDK initialization step.
+This approach is best when you are able to initialize the [!DNL Adobe Target] SDK at the same time you initialize and start your web server. The rule artifact will be downloaded by the [!DNL Adobe Target] SDK and cached into memory before your web server application starts serving requests. Once your web application is up and running, all [!DNL Adobe Target] decisions will be executed using the in-memory rule artifact. The cached rule artifact will be updated based on the `pollingInterval` you specify during the SDK initialization step.
 
 ## Summary of steps
 
@@ -15,7 +15,7 @@ This approach is best when you are able to initialize the Adobe Target SDK at th
 1. Initialize the SDK
 1. Store and Use the Rule Artifact
 
-## Install the SDK
+## 1. Install the SDK
 
 >[!BEGINTABS]
 
@@ -37,7 +37,7 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!ENDTABS]
 
-## Initialize the SDK
+## 2. Initialize the SDK
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
@@ -87,12 +87,12 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Both client and organizationId can be retrieved from Adobe Target by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
+1. Both client and organizationId can be retrieved from [!DNL Adobe Target] by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
 
    <!--- Insert image-client-code.png --->
    ![Implementation page under Administration in Target](assets/asset-rule-artifact-3.png)
 
-## Store and Use the Rule Artifact
+## 3. Store and use the rule artifact
 
 You do not need to manage the rule artifact yourself and calling the SDK methods should be straightforward.
 
@@ -143,7 +143,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 >
 >In the code sample above, the `TargetClient` object holds a reference to the in-memory rule artifact. When you use this object for invoking standard SDK methods, it uses the in-memory rule artifact for decisioning. If your application is structured such that you need to call the SDK methods in files other than the one that initializes and listens to client requests, and if those files do not have access to the TargetClient object, then you can download the JSON payload and store it in a local JSON file to be consumed on other files, which need to initialize the SDK. This is explained in the next section, regarding [downloading the rule artifact using a JSON payload](rule-artifact-json.md).
 
-Here is an example that starts a web application after initializing the Adobe Target SDK.
+Here is an example that starts a web application after initializing the [!DNL Adobe Target] SDK.
 
 >[!BEGINTABS]
 
