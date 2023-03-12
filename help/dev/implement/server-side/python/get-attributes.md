@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-`get_attributes()` is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+`get_attributes()` is used to fetch experimentation and personalized experiences from [!DNL Target] and extract attribute values.
 
 
 ## Method

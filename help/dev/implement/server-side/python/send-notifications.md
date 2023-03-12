@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-`send_notifications()` is used to send display or click notifications to Adobe Target for measurement and reporting.
+`send_notifications()` is used to send display or click notifications to [!DNL Adobe Target] for measurement and reporting.
 
 >[!NOTE]
 >
@@ -36,9 +36,9 @@ target_client.send_notifications(options)
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request|
-|target_cookie|str|no|None|Target cookie|
-|target_location_hint|str|no|None|Target location hint|
+|request|DeliveryRequest|Yes|None|Conforms to the [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request|
+|target_cookie|str|no|None|[!DNL Target] cookie|
+|target_location_hint|str|no|None|[!DNL Target] location hint|
 |consumer_id|str|no|None|When stitching multiple calls, different consumer IDs should be provided|
 |customer_ids|list[CustomerId]|no|None|A list of Customer Ids in VisitorId-compatible format|
 |session_id|str|no|None|Used for linking multiple requests|
@@ -51,17 +51,17 @@ target_client.send_notifications(options)
 
 |Name|Type|Description|
 | --- | --- | --- |
-|response|DeliveryResponse|Conforms to the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) response|
-|target_cookie|dict|Target cookie|
-|target_location_hint_cookie|dict|Target location hint cookie|
-|analytics_details|list[AnalyticsResponse]|Analytics payload, in case of client side Analytics usage|
+|response|DeliveryResponse|Conforms to the [[!DNL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) response|
+|target_cookie|dict|[!DNL Target] cookie|
+|target_location_hint_cookie|dict|[!DNL Target] location hint cookie|
+|analytics_details|list[AnalyticsResponse]|[!DNL Analytics] payload, in case of client-side [!DNL Analytics] usage|
 |trace||list[dict]|Aggregated trace data for all request mboxes/views|
 |response_tokens|list[dict]|A list of [​Response Tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)|
 |meta|dict|Additional decisioning metadata for use with on-device-decisioning|
 
 ## Example
 
-First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
+First, let's build the [!UICONTROL Target Delivery API] request for prefetching content for the `home` and `product1` mboxes.
 
 ### Python
 
@@ -75,7 +75,7 @@ delivery_request = DeliveryRequest(prefetch=prefetch)
 response = target_client.get_offers({ "request": delivery_request })
 ```
 
-A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `target_response["response"]` object (formatted as a dict) may appear as follows:
+A successful response will contain a [!UICONTROL Target Delivery API] response object, which contains prefetched content for the requested mboxes. A sample `target_response["response"]` object (formatted as a dict) may appear as follows:
 
 ### Python
 
@@ -150,7 +150,7 @@ notification = Notification(
 notification_request = DeliveryRequest(notifications=[notification])
 ```
 
-Notice we have included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via the `send_notifications()` API method:
+Notice we have included both the mbox state and the event token corresponding to the [!DNL Target] offer delivered in the prefetch response. Having built the notifications request, we can send it to [!DNL Target] via the `send_notifications()` API method:
 
 ### Python
 

@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target Python SDK supports asynchronous requests, which can reduce the effective target time to zero.
+One benefit of server-side integration is that you can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. [!DNL Target] Python SDK supports asynchronous requests, which can reduce the effective target time to zero.
 
 ## Supported Methods
 

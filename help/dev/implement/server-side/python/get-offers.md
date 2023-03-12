@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-`get_offers()` is used to execute a decision and retrieve an experience from Adobe Target.
+`get_offers()` is used to execute a decision and retrieve an experience from [!DNL Adobe Target].
 
 
 ## Method
@@ -26,9 +26,9 @@ The `options` dict has the following structure:
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|request|DeliveryRequest|Yes|None|Conforms to the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request|
-|target_cookie|str|no|None|Target cookie|
-|target_location_hint|str|no|None|Target location hint|
+|request|DeliveryRequest|Yes|None|Conforms to the [[!DNL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request|
+|target_cookie|str|no|None|[!DNL Target] cookie|
+|target_location_hint|str|no|None|[!DNL Target] location hint|
 |consumer_id|str|no|None|When stitching multiple calls, different consumer IDs should be provided|
 |customer_ids|list[CustomerId]|no|None|A list of Customer Ids in VisitorId-compatible format|
 |session_id|str|no|None|Used for linking multiple requests|
@@ -41,9 +41,9 @@ Returns a `TargetDeliveryResponse` if called synchronously (default), or an `Asy
 
 |Name|Type|Description|
 | --- | --- | --- |
-|response|DeliveryResponse|Conforms to the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) response|
-|target_cookie|dict|Target cookie|
-|target_location_hint_cookie|dict|Target location hint cookie|
+|response|DeliveryResponse|Conforms to the [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) response|
+|target_cookie|dict|[!DNL Target] cookie|
+|target_location_hint_cookie|dict|[!DNL Target] location hint cookie|
 |analytics_details|list[AnalyticsResponse]|Analytics payload, in case of client side Analytics usage|
 |trace|list[dict]|Aggregated trace data for all request mboxes/views|
 |response_tokens|list[dict]|A list of ​[Response Tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)|
@@ -62,8 +62,8 @@ The `meta` object used for indicating the status of the target response has the 
 |Name|Type|Description|
 | --- | --- | --- |
 |decisioning_method|str|Which decisioning method was used: on-device or server-side|
-|remote_mboxes|list`[str]`|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request is needed.|
-|remote_views|list`[str]`|When decisioning Method is on-device, an array of view names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request is needed.|
+|remote_mboxes|list`[str]`|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request is needed.|
+|remote_views|list`[str]`|When decisioning Method is on-device, an array of view names that could not be fully decided on-device is given. In other words, a [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request is needed.|
 
 ## Example
 

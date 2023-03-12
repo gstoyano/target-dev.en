@@ -1,6 +1,6 @@
 ---
-title: Subscribe to events in the Adobe Target Python SDK
-description: Learn how to subscribe to various events that occur within the Python SDK using the OnDeviceDecisioningHandler object.
+title: Subscribe to events in the [!DNL Adobe Target] Python SDK
+description: Learn how to subscribe to various events that occur within the Python SDK using the [!UICONTROL OnDeviceDecisioningHandler] object.
 feature: APIs/SDKs
 role: Developer
 ---
