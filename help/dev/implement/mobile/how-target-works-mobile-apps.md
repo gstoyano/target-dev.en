@@ -1,14 +1,14 @@
 ---
-description: Learn how to use the Adobe Mobile SDK to show the optimal experiences to your mobile app visitors.
-title: How Does Target Work in Mobile Apps?
+description: Learn how to use the [!DNL Adobe Mobile SDK] to show the optimal experiences to your mobile app visitors.
+title: How Does [!DNL Target] Work in Mobile Apps?
 feature: Implement Mobile
 role: Developer
 ---
-# How Target works in mobile apps
+# How [!DNL Target] works in mobile apps
 
-The Adobe Mobile SDK contacts the Target server to get the content along with other data points to show the right experience to the user.
+The [!DNL Adobe Mobile SDK] contacts the [!DNL Target] server to get the content along with other data points to show the right experience to the user.
 
-## Target Locations and Success Metrics
+## [!DNL Target] locations and success metrics
 
 A *target location* is also referred to as an mbox. An identified location in the app is enabled for testing or personalization (for example, the welcome message on the home screen). These locations are identified during the test creation process.
 
@@ -16,12 +16,12 @@ A *[success metric](https://experienceleague.adobe.com/docs/target/using/activit
 
 ![alt image](assets/mobile-target-location.png)
 
-* **Target Location:** The content that shows below the register button.
+* **[!DNL Target] location:** The content that shows below the register button.
 
-  This particular user is offered free shipping until 6 PM. This location can be reused across multiple Target activities to run A/B tests and personalization. 
+  This particular user is offered free shipping until 6 PM. This location can be reused across multiple [!DNL Target] activities to run A/B tests and personalization. 
 
-* **Success Metric:** The action performed by the user where the user taps the register button.
+* **Success metric:** The action performed by the user where the user taps the register button.
 
-**Understand How Target Works in the SDK**
+**Understand how [!DNL Target] works in the SDK**
 
 ![alt image](assets/how-target-mobile-works.png)

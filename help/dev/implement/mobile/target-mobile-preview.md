@@ -1,11 +1,11 @@
 ---
 keywords: qa, preview, preview link, mobile, mobile preview
 description: Use mobile preview links to perform end-to-end QA for mobile app activities. You can enroll yourself into different experiences without special test devices.
-title: How Do I Use the Mobile Preview Link in Target Mobile?
+title: How Do I Use the Mobile Preview Link in [!DNL Target] Mobile?
 feature: Implement Mobile
 role: Developer
 ---
-# Target mobile preview
+# [!DNL Target] mobile preview
 
 Use the mobile preview link to perform easy end-to-end QA for mobile app activities and enroll yourself into different experiences right on your device without any special test devices.
 
@@ -84,7 +84,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
 ## Generating a Preview Link
 
-1. In the Target UI, click the **[!UICONTROL More Options]** icon (three vertical ellipses), then select **[!UICONTROL Create Mobile Preview]**.
+1. In the [!DNL Target] UI, click the **[!UICONTROL More Options]** icon (three vertical ellipses), then select **[!UICONTROL Create Mobile Preview]**.
 
    ![alt image](assets/mobile-preview-create.png)
 
@@ -112,11 +112,11 @@ Open the link in a mobile browser on a device where you have your app installed.
 
 1. Open the link in your mobile browser.
 
-    Share the link that you copied in the previous step from the Target UI to your mobile device in a convenient way, for example using text, email, or Slack.
+    Share the link that you copied in the previous step from the [!DNL Target] UI to your mobile device in a convenient way, for example using text, email, or Slack.
 
     |![preview deep link 1](assets/mobile-preview-open-deeplink.png)|![preview deep link 2](assets/mobile-preview-open-app.png)|
 
-    Your app opens and starts the Target Mobile Preview Mode. 
+    Your app opens and starts the [!DNL Target] Mobile Preview Mode. 
 
 1. Select the combination of experiences that you want to see, then click **[!UICONTROL Launch Experiences]**.
 

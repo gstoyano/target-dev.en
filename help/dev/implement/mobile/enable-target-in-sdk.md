@@ -1,11 +1,11 @@
 ---
 keywords: mobile app, mobile app sdk, target mobile app, mobile target sdk, mobile app sdk, enable target in sdk
 description: Learn how to add the Adobe Mobile Services SDK to your mobile app.
-title: How Do I Enable Target in the Adobe Mobile SDK?
+title: How Do I Enable [!DNL Target] in the [!DNL Adobe Mobile SDK]?
 feature: Implement Mobile
 role: Developer
 ---
-# Enable Target in the SDK
+# Enable [!DNL Target] in the SDK
 
 Add the [!UICONTROL Adobe Mobile Services SDK] to your app.
 
@@ -19,7 +19,7 @@ Add the [!UICONTROL Adobe Mobile Services SDK] to your app.
 
    In the Experience Cloud, open Mobile Services, then go to **[!UICONTROL Manage App Settings]** > **[!UICONTROL SDK Target Options]**.
 
-   Add your Target clientcode and timeout. The clientcode is unique to your account or company. The timeout is the time in number of seconds until which Target will wait for a response before showing the default content. Make sure the **[!UICONTROL Use HTTPS]** option is checked in the Manage App Settings page in Adobe Mobile Services. If HTTPS isn't enabled, all calls in iOS9+ will be blocked unless you allowlist the Target server.
+   Add your [!DNL Target] clientcode and timeout. The clientcode is unique to your account or company. The timeout is the time in number of seconds until which [!DNL Target] will wait for a response before showing the default content. Make sure the **[!UICONTROL Use HTTPS]** option is checked in the Manage App Settings page in Adobe Mobile Services. If HTTPS isn't enabled, all calls in iOS9+ will be blocked unless you allowlist the [!DNL Target] server.
 
    ![alt image](assets/mobile-clientcode.png)
 
