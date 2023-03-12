@@ -1,20 +1,20 @@
 ---
 title: Troubleshoot on-device decisioning
-description: Learn how to troubleshoot on-device decisioning
+description: Learn how to troubleshoot [!UICONTROL on-device decisioning]
 ---
-# Troubleshooting on-device decisioning
+# Troubleshooting [!UICONTROL on-device decisioning]
 
 ## Validating Configuration
 
 ### Summary of Steps
 
 1. Ensure the `logger` is configured
-1. Ensure Target Traces is enabled
-1. Verify the on-device decisioning *rule artifact* has been retrieved and cached according to the polling interval defined.
-1. Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer.
+1. Ensure [!DNL Target ] traces is enabled
+1. Verify the [!UICONTROL on-device decisioning] *rule artifact* has been retrieved and cached according to the polling interval defined.
+1. Validate content delivery via the cached rule artifact by creating a test [!UICONTROL on-device decisioning] activity through the form-based experience composer.
 1. Inspect send notification errors
 
-## Ensure the logger is configured
+## 1. Ensure the logger is configured
 
 When initializing the SDK, ensure that you enable logging.
 
@@ -48,11 +48,11 @@ Also the JVM should be started with the following command line parameter:
 java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
-## Ensure Target Traces is enabled
+## 2. Ensure[!DNL Target]Traces is enabled
 
-Enabling traces will output additional information from Adobe Target in regards to the rules artifact.
+Enabling traces will output additional information from [!DNL Adobe Target] in regards to the rules artifact.
 
-1. Navigate to the Target UI in Experience Cloud.
+1. Navigate to the[!DNL Target]UI in [!DNL Experience Cloud].
 
    ![alt image](assets/asset-target-ui-1.png)
 
@@ -60,74 +60,76 @@ Enabling traces will output additional information from Adobe Target in regards 
 
    ![alt image](assets/asset-target-ui-2.png)
 
-1. Copy the newly generated authorization token to the clipboard and add it to your Target request:
+1. Copy the newly generated authorization token to the clipboard and add it to your[!DNL Target]request:
 
-**Node.js**
+   **Node.js**
 
-```js
-const request = {
-  trace: {
-    authorizationToken: "88f1a924-6bc5-4836-8560-2f9c86aeb36b"
-  },
-  execute: {
-    mboxes: [{
-      name: "sdk-mbox"
-    }]
-}};
-```
+   ```js
+   const request = {
+     trace: {
+       authorizationToken: "88f1a924-6bc5-4836-8560-2f9c86aeb36b"
+     },
+     execute: {
+       mboxes: [{
+         name: "sdk-mbox"
+       }]
+   }};
+   ```
 
-**Java SDK**
+   **Java**
 
-```js
-Trace trace = new Trace()
-  .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
-Context context = new Context()
-  .channel(ChannelType.WEB);
-MboxRequest mbox = new MboxRequest()
-  .name("sdk-mbox")
-  .index(0);
-ExecuteRequest executeRequest = new ExecuteRequest()
-  .mboxes(Arrays.asList(mbox));
+   ```js
+   Trace trace = new Trace()
+     .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
+   Context context = new Context()
+     .channel(ChannelType.WEB);
+   MboxRequest mbox = new MboxRequest()
+     .name("sdk-mbox")
+     .index(0);
+   ExecuteRequest executeRequest = new ExecuteRequest()
+     .mboxes(Arrays.asList(mbox));
 
-TargetDeliveryRequest request = TargetDeliveryRequest.builder()
-  .trace(trace)
-  .context(context)
-  .execute(executeRequest)
-  .build();
-```
+   TargetDeliveryRequest request = TargetDeliveryRequest.builder()
+     .trace(trace)
+     .context(context)
+     .execute(executeRequest)
+     .build();
+   ```
 
 1. With the logger and trace in place, start your app and monitor the server terminal. The following output from the logger confirms that the rule artifact has been retrieved:
 
-**Node.js SDK**
+   **Node.js SDK**
 
-```text
-  AT: LD.ArtifactProvider fetching artifact - https://assets.adobetarget.com/your-client-code/production/v1/rules.json
-  AT: LD.ArtifactProvider artifact received - status=200
-```
+   ```text
+     AT: LD.ArtifactProvider fetching artifact - https://assets.adobetarget.com/your-client-code/production/v1/rules.json
+     AT: LD.ArtifactProvider artifact received - status=200
+   ```
+
+## 3. Verify the [!UICONTROL on-device decisioning] *rule artifact* has been retrieved and cached according to the polling interval defined.
 
 1. Wait the duration of the polling interval (default is 5 minutes) and ensure that the artifact is being fetched by the SDK. The same terminal logs will be output.
 
-   Additionally, information from the the Target Trace should be outputted to the terminal with details about the rule artifact.
+   Additionally, information from the the[!DNL Target]Trace should be outputted to the terminal with details about the rule artifact.
 
-```text
-"trace": {
-   "clientCode": "your-client-code",
-   "artifact": {
-     "artifactLocation": "https://assets.adobetarget.com/your-client-code/production/v1/rules.json",
-     "pollingInterval": 300000,
-     "pollingHalted": false,
-     "artifactVersion": "1.0.0",
-     "artifactRetrievalCount": 10,
-     "artifactLastRetrieved": "2020-09-20T00:09:42.707Z",
+   ```text
+   "trace": {
      "clientCode": "your-client-code",
-     "environment": "production",
-     "generatedAt": "2020-09-22T17:17:59.783Z"
-   },
-```
+     "artifact": {
+       "artifactLocation": "https://assets.adobetarget.com/your-client-code/production/v1/rules.json",
+       "pollingInterval": 300000,
+       "pollingHalted": false,
+       "artifactVersion": "1.0.0",
+       "artifactRetrievalCount": 10,
+       "artifactLastRetrieved": "2020-09-20T00:09:42.707Z",
+       "clientCode": "your-client-code",
+       "environment": "production",
+       "generatedAt": "2020-09-22T17:17:59.783Z"
+     },
+   ```
 
-## Validate content delivery via the cached rule artifact by creating a test on-device decisioning activity through the form-based experience composer
+## 4. Validate content delivery via the cached rule artifact by creating a test [!UICONTROL on-device decisioning] activity through the form-based experience composer
 
-1. Navigate to the Target UI in Experience Cloud
+1. Navigate to the[!DNL Target]UI in Experience Cloud
 
     ![alt image](assets/asset-target-ui-1.png)
 
@@ -135,61 +137,61 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
     ![alt image](assets/asset-form-base-composer-ui.png)
 
-1. Input the mbox name used in your Target request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
+1. Input the mbox name used in your[!DNL Target]request as the location for the XT activity (note this should be a unique mbox name specifically for development purposes).
 
     ![alt image](assets/asset-mbox-location-ui.png)
 
-1. Change the content to either an HTML offer or JSON offer. This will be returned in the Target request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
+1. Change the content to either an HTML offer or JSON offer. This will be returned in the[!DNL Target]request to your application. Leave targeting for the activity as 'All Visitors' and select any metric you would like. Name the activity, save it, and then activate it to ensure the mbox/location in use is only for development.
 
    ![alt image](assets/asset-target-content-ui.png)
 
-1. In your application, add a log statements for the content received in the response from your Target request
+1. In your application, add a log statements for the content received in the response from your[!DNL Target]request
 
-**Node.js SDK**
+   **Node.js SDK**
 
-```js
-try {
-  const response = await targetClient.getOffers({ request });
-  console.log('Response: ', response.response.execute.mboxes[0].options[0].content);
-} catch (error) {
-  console.error('Something went wrong', error);
-}
-```
+   ```js
+   try {
+     const response = await targetClient.getOffers({ request });
+     console.log('Response: ', response.response.execute.mboxes[0].options[0].content);
+   } catch (error) {
+     console.error('Something went wrong', error);
+   }
+   ```
 
-**Java SDK**
+   **Java SDK**
 
-```js
-try {
-  Context context = new Context()
-    .channel(ChannelType.WEB);
-  MboxRequest mbox = new MboxRequest()
-    .name("sdk-mbox")
-    .index(0);
-  ExecuteRequest executeRequest = new ExecuteRequest()
-    .mboxes(Arrays.asList(mbox));
+   ```js
+   try {
+     Context context = new Context()
+       .channel(ChannelType.WEB);
+     MboxRequest mbox = new MboxRequest()
+       .name("sdk-mbox")
+       .index(0);
+     ExecuteRequest executeRequest = new ExecuteRequest()
+       .mboxes(Arrays.asList(mbox));
 
-  TargetDeliveryRequest request = TargetDeliveryRequest.builder()
-    .context(context)
-    .decisioningMethod(DecisioningMethod.ON_DEVICE)
-    .execute(executeRequest)
-    .build();
+     TargetDeliveryRequest request = TargetDeliveryRequest.builder()
+       .context(context)
+       .decisioningMethod(DecisioningMethod.ON_DEVICE)
+       .execute(executeRequest)
+       .build();
 
-    TargetDeliveryResponse response = targetClient.getOffers(request);
-  logger.debug("Response: ", response.getResponse().getExecute().getMboxes().get(0).getOptions().get(0).getContent());
-} catch (Exception exception) {
-  logger.error("Something went wrong", exception);
-}
-```
+       TargetDeliveryResponse response = targetClient.getOffers(request);
+     logger.debug("Response: ", response.getResponse().getExecute().getMboxes().get(0).getOptions().get(0).getContent());
+   } catch (Exception exception) {
+     logger.error("Something went wrong", exception);
+   }
+   ```
 
 1. Review the logs in your terminal to verify that your content is being delivered and that it was delivered via the rules artifact on your server. The `LD.DeciscionProvider` object is outputted when the activity qualification and decisioning were determined on-device based on the rules artifact. Furthermore, due to the logging of the `content`, you should see `<div>test</div>` or however you have decided the response to be when creating the test activity.
 
-**Logger output**
+   **Logger output**
 
-```text
-AT: LD.DecisionProvider {...}
-AT: Response received {...}
-Response:  <div>test</div>
-```
+   ```text
+   AT: LD.DecisionProvider {...}
+   AT: Response received {...}
+   Response:  <div>test</div>
+   ```
 
 ## Inspect send notification errors
 
@@ -229,11 +231,11 @@ client = TargetClient.create({
 
 ## Common Troubleshooting Scenarios
 
-Please be sure to review [supported features](supported-features.md) for on-device decisioning when running into issues.
+Please be sure to review [supported features](supported-features.md) for [!UICONTROL on-device decisioning] when running into issues.
 
 ### On-device decisioning activities not executing due to unsupported audience or activity
 
-A common issue that can occur is on-device decisioning activities not executing due to the audience in use or the activity type being unsupported.
+A common issue that can occur is [!UICONTROL on-device decisioning] activities not executing due to the audience in use or the activity type being unsupported.
 
 (1) Using the logger output, review the entries in the trace property in your response object. Specifically identify the campaigns property:
 
@@ -268,7 +270,7 @@ You will notice that the activity you are trying to qualify for is not in the `c
  }
 ```
 
-Finally, navigate to the Target UI and locate the activity in question: [experience.adobe.com/target](https://experience.adobe.com/target)
+Finally, navigate to the[!DNL Target]UI and locate the activity in question: [experience.adobe.com/target](https://experience.adobe.com/target)
 
 Review the rules used in the audience and ensure you only use those aforementioned that are supported. Additionally, ensure that the activity type is either A/B or XT.
 
@@ -280,7 +282,9 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 (1) Ensure that the mbox you are executing in your application is the same one the activity is using:
 
-**rules.json**
+>[!BEGINTABS]
+
+>[!TAB rule.json]
 
 ```text
  ...
@@ -293,7 +297,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
  ...
 ```
 
-**Node.js SDK**
+>[!TAB Node.js SDK]
 
 ```js
  const request = {
@@ -308,7 +312,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
    }};
 ```
 
-**Java SDK**
+>[!TAB Java SDK]
 
 ```js
 Context context = new Context()
@@ -327,6 +331,8 @@ TargetDeliveryRequest request = TargetDeliveryRequest.builder()
 
 TargetDeliveryResponse response = targetClient.getOffers(request);
 ```
+
+>[!ENDTABS]
 
 (2) Ensure that you are qualified for the audience for you activity by reviewing the `matchedRuleConditions` or `unmatchedRuleConditions` property of your trace output:
 
@@ -458,7 +464,7 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 (3) Review the `context`, `page`, and `referring` data to ensure it is as expected as this can affect the targeting qualification of the activity.
 
-(4) Review the `campaignId` to ensure the activity or activities you are expecting to execute are evaluated. The `campaignId` will match the activity ID on the activity overview tab in the Target UI:
+(4) Review the `campaignId` to ensure the activity or activities you are expecting to execute are evaluated. The `campaignId` will match the activity ID on the activity overview tab in the[!DNL Target]UI:
 
 ![alt image](assets/asset-activity-id-target-ui.png)
 
@@ -470,7 +476,7 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 (8) Ensure you are using supported audience rules and supported activity types.
 
-### A server call is made even though the activity setup under an mbox says "On Device Decisioning Eligible" in the Target user interface
+### A server call is made even though the activity setup under an mbox says "On Device Decisioning Eligible" in the[!DNL Target]user interface
 
 There are a few reasons why a server call is made even though the device is eligible for on-device decisioning:
 

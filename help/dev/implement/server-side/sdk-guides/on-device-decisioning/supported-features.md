@@ -6,7 +6,7 @@ role: Developer
 ---
 # Supported features overview
 
-Adobe Target's server-side SDKs give developers the flexibility to choose between performance and freshness of data for decisions. In other words, if delivering the most relevant and engaging personalized content via machine learning is most important to you, a live server call should be made. But when performance is more critical, an on-device decision should be made. For on-device decisioning to work, please refer to the following list of supported features:
+[!DNL Adobe Target]'s server-side SDKs give developers the flexibility to choose between performance and freshness of data for decisions. In other words, if delivering the most relevant and engaging personalized content via machine learning is most important to you, a live server call should be made. But when performance is more critical, an on-device decision should be made. For [!UICONTROL on-device decisioning] to work, please refer to the following list of supported features:
 
 * Activity Types
 * Audience Targeting
@@ -14,7 +14,7 @@ Adobe Target's server-side SDKs give developers the flexibility to choose betwee
 
 ## Activity types
 
-The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?) are supported or not supported for on-device decisioning.
+The following table indicates which [activity types](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) created using the [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?) are supported or not supported for [!UICONTROL on-device decisioning].
 
 |Activity Type|Supported|
 | --- | --- |
@@ -30,7 +30,7 @@ The following table indicates which [activity types](https://experienceleague.ad
 
 ## Audience targeting
 
-The following table indicates which audience rules are supported or not supported for on-device decisioning.
+The following table indicates which audience rules are supported or not supported for [!UICONTROL on-device decisioning].
 
 |Audience Rule|On-device Decisioning|
 | --- | --- |
@@ -46,11 +46,13 @@ The following table indicates which audience rules are supported or not supporte
 |[Time Frame](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)|Yes|
 |[Experience Cloud Audiences](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Audiences from Adobe Audience Manager, Adobe Analytics, and Adobe Experience Manager|No|
 
-### Geo targeting for on-device decisioning
+### Geo targeting for [!UICONTROL on-device decisioning]
 
-In order to maintain near-zero latency for on-device decisioning activities with geo-based audiences, Adobe recommends you provide the geo values yourself in the call to `getOffers`. Do this by setting the `Geo` object in the `Context` of the request. This means your server will need a way to determine the location of each end user. For example, your server may perform an IP-to-Geo lookup, using a service you configure. Some hosting providers, such as Google Cloud, provide this functionality via custom headers in each `HttpServletRequest`.
+In order to maintain near-zero latency for [!UICONTROL on-device decisioning] activities with geo-based audiences, Adobe recommends you provide the geo values yourself in the call to `getOffers`. Do this by setting the `Geo` object in the `Context` of the request. This means your server will need a way to determine the location of each end user. For example, your server may perform an IP-to-Geo lookup, using a service you configure. Some hosting providers, such as Google Cloud, provide this functionality via custom headers in each `HttpServletRequest`.
 
-**Node.js**
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```csharp
 const CONFIG = {
@@ -79,7 +81,7 @@ targetClient.getOffers({
 })
 ```
 
-**Java**
+>[!TAB Java]
 
 ```javascript
 public class TargetRequestUtils {
@@ -104,9 +106,14 @@ public class TargetRequestUtils {
 }
 ```
 
-However, if you do not have the ability to perform IP-to-Geo lookups on your server, but you still want to perform on-device decisioning for `getOffers` requests that contain geo-based audiences, this is also supported. The downside of this approach is that it will use a remote IP-to-Geo lookup, which will add latency to each `getOffers` call. This latency should be lower than a remote `getOffers` call, since it hits a CDN that is located close to your server. You must only provide the `ipAddress` field in the `Geo` object in the `Context` of your request, in order for the SDK to retrieve the geo-location of your user's IP address. If any other field in addition to the `ipAddress` is provided, the Target SDK will not fetch the geo-location metadata for resolution.
+>[!ENDTABS]
 
-**Node.js**
+However, if you do not have the ability to perform IP-to-Geo lookups on your server, but you still want to perform [!UICONTROL on-device decisioning] for `getOffers` requests that contain geo-based audiences, this is also supported. The downside of this approach is that it will use a remote IP-to-Geo lookup, which will add latency to each `getOffers` call. This latency should be lower than a remote `getOffers` call, since it hits a CDN that is located close to your server. You must only provide the `ipAddress` field in the `Geo` object in the `Context` of your request, in order for the SDK to retrieve the geo-location of your user's IP address. If any other field in addition to the `ipAddress` is provided, the [!DNL Target] SDK will not fetch the geo-location metadata for resolution.
+
+
+>[!BEGINTABS]
+
+>[!TAB Node.js]
 
 ```csharp
 const CONFIG = {
@@ -131,7 +138,7 @@ targetClient.getOffers({
 })
 ```
 
-**Java**
+>[!TAB Java]
 
 ```javascript
 public class TargetRequestUtils {
@@ -148,9 +155,11 @@ public class TargetRequestUtils {
 }
 ```
 
+>[!ENDTABS]
+
 ## Allocation method
 
-The following table indicates which allocation methods are supported or not supported for on-device decisioning.
+The following table indicates which allocation methods are supported or not supported for [!UICONTROL on-device decisioning].
 
 |Allocation Method|Supported|
 | --- | --- |
