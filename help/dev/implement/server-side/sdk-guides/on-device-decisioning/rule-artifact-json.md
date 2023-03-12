@@ -4,7 +4,7 @@ description: This approach is best if your application is structured in a way th
 feature: APIs/SDKs
 role: Developer
 ---
-# Downloading, Storing, and Updating the Rule Artifact via JSON Payload
+# Downloading, storing, and updating the rule artifact via JSON payload
 
 This approach is best if your application is structured in a way that requires the SDK to be initialized on each file in which it uses SDK methods. Before your web application can use the JSON payload of the rule artifact during SDK initialization, you should ensure the JSON payload is downloaded and is available for your application to use.
 
@@ -14,7 +14,7 @@ This approach is best if your application is structured in a way that requires t
 1. Initialize the SDK
 1. Store and Use the JSON Payload
 
-## Install the 
+## 1. Install the SDK
 
 >[!BEGINTABS]
 
@@ -36,26 +36,32 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!ENDTABS]
 
-## Initialize the SDK
+## 2. Initialize the SDK
 
 1. First, import the SDK. Import to the same file from which you can control your server start-up.
 
-   **Node.js**
+   >[!BEGINTABS]
+
+>  [!TAB Node.js]
 
    ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   **Java**
+   [!TAB Java]
 
    ```javascript
    import com.adobe.target.edge.client.ClientConfig;
    import com.adobe.target.edge.client.TargetClient;
    ```
 
+   >[!ENDTABS]
+
 1. To configure the SDK, use the create method.
 
-   **Node.js**
+   >[!BEGINTABS]
+
+>  [!TAB Node.js]
 
    ```javascript
    const CONFIG = {
@@ -84,7 +90,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   **Java**
+   [!TAB Java]
 
    ```javascript
    package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
@@ -107,14 +113,16 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Both client and `organizationId` can be retrieved from Adobe Target by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
+   >[!ENDTABS]
+
+1. Both client and `organizationId` can be retrieved from [!DNL Adobe Target]by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, as shown here.
 
    <!--- Insert image-client-code.png --->
    ![alt image](assets/asset-rule-artifact-3.png)
 
-## Store and Use the JSON Payload
+## 3. Store and rse the JSON payload
 
-The mechanism you use to store the JSON payload depends on your system architecture. You can use a local file, a database, or a memory object caching system such as Memcached . You need to be able to read this JSON from your application for consumption. In this guide, we use a local file as the storage.
+The mechanism you use to store the JSON payload depends on your system architecture. You can use a local file, a database, or a memory object caching system such as Memcached. You need to be able to read this JSON from your application for consumption. In this guide, we use a local file as the storage.
 
 >[!BEGINTABS]
 
@@ -156,7 +164,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->By initializing the Adobe Target SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the Adobe Target SDK does not need to wait for the rule artifact to be downloaded.
+>By initializing the [!DNL Adobe Target]SDK via the JSON payload, your server is ready to serve requests immediately with on-device decisioning activities, since the [!DNL Adobe Target]SDK does not need to wait for the rule artifact to be downloaded.
 
 Here is an example demonstrating the JSON payload-initializing capability.
 
