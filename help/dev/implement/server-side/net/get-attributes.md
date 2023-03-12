@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-`GetAttributes()` is used to fetch experimentation and personalized experiences from Target and extract attribute values.
+`GetAttributes()` is used to fetch experimentation and personalized experiences from [!DNL Target] and extract attribute values.
 
 ## Method
 
@@ -22,7 +22,7 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|targetRequest|TargetDeliveryRequest|No|null|The same target request as used for [Get Offers​](get-offers.md)|
+|targetRequest|TargetDeliveryRequest|No|null|The same [!DNL Target] request as used for [Get Offers​](get-offers.md)|
 |mboxNames|params string[]|No|null|A parameter array of mbox names|
 
 ## Result

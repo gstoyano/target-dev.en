@@ -7,7 +7,7 @@ role: Developer
 
 # .NET SDK overview
 
-This reference guide shows how Adobe Target customers can install, initialize, and use the .NET SDK.
+This reference guide shows how [!DNL Adobe Target] customers can install, initialize, and use the .NET SDK.
 
 ## Pre-requisites
 
@@ -16,13 +16,13 @@ This reference guide shows how Adobe Target customers can install, initialize, a
 
 ## Getting Started
 
-To see how you can get started with the .NET SDK, navigate to the [Target SDK Getting Started Guide](../sdk-guides/getting-started/getting-started.md).
+To see how you can get started with the .NET SDK, navigate to the [[!DNL Target] SDK Getting Started Guide](../sdk-guides/getting-started/getting-started.md).
 
 ## Sample App
 
 Test drive the.NET SDK:
 
-* By visiting the [Adobe Target On-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
+* By visiting the [[!DNL Adobe Target] [!UICONTROL on-device decisioning] demo site](https://github.com/adobe/on-device-decisioning-demo-site)
 * In a [sample application](../sdk-guides/sample-apps/sample-apps.md).
 
 ### Reference

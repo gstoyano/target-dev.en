@@ -1,6 +1,6 @@
 ---
-title: Subscribe to events in the Adobe Target .NET SDK
-description: Learn how to subscribe to various events that occur within the .NET SDK using the OnDeviceDecisioningHandler object.
+title: Subscribe to events in the [!DNL Adobe Target] .NET SDK
+description: Learn how to subscribe to various events that occur within the .NET SDK using the [!UICONTROL OnDeviceDecisioningHandler] object.
 feature: APIs/SDKs
 role: Developer
 ---
@@ -9,8 +9,7 @@ role: Developer
 
 ## Description
 
-When [initializing the SDK](initialize-sdk.md), an optional `OnDeviceDecisioningReady` delegate can be provided on the `TargetClientConfig` object, which will be invoked when the SDK is ready for on-device method calls.
-There are also a couple other delegates available for handling the on-device decisioning artifact download.
+When [initializing the SDK](initialize-sdk.md), an optional `OnDeviceDecisioningReady` delegate can be provided on the `TargetClientConfig` object, which will be invoked when the SDK is ready for on-device method calls. There are also a couple other delegates available for handling the [!UICONTROL on-device decisioning] artifact download.
 
 ## Events
 
@@ -18,9 +17,9 @@ The following delegates can be configured for certain events:
 
 |Name|Arguments|Description|
 | --- | --- | --- |
-|OnDeviceDecisioningReady|None|Called only once the first time the client is ready for on-device decisioning|
-|ArtifactDownloadSucceeded|string contents of artifact file|Called every time an on-device decisioning artifact is downloaded|
-|ArtifactDownloadFailed|Exception|Called every time there is a failure to download an on-device decisioning artifact|
+|OnDeviceDecisioningReady|None|Called only once the first time the client is ready for [!UICONTROL on-device decisioning]|
+|ArtifactDownloadSucceeded|string contents of artifact file|Called every time an [!UICONTROL on-device decisioning] artifact is downloaded|
+|ArtifactDownloadFailed|Exception|Called every time there is a failure to download an [!UICONTROL on-device decisioning] artifact|
 
 ## Example
 

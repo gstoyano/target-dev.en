@@ -1,6 +1,6 @@
 ---
 title: Initialize the .NET SDK using the create method
-description: Learn how to use the create method to initialize the Java SDK and instantiate the TargetClient to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
+description: Learn how to use the create method to initialize the Java SDK and instantiate the [!UICONTROL TargetClient] to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 feature: APIs/SDKs
 role: Developer
 ---
@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-Use the `Create` method in order to initialize the .NET SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+Use the `Create` method in order to initialize the .NET SDK and instantiate the [!UICONTROL Target Client] to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 
 When using .NET Dependency Injection, just add the SDK at service configuration step by calling `services.AddTargetLibrary()`;, then inject `ITargetClient targetClient` in your app's constructor.
 
@@ -38,13 +38,13 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|Client|string|Yes|None|Target Client Id|
-|OrganizationId|string|Yes|None|Experience Cloud Organization ID|
+|Client|string|Yes|None|[!UICONTROL Target Client Id]|
+|OrganizationId|string|Yes|None|[!UICONTROL Experience Cloud Organization ID]|
 |Timeout|int|No|10000|Timeout for all requests in milliseconds|
-|Proxy||WebProxy|No|null|Proxy for all Target requests|
-|RetryPolicy|Policy|No|null|Retry Policy for all Target requests|
-|AsyncRetryPolicy|AsyncPolicy|No|null|Async Retry Policy for all Target requests|
-|Logger|ILogger|No|null|Used for debug logging of Target requests and responses|
+|Proxy||WebProxy|No|null|Proxy for all [!DNL Target] requests|
+|RetryPolicy|Policy|No|null|Retry Policy for all [!DNL Target] requests|
+|AsyncRetryPolicy|AsyncPolicy|No|null|Async Retry Policy for all [!DNL Target] requests|
+|Logger|ILogger|No|null|Used for debug logging of [!DNL Target] requests and responses|
 |ServerDomain|string|No|`client.tt.omtrdc.net`|Overrides default hostname|
 |Secure|bool|No|true|Unset to enforce HTTP scheme|
 |DefaultPropertyToken|string|No|null|Sets the default property token for every `getOffers` call|

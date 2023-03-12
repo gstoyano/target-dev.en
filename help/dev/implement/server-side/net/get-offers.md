@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-`GetOffers()` is used to execute a decision and retrieve an experience from Adobe Target.
+`GetOffers()` is used to execute a decision and retrieve an experience from [!DNL Adobe Target].
 
 ## Method
 
@@ -36,9 +36,9 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 |Name|Type|Required|Description|
 | --- | --- | --- | --- |
 |context|Context|Yes|Specifies the context for the request|
-|sessionId|String|No|Used for linking multiple Target requests|
+|sessionId|String|No|Used for linking multiple [!DNL Target] requests|
 |thirdPartyId|String|No|Your company's identifier for the user that you can send with every call|
-|cookies|List|No|List of cookies returned in previous Target request of same user.|
+|cookies|List|No|List of cookies returned in previous [!DNL Target] request of same user.|
 |customerIds|Map|No|Customer Ids in VisitorId-compatible format|
 |execute|ExecuteRequest|No|PageLoad or mboxes request to execute. Will be evaluated on server side immediately|
 |prefetch|PrefetchRequest|No|Views, PageLoad or mboxes request to prefetch. Returns with notification token to be returned on conversion.|
@@ -49,14 +49,14 @@ The `TargetDeliveryRequest.Builder` object has the following structure:
 |property|Property|No|Specifies the at_property via the token field. It can be used to control the scope for the delivery.|
 |trace|Trace|No|Enables trace for Delivery API.|
 |qaMode|QAMode|No|Use this object to enable the QA mode in the request.|
-|locationHint|String|No|Target edge cluster location hint. Used to target given edge cluster for this request.|
+|locationHint|String|No|[!DNL Target] edge cluster location hint. Used to target given edge cluster for this request.|
 |visitor|Visitor|No|Used to provide custom Visitor API object.|
 |id|VisitorId|No|Object that contains the identifiers for the visitor. Eg. tntId, thirdParyId, mcId, customerIds.|
 |experienceCloud|ExperienceCloud|No|Specifies integrations with Audience Manager and Analytics. Automatically populated using cookies, if not provided.|
-|tntId|String|No|Primary identifier in Target for a user. Fetched from targetCookies. Auto-generated if not provided.|
+|tntId|String|No|Primary identifier in [!DNL Target] for a user. Fetched from targetCookies. Auto-generated if not provided.|
 |mcId|String|No|Used to merge and share data between different Adobe solutions(ECID). Fetched from targetCookies. Auto-generated if not provided.|
-|trackingServer|String|No|The Adobe Analytics Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
-|trackingServerSecure|String|No|The Adobe Analytics Secure Server in order for Adobe Target and Adobe Analytics to correctly stitch the data together.|
+|trackingServer|String|No|The Adobe Analytics Server in order for [!DNL Adobe Target] and [!DNL Adobe Analytics] to correctly stitch the data together.|
+|trackingServerSecure|String|No|The [!UICONTROL Adobe Analytics Secure Server] in order for [!DNL Adobe Target] and [!DNL Adobe Analytics] to correctly stitch the data together.|
 |decisioningMethod|DecisioningMethod|No|Can be used to explicitly set ON_DEVICE or HYBRID decisioning method for on-device decisioning|
 
 The values of each field should conform to [Target Delivery API](../../delivery-api/overview.md) request specification.
@@ -71,8 +71,8 @@ The `TargetDeliveryResponse` returned by `TargetClient.GetOffers()` has the foll
 |Response|DeliveryResponse​|[Target Delivery API](../../delivery-api/overview.md)* response|
 |Status|HttpStatusCode|Response HTTP status code|
 |Message|string|Response status message or error message|
-|Locations|Locations|Target location names, including global mbox name and mboxes/views for which only remote decisioning is available|
-|GetCookies|Dictionary|Returns a dictionary of session metadata for this user. This needs to be passed in next Target request for this user.|
+|Locations|Locations|[!DNL Target] location names, including global mbox name and mboxes/views for which only remote decisioning is available|
+|GetCookies|Dictionary|Returns a dictionary of session metadata for this user. This needs to be passed in next [!DNL Target] request for this user.|
 |VisitorState|IDictionary|Visitor state to be set on client side for Visitor API Javascript library initialization|
 
 The `TargetCookie` object used for saving data for user session has the following structure:
@@ -83,7 +83,7 @@ The `TargetCookie` object used for saving data for user session has the followin
 |Value|string|Cookie value|
 |MaxAge|int|The `MaxAge` option is a convenience for setting Expires relative to the current time in seconds|
 
-You don't have to worry about expiring the cookies. Target handles `MaxAge` inside the SDK.
+You don't have to worry about expiring the cookies. [!DNL Target] handles `MaxAge` inside the SDK.
 
 ## Example
 
