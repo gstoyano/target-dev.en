@@ -1,5 +1,5 @@
 ---
-title:Adobe Target Reporting API
+title: Adobe Target Reporting API
 description: Adobe Target Reporting API
 openAPISpec: 
 ---
