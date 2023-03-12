@@ -55,6 +55,8 @@ Although there are some reserved keys, both profile and mbox parameters can cont
 
       Search for your target location name in your debug console. You will see a call to `YOUR-CLIENT-CODE.tt.omtrdc.net`with all the parameters that you just passed.
 
-      ![alt image](assets/mobile-debug.png)
+      (Click image to expand to full width.)
+
+      ![Target location in the debug console](/help/dev/implement/mobile/assets/mobile-debug.png "Target location in the debug console"){zoomable="yes"}
 
    You can build audiences and restrict or target the display of content using these parameters in [!DNL Target].
