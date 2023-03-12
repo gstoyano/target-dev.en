@@ -6,7 +6,7 @@ role: Developer
 ---
 # Node.js SDK overview
 
-This reference guide shows how Adobe Target customers can install, initialize, and use the Node.js SDK.
+This reference guide shows how [!DNL Adobe Target] customers can install, initialize, and use the Node.js SDK.
 
 ## Pre-requisites
 
@@ -20,7 +20,7 @@ To see how you can get started with using the Node.js SDK, navigate to the [Targ
 
 Test drive the Node.js SDK:
 
-* By visiting the [Adobe Target On-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
+* By visiting the [[!DNL Adobe Target] on-device decisioning demo site](https://github.com/adobe/on-device-decisioning-demo-site)
 * In a [sample application](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Reference
@@ -32,4 +32,3 @@ To read and understand the Node.js SDK reference documentation, begin at [Instal
 * [Node.js SDK Github Repo](https://github.com/adobe/target-nodejs-sdk)
 * [Changelog](https://github.com/adobe/target-nodejs-sdk/blob/main/CHANGELOG.md)
 ​​
-​

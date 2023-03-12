@@ -1,15 +1,15 @@
 ---
-title: Use getOffers() in [!DNL Adobe Target] when using the Node.js SDK
-description: Learn how to use getOffers() to execute a decision and retrieve an experience from [!DNL Adobe Target].
+title: Use [!UICONTROL getOffers()] in [!DNL Adobe Target] when using the Node.js SDK
+description: Learn how to use [!UICONTROL getOffers()] to execute a decision and retrieve an experience from [!DNL Adobe Target].
 feature: APIs/SDKs
 role: Developer
 ---
 
-# Get Offers (Node.js)
+# [!UICONTROL Get Offers] (Node.js)
 
 ## Description
 
-`getOffers()` is used to execute a decision and retrieve an experience from Adobe Target.
+`[!UICONTROL getOffers()]` is used to execute a decision and retrieve an experience from [!DNL Adobe Target].
 
 
 ## Method
@@ -26,13 +26,13 @@ The `options` object has the following structure:
 
 |Name|Type|Required|Default|Description|
 | --- |--- | --- | --- | --- |
-|Request|Object|Yes|None|Conforms to the [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request|
+|Request|Object|Yes|None|Conforms to the [[!DNL Target] Delivery API](/help/dev/implement/delivery-api/overview.md) request|
 |visitorCookie|String|No|None|ECID (VisitorId) cookie|
-|targetCookie|String|No|None|Target cookie |
-|targetLocationHint|String|No|None|Target location hint|
-|consumerId|Sting|No|None|consumerIds for Analytics for Target (A4T) stitching|
+|targetCookie|String|No|None|[!DNL Target] cookie |
+|targetLocationHint|String|No|None|[!DNL Target] location hint|
+|consumerId|Sting|No|None|consumerIds for [!UICONTROL Analytics for Target] (A4T) stitching|
 |CustomerIds|Array|No|None|Customer IDs in VisitorId-compatible format|
-|sessionId|String|No|None|Used for linking multiple Target requests|
+|sessionId|String|No|None|Used for linking multiple [!DNL Target] requests|
 |visitor|Object|No|new VisitorId|Supply an external VisitorId instance|
 
 ## Promise
@@ -41,11 +41,11 @@ The `options` object has the following structure:
 
 |Name|Type|Description|
 | --- | --- | --- |
-|request|Object|[Target Delivery API](/help/dev/implement/delivery-api/overview.md) request|
-|response|Object|[Target Delivery API](/help/dev/implement/delivery-api/overview.md) response|
+|request|Object|[[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request|
+|response|Object|[[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) response|
 |visitorState|Object|Object that should be passed to Visitor API `getInstance()`|
-|targetCookie|Object|Target cookie|
-|targetLocationHintCookie|Object|Target location hint cookie|
+|targetCookie|Object|[!DNL Target] cookie|
+|targetLocationHintCookie|Object|[!DNL Target] location hint cookie|
 |analyticsDetails|Array|Analytics payload, in case of client-side Analytics usage|
 |responseTokens|Array|A list of [Response tokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?).|
 |trace|Array|Aggregated trace data for all request mboxes/views|
@@ -66,7 +66,7 @@ The `status` object used for indicating the status of the target response has th
 | --- | --- | --- |
 |status|Number|HTTP status code|
 |message|String|A message about the response. For instance, it may indicate if the response was decided [on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) or server-side|
-|remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [Target Delivery API](/help/dev/implement/delivery-api/overview.md) request is needed.|
+|remoteMboxes|Array|When decisioning Method is `on-device`, an array of mbox names that could not be fully decided on-device is given. In other words, a [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) request is needed.|
 
 ## Example
 

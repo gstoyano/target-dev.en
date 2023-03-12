@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-`sendNotifications()` is used to send display or click notifications to Adobe Target for measurement and reporting.
+`[!UICONTROL sendNotifications()]` is used to send display or click notifications to [!DNL Adobe Target] for measurement and reporting.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ TargetClient.sendNotifications(options: Object): Promise
 
 ## Example
 
-First, let's build the Target Delivery API request for prefetching content for the `home` and `product1` mboxes.
+First, let's build the Target D[!UICONTROL ]elivery API request for prefetching content for the `home` and `product1` mboxes.
 
 ### Node.js
 
@@ -57,7 +57,7 @@ const prefetchMboxesRequest = {
 const targetResponse = await targetClient.getOffers({ request: prefetchMboxesRequest });
 ```
 
-A successful response will contain a Target Delivery API response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may appear as follows:
+A successful response will contain a [!UICONTROL Target Delivery API] response object, which contains prefetched content for the requested mboxes. A sample `targetResponse.response` object may appear as follows:
 
 ### Node.js
 
@@ -115,7 +115,7 @@ A successful response will contain a Target Delivery API response object, which 
 }
 ```
 
-Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the Target content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will appear as follows:
+Note the mbox `name` and `state` fields, as well as the `eventToken` field, in each of the [!DNL Target] content options. These should be provided in the `sendNotifications()` request, as soon as each content option is displayed. Let's suppose the `product1` mbox has been displayed on a non-browser device. The notifications request will appear as follows:
 
 ### Node.js
 
@@ -134,7 +134,7 @@ const mboxNotificationRequest = {
 };
 ```
 
-Notice that we've included both the mbox state and the event token corresponding to the Target offer delivered in the prefetch response. Having built the notifications request, we can send it to Target via the `sendNotifications()` API method:
+Notice that we've included both the mbox state and the event token corresponding to the [!DNL Target] offer delivered in the prefetch response. Having built the notifications request, we can send it to [!DNL Target] via the `sendNotifications()` API method:
 
 ### Node.js
 

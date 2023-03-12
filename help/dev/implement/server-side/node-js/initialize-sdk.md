@@ -1,6 +1,6 @@
 ---
 title: Initialize the Node.js SDK using the create method
-description: Learn how to use the create method to initialize the Node.js SDK and instantiate the TargetClient to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
+description: Learn how to use the create method to initialize the Node.js SDK and instantiate the [!DNL Target] client to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 feature: APIs/SDKs
 role: Developer
 ---
@@ -8,7 +8,7 @@ role: Developer
 
 ## Description
 
-Use the `create` method in order to initialize the Node.js SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+Use the `create` method in order to initialize the Node.js SDK and instantiate the [!UICONTROL Target] client to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 
 ## Method
 
@@ -24,10 +24,10 @@ TargetClient.create(options: Object): TargetClient
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|client|String|Yes|None|Adobe Target Client ID|
-|organizationId|String|Yes|None|Experience Cloud Organization ID|
+|client|String|Yes|None|[!UICONTROL Adobe Target Client ID]|
+|organizationId|String|Yes|None|[!UICONTROL Experience Cloud Organization ID]|
 |timeout|Number|No|3000|Timeout in milliseconds|
-|serverDomain|String|No|*client*.tt.omtrdc.net|Overrides default hostname|
+|serverDomain|String|No|`*client*.tt.omtrdc.net`|Overrides default hostname|
 |secure|Boolean|No|true|Unset to enforce HTTP scheme|
 |logger|Object|No|NOOP logger|Replaces the default NOOP logger|
 |targetLocationHint|String|No|None|Target location hint|
