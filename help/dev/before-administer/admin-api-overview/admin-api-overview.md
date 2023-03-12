@@ -1,5 +1,5 @@
 ---
-title: [!DNL Adobe Target Admin API] Overview
+title: Adobe Target Admin API Overview
 description: Overview of the [!DNL Adobe Target Admin API]
 ---
 
