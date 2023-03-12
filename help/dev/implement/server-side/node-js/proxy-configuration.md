@@ -1,6 +1,6 @@
 ---
 title: Implement proxy configuration in the [!DNL Adobe Target] Node.js SDK
-description: Learn how to configure the TargetClient proxy configuration in the [!DNL Adobe Target] Node.js SDK.
+description: Learn how to configure the [!UICONTROL TargetClient] proxy configuration in the [!DNL Adobe Target] Node.js SDK.
 feature: APIs/SDKs
 role: Developer
 ---

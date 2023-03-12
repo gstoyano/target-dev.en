@@ -11,7 +11,7 @@ role: Developer
 
 When [initializing the SDK](initialize-sdk.md), the `options.logger` object is an optional object. However, in order to debug effectively when an issue occurs, a `logger` object should be provided when initializing the SDK.
 
-The `logger` object is expected to have a `debug()` and an `error()` method. When an appropriate logger is provided, such as `console`, Target requests and responses will be logged.
+The `logger` object is expected to have a `debug()` and an `error()` method. When an appropriate logger is provided, such as `console`, [!DNL Target] requests and responses will be logged.
 
 ## Example
 
