@@ -1,13 +1,13 @@
 ---
 title: Initialize the Python SDK using the create method
-description: Learn how to use the create method to initialize the Python SDK and instantiate the TargetClient to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
+description: Learn how to use the create method to initialize the Python SDK and instantiate the [!UICONTROL TargetClient] to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 feature: APIs/SDKs
 role: Developer
 ---
 # Initialize the Python SDK
 
 Description
-Use the `create` method in order to initialize the Python SDK and instantiate the Target Client to make calls to Adobe Target for experiments and personalized experiences.
+Use the `create` method in order to initialize the Python SDK and instantiate the [!UICONTROL Target Client] to make calls to [!DNL Adobe Target] for experiments and personalized experiences.
 
 ## Method
 
@@ -23,24 +23,24 @@ TargetClient.create(options)
 
 |Name|Type|Required|Default|Description|
 | --- | --- | --- | --- | --- |
-|client|str|Yes|None|Adobe Target client ID|
-|organization_id|str|Yes|None|Experience Cloud Organization ID|
+|client|str|Yes|None|[!UICONTROL Adobe Target client ID]|
+|organization_id|str|Yes|None|[!UICONTROL Experience Cloud Organization ID]|
 |timeout|int|No|3000|Timeout in milliseconds|
 |server_domain|str|No|`client.tt.omtrdc.net`||Overrides default hostname|
 |secure|bool|No|true|Unset to enforce HTTP scheme|
 |logger|object|No|INFO logger||Replaces the default INFO logger|
-|target_location_hint|str|No|None|Target location hint|
-|property_token|str|No|None|Target Property Token. If specified here, all get_offers calls will use this value.|
+|target_location_hint|str|No|None|[!DNL Target] location hint|
+|property_token|str|No|None|[!DNL Target] Property Token. If specified here, all get_offers calls will use this value.|
 |decisioning_method|str|No|server-side|Determines which decisioning method to use ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-side, hybrid)|
 |polling_interval|int|No|300000 (5 minutes)|Polling interval for the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (in ms)|
 |artifact_location|str|No|None|A fully qualified url to the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Overrides internally determined location.|
 |artifact_payload|object|No|None|The JSON payload of the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). If specified, it is used instead of requesting one from a URL.|
 |[events](sdk-events.md)|dict <str, callable>|No|None|An optional object with event name keys and callback function values|
-|environment_id|int|No|production|The Target environment ID|
-|environment_name|str|No|production|The Target environment name|
+|environment_id|int|No|production|The [!DNL Target] environment ID|
+|environment_name|str|No|production|The [!DNL Target] environment name|
 |cdn_environment|str|No|production|The CDN environment name|
-|telemetry_enabled|bool|No|True|If set to False, telemetry data will not be sent to Adobe|
-|version|str|No|None|The version number of this sdk|
+|telemetry_enabled|bool|No|True|If set to False, telemetry data will not be sent to [!DNL Adobe]|
+|version|str|No|None|The version number of this SDK|
 
 ## Example
 

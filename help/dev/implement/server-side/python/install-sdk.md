@@ -1,6 +1,6 @@
 ---
 title: Install the Python SDK
-description: Learn how t install the [!DNL Adobe Target] Python SDK.
+description: Learn how to install the [!DNL Adobe Target] Python SDK.
 feature: APIs/SDKs
 role: Developer
 ---
