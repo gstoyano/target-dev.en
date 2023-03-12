@@ -1,6 +1,6 @@
 ---
-title: [!DNL Adobe Target Profile] API
-description: [!DNL Adobe Target Profile API]
+title: Adobe Target Profile API
+description: Adobe Target Profile API
 contributors: https://github.com/icaraps
 ---
 

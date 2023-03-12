@@ -1,6 +1,6 @@
 ---
-title: [!DNL Adobe Target Reporting API]
-description: [!DNL Adobe Target Reporting API]
+title:Adobe Target Reporting API
+description: Adobe Target Reporting API
 openAPISpec: 
 ---
 
