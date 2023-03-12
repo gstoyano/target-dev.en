@@ -9,7 +9,7 @@ role: Developer
 
 ## Description
 
-One benefit of server-side integration is that one can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. Target .NET SDK supports asynchronous requests, making it easy to integrate Target into an app's existing async workflow.
+One benefit of server-side integration is that one can leverage the huge bandwidth and computing resources available on the server-side by using parallelism. [!DNL Target] .NET SDK supports asynchronous requests, making it easy to integrate [!DNL Target] into an app's existing async workflow.
 
 ## Supported Methods
 
