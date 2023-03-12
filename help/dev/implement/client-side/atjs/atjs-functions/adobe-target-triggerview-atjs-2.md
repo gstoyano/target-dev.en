@@ -35,7 +35,7 @@ adobe.target.triggerView("homeView")
 adobe.target.triggerView("homeView", {page: false})
 ```
 
-## Example promise chaining with getoffers() and applyOffers()
+## Example: Promise chaining with getoffers() and applyOffers()
 
 Some customers have faced issues using promise chains when calling triggerView().
 
