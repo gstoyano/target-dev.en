@@ -1,6 +1,6 @@
 ---
 keywords: Implementation, mbox.js non javascript, redirector, costs per click, revenue per click
-description: Learn how to use Redirectors in email implementations, similarly to how you use an mbox in your Adobe Target activities.
+description: Learn how to use Redirectors in email implementations, similarly to how you use an mbox in your [!DNL Adobe Target] activities.
 title: How Do I Work with Redirectors?
 feature: Implement Email
 role: Developer
@@ -38,7 +38,7 @@ Before you can use a redirector, you must create it.
 
    * Where `yourclientcode` is your company's client code. Your company's client code is all lower case and has no special characters.
 
-     Your client code is available at the top of the **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** page of the Target interface.
+     Your client code is available at the top of the **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** page of the [!DNL Target] interface.
 
    * `redirectorlink_456` is the name of the Redirector mbox that appears in your account to use in campaigns and tests.
 
@@ -50,7 +50,7 @@ Before you can use a redirector, you must create it.
 
    >[!WARNING]
    >
-   >Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. Target uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to Target](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
+   >Note that with Redirector you can be exposed to a risk of an Open Redirect Vulnerability. To avoid the unauthorized use of Redirector links by third parties, Adobe recommends you use "authorized hosts" to allowlist the default redirect URL domains. [!DNL Target] uses hosts to allowlist domains to which you want to allow redirects. For more information, see [Create Allowlists that specify hosts that are authorized to send mbox calls to [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Hosts*.
 
 1. Validate the Redirector.
    1. *Security best practice*: Ensure that the domain used in the Redirector is allowlisted, as indicated above. If you use a domain that is not allowlisted, Adobe will block any calls to that domain to prevent malicious actors from using the Redirector to redirect to potentially malicious domains.

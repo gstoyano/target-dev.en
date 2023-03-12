@@ -1,11 +1,11 @@
 ---
-title: Adobe Target Profile API
-description: Adobe Target Profile API
+title: [!DNL Adobe Target Profile] API
+description: [!DNL Adobe Target Profile API]
 contributors: https://github.com/icaraps
 ---
 
-# Adobe Target Profile API
+# [!DNL Adobe Target Profile API]
 
-The Adobe Target Profiles API can be found here:
+The [!DNL Adobe Target Profiles API] can be found here:
 
 * [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles){target=_blank}

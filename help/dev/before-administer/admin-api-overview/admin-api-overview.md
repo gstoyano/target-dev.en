@@ -1,21 +1,21 @@
 ---
-title: Adobe Target Admin API Overview
-description: Overview of the Adobe Target Admin API
+title: [!DNL Adobe Target Admin API] Overview
+description: Overview of the [!DNL Adobe Target Admin API]
 ---
 
 # Target Admin API Overview
 
-This article provides an overview of background information necessary to understand and use Adobe Target Admin APIs successfully. The following content assumes you understand how to [configure authentication](../configure-authentication.md) for Adobe Target Admin APIs.
+This article provides an overview of background information necessary to understand and use [!DNL Adobe Target Admin API]s successfully. The following content assumes you understand how to [configure authentication](../configure-authentication.md) for [!DNL Adobe Target Admin API]s.
 
 >[!NOTE]
 >
->If you wish to administer Target via the UI, see the [administration section of the *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>If you wish to administer [!DNL Target] via the UI, see the [administration section of the *Adobe Target Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 >
->The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a Target Admin API.
+>The Admin APIs and Profile APIs are often referred to collectively ("Admin and Profile APIs"), but may also be referred to separately ("Admin APIs" and "Profile APIs"). The Recommendations API is a specific implementation of a [!DNL Target] Admin API.
 
 ## Before You Begin
 
-In all code examples provided for the [Admin APIs](../../administer/admin-api/admin-api-overview-new.md), replace {tenant} with your tenant value, `your-bearer-token` with the access token that you generate with your JWT and `your-api-key` with your API key from the [Adobe Developer Console](https://developer.adobe.com/console/home). For more information on tenants and JWTs, please see the article on how to [configure authentication](../configure-authentication.md) for Adobe Target Admin APIs.
+In all code examples provided for the [Admin APIs](../../administer/admin-api/admin-api-overview-new.md), replace {tenant} with your tenant value, `your-bearer-token` with the access token that you generate with your JWT and `your-api-key` with your API key from the [Adobe Developer Console](https://developer.adobe.com/console/home). For more information on tenants and JWTs, please see the article on how to [configure authentication](../configure-authentication.md) for Adobe [!DNL Target] Admin APIs.
 
 ## Versioning
 

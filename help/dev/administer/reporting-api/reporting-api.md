@@ -1,11 +1,11 @@
 ---
-title: Adobe Target Reporting API
-description: Adobe Target Reporting API
+title: [!DNL Adobe Target Reporting API]
+description: [!DNL Adobe Target Reporting API]
 openAPISpec: 
 ---
 
-# Adobe Target Reporting API
+# [!DNL Adobe Target Reporting API]
 
-The Adobe Target Models API can be found here:
+The [!DNL Adobe Target Reporting API] can be found here:
 
 * [https://developer.adobe.com/target/administer/admin-api/#tag/Reports](https://developer.adobe.com/target/administer/admin-api/#tag/Reports){target=_blank}
