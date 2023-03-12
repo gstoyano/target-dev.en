@@ -41,7 +41,7 @@ Some customers have faced issues using promise chains when calling triggerView()
 
 The problem with the approach below is that the views might not show up in the VEC because getOffers() calls are suppressed when the page is loaded within the VEC. 
 
-```
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
         'request': {
             'prefetch': {
@@ -67,7 +67,7 @@ adobe.target.getOffers({
 
 To avoid this issue, you must add the triggerView() call in the catch block as well, as shown below:
 
-```
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
     'request': {
         'prefetch': {
