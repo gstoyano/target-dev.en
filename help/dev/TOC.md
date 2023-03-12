@@ -124,7 +124,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
       + [Deliver personalization](implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md)
       + [Supported features overview](implement/server-side/sdk-guides/on-device-decisioning/supported-features.md)
       + [Troubleshooting on-device decisioning](implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md)
-    + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
+      + [Best Practices](implement/server-side/sdk-guides/best-practices/best-practices.md)
     + Node.js SDK Reference {#node-js}
       + [Node.js SDK overview](implement/server-side/node-js/overview.md)
       + [Install the Node.js SDK](implement/server-side/node-js/install-sdk.md)
