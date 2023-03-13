@@ -227,7 +227,7 @@ at.js 2.*x* uses a new API, which we call the Delivery API. In order to debug wh
 
 In at.js 2.*x*, you no longer see "`target-global-mbox`" visibly in the network calls. Instead, we have replaced the "`target-global-mbox`" syntax to "`execute > pageLoad`" in the JSON payload sent to the [!DNL Target] servers, as seen below:
 
-```json {line-numbers="true"}
+```json
 {
   "id": {
     // ...
@@ -424,7 +424,7 @@ The following sections list each at.js 1.*x* parameter, its description, and the
 
 Used for [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
 
-```json {line-numbers="true"}
+```json
 {
   ....
   "property": {
@@ -442,7 +442,7 @@ The domain of the page where the [!DNL Target] library runs.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "context": {
     "browser": {
@@ -460,7 +460,7 @@ The WEB GL renderer capabilities of the browser. This is used by our device dete
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "context": {
     "browser": {
@@ -478,7 +478,7 @@ The page URL.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "context": {
     "address": {
@@ -497,7 +497,7 @@ The page referrer.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "context": {
     "address": {
@@ -515,7 +515,7 @@ Delivery API no longer has a global mbox concept. In the JSON payload you must u
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "execute": {
     "pageLoad": {
@@ -535,7 +535,7 @@ To use an mbox name, pass it to `execute > mboxes`. An mbox requires an index an
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "execute": {
     "mboxes": [{
@@ -569,7 +569,7 @@ Request ID used by downstream systems to help with debugging.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "requestId": "2412234442342"
   ....
@@ -596,7 +596,7 @@ The TNT ID is passed into `id > tntId`.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "id": {
     "tntId": "ca5ddd7e33504c58b70d45d0368bcc70.21_3"
@@ -613,7 +613,7 @@ Marketing Cloud Visitor ID is passed into `id > marketingCloudVisitorId`.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "id": {
     "marketingCloudVisitorId": "797110122341429343505"
@@ -630,7 +630,7 @@ Customer IDs should be passed into `id > customerIds`.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "id": {
     "customerIds": [{
@@ -651,7 +651,7 @@ Customer third-party ID used to link different [!DNL Target] IDs.
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "id": {
     "thirdPartyId": "1232312323123"
@@ -668,7 +668,7 @@ SDID, also known as Supplemental Data ID. Should be passed into `experienceCloud
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "experienceCloud": {
     "analytics": {
@@ -687,7 +687,7 @@ at.js 2.*x* JSON payload:
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "experienceCloud": {
     "analytics": {
@@ -706,7 +706,7 @@ Analytics tracking server secure. Should be passed into `experienceCloud > analy
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "experienceCloud": {
     "analytics": {
@@ -725,7 +725,7 @@ Audience Manager location hint. Should be passed into `experienceCloud > audienc
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "experienceCloud": {
     "audienceManager": {
@@ -744,7 +744,7 @@ Audience Manager blob. Should be passed into `experienceCloud > audienceManager 
 
 at.js 2.*x* JSON payload:
 
-```json {line-numbers="true"}
+```json
 {
   "experienceCloud": {
     "audienceManager": {
