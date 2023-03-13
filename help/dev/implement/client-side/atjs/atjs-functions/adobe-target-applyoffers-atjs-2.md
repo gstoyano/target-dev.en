@@ -66,7 +66,7 @@ This function lets you apply more than one offer that was retrieved by `adobe.ta
 
 ## Example [!UICONTROL applyOffers()] call
 
-```javascript {line-numbers="true"}}
+```javascript
 adobe.target.applyOffers({response:{
   "execute": {
     "pageLoad": {
@@ -103,7 +103,7 @@ adobe.target.applyOffers({response:{
 
 ## Example calls of Promise chaining with `[!UICONTROL getOffers()]` and `[!UICONTROL applyOffers()]`, because these functions are Promise based
 
-```javascript {line-numbers="true"}
+```javascript
 adobe.target.getOffers({...})
 .then(response => adobe.target.applyOffers({ response: response }))
 .then(() => console.log("Success"))
@@ -115,7 +115,7 @@ For more examples on how to use getOffers(), please refer to the getOffers [docu
 ### Page Load Request Example
 
 
-```javascript {line-numbers="true"}
+```javascript
 adobe.target.getOffers({
     request: {
         execute: {

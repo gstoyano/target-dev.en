@@ -21,13 +21,13 @@ This approach is best when you are able to initialize the [!DNL Adobe Target] SD
 
 >[!TAB NPM]
 
-```javascript {line-numbers="true"}
+```javascript
 npm i @adobe/target-nodejs-sdk -P
 ```
 
 >[!TAB MVN]
 
-```javascript {line-numbers="true"}
+```javascript
 <dependency>
     <groupId>com.adobe.target</groupId>
     <artifactId>java-sdk</artifactId>
@@ -43,13 +43,13 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Node.js**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
    **Java**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    import com.adobe.target.edge.client.ClientConfig;
    import com.adobe.target.edge.client.TargetClient;
    ```
@@ -58,7 +58,7 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Node.js**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    const CONFIG = {
        client: "<your target client code>",
        organizationId: "your EC org id",
@@ -79,7 +79,7 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Java**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    ClientConfig config = ClientConfig.builder()
        .client("<you target client code>")
        .organizationId("<your EC org id>")
@@ -100,7 +100,7 @@ You do not need to manage the rule artifact yourself and calling the SDK methods
 
 >[!TAB Node.js]
 
-```javascript {line-numbers="true"}
+```javascript
 //req is the request object from the server request listener method
 const targetCookie = req.cookies[TargetClient.TargetCookieName];
 const request = {
@@ -149,7 +149,7 @@ Here is an example that starts a web application after initializing the [!DNL Ad
 
 >[!TAB Node.js]
 
-```javascript {line-numbers="true"}
+```javascript
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -220,7 +220,7 @@ function startWebServer() {
 
 >[!TAB Java]
 
-```javascript {line-numbers="true"}
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;

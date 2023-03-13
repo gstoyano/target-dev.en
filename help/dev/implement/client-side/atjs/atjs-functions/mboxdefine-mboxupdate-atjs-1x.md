@@ -25,7 +25,7 @@ Executes the request and applies the offer to the element identified by the `nod
 
 ## Example
 
-```javascript {line-numbers="true"}
+```javascript
 <div id="someId" class="mboxDefault"></div> 
 <script> 
  mboxDefine('someId','mboxName','param1=value1','param2=value2'); 

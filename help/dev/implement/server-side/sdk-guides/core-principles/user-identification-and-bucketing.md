@@ -26,7 +26,7 @@ The following sample call demonstrates a situation in which a `tntId` is not pas
 
 >[!TAB Node.js SDK]
 
-```javascript {line-numbers="true"}
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -102,7 +102,7 @@ The following sample call demonstrates the use of a `thirdPartyId`.
 
 >[!TAB Node.js SDK]
 
-```javascript {line-numbers="true"}
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -168,7 +168,7 @@ The following sample call demonstrates how a `marketingCloudVisitorId` that was 
 
 >[!TAB Node.js SDK]
 
-```javascript {line-numbers="true"}
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -240,7 +240,7 @@ Please note that only when the `customerId` is in an authenticated state will [!
 
 >[!TAB Node.js SDK]
 
-```javascript {line-numbers="true"}
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -314,7 +314,7 @@ You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the sa
 
 >[!TAB Node.js SDK]
 
-```javascript {line-numbers="true"}
+```Javascript
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {

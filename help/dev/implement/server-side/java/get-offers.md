@@ -18,7 +18,7 @@ The `TargetClient.getOffers` method signature is shown as follows.
 
 **Request**
 
-```javascript {line-numbers="true"}
+```javascript
 TargetDeliveryResponse TargetClient.getOffers(TargetDeliveryRequest request)
 ```
 
@@ -26,7 +26,7 @@ TargetDeliveryRequest is created using `TargetDeliveryRequest.builder`.
 
 **Response**
 
-```javascript {line-numbers="true"}
+```javascript
 TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 ```
 
@@ -98,7 +98,7 @@ You don't have to worry about expiring the cookies. Target handles maxAge inside
 
 **Request**
 
-```javascript {line-numbers="true"}
+```javascript
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")
@@ -117,6 +117,6 @@ TargetDeliveryRequest targetDeliveryRequest = TargetDeliveryRequest.builder()
 
 **Response**
 
-```javascript {line-numbers="true"}
+```javascript
 TargetDeliveryResponse targetResponse = targetJavaClient.getOffers(targetDeliveryRequest);
 ```

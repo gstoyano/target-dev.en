@@ -20,13 +20,13 @@ This approach is best if your application is structured in a way that requires t
 
 >[!TAB NPM]
 
-```javascript {line-numbers="true"}
+```javascript
 npm i @adobe/target-nodejs-sdk -P
 ```
 
 >[!TAB MVN]
 
-```javascript {line-numbers="true"}
+```javascript
 <dependency>
     <groupId>com.adobe.target</groupId>
     <artifactId>java-sdk</artifactId>
@@ -42,13 +42,13 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Node.js**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
    **Java**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    import com.adobe.target.edge.client.ClientConfig;
    import com.adobe.target.edge.client.TargetClient;
    ```
@@ -57,7 +57,7 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Node.js**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    const CONFIG = {
        client: "<your target client code>",
        organizationId: "your EC org id",
@@ -86,7 +86,7 @@ npm i @adobe/target-nodejs-sdk -P
 
    **Java**
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
    
    ClientConfig config = ClientConfig.builder()
@@ -120,7 +120,7 @@ The mechanism you use to store the JSON payload depends on your system architect
 
 >[!TAB Node.js]
 
-```javascript {line-numbers="true"}
+```javascript
 //... Code removed for brevity
 
 function onArtifactDownloadSucceeded(event) {
@@ -143,7 +143,7 @@ function onArtifactDownloadFailed(event) {
 
 >[!TAB Java]
 
-```javascript {line-numbers="true"}
+```javascript
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
 TargetDeliveryRequest request = TargetDeliveryRequest.builder()
     .context(new Context().channel(ChannelType.WEB))
@@ -164,7 +164,7 @@ Here is an example demonstrating the JSON payload-initializing capability.
 
 >[!TAB Node.js]
 
-```javascript {line-numbers="true"}
+```javascript
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -251,7 +251,7 @@ function startWebServer() {
 
 >[!TAB Java]
 
-```javascript {line-numbers="true"}
+```javascript
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;

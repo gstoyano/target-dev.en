@@ -26,13 +26,13 @@ Here are the API details:
 
 ## Example
 
-```javascript {line-numbers="true"}
+```javascript
 <a href="https://asite.com">click me!</a> 
 ```
 
 plus javaScript code to assign `trackEvent`:
 
-```javascript {line-numbers="true"}
+```javascript
 <script> 
 $('a').click(function(event){ 
   adobe.target.trackEvent({'mbox':'homePageHero'}) 
@@ -42,7 +42,7 @@ $('a').click(function(event){
 
 Or:
 
-```javascript {line-numbers="true"}
+```javascript
 adobe.target.trackEvent({ 
     "mbox": "clicked-cta", 
     "params": { 

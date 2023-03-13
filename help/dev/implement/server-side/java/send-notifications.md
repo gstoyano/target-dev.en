@@ -25,7 +25,7 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ### create
 
-```javascript {line-numbers="true"}
+```javascript
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 ```
 
@@ -35,7 +35,7 @@ First, let's build the [!DNL Target Delivery API] request for prefetching conten
 
 ### Prefetch 
 
-```javascript {line-numbers="true"}
+```javascript
 List<MboxRequest> mboxRequests = new ArrayList<>();
 mboxRequests.add((MboxRequest) new MboxRequest().name("home").index(1));
 mboxRequests.add((MboxRequest) new MboxRequest().name("product1").index(2));
@@ -49,7 +49,7 @@ A successful response will contain a [!UICONTROL Target Delivery API] response o
 
 ### Response
 
-```javascript {line-numbers="true"}
+```javascript
 {
   "status": 200,
   "requestId": "e8ac2dbf5f7d4a9f9280f6071f24a01e",
@@ -107,7 +107,7 @@ Note the mbox `name` and `state` fields, as well as the `eventToken` field, in e
 
 ### Request
 
-```javascript {line-numbers="true"}
+```javascript
 TargetDeliveryRequest mboxNotificationRequest = TargetDeliveryRequest.builder().notifications(new ArrayList() {{
     add(new Notification()
             .id("1")
@@ -126,6 +126,6 @@ Notice that we've included both the mbox state and the event token corresponding
 
 ### Response
 
-```javascript {line-numbers="true"}
+```javascript
 ResponseStatus notificationResponse = targetJavaClient.sendNotifications(mboxNotificationRequest);
 ```

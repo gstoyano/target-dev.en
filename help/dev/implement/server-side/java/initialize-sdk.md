@@ -16,13 +16,13 @@ Use the `create` method in order to initialize the Java SDK and instantiate the 
 
 ### create
 
-```javascript {line-numbers="true"}
+```javascript
 TargetClient TargetClient.create(ClientConfig clientConfig)
 ```
 
 ClientConfig is created using `ClientConfig.builder`.
 
-```javascript {line-numbers="true"}
+```javascript
 ClientConfigBuilder ClientConfig.builder()
 ```
 

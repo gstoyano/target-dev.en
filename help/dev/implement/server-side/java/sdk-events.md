@@ -25,7 +25,7 @@ The `OnDeviceDecisioningHandler` object contains the following callbacks, which 
 
 ### SDK Events
 
-```javascript {line-numbers="true"}
+```javascript
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")

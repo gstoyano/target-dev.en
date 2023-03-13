@@ -42,7 +42,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    The following code snippet is an example:
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url 
                 options:(NSDictionary<NSString *,id> *)options { 
     
@@ -57,7 +57,7 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    **Android:** In the app , call `Config.trackAdobeDeepLink(URL);` when the caller is asked to open the resource with the URL scheme that was specified in the previous step.
 
-   ```javascript {line-numbers="true"}
+   ```javascript
     private Boolean shouldOpenDeeplinkUrl() { 
         Intent appLinkIntent = getIntent(); 
         String appLinkAction = appLinkIntent.getAction(); 
@@ -72,13 +72,13 @@ The mobile preview functionality lets you fully test your Mobile app activities 
 
    To make Mobile Preview work for Android, you must also add the following code snippet in AndroidManifest.xml if using version 5 of the Adobe Mobile SDK:
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    <activity android:name="com.adobe.marketing.mobile.FullscreenMessageActivity" />
    ```
 
    If you are using version 4 of the Adobe Mobile SDK, use the following code snippet:
 
-   ```javascript {line-numbers="true"}
+   ```javascript
    <activity android:name="com.adobe.mobile.MessageFullScreenActivity" />
    ```
 
