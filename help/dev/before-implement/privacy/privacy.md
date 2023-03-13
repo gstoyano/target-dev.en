@@ -1,19 +1,13 @@
 ---
 keywords: privacy, ip address, geosegmentation, opt out, optout, opt-out, data privacy, government regulations, regulations, gdpr, ccpa, privacy, personally identifiable information, PII
-description: Learn how Adobe Target complies with applicable data privacy laws including collection and handling of IP addresses, PII, and opt-out instructions.
-title: How Does Target Handle Privacy Issues?
+description: Learn how [!DNL Adobe Target] complies with applicable data privacy laws including collection and handling of IP addresses, PII, and opt-out instructions.
+title: How Does Target Handle Privacy Issues, including PII?
 feature: Privacy & Security
 role: Developer
 ---
 # Privacy
 
 [!DNL Adobe Target] has enabled processes and settings that allow you to use [!DNL Target] in compliance with applicable data privacy laws.
-
-## Collection of feature-usage data
-
-Individual feature-usage data is collected for internal Adobe purposes to identify whether [!DNL Target] features are performing as intended or to identify features that are being under-utilized. Various measurements of latency are collected to help address performance concerns. Personal data is not collected.
-
-You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled).
 
 ## Collection of IP addresses and Personally Identifiable Information (PII)
 
@@ -31,13 +25,13 @@ When this feature is enabled, the IP address is made sufficiently anonymous so i
 
 The following settings are available in the [!DNL Target] UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**:
 
-* Last octet obfuscation: [!DNL Target] hides the last octet of the IP address.
-* Entire IP obfuscation: [!DNL Target] hides the entire IP address.
-* None: [!DNL Target] does not hide any part of the IP address.
+* [!UICONTROL Last octet obfuscation]: [!DNL Target] hides the last octet of the IP address.
+* [!UICONTROL Entire IP obfuscation]: [!DNL Target] hides the entire IP address.
+* [!UICONTROL None]: [!DNL Target] does not hide any part of the IP address.
 
-![obfuscate-ip-options](assets/obfuscate-ip.png)
+  ![obfuscate-ip-options](assets/obfuscate-ip.png)
 
-[!DNL Target] receives the full IP address and obfuscates it (if set to Last octet or Entire IP) as specified. [!DNL Target] then holds the obfuscated IP address in memory during the session.
+[!DNL Target] receives the full IP address and obfuscates it (if set to Last octet or Entire IP) as specified. [!DNL Target] then holds the obfuscated IP address in memory only during the current session.
 
 ## GeoSegmentation
 
@@ -65,3 +59,9 @@ Even if you use a first-party cookie implementation, the provided opt-out is set
 ## Privacy and data protection regulations
 
 See [Privacy and data protection regulations](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) for information about the European Union's General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other international privacy requirements, and how these regulations impact your organization and [!DNL Target].
+
+## Collection of feature-usage data
+
+Individual feature-usage data is collected for internal Adobe purposes to identify whether [!DNL Target] features are performing as intended or to identify features that are being under-utilized. Various measurements of latency are collected to help address performance concerns. Personal data is not collected.
+
+You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled).
