@@ -77,7 +77,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 In the absence of a `tntId`, [!DNL Adobe Target] generates a `tntId` and provides it in the response, as follows.
 
-```JSON
+```json {line-numbers="true"}
 {
   "status": 200,
   "requestId": "5b586f83-890c-46ae-93a2-610b1caa43ef",
