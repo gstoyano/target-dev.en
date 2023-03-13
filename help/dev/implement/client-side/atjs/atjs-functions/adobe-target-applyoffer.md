@@ -25,7 +25,7 @@ The options parameter is mandatory and has the following structure:
 
 The following example shows how to use `[!UICONTROL getOffer]` and `[!UICONTROL applyOffer]` together:
 
-```javascript {line-numbers="true"}}
+```javascript {line-numbers="true"}
 adobe.target.getOffer({   
   "mbox": "mbox",   
   "success": function(offers) {           

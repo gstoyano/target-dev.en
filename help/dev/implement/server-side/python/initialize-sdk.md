@@ -13,7 +13,7 @@ Use the `create` method in order to initialize the Python SDK and instantiate th
 
 ### create
 
-```python
+```python {line-numbers="true"}
 TargetClient.create(options)
 ```
 
@@ -46,7 +46,7 @@ TargetClient.create(options)
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 from target_python_sdk import TargetClient
 
 def client_ready_callback(ready_event):

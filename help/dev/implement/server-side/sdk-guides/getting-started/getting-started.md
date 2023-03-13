@@ -65,7 +65,7 @@ dotnet add package Adobe.Target.Client
 
 >[!TAB Python (pip)]
 
-```python
+```python {line-numbers="true"}
 pip install target-python-sdk
 ```
 
@@ -119,7 +119,7 @@ this.targetClient.Initialize(targetClientConfig);
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 from target_python_sdk import TargetClient
 
 def target_client_ready():
@@ -250,7 +250,7 @@ var flag = attributes.GetString("ondevice-featureflag", "flag");
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 # ... Code removed for brevity
 
 feature_flags = {}
@@ -352,7 +352,7 @@ targetClient.SendNotifications(notificationRequest);
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 # ... Code removed for brevity
 
 # When a conversion happens
