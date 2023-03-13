@@ -85,7 +85,7 @@ This example sends the following data to the mbox edge:
 
 JSON is a powerful way to pass parameters. [!DNL Target] uses the JSON object keys to flatten complicated structures into simple parameters.
 
-```json {line-numbers="true"}
+```json
 <!--window.-->targetPageParams = function() { 
   return { 
     "a": 1, 
