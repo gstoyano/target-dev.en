@@ -10,7 +10,7 @@ role: Developer
 
 ![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)
 
-**Last updated: March 2, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})
+**Last updated: March 13, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
 This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to implement and administer [!DNL Target].
 
