@@ -166,7 +166,7 @@ target_client = TargetClient.create(CONFIG)
    
    **(Sample JSON for Experience A, above)**
 
-   ```json
+   ```json {line-numbers="true"}
    {
       "enabled" : true,
       "flag" : "expA"
@@ -179,7 +179,7 @@ target_client = TargetClient.create(CONFIG)
 
    **(Sample JSON for Experience B, above)**
 
-   ```json
+   ```json {line-numbers="true"}
    {
       "enabled" : true,
       "flag" : "expB"
