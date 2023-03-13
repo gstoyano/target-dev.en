@@ -10,7 +10,7 @@ These helper methods are reusable across controllers and can be moved to a separ
 
 ## Methods
 
-```javascript
+```javascript {line-numbers="true"
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

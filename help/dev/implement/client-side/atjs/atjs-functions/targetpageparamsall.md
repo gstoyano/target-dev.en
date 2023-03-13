@@ -21,7 +21,7 @@ You can pass in parameters to target-global-mbox using the [!UICONTROL targetPag
 
 Ampersand-delimited list (values must be URL encoded):
 
-```javascript
+```javascript {line-numbers="true"
 function targetPageParamsAll() { 
     return "param1=value1&param2=value2&p3=hello%20world"; 
 }
@@ -29,7 +29,7 @@ function targetPageParamsAll() {
 
 Array (values do not need to be URL encoded):
 
-```javascript
+```javascript {line-numbers="true"
 targetPageParamsAll = function() { 
      return ["a=1", "b=2", "c=hello world"]; 
 };
@@ -37,7 +37,7 @@ targetPageParamsAll = function() {
 
 JSON (values do not need to be URL encoded):
 
-```javascript
+```javascript {line-numbers="true"
 targetPageParamsAll = function() { 
   return { 
     "a": 1, 

@@ -31,7 +31,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
 1. Copy the newly generated authorization token to the clipboard and add it to your Target request.
 
-   ```javascript
+   ```javascript {line-numbers="true"
    const request = {
      trace: {
        authorizationToken: '88f1a924-6bc5-4836-8560-2f9c86aeb36b'

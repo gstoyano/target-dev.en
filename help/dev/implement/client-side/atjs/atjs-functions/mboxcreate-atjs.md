@@ -17,7 +17,7 @@ This function is built into at.js mostly to ease the transition from mbox.js (no
 
 ## Example
 
-```javascript
+```javascript {line-numbers="true"
 <div class="mboxDefault"> 
   default content to replace by offer 
 </div> 

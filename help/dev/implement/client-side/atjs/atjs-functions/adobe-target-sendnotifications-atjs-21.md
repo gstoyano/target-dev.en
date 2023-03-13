@@ -58,7 +58,7 @@ This function sends a notification to [!DNL Target] edge when an experience is r
 
 ## sendNotifications() call after rendering prefetched mboxes
 
-```javascript
+```javascript {line-numbers="true"
 function createTokens(options) {
   return options.map(e => e.eventToken);
 }

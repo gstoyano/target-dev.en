@@ -66,7 +66,7 @@ This example sends the following data to the mbox edge:
 
 ## Array
 
-```javascript
+```javascript {line-numbers="true"
 <!--window.-->targetPageParams = function() { 
   return ["a=1", "b=2", "c=hello world"]; 
 }; 
