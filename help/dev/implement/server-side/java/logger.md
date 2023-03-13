@@ -28,13 +28,13 @@ Add the `slf4j` dependency.
 
 ### Gradle
 
-```javascript
+```javascript {line-numbers="true"}
 compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 ```
 
 >[!TAB Maven]
 
-```javascript
+```javascript {line-numbers="true"}
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-simple</artifactId>
@@ -48,7 +48,7 @@ Enable the `DEBUG` logs based on your implementation, and mark the request loggi
 
 ### Debug
 
-```javascript
+```javascript {line-numbers="true"}
 System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "DEBUG");
 ClientConfig config = ClientConfig.builder()
         .client("acmeclient")

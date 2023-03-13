@@ -49,7 +49,7 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 <dependency>
    <groupId>com.adobe.target</groupId>
    <artifactId>java-sdk</artifactId>
@@ -101,7 +101,7 @@ function targetClientReady() {
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
    .client("testClient")
    .organizationId("ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -226,7 +226,7 @@ function targetClientReady() {
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
 TargetDeliveryRequest request = TargetDeliveryRequest.builder()
    .context(new Context().channel(ChannelType.WEB))
@@ -302,7 +302,7 @@ TargetClient.sendNotifications({
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 Notification notification = new Notification();
 notification.setId("conversion");
 notification.setImpressionId(UUID.randomUUID().toString());

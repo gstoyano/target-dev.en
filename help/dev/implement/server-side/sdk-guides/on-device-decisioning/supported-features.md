@@ -83,7 +83,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -140,7 +140,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

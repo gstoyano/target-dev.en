@@ -258,7 +258,7 @@ After enabling the On-Device Decisioning toggle, [!DNL Target] begins generating
 
 You can configure a default Decisioning Method for all of [!DNL Target] decisions. The various decisioning methods are Server-side only, On-device only, and Hybrid. The decisioning method that is selected in the [!DNL Target] UI is configured in `window.targetGlobalSettings` under the `decisioningMethod` field. Learn more about the `decisioningMethod` in [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#decisioningmethod).
 
-```javascript
+```javascript {line-numbers="true"}
 <head> 
     <script type="text/javascript">
 
@@ -278,7 +278,7 @@ You can configure a default Decisioning Method for all of [!DNL Target] decision
 
 If you set the `decisioningMethod` in `window.targetGlobalSettings`, but would like to override the `decisioningMethod` for each [!DNL Adobe Target] decision according to your use case, you can do this procedure by specifying `decisioningMethod` in At.js2.5.0+'s [getOffers()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) call.
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({ 
 
   decisioningMethod:"on-device", 

@@ -14,7 +14,7 @@ One benefit of server-side integration is that you can leverage the huge bandwid
 
 ### Methods
 
-```javascript
+```javascript {line-numbers="true"}
 CompletableFuture<TargetDeliveryResponse> getOffersAsync(TargetDeliveryRequest request);
 CompletableFuture<ResponseStatus> sendNotificationsAsync(TargetDeliveryRequest request);
 CompletableFuture<Attributes> getAttributesAsync(TargetDeliveryRequest targetRequest, String ...mboxes);
@@ -26,7 +26,7 @@ A sample `Spring` application Controller could look like this:
 
 ### Sample Controller
 
-```javascript
+```javascript {line-numbers="true"}
 @RestController
 public class TargetRestController {
 

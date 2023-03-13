@@ -246,7 +246,7 @@ This function can be defined before at.js is loaded or in **Administration** > *
 
 The Library Header field allows you to enter free-form JavaScript. The customization code should look something similar to the following example:
 
-```javascript
+```javascript {line-numbers="true"}
 window.targetGlobalSettings = {
    timeout: 200, // using custom timeout
    visitorApiTimeout: 500, // using custom API timeout
@@ -282,7 +282,7 @@ Each data provider has the following structure:
 
 The following example shows where the data provider is using sync execution:
 
-```javascript
+```javascript {line-numbers="true"}
 var syncDataProvider = {
   name: "simpleDataProvider",
   version: "1.0.0",
@@ -302,7 +302,7 @@ After at.js processes `window.targetGlobalSettings.dataProviders`, the [!DNL Tar
 
 The following is an example if the parameters that you want to add to the [!DNL Target] request are fetched from a third-party service, such as Bluekai, Demandbase, and so forth:
 
-```javascript
+```javascript {line-numbers="true"}
 var blueKaiDataProvider = {
    name: "blueKai",
    version: "1.0.0",
@@ -325,7 +325,7 @@ After at.js processes `window.targetGlobalSettings.dataProviders`, the [!DNL Tar
 
 The following example uses data providers to collect weather API data and send it as parameters in a [!DNL Target] request. The [!DNL Target] request will have additional params, such as `country` and `weatherCondition`.
 
-```javascript
+```javascript {line-numbers="true"}
 var weatherProvider = {
       name: "weather-api",
       version: "1.0.0",
@@ -377,7 +377,7 @@ at.js 2.3.0+ supports setting Content Security Policy nonces on SCRIPT and STYLE
 
 The SCRIPT and STYLE nonces should be set in `targetGlobalSettings.cspScriptNonce` and `targetGlobalSettings.cspStyleNonce` correspondingly, prior to at.js 2.3.0+ loading. See an example below:
 
-```javascript
+```javascript {line-numbers="true"}
 ...
 <head>
  <script nonce="<script_nonce_value>">
@@ -409,7 +409,7 @@ You must have a hybrid integration of [!DNL Target].
 
 To better understand how this works, please see the code examples below that you would have on your server. The code assumes you are using the [Target Node.js SDK](https://github.com/adobe/target-nodejs-sdk).
 
-```javascript
+```javascript {line-numbers="true"}
 // First, we fetch the offers via Target Node.js SDK API, as usual
 const targetResponse = await targetClient.getOffers(options);
 // A successfull response will contain Target Delivery API request and response objects, which we need to set as serverState
@@ -439,7 +439,7 @@ const PAGE_TEMPLATE = `
 
 A sample `serverState` object JSON for view prefetch looks as follows:
 
-```javascript
+```javascript {line-numbers="true"}
 {
  "request": {
   "requestId": "076ace1cd3624048bae1ced1f9e0c536",
