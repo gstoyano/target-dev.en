@@ -1,6 +1,6 @@
 ---
-keywords: privacy, ip address, geosegmentation, opt out, optout, opt-out, data privacy, government regulations, regulations, gdpr, ccpa, privacy2
-description: Learn how Adobe Target complies with applicable data privacy laws including collection and handling of IP addresses and opt-out instructions.
+keywords: privacy, ip address, geosegmentation, opt out, optout, opt-out, data privacy, government regulations, regulations, gdpr, ccpa, privacy, personally identifiable information, PII
+description: Learn how Adobe Target complies with applicable data privacy laws including collection and handling of IP addresses, PII, and opt-out instructions.
 title: How Does Target Handle Privacy Issues?
 feature: Privacy & Security
 role: Developer
@@ -11,21 +11,25 @@ role: Developer
 
 ## Collection of feature-usage data
 
-Individual feature-usage data is collected for internal Adobe purposes to identify whether Tar[!DNL ]get features are performing as intended or to identify features that are being under-utilized. Various measurements of latency are collected to help address performance concerns. Personal data is not collected.
+Individual feature-usage data is collected for internal Adobe purposes to identify whether [!DNL Target] features are performing as intended or to identify features that are being under-utilized. Various measurements of latency are collected to help address performance concerns. Personal data is not collected.
 
 You can opt out of reporting usage data in our SDKs by setting `telemetryEnabled` to false in the client initialization options. For more information, see [telemetryEnabled in targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#telemetryenabled).
 
-## Collection of IP addresses
+## Collection of IP addresses and Personally Identifiable Information (PII)
 
-The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor's computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. Ta[!DNL ]rget doesn't store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by Ta[!DNL ]rget during the session (in-memory, never persisted).
+The IP address of a visitor to your website is transmitted to an Adobe Data Processing Center (DPC). Depending on the network configuration for the visitor, the IP address does not necessarily represent the IP address of the visitor's computer. For example, the IP address could be the external IP address of a Network Address Translation (NAT) firewall, HTTP proxy, or Internet gateway. 
+
+>[!IMPORTANT]
+>
+>[!DNL Target] does not store any IP addresses of the user or any Personally Identifiable Information (PII). IP addresses are used only by [!DNL Target] during the session (in-memory, never persisted).
 
 ## Replacement of last octet of IP addresses
 
-Adobe has developed a "privacy by design" setting that users can enable for Adobe Tar[!DNL ]get. When enabled, Adobe T[!DNL ]arget immediately obfuscates the last octet (the last portion) of the IP address at the time the IP address is collected. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
+Adobe has developed a "privacy by design" setting that users can enable for Adobe [!DNL Target]. When enabled, Adobe [!DNL Target] immediately obfuscates the last octet (the last portion) of the IP address at the time the IP address is collected. This anonymization is performed before any processing of the IP address, including before an optional geo-lookup of the IP address.
 
 When this feature is enabled, the IP address is made sufficiently anonymous so it is no longer identifiable as personal information. As a result, [!DNL Target] can be used in compliance with data privacy laws in countries that do not permit the collection of personal information. Obtaining city-level information will likely be significantly impacted by the obfuscation of the IP address. Obtaining region- and country-level information should only be slightly impacted.
 
-The following settings are available in the Ta[!DNL ]rget UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**:
+The following settings are available in the [!DNL Target] UI by navigating to **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**:
 
 * Last octet obfuscation: [!DNL Target] hides the last octet of the IP address.
 * Entire IP obfuscation: [!DNL Target] hides the entire IP address.

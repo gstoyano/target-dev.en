@@ -27,7 +27,7 @@ Information to help you customize an [!DNL Adobe Target] global mbox for at.js.
 
 1. Time the transition with your release.
 
-   When you are ready for Tar[!DNL ]get to start using your global mbox for all activities in the future, you can proceed with this step.
+   When you are ready for [!DNL Target] to start using your global mbox for all activities in the future, you can proceed with this step.
 
    Update the name of the custom global mbox to match the name used in Step 2, above.
 
