@@ -17,7 +17,7 @@ The `logger` object is expected to have a `debug()` and an `error()` method. Whe
 
 ### Python
 
-```python {line-numbers="true"}
+```python
 logger = logging.getLogger("org.logger")
 logger.setLevel(logging.DEBUG)
 

@@ -10,7 +10,7 @@ The Python SDK is distributed by [pypi](https://pypi.org/project/target-python-s
 
 ## Install
 
-```python {line-numbers="true"}
+```python
 pip install target-python-sdk
 ```
 

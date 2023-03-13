@@ -14,7 +14,7 @@ One benefit of server-side integration is that you can leverage the huge bandwid
 
 ### Python
 
-```python {line-numbers="true"}
+```python
 get_offers(options)
 send_notifications(options)
 get_attributes(mbox_names, options)
@@ -26,7 +26,7 @@ A sample application that uses the `asyncio` module's async/await in Python 3.9+
 
 ### Python
 
-```python {line-numbers="true"}
+```python
 async def execute_mboxes(self, mboxes):
     context = Context(channel=ChannelType.WEB)
     execute = ExecuteRequest(mboxes=mboxes)

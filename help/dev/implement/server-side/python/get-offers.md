@@ -16,7 +16,7 @@ role: Developer
 
 ### getOffers
 
-```python {line-numbers="true"}
+```python
 target_client_instance.get_offers(options)
 ```
 
@@ -69,7 +69,7 @@ The `meta` object used for indicating the status of the target response has the 
 
 ### Python
 
-```python {line-numbers="true"}
+```python
 def client_ready_callback():
     context = Context(channel=ChannelType.WEB)
     mboxes = [MboxRequest(name="a1-serverside-ab", index=1)]
