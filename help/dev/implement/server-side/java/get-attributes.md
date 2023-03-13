@@ -15,7 +15,7 @@ role: Developer
 
 ### getAttributes
 
-```javascript
+```javascript {line-numbers="true"}
 Attributes TargetClient.getAttributes(TargetDeliveryRequest targetRequest, String ...mboxes)
 ```
 
@@ -44,7 +44,7 @@ An `Attributes` object is returned from `TargetClient.getAttributes()` which has
 
 ### Java
 
-```javascript
+```javascript {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
         .client("acmeclient")
         .organizationId("1234567890@AdobeOrg")

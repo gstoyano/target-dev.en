@@ -15,7 +15,7 @@ role: Developer
 
 ### getAttributes
 
-```js
+```js {line-numbers="true"}
 TargetClient.getAttributes(mboxNames: Array, options: Object): Promise
 ```
 
@@ -40,7 +40,7 @@ The `Promise` returned by `TargetClient.getAttributes()` resolves an object with
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const CONFIG = {
   client: "acmeclient",

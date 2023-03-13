@@ -25,7 +25,7 @@ When the callback function is called, an event object is passed in. Each event h
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const targetClient = TargetClient.create({
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",

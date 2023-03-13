@@ -34,7 +34,7 @@ To make sure that events can be used in different scenarios, the custom events h
 
 ## Usage
 
-```javascript
+```javascript {line-numbers="true"}
 document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) { 
   console.log('Event', event); 
 });

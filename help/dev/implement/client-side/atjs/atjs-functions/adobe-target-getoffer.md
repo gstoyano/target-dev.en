@@ -23,7 +23,7 @@ Use with `[!UICONTROL adobe.target.applyOffer()]` to process the response or use
 
 Adding parameters with [!UICONTROL getOffer()] and using [!UICONTROL applyOffer()] for success-handling:
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffer({   
   "mbox": "target-global-mbox", 
   "params": { 
@@ -44,7 +44,7 @@ adobe.target.getOffer({
 
 Adding parameters and profile parameters with [!UICONTROL getOffer()] and using [!UICONTROL applyOffer()] for success-handling:
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffer({   
   "mbox": "target-global-mbox", 
   "params": { 
@@ -69,7 +69,7 @@ Using custom timeout and custom success-handling with [!UICONTROL getOffer()]:
 
 "YOUR_OWN_CUSTOM_HANDLING_FUNCTION" is a placeholder for a function the customer would define.
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffer({     
   "mbox": "target-global-mbox",   
   "success": function(offer) { 
@@ -95,7 +95,7 @@ The response parameter passed to the success callback will be an array of action
 
 ## Example
 
-```javascript
+```javascript {line-numbers="true"}
 { 
     "sessionId": "1444512212156-384616", 
     "tntId": "1444512212156-384616.17_35", 

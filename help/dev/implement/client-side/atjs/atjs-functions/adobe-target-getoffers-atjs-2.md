@@ -69,7 +69,7 @@ This function lets you retrieve multiple offers by passing in multiple mboxes. A
 
 ## Call [!UICONTROL getOffers()] for all views
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
     request: {
       prefetch: {
@@ -81,7 +81,7 @@ adobe.target.getOffers({
 
 ## Call [!UICONTROL getOffers()] to make an on-device decisioning
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({ 
 
   decisioningMethod:"on-device", 
@@ -100,7 +100,7 @@ adobe.target.getOffers({
 
 ## Call [!UICONTROL getOffers()] to retrieve the latest views with the passed-in parameters and profile parameters
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
   request: {
     "prefetch": {
@@ -121,7 +121,7 @@ adobe.target.getOffers({
 
 ## Call [!UICONTROL getOffers()] to retrieve mboxes with parameters and profile parameters passed-in.
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
   request: {
     execute: {
@@ -148,7 +148,7 @@ adobe.target.getOffers({
 
 ## Call [!UICONTROL getOffers()] to retrieve the analytics payload from the client side
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
       request: {
         experienceCloud: {
@@ -169,7 +169,7 @@ adobe.target.getOffers({
 
 **Response**:
 
-```javascript
+```javascript {line-numbers="true"}
 {
   "prefetch": {
     "mboxes": [{
@@ -206,7 +206,7 @@ at.js 2.x lets you fetch multiple mboxes via the `[!UICONTROL getOffers()]` API.
 
 The following example shows a simple HTML page with at.js 2.x implemented:
 
-```html
+```html {line-numbers="true"}
 <!DOCTYPE html>
 <html>
 <head>
@@ -228,7 +228,7 @@ Assume that you have three containers that you want to modify via content receiv
 
 The request and rendering code might look like the following example:
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
   request: {
     prefetch: {
@@ -283,7 +283,7 @@ Note that this example uses `prefetch > mboxes`, but you could also use `execute
 
 The following example shows you how to perform a pageLoad using [!UICONTROL getOffers()] with at.js 2.*x*
 
-```javascript
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
     request: {
         execute: {

@@ -16,7 +16,7 @@ role: Developer
 
 ### getOffers
 
-```js
+```js {line-numbers="true"}
 TargetClient.getOffers(options: Object): Promise
 ```
 
@@ -72,7 +72,7 @@ The `status` object used for indicating the status of the target response has th
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const CONFIG = {
   client: "acmeclient",

@@ -43,13 +43,13 @@ For Node.js, Java, and Python, run the following command in your project directo
 
 >[!TAB Node.js (NPM)]
 
-```js
+```js {line-numbers="true"}
 npm i @adobe/target-nodejs-sdk -P
 ```
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 <dependency>
    <groupId>com.adobe.target</groupId>
    <artifactId>java-sdk</artifactId>
@@ -59,13 +59,13 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!TAB .NET (Bash)]
 
-```bash
+```bash {line-numbers="true"}
 dotnet add package Adobe.Target.Client
 ```
 
 >[!TAB Python (pip)]
 
-```python
+```python {line-numbers="true"}
 pip install target-python-sdk
 ```
 
@@ -79,7 +79,7 @@ The rule artifact is downloaded during the SDK initialization step. You can cust
 
 >[!TAB Node.js]
 
-```js
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -101,7 +101,7 @@ function targetClientReady() {
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
    .client("testClient")
    .organizationId("ABCDEF012345677890ABCDEF0@AdobeOrg")
@@ -111,7 +111,7 @@ TargetClient targetClient = TargetClient.create(config);
 
 >[!TAB .NET (C#)]
 
-```csharp
+```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("testClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
    .Build();
 this.targetClient.Initialize(targetClientConfig);
@@ -119,7 +119,7 @@ this.targetClient.Initialize(targetClientConfig);
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 from target_python_sdk import TargetClient
 
 def target_client_ready():
@@ -166,7 +166,7 @@ target_client = TargetClient.create(CONFIG)
    
    **(Sample JSON for Experience A, above)**
 
-   ```json
+   ```json {line-numbers="true"}
    {
       "enabled" : true,
       "flag" : "expA"
@@ -179,7 +179,7 @@ target_client = TargetClient.create(CONFIG)
 
    **(Sample JSON for Experience B, above)**
 
-   ```json
+   ```json {line-numbers="true"}
    {
       "enabled" : true,
       "flag" : "expB"
@@ -206,7 +206,7 @@ After setting up the feature flag variables in [!DNL Target], modify your applic
 
 >[!TAB Node.js]
 
-```js
+```js {line-numbers="true"}
 //... Code removed for brevity
 ​
 let featureFlags = {};
@@ -226,7 +226,7 @@ function targetClientReady() {
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 MboxRequest mbox = new MboxRequest().name("ondevice-featureflag").index(0);
 TargetDeliveryRequest request = TargetDeliveryRequest.builder()
    .context(new Context().channel(ChannelType.WEB))
@@ -238,7 +238,7 @@ String flag = attributes.getString("ondevice-featureflag", "flag");
 
 >[!TAB .NET (C#)]
 
-```csharp
+```csharp {line-numbers="true"}
 var mbox = new MboxRequest(index: 0, name: "ondevice-featureflag");
 var deliveryRequest = new TargetDeliveryRequest.Builder()
    .SetContext(new Context(ChannelType.Web))
@@ -250,7 +250,7 @@ var flag = attributes.GetString("ondevice-featureflag", "flag");
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 # ... Code removed for brevity
 
 feature_flags = {}
@@ -274,7 +274,7 @@ Optionally, you can send additional events for tracking conversions using the se
 
 >[!TAB Node.js]
 
-```js
+```js {line-numbers="true"}
 //... Code removed for brevity
 ​
 //When a conversion happens
@@ -302,7 +302,7 @@ TargetClient.sendNotifications({
 
 >[!TAB Java (Maven)]
 
-```javascript
+```javascript {line-numbers="true"}
 Notification notification = new Notification();
 notification.setId("conversion");
 notification.setImpressionId(UUID.randomUUID().toString());
@@ -325,7 +325,7 @@ notificationDeliveryService.sendNotification(notificationRequest);
 
 >[!TAB .NET (C#)]
 
-```csharp
+```csharp {line-numbers="true"}
 var order = new Order
 {
    Id = "BR9389",
@@ -352,7 +352,7 @@ targetClient.SendNotifications(notificationRequest);
 
 >[!TAB Python]
 
-```python
+```python {line-numbers="true"}
 # ... Code removed for brevity
 
 # When a conversion happens

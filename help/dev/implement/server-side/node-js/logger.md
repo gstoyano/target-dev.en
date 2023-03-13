@@ -17,7 +17,7 @@ The `logger` object is expected to have a `debug()` and an `error()` method. Whe
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const CONFIG = {
   client: "acmeclient",

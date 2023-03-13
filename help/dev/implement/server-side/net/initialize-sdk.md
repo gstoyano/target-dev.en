@@ -20,7 +20,7 @@ After this, use the `Initialize` method of the SDK to configure the SDK, thus co
 
 ## C\#
 
-```csharp
+```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 ```
 
@@ -28,7 +28,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 ## C\#
 
-```csharp
+```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
 ```
 
@@ -62,7 +62,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## C\#
 
-```csharp
+```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
     .Build();
 

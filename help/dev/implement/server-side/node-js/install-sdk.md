@@ -12,7 +12,7 @@ To get started, add it as a dependency by installing from NPM:
 
 ## Install
 
-```js
+```js {line-numbers="true"}
 npm i @adobe/target-nodejs-sdk -P
 ```
 

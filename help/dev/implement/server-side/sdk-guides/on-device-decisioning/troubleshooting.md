@@ -22,7 +22,7 @@ When initializing the SDK, ensure that you enable logging.
 
 For Node.js SDK a `logger` object should be provided.
 
-```js
+```js {line-numbers="true"}
 const CONFIG = {
   client: "<your client code>",
   organizationId: "<your organization ID>",
@@ -34,7 +34,7 @@ const CONFIG = {
 
 For Java SDK `logRequests` on the `ClientConfig` should be enabled.
 
-```js
+```js {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("<your client code>")
   .organizationId("<your organization ID>")
@@ -44,7 +44,7 @@ ClientConfig config = ClientConfig.builder()
 
 Also the JVM should be started with the following command line parameter:
 
-```bash
+```bash {line-numbers="true"}
 java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
@@ -64,7 +64,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Node.js**
 
-   ```js
+   ```js {line-numbers="true"}
    const request = {
      trace: {
        authorizationToken: "88f1a924-6bc5-4836-8560-2f9c86aeb36b"
@@ -78,7 +78,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Java**
 
-   ```js
+   ```js {line-numbers="true"}
    Trace trace = new Trace()
      .authorizationToken("88f1a924-6bc5-4836-8560-2f9c86aeb36b");
    Context context = new Context()
@@ -100,7 +100,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Node.js SDK**
 
-   ```text
+   ```text {line-numbers="true"}
      AT: LD.ArtifactProvider fetching artifact - https://assets.adobetarget.com/your-client-code/production/v1/rules.json
      AT: LD.ArtifactProvider artifact received - status=200
    ```
@@ -111,7 +111,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    Additionally, information from the the[!DNL Target]Trace should be outputted to the terminal with details about the rule artifact.
 
-   ```text
+   ```text {line-numbers="true"}
    "trace": {
      "clientCode": "your-client-code",
      "artifact": {
@@ -149,7 +149,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Node.js SDK**
 
-   ```js
+   ```js {line-numbers="true"}
    try {
      const response = await targetClient.getOffers({ request });
      console.log('Response: ', response.response.execute.mboxes[0].options[0].content);
@@ -160,7 +160,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Java SDK**
 
-   ```js
+   ```js {line-numbers="true"}
    try {
      Context context = new Context()
        .channel(ChannelType.WEB);
@@ -187,7 +187,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
    **Logger output**
 
-   ```text
+   ```text {line-numbers="true"}
    AT: LD.DecisionProvider {...}
    AT: Response received {...}
    Response:  <div>test</div>
@@ -197,7 +197,7 @@ Enabling traces will output additional information from [!DNL Adobe Target] in r
 
 When using On-device decisioning, notifications are sent automatically for getOffers execute requests. These requests are sent silently in the background. Any errors can be inspected by subscribing to an event called `sendNotificationError`. Here is a code sample showing how to subscribe to notification errors using the Node.js SDK.
 
-```js
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 let client;
 
@@ -241,7 +241,7 @@ A common issue that can occur is [!UICONTROL on-device decisioning] activities n
 
 **Trace output**
 
-```text
+```text {line-numbers="true"}
   "execute": {
   "mboxes": [
     {
@@ -262,7 +262,7 @@ You will notice that the activity you are trying to qualify for is not in the `c
 
 **Logger output**
 
-```text
+```text {line-numbers="true"}
  ...
  rules: {
    mboxes: { },
@@ -286,7 +286,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 >[!TAB rule.json]
 
-```text
+```text {line-numbers="true"}
  ...
  rules: {
    mboxes: {
@@ -299,7 +299,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 >[!TAB Node.js SDK]
 
-```js
+```js {line-numbers="true"}
  const request = {
    trace: {
      authorizationToken: '2dfc1dce-1e58-4e05-bbd6-a6725893d4d6'
@@ -314,7 +314,7 @@ If an on-device decisioning activity is not executing, but you have verified tha
 
 >[!TAB Java SDK]
 
-```js
+```js {line-numbers="true"}
 Context context = new Context()
   .channel(ChannelType.WEB);
 MboxRequest mbox = new MboxRequest()
@@ -338,7 +338,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 **Trace output**
 
-```text
+```text {line-numbers="true"}
 ...
 },
 "campaignId": 368564,
@@ -371,7 +371,7 @@ It may not be readily apparent why an on-device decisioning activity is not exec
 
 **Trace output**
 
-```text
+```text {line-numbers="true"}
 ...
       "artifact": {
           "artifactLocation": "https://assets.adobetarget.com/your-client-code/production/v1/rules.json",
@@ -392,7 +392,7 @@ Look at the `artifactLastRetrieved` date of the artifact and ensure that you hav
 
 **Logger output**
 
-```text
+```text {line-numbers="true"}
 ...
   "evaluatedCampaignTargets": [
       {

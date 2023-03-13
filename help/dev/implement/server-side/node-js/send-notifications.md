@@ -26,7 +26,7 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ### create
 
-```js
+```js {line-numbers="true"}
 TargetClient.sendNotifications(options: Object): Promise
 ```
 
@@ -44,7 +44,7 @@ First, let's build the Target D[!UICONTROL ]elivery API request for prefetching 
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const prefetchMboxesRequest = {
   prefetch: {
     mboxes: [
@@ -61,7 +61,7 @@ A successful response will contain a [!UICONTROL Target Delivery API] response o
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 {
   "status": 200,
   "requestId": "e8ac2dbf5f7d4a9f9280f6071f24a01e",
@@ -119,7 +119,7 @@ Note the mbox `name` and `state` fields, as well as the `eventToken` field, in e
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const mboxNotificationRequest = {
   notifications: [{
     id: "1",
@@ -138,6 +138,6 @@ Notice that we've included both the mbox state and the event token corresponding
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const notificationResponse = await targetClient.sendNotifications({ request: mboxNotificationRequest });
 ```

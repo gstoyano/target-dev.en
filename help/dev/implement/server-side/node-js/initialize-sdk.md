@@ -14,7 +14,7 @@ Use the `create` method in order to initialize the Node.js SDK and instantiate t
 
 **create**
 
-```js
+```js {line-numbers="true"}
 TargetClient.create(options: Object): TargetClient
 ```
 
@@ -44,7 +44,7 @@ TargetClient.create(options: Object): TargetClient
 
 ### Node.js
 
-```js
+```js {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",

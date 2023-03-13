@@ -6,7 +6,7 @@ role: Developer
 ---
 # Example rule artifact
 
-```json
+```json {line-numbers="true"}
 {
     "version": "1.0.0",
     "meta": {
