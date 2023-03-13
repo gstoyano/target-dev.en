@@ -15,7 +15,7 @@ This function can be called whenever a new page is loaded or when a component on
 
 |Parameter|Type|Required?|Description|
 | --- | --- | --- | --- |
-|viewName|String|Yes|Pass in any name as a string type that you want to represent your view. This view name appears in the Modifications panel of the VEC for marketers to create actions and run their A/B and XT activities.|
+|viewName|String|Yes|Pass in any name as a string type that you want to represent your view. This view name appears in the [!UICONTROL Modifications] panel of the VEC for marketers to create actions and run their [!UICONTROL A/B Test] and [!UICONTROL Experience Targeting] XT activities.|
 |options|Object|No||
 |options > page|Boolean|No|**TRUE:** Default value of page is true. When page=true, notifications are sent to the [!DNL Target] backend for incrementing impression count.<P>A notification is always sent by default when a `[!UICONTROL triggerView]` is called, except when options > page is set to false.<P>**FALSE:** When page=false, notifications are not sent for incrementing impression count. This approach should be used when you want to only re-render a component on a page with an offer.<P>**Note**: Custom Code offers in the VEC are not re-rendered when `[!UICONTROL triggerView()]` is called with `{page: false}` as the option.|
 
@@ -35,39 +35,11 @@ adobe.target.triggerView("homeView")
 adobe.target.triggerView("homeView", {page: false})
 ```
 
-## Example: Promise chaining with getoffers() and applyOffers()
+## Example: Promise chaining with `getoffers()` and `applyOffers()`
 
-Some customers have faced issues using promise chains when calling triggerView().
+To execute `triggerView()` when the `getOffers()` promise is resolved, it is important to execute `triggerView()` on the final block, as shown in the example below. This is necessary for the VEC to detect `Views` in authoring mode. 
 
-The problem with the approach below is that the views might not show up in the VEC because getOffers() calls are suppressed when the page is loaded within the VEC. 
-
-```javascript {line-numbers="true"} {line-numbers="true"}
-adobe.target.getOffers({
-        'request': {
-            'prefetch': {
-                'views': [{
-                    'parameters': {
-                    }
-                }]
-            }
-        }
-    }).then(function(response) {       
-        // Apply Offers
-        adobe.target.applyOffers({
-            response: response
-        });
-        // Trigger View, pageView is defined elsewhere
-        adobe.target.triggerView(pageView, {
-            page: true
-        });
-        _satellite.logger.info('AT: View triggered on : ' + pageView);    }).catch(function(error) {
-        _satellite.logger.info("AT: getOffers failed - Error", error);
-    }); 
-```
-
-To avoid this issue, you must add the triggerView() call in the catch block as well, as shown below:
-
-```javascript {line-numbers="true"} {line-numbers="true"}
+```javascript {line-numbers="true"}
 adobe.target.getOffers({
     'request': {
         'prefetch': {
@@ -81,16 +53,13 @@ adobe.target.getOffers({
     adobe.target.applyOffers({
         response: response
     });
-    // Trigger View call, pageView is defined elsewhere
-    adobe.target.triggerView(pageView, {
-        page: true
-    });
-    _satellite.logger.info('AT: View triggered on : ' + pageView);
 }).catch(function(error) {
-    // Trigger View, pageView is defined elsewhere
+    console.log("AT: getOffers failed - Error", error);
+}).finally(() => {
+    // Trigger View call, assuming pageView is defined elsewhere
     adobe.target.triggerView(pageView, {
         page: true
     });
-    _satellite.logger.info("AT: getOffers failed - Error", error);
-}); 
+    console.log('AT: View triggered on : ' + pageView);
+});
 ```
