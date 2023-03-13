@@ -12,7 +12,7 @@ The Java SDK is distributed by [Maven Central](https://search.maven.org/artifact
 
 >[!TAB Gradle]
 
-```javascript {line-numbers="true"
+```javascript {line-numbers="true"}
 compile 'com.adobe.target:java-sdk:1.0'
 ```
 

@@ -11,7 +11,7 @@ To configure a proxy for the Node SDK's HTTP requests, override the fetch API us
 
 The following is a basic example showing how to override `fetchApi` during the `TargetClient` initialization to add a proxy:
 
-```javascript {line-numbers="true"
+```javascript {line-numbers="true"}
 const { ProxyAgent } = require("undici");
 
 const proxyAgent = new ProxyAgent("your proxy address here");

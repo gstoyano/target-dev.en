@@ -159,7 +159,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript {line-numbers="true"
+```javascript {line-numbers="true"}
 import com.adobe.target.delivery.v1.model.ClientHints; 
 import com.adobe.target.delivery.v1.model.Context; 
 import com.adobe.target.delivery.v1.model.ExecuteRequest; 
@@ -240,7 +240,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript {line-numbers="true"
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -295,7 +295,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript {line-numbers="true"
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
