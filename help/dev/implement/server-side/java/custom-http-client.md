@@ -14,7 +14,7 @@ The SDK currently supports HTTP Clients that implement the `org.apache.http.clie
 
 ### Basic Implementaiton
 
-```Java
+```java {line-numbers="true"}
 CloseableHttpClient httpClient = HttpClients.custom().build();
 ClientConfig clientConfig = ClientConfig.builder()
     .client("acmeclient")
@@ -30,7 +30,7 @@ Here is an example of how to configure SSL in the `TargetClient` by customizing 
 
 ### SSL Implementaiton
 
-```Java
+```java {line-numbers="true"}
 SSLContext context = SSLContextBuilder.create().build();
 SSLConnectionSocketFactory sslSocketFactory = new SSLConnectionSocketFactory(context);
 CloseableHttpClient httpClient = HttpClients.custom().setSSLSocketFactory(sslSocketFactory).build();

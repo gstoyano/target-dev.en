@@ -49,7 +49,7 @@ You can also pass certain quickly changing attributes on the product page itself
 
 #### Pass price and inventory
 
-```js
+```js {line-numbers="true"}
 <script type="text/javascript">
 function targetPageParams() { 
    return { 
@@ -70,7 +70,7 @@ On a category page, you likely want to restrict your recommendations to products
 
 #### Pass current category
 
-```js
+```js {line-numbers="true"}
 function targetPageParams() { 
    return { 
       "entity": { 
@@ -86,7 +86,7 @@ On a cart page, you can recommend items based on the contents of the visitor's c
 
 #### Pass items currently in cart
 
-```js
+```js {line-numbers="true"}
 function targetPageParams() {
    return {
       "cartIds": "352,223,23432,432,553"
@@ -102,7 +102,7 @@ On pages throughout your site, you can exclude some items from recommendations. 
 
 #### Pass items to exclude
 
-```js
+```js {line-numbers="true"}
 function targetPageParams() {
    return {
       "excludedIds": "352,223,23432,432,553"

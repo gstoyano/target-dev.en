@@ -15,7 +15,7 @@ One benefit of server-side integration is that one can leverage the huge bandwid
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 Task<TargetDeliveryResponse> GetOffersAsync(TargetDeliveryRequest request);
 Task<TargetDeliveryResponse> SendNotificationsAsync(TargetDeliveryRequest request);
 Task<TargetAttributes> GetAttributesAsync(TargetDeliveryRequest request, params string[] mboxes);
@@ -27,7 +27,7 @@ A sample async SDK API usage could appear as follows:
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var deliveryRequest = new TargetDeliveryRequest.Builder()
     .SetExecute(new ExecuteRequest(mboxes: new List<MboxRequest> { new MboxRequest(index: 1, name: "a1-serverside-ab") }))
     .Build();

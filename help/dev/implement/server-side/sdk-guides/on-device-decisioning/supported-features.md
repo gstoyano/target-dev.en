@@ -54,7 +54,7 @@ In order to maintain near-zero latency for [!UICONTROL on-device decisioning] ac
 
 >[!TAB Node.js]
 
-```csharp
+```csharp {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -83,7 +83,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -115,7 +115,7 @@ However, if you do not have the ability to perform IP-to-Geo lookups on your ser
 
 >[!TAB Node.js]
 
-```csharp
+```csharp {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -140,7 +140,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

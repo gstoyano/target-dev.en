@@ -46,7 +46,7 @@ The following table indicates which audience rules are supported or not supporte
 
 To maintain minimal latency for [!UICONTROL on-device decisioning] activities with geo-based audiences, Adobe recommends you provide the geo values yourself in the call to [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Set the Geo object in the Context of the request. This means from the browser, a way to determine the location of each visitor. For example, you can perform an IP-to-Geo lookup, using a service you configure. Some hosting providers, such as Google Cloud, provide this functionality via custom headers in each `HttpServletRequest`.
 
-```javascript
+```javascript {line-numbers="true"}
 window.adobe.target.getOffers({ 
     decisioningMethod: "on-device", 
     request: { 
@@ -68,7 +68,7 @@ window.adobe.target.getOffers({
 
 However, if you are not able to perform IP-to-Geo lookups on your server, but you still want to perform [!UICONTROL on-device decisioning] for [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) requests that contain geo-based audiences, this is also supported. The downside of this approach is that it uses a remote IP-to-Geo lookup, which adds latency to each `getOffers` call. This latency should be lower than a `getOffers` call with server-side decisioning, because it hits a CDN that is located close to your server. Provide only the "ipAddress" field in the Geo object in the Context of your request for the SDK to retrieve the geo-location of your visitor's IP address. If any other field in addition to the "ipAddress" is provided, the [!DNL Target] SDK will not fetch the geo-location metadata for resolution.
 
-```javascript
+```javascript {line-numbers="true"}
 window.adobe.target.getOffers({ 
     decisioningMethod: "on-device", 
     request: { 

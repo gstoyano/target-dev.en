@@ -51,7 +51,7 @@ You can subscribe to listen to these custom events in your application to action
 
 The following example shows a sample of code listening to artifact download success and failure events:
 
-```javascript
+```javascript {line-numbers="true"}
 document.addEventListener(adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED, function(e) { 
   console.log("Artifact successfully downloaded", e.detail);
 }, false);

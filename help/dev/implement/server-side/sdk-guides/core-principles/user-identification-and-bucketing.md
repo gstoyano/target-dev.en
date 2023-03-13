@@ -26,7 +26,7 @@ The following sample call demonstrates a situation in which a `tntId` is not pas
 
 >[!TAB Node.js SDK]
 
-```Javascript
+```javascript {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -51,7 +51,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```Java
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -77,7 +77,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 In the absence of a `tntId`, [!DNL Adobe Target] generates a `tntId` and provides it in the response, as follows.
 
-```JSON
+```json {line-numbers="true"}
 {
   "status": 200,
   "requestId": "5b586f83-890c-46ae-93a2-610b1caa43ef",
@@ -102,7 +102,7 @@ The following sample call demonstrates the use of a `thirdPartyId`.
 
 >[!TAB Node.js SDK]
 
-```Javascript
+```javascript {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -130,7 +130,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```Java
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -168,7 +168,7 @@ The following sample call demonstrates how a `marketingCloudVisitorId` that was 
 
 >[!TAB Node.js SDK]
 
-```Javascript
+```javascript {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -196,7 +196,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```Java
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -240,7 +240,7 @@ Please note that only when the `customerId` is in an authenticated state will [!
 
 >[!TAB Node.js SDK]
 
-```Javascript
+```javascript {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -273,7 +273,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```Java
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -314,7 +314,7 @@ You can combine `tntId`, `thirdPartyID`, and `marketingCloudVisitorId` in the sa
 
 >[!TAB Node.js SDK]
 
-```Javascript
+```javascript {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -344,7 +344,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```Java
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")

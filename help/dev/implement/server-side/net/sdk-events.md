@@ -25,7 +25,7 @@ The following delegates can be configured for certain events:
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var clientConfig = new TargetClientConfig.Builder("acmeclient", "1234567890@AdobeOrg")
     .SetDecisioningMethod(DecisioningMethod.OnDevice)
     .SetOnDeviceDecisioningReady(DecisioningReady)

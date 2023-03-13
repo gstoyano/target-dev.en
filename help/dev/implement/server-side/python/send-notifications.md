@@ -26,7 +26,7 @@ When a `prefetch` object is passed within the request, the impression is not aut
 
 ### send_notifications
 
-```python
+```python {line-numbers="true"}
 target_client.send_notifications(options)
 ```
 
@@ -65,7 +65,7 @@ First, let's build the [!UICONTROL Target Delivery API] request for prefetching 
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 mboxes = [MboxRequest(name="home"),
           MboxRequest(name="product1")]
 prefetch = PrefetchRequest(mboxes=mboxes)
@@ -79,7 +79,7 @@ A successful response will contain a [!UICONTROL Target Delivery API] response o
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 {
   "status": 200,
   "requestId": "e8ac2dbf5f7d4a9f9280f6071f24a01e",
@@ -137,7 +137,7 @@ Note the mbox `name` and `state` fields, as well as the `eventToken` field, in e
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 notification_mbox = NotificationMbox(name="product1",
                                      state="J+W1Fq18hxliDDJonTPfV0S+mzxapAO3d14M43EsM9f12A6QaqL+E3XKkRFlmq9U")
 notification = Notification(
@@ -154,6 +154,6 @@ Notice we have included both the mbox state and the event token corresponding to
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 response = target_client.send_notifications({ "request": notification_request })
 ```

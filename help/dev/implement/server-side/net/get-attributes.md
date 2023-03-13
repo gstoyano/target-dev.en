@@ -14,7 +14,7 @@ role: Developer
 
 ### getAttributes
 
-```dotnet
+```dotnet {line-numbers="true"}
 TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest, params string[] mboxes)
 ```
 
@@ -44,7 +44,7 @@ A `TargetAttributes` object is returned from `TargetClient.GetAttributes()` whic
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
     .Build();
 

@@ -43,13 +43,13 @@ Before blocklisting a feature, view the list of features that are currently bein
 
 >[!TAB Request]
 
-```json
+```json {line-numbers="true"}
 GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 ```
 
 >[!TAB Response]
 
-```json
+```json {line-numbers="true"}
 {
     "features": [
         {
@@ -113,13 +113,13 @@ Next, view the blocklist. In other words, check to see which features, if any, a
 
 >[!TAB Request]
 
-```json
+```json {line-numbers="true"}
 GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 ```
 
 >[!TAB Response]
 
-```json
+```json {line-numbers="true"}
 
 ```
 
@@ -164,7 +164,7 @@ Note that `blockedFeatureSources` indicates where a feature came from. For the p
 
 >[!TAB Request]
 
-```json
+```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 {
@@ -175,7 +175,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!TAB Response]
 
-```json
+```json {line-numbers="true"}
 {
     "blockedFeatures": [
             "SES_PREVIOUS_VISIT_COUNT",
@@ -204,7 +204,7 @@ To unblock all blocklisted features, clear the values from `blockedFeatureSource
 
 >[!TAB Request]
 
-```json
+```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 {
@@ -215,7 +215,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!TAB Response]
 
-```json
+```json {line-numbers="true"}
 {
     "blockedFeatures": [],
     "blockedFeatureSources": []
@@ -245,7 +245,7 @@ The examples above were all in the context of a single activity. You may also bl
 
 >[!TAB Request]
 
-```json
+```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 {
@@ -256,7 +256,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 >[!TAB Response]
 
-```json
+```json {line-numbers="true"}
 {
     "blockedFeatures": [
         "AAM_FEATURE_1",

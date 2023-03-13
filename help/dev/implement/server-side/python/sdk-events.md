@@ -25,7 +25,7 @@ When the `callback` function is called, an event object is passed in. Each event
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 def client_ready_callback():
     # make get_offers requests
 

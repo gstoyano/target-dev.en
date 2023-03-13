@@ -130,7 +130,7 @@ Starting with Node.js SDK v2.4.0 and Java SDK v2.3.0, Client Hints can be sent t
 
 >[!TAB Node.js SDK]
 
-```js
+```js {line-numbers="true"}
 targetClient.getOffers({ 
     request: { 
         context: { 
@@ -159,7 +159,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript
+```javascript {line-numbers="true"}
 import com.adobe.target.delivery.v1.model.ClientHints; 
 import com.adobe.target.delivery.v1.model.Context; 
 import com.adobe.target.delivery.v1.model.ExecuteRequest; 
@@ -211,7 +211,7 @@ In order to maintain near-zero latency for on-device decisioning activities with
 
 >[!TAB Node.js SDK]
 
-```js
+```js {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -240,7 +240,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {
@@ -270,7 +270,7 @@ However, if you do not have the ability to perform IP-to-Geo lookups on your ser
 
 >[!TAB Node.js SDK]
 
-```js
+```js {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -295,7 +295,7 @@ targetClient.getOffers({
 
 >[!TAB Java SDK]
 
-```javascript
+```javascript {line-numbers="true"}
 public class TargetRequestUtils {
 
     public static Context getContext(HttpServletRequest request) {

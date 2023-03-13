@@ -16,7 +16,7 @@ role: Developer
 
 ### getAttributes
 
-```python
+```python {line-numbers="true"}
 target_client_instance.get_attributes(mbox_names, options)
 ```
 
@@ -41,7 +41,7 @@ The `AttributesProvider` returned by `target_client.get_attributes()` has the fo
 
 ### Python
 
-```python
+```python {line-numbers="true"}
 def client_ready_callback():
     context = Context(channel=ChannelType.WEB)
     mboxes = [MboxRequest(name="a1-serverside-ab", index=1)]

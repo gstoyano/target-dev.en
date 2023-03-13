@@ -12,7 +12,7 @@ If the application running the SDK requires a proxy to access the internet, the 
 
 ### Basic Proxy Config
 
-```java
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
     .client("acmeclient")
     .organizationId("1234567890@AdobeOrg")
@@ -27,7 +27,7 @@ If a proxy authentication is required, the credentials can be passed as paramete
 
 ### Basic Proxy Authentication
 
-```java
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
     .client("acmeclient")
     .organizationId("1234567890@AdobeOrg")

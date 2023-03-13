@@ -26,7 +26,7 @@ When a `Prefetch` object is passed within the request, the impression is not aut
 
 ### Create
 
-```dotnet
+```dotnet {line-numbers="true"}
 TargetDeliveryResponse TargetClient.SendNotifications(TargetDeliveryRequest request)
 ```
 
@@ -36,7 +36,7 @@ First, let's build the [!UICONTROL Target Delivery API] request for prefetching 
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var mboxRequests = new List<MboxRequest>
     {
         new (index: 1, name: "home"),
@@ -55,7 +55,7 @@ A successful response will contain a [!DNL Target Delivery API] response object,
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 {
   "status": 200,
   "requestId": "e8ac2dbf5f7d4a9f9280f6071f24a01e",
@@ -113,7 +113,7 @@ Note the `mbox` name and `state` fields, as well as the `eventToken` field, in e
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var mboxNotifications = new List<Notification>
 {
     new (id: "1", type: MetricType.Display, timestamp: DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
@@ -130,6 +130,6 @@ Notice we have included both the mbox state and the event token corresponding to
 
 ### \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var notificationResponse = targetClient.SendNotifications(mboxNotificationRequest);
 ```

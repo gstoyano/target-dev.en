@@ -14,13 +14,13 @@ The .NET SDK is distributed by [NuGet](https://www.nuget.org/packages/Adobe.Targ
 
 >[!TAB Package Manager]
 
-```csharp
+```csharp {line-numbers="true"}
 Install-Package Adobe.Target.Client
 ```
 
 >[!TAB .NET CLI]
 
-```csharp
+```csharp {line-numbers="true"}
 dotnet add package Adobe.Target.Client
 ```
 

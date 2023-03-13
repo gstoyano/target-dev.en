@@ -17,7 +17,7 @@ role: Developer
 
 ## \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 TargetDeliveryResponse TargetClient.GetOffers(TargetDeliveryRequest request)
 ```
 
@@ -25,7 +25,7 @@ TargetDeliveryResponse TargetClient.GetOffers(TargetDeliveryRequest request)
 
 ## \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 TargetDeliveryRequest.Builder TargetDeliveryRequest.Builder()
 ```
 
@@ -89,7 +89,7 @@ You don't have to worry about expiring the cookies. [!DNL Target] handles `MaxAg
 
 ## \.NET
 
-```dotnet
+```dotnet {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeClient", "ABCDEF012345677890ABCDEF0@AdobeOrg")
     .Build();
 
