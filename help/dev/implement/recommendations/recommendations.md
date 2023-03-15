@@ -6,6 +6,12 @@ feature: Recommendations
 ---
 # Plan and implement [!UICONTROL Recommendations] 
 
+Information to help you plan and implement [!DNL Adobe Target Recommendations].
+
+>[!NOTE]
+>
+>In addition to this article, the [Adobe Target Business Practitioner Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} contains in-depth information about [Target Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html){target=_blank}.
+
 Before setting up your first [!UICONTROL Recommendations] activity in [!DNL Adobe Target], complete the following steps:
 
 1. [Implement [!UICONTROL Target]](#implement-target) on the web and mobile app surfaces that you want to use for capturing user behavior and delivering recommendations.
