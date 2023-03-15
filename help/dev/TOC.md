@@ -48,7 +48,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Client Hints](before-implement/delivery-api-overview/client-hints.md)
 + Client-side implementation {#client-side}
    + [Overview: implement Target for client-side web](implement/client-side/overview.md)
-   + [AEP Web SDK implementation overview](implement/client-side/aep-web-sdk.md)
+   + [Adobe Experience Platform Web SDK implementation overview](implement/client-side/aep-web-sdk.md)
    + at.js implementation {#at-js-implementation}
       + [at.js overview](implement/client-side/atjs/how-atjs-works/overview.md)
       + How at.js works {#at-js}
