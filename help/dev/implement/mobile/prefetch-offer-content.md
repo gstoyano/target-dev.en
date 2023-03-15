@@ -9,6 +9,12 @@ role: Developer
 
 The [!DNL Target] prefetch feature uses the iOS and Android Mobile SDKs to fetch offer content as few times as possible by caching the server responses.
 
+>[!IMPORTANT]
+>
+>Support for the [!DNL Adobe Mobile] version 4.*x* SDKs has ended as of August 31, 2021 and is no longer recommended for [!DNL Adobe Target] mobile users.
+>
+>The [Adobe Experience Platform SDK for Mobile Apps](https://developer.adobe.com/client-sdks/documentation/){target=_blank} is the recommended solution to power [!DNL Adobe Experience Cloud] solutions and services in your mobile apps.
+
 This process reduces the load time, prevents multiple network calls, and allows [!DNL Target] to be notified which mbox was visited by the mobile app user. All content is retrieved and cached during the prefetch call, and this content is retrieved from the cache for all future calls that contain cached content for the specified mbox name.
 
 Consider the following limitations when using the prefetch method with the iOS and Android Mobile SDKs:
