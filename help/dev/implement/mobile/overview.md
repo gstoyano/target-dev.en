@@ -9,9 +9,21 @@ role: Developer
 
 [!DNL Adobe Target] helps test, personalize, and optimize mobile app experiences based on user behavior and mobile context. You can deliver interactions that engage and convert through iterative testing as well as rules-based and AI-powered personalization.
 
-For more information about implementing [!DNL Target] on mobile apps, see the new [Adobe Experience Platform SDK for Mobile Apps](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target) (SDK 5.x).
+## [!DNL Adobe Experience Platform Mobile SDK]
 
-If you are leveraging the SDK 4.x, the mobile app targeting process includes the following steps:
+The [!DNL Adobe Experience Platform Mobile SDK] is the recommended solution to power [!DNL Adobe Experience Cloud] solutions and services in your mobile apps.
+
+For more information about implementing [!DNL Target] on mobile apps, see the [Adobe Experience Platform SDK for Mobile Apps](https://developer.adobe.com/client-sdks/documentation/){target=_blank} documentation.
+
+Information specific to [!DNL Target] can be found under [Adobe Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank}.
+
+## [!DNL Adobe Mobile SDK] version 4.*x*
+
+>[!IMPORTANT]
+>
+>Support for the [!DNL Adobe Mobile] version 4.*x* SDKs has ended as of August 31, 2021 and is no longer recommended for [!DNL Adobe Target] mobile users.
+
+If you are still using the legacy [!DNL Adobe Mobile] version 4.*x* SDKs, the mobile app targeting process includes the following steps:
 
 1. [How [!DNL Target] works in mobile apps](/help/dev/implement/mobile/how-target-works-mobile-apps.md)
 1. [Enable [!DNL Target] in the SDK](/help/dev/implement/mobile/enable-target-in-sdk.md)
