@@ -9,6 +9,12 @@ role: Developer
 
 Add the [!UICONTROL Adobe Mobile Services SDK] to your app.
 
+>[!IMPORTANT]
+>
+>Support for the [!DNL Adobe Mobile] version 4.*x* SDKs has ended as of August 31, 2021 and is no longer recommended for [!DNL Adobe Target] mobile users.
+>
+>The [Adobe Experience Platform SDK for Mobile Apps](https://developer.adobe.com/client-sdks/documentation/){target=_blank} is the recommended solution to power [!DNL Adobe Experience Cloud] solutions and services in your mobile apps.
+
 1. If you haven't installed the Adobe Mobile Services SDK in your app, use your Analytics or Experience Cloud credentials and download the SDK from the [Adobe Mobile Services](https://mobilemarketing.adobe.com/) website.
 
 1. Add the [!DNL Adobe Mobile Services SDK] to your app.

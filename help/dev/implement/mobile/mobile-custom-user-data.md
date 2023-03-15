@@ -9,6 +9,12 @@ role: Developer
 
 You can send additional information about the location or the user to [!DNL Target] as name-value pairs.
 
+>[!IMPORTANT]
+>
+>Support for the [!DNL Adobe Mobile] version 4.*x* SDKs has ended as of August 31, 2021 and is no longer recommended for [!DNL Adobe Target] mobile users.
+>
+>The [Adobe Experience Platform SDK for Mobile Apps](https://developer.adobe.com/client-sdks/documentation/){target=_blank} is the recommended solution to power [!DNL Adobe Experience Cloud] solutions and services in your mobile apps.
+
 This information can be used to build custom audiences (for example, users with greater than 25000 miles) and in reporting.
 
 There are two types of parameters that you can send with a [!DNL Target] call:
