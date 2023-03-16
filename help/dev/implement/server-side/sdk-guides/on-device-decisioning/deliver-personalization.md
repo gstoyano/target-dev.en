@@ -83,7 +83,7 @@ Choose a **[!UICONTROL Goal Metric]** to measure the success of the activity. In
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -110,7 +110,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -146,8 +146,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 >[!BEGINTABS]
 
 >[!TAB Node.js]
-
-```
+```js {line-numbers="true"} 
 //... Code removed for brevity
 
 //When a conversion happens
@@ -170,7 +169,7 @@ TargetClient.sendNotifications({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")

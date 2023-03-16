@@ -111,7 +111,7 @@ Choose a **[!UICONTROL Goal Metric]** to measure the A/B test. In this example, 
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const options = {
   client: "testClient",
@@ -133,7 +133,7 @@ function targetClientReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;

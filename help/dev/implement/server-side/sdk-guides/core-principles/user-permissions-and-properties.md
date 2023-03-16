@@ -15,7 +15,7 @@ The client can make use of a property token in one of two ways.
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -29,7 +29,7 @@ targetClient.getOffers({...})
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
     .client("emeaprod4")
     .organizationId("0DD934B85278256B0A490D44@AdobeOrg")
@@ -49,7 +49,7 @@ A property token can also be specified in an individual `getOffers` call. This i
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const CONFIG = {
     client: "acmeclient",
     organizationId: "1234567890@AdobeOrg",
@@ -71,7 +71,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ExecuteRequest executeRequest = new ExecuteRequest()
     .mboxes(getMboxRequests(mbox));
 

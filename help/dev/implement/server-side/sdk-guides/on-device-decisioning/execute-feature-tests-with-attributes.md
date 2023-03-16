@@ -117,7 +117,7 @@ Choose a **[!UICONTROL Goal Metric]** to measure the feature test with attribute
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const options = {
   client: "testClient",
@@ -140,7 +140,7 @@ function targetClientReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;
@@ -174,7 +174,7 @@ String paginationLimit = attributes.getString("product-results-page", "paginatio
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 //... Code removed for brevity
 
 //When a conversion happens
@@ -197,7 +197,7 @@ TargetClient.sendNotifications({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")

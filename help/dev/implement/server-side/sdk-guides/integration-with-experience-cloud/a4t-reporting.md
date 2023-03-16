@@ -31,7 +31,7 @@ keywords: delivery api, server-side, serverside, integration, a4t
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 
 const CONFIG = {
@@ -68,7 +68,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
@@ -114,7 +114,7 @@ A user can retrieve the [!DNL Adobe Analytics] payload for a given mbox, then se
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const CONFIG = {
   client: "acmeclient",
@@ -146,7 +146,7 @@ targetClient.getOffers({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
   .client("acmeclient")
   .organizationId("1234567890@AdobeOrg")
