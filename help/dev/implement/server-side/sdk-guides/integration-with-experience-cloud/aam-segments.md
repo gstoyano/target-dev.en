@@ -56,7 +56,7 @@ This sample relies on [express, a Node.js web framework](https://expressjs.com/)
 
 >[!TAB server.js]
 
-```
+```js {line-numbers="true"}
 const fs = require("fs");
 const express = require("express");
 const cookieParser = require("cookie-parser");
@@ -143,7 +143,7 @@ app.listen(3000, function () {
 
 >[!TAB index.handlebars]
 
-```
+```html {line-numbers="true"}
 <!doctype html>
 <html>
 <head>
@@ -174,7 +174,7 @@ This sample uses [spring, a Java web framework](https://spring.io/).
 
 >[!TAB ClientSampleApplication.java]
 
-```
+```java {line-numbers="true"}
 @SpringBootApplication
 public class ClientSampleApplication {
 
@@ -198,7 +198,7 @@ public class ClientSampleApplication {
 
 >[!TAB TargetController.java]
 
-```
+```java {line-numbers="true"}
 @Controller
 @RequestMapping("/")
 public class TargetController {
@@ -233,7 +233,7 @@ public class TargetController {
 
 >[!TAB TargetClientService.java]
 
-```
+```java {line-numbers="true"}
 @Service
 public class TargetClientService {
 
@@ -268,7 +268,7 @@ public class TargetClientService {
 
 >[!TAB TargetRequestUtils.java]
 
-```
+```java {line-numbers="true"}
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>

@@ -42,13 +42,13 @@ The `sendNotifications` method can be used to manually send events to [!DNL Adob
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"} 
 TargetClient.sendNotifications(options: Object): Promise
 ```
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 ```
 
@@ -72,7 +72,7 @@ For mboxes, you must set the mbox property on the notification object and provid
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"} 
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const { v4: uuidv4 } = require("uuid");
 
@@ -127,7 +127,7 @@ async function onTargetReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
                 .client("acmeclient")
                 .organizationId("1234567890@AdobeOrg")
@@ -187,7 +187,7 @@ You must set the `mbox` property on the notification object and provide an array
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"} 
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const { v4: uuidv4 } = require("uuid");
 
@@ -244,7 +244,7 @@ async function onTargetReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
                 .client("acmeclient")
                 .organizationId("1234567890@AdobeOrg")
@@ -307,7 +307,7 @@ For views, you must set the `view` property on the notification object and provi
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const { v4: uuidv4 } = require("uuid");
 
@@ -357,7 +357,7 @@ async function onTargetReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
                 .client("acmeclient")
                 .organizationId("1234567890@AdobeOrg")
@@ -417,7 +417,7 @@ You must set the `view` property on the notification object and provide an array
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const TargetClient = require("@adobe/target-nodejs-sdk");
 const { v4: uuidv4 } = require("uuid");
 
@@ -469,7 +469,7 @@ async function onTargetReady() {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
                 .client("acmeclient")
                 .organizationId("1234567890@AdobeOrg")

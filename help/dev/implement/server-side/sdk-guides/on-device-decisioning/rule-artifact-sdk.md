@@ -128,7 +128,7 @@ TargetClient.getOffers({
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
 TargetDeliveryRequest request = TargetDeliveryRequest.builder()
     .context(new Context().channel(ChannelType.WEB))
@@ -220,7 +220,7 @@ function startWebServer() {
 
 >[!TAB Java]
 
-```javascript {line-numbers="true"}
+```java {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;
 import com.adobe.target.edge.client.TargetClient;
 import com.adobe.target.delivery.v1.model.ChannelType;

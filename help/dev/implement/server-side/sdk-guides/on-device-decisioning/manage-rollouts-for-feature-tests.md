@@ -75,7 +75,7 @@ In the **[!UICONTROL Experiences]** step of activity creation, provide a name fo
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 targetClient.getAttributes(["ondevice-rollout"]).then(function(attributes) {
       const featureFlags = attributes.asObject("ondevice-rollout");
 
@@ -87,7 +87,7 @@ targetClient.getAttributes(["ondevice-rollout"]).then(function(attributes) {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
     Attributes attrs = targetJavaClient.getAttributes(targetDeliveryRequest, "ondevice-rollout");
     Map<String, Object> featureFlags = attrs.toMboxMap("ondevice-rollout");
 ​
@@ -106,7 +106,7 @@ After making the feature flag variable available in the application, you can use
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 //... Code removed for brevity
 
 if(featureFlags.enable == "yes") { //Fell within 10% traffic
@@ -128,7 +128,7 @@ else {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 //... Code removed for brevity
 ​
 if("yes".equals(String.valueOf(featureFlags.get("enable")))) { //Fell within 10% traffic

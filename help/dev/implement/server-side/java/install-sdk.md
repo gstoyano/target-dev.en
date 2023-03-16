@@ -18,7 +18,7 @@ compile 'com.adobe.target:java-sdk:1.0'
 
 >[!TAB Maven]
 
-```markup {line-numbers="true"}
+```javascript {line-numbers="true"}
 <dependency>
     <groupId>com.adobe.target</groupId>
     <artifactId>java-sdk</artifactId>

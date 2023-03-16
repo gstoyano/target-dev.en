@@ -11,7 +11,7 @@ Although using the [!DNL Target] SDKs for fetching content from [!DNL Target] ca
 
 The ECID is generated and maintained by `visitor.js`, which maintains its own state. The `visitor.js` file creates a cookie named `AMCV_{organizationId}`, which is used by [!DNL Target] SDKs for ECID integration. When the [!DNL Target] response is returned, you need to update the Visitor instance on the client side with `thevisitorState` returned by the [!DNL Target] SDKs.
 
-```
+```html {line-numbers="true"}
 <!doctype html>
 <html>
 <head>
@@ -32,7 +32,7 @@ The ECID is generated and maintained by `visitor.js`, which maintains its own st
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -109,7 +109,7 @@ app.get("/abtest", async (req, res) => {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"
   console.log("Request", request);
 
   try {
@@ -153,7 +153,7 @@ public class TargetControllerSample {
 
 In order to track visitor user accounts and login status details, `customerIds` may be passed via [!DNL Target] SDKs.
 
-```
+```html {line-numbers="true"
 <!doctype html>
 <html>
 <head>
@@ -174,7 +174,7 @@ In order to track visitor user accounts and login status details, `customerIds` 
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -269,7 +269,7 @@ app.listen(3000, function () {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 @Controller
 public class TargetControllerSample {
 
@@ -313,7 +313,7 @@ Using integrations across ECID, [!DNL Analytics], and [!DNL Target] lets you:
 
 Integrations across ECID, [!DNL Analytics], and [!DNL Target] do not require any special handling for analytics on the server side. Instead, once you have the ECID integrated, add `AppMeasurement.js` ([!DNL Analytics] library) on the client side. [!DNL Analytics] then uses the Visitor instance to synchronize with [!DNL Target].
 
-```
+```html {line-numbers="true"}
 <!doctype html>
 <html>
 <head>
@@ -336,7 +336,7 @@ Integrations across ECID, [!DNL Analytics], and [!DNL Target] do not require any
 
 >[!TAB Node.js]
 
-```
+```js {line-numbers="true"}
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const TargetClient = require("@adobe/target-nodejs-sdk");
@@ -428,7 +428,7 @@ app.listen(3000, function () {
 
 >[!TAB Java]
 
-```
+```java {line-numbers="true"}
 @Controller
 public class TargetControllerSample {
 
