@@ -146,6 +146,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 >[!BEGINTABS]
 
 >[!TAB Node.js]
+
 ```js {line-numbers="true"} 
 //... Code removed for brevity
 
