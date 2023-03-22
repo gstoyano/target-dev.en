@@ -16,11 +16,11 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 >[!NOTE]
 >
->In addition to this guide, the following guides help you tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
+>In addition to this guide, the following [!DNL Adobe Target] guides are also available:
 >
->* [*Target Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank}
+>* [*[!DNL Adobe Target] Business Practitioner Guide*](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank}
 >
->* [*Adobe Target Tutorials*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
+>* [*[!DNL Adobe Target] Tutorials*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
 
 ## Getting started with implementation
 
