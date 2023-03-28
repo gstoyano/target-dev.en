@@ -10,7 +10,7 @@ role: Developer
 
 ![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)
 
-**Last updated: March 22, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
+**Last updated: March 28, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
 This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to implement and administer [!DNL Target].
 
@@ -24,11 +24,11 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 ## Getting started with implementation
 
-[**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): This section includes information for developers specific to their implementation that they need to gather, privacy considerations, a discussion about cookies, a list of the various methods that can be used to get data into [!DNL Target], security considerations, and information about TLS (Transport Layer Security) Encryption.
+[**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): Tasks to complete and information to gather when preparing to implement [!DNL Adobe Target].
 
 ## Client-Side implementation
 
-[**Adobe Experience Platform Web SDK**](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html): The [!DNL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network].
+[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): The [!DNL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network].
 
 [**Target at.js JavaScript library**](/help/dev/implement/client-side/overview.md): The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single-page applications. 
 
