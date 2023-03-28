@@ -24,7 +24,7 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 ## Getting started with implementation
 
-[**Before you implement**](/help/dev/before-implement/prepare-to-implement-target.md): Tasks to complete and information to gather when preparing to implement [!DNL Adobe Target].
+**[Before you implement](/help/dev/before-implement/considerations-before-you-implement-target.md)**: Considerations you should address before you implement [!DNL Adobe Target].
 
 ## Client-Side implementation
 
