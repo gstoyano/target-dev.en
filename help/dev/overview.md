@@ -32,8 +32,6 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Target at.js JavaScript library**](/help/dev/implement/client-side/overview.md): The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single-page applications. 
 
-[**Migrate Target from at.js 2.x to Platform Web SDK**](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target=_blank}: This tutorial is for experienced [!DNL Adobe Target] implementers to learn how to migrate an at.js implementation to [!DNL Adobe Experience Platform Web SDK].
-
 ## Server-Side implementation
 
 [**Target SDK overview**](implement/server-side/server-side-overview.md): Get started with [!DNL Adobe Target] SDKs, including On-device decisioning.
