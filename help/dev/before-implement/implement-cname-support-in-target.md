@@ -21,9 +21,9 @@ Instructions for working with [!DNL Adobe Client Care] to implement CNAME (Canon
    target.example.com.  IN  CNAME  cnamecustomer.tt.omtrdc.net.
    ```
    
->[!WARNING]
->
->Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
+   >[!WARNING]
+   >
+   >Adobe's certificate authority, DigiCert, cannot issue a certificate until this step is complete. Therefore, Adobe cannot fulfill your request for a CNAME implementation until this step is complete.
 
 1. [Fill out this form](assets/FPC_Request_Form.xlsx) and include it when you [open an Adobe Client Care ticket requesting CNAME support](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
