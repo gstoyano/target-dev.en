@@ -13,6 +13,12 @@ An edge is a geographically distributed serving architecture that ensures optimu
 
 You can allowlist [!DNL Target] edge nodes, if desired.
 
+>[!NOTE]
+>
+>In addition to allowlisting the Network Address Translation (NAT) IP addresses of [!DNL Target] edges and [!DNL Target] edge IP addresses discussed in the article, you should also allowlist all [!DNL Adobe Analytics] IP address blocks.
+>
+>For more information, see [All Adobe Analytics IP address blocks](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank} in the *Adobe Analytics tech notes* documentation.
+
 ## Network Address Translation (NAT) IP addresses of [!DNL Target] edges
 
 List of egress IP addresses of [!DNL Target] edges. Allowlist these IPs if you plan to have [!DNL Target] reach out to your services.
@@ -45,9 +51,3 @@ This list will change often, as the load balancers scale up and down based on tr
 |Edge38 (Singapore)|`mboxedge38.tt.omtrdc.net`|52.220.75.199<br />52.221.116.71|
 
 As the load balancers detect changes in the traffic profile, it will scale up or down. The time required for Elastic Load Balancing to scale can range from 1 to 7 minutes, depending on the changes detected. When the load balancers scale, they update the DNS record with the new list of IP addresses. To ensure you are taking advantage of the increased capacity, Elastic Load Balancing uses a TTL setting on the DNS record of 60 seconds.
-
-## All [!DNL Adobe Analytics] IP address blocks
-
-In addition to allowlisting the Network Address Translation (NAT) IP addresses of [!DNL Target] edges and [!DNL Target] edge IP addresses, you should also allowlist all [!DNL Adobe Analytics] IP address blocks.
-
-For more information, see [All Adobe Analytics IP address blocks](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank} in the *Adobe Analytics tech notes* documentation.
