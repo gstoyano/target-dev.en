@@ -10,7 +10,7 @@ role: Developer
 
 ![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)
 
-**Last updated: March 28, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
+**Last updated: April 10, 2023 ([See what changed](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
 This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!DNL Target] developers, including API and SDK documentation to implement and administer [!DNL Target].
 
@@ -22,17 +22,17 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 >
 >* [*[!DNL Adobe Target] Tutorials*](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
 
-## Getting started with implementation
+**Getting started with implementation**
 
 **[Before you implement](/help/dev/before-implement/considerations-before-you-implement-target.md)**: Considerations you should address before you implement [!DNL Adobe Target].
 
-## Client-Side implementation
+**Client-Side implementation**
 
 [**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): The [!DNL Adobe Experience Platform Web SDK] lets you interact with the various services in the [!DNL Experience Cloud] (including [!DNL Target]) through the [!UICONTROL Adobe Experience Edge Network].
 
 [**Target at.js JavaScript library**](/help/dev/implement/client-side/overview.md): The at.js JavaScript library improves page load times for web implementations, improves security, and provides better implementation options for single-page applications. 
 
-## Server-Side implementation
+**Server-Side implementation**
 
 [**Target SDK overview**](implement/server-side/server-side-overview.md): Get started with [!DNL Adobe Target] SDKs, including On-device decisioning.
 
@@ -44,25 +44,25 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Python SDK**](implement/server-side/python/overview.md): How to use the [!DNL Target] Python SDK.
 
-## Hybrid implementation
+**Hybrid implementation**
 
 [**Hybrid deployment**](implement/hybrid/hybrid-overview.md): Implement [!DNL Target] using a combination of client-side and server-side implementation.
 
-## Recommendations implementation
+**Recommendations implementation**
 
 [**Recommendations implementation**](implement/recommendations/recommendations.md): Plan and implement [!DNL Adobe Target Recommendations].
 
-## Mobile App implementation
+**Mobile App implementation**
 
 [**AEP Mobile SDK overview**](implement/mobile/overview.md): Overview of how to implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
 [**AEP Mobile SDK reference**](https://developer.adobe.com/client-sdks/documentation/): Implement [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobile SDKs.
 
-## Email implementation
+**Email implementation**
 
 [**Email overview**](implement/email/overview.md): Overview of how to implement [!DNL Adobe Target] in emails.
 
-## APIs for implementation
+**APIs for implementation**
 
 [**Introduction**](before-administer/target-api-overview.md): Overview of [!DNL Adobe Target] APIs.
 
@@ -70,7 +70,7 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
-## API administration guides
+**API administration guides**
 
 [**Introduction**](before-administer/target-api-overview.md): Overview and configuration requirements for [!DNL Adobe Target] Admin and Profile APIs, including [!DNL Recommendations] APIs.
 
@@ -86,7 +86,7 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Admin Console APIs**](https://developer.adobe.com/umapi/): Manage users and product entitlements through the Adobe User Management and User Sync APIs.
 
-## Resources
+**Resources**
 
 * [Adobe open source repo](https://github.com/adobe)
 * [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
