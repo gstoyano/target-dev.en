@@ -4,8 +4,8 @@ description: Learn how to use [!UICONTROL [!UICONTROL on-device decisioning]] to
 title: What is On-Device Decisioning?
 feature: Implement Server-side
 role: Developer
+exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
 ---
-
 # On-device decisioning overview
 
 The next-generation [!DNL Adobe Target] SDKs now offer [!UICONTROL on-device decisioning], which provides the ability to cache your A/B and Experience Targeting (XT) campaigns on your server and perform in-memory decisioning at near-zero latency, without blocking network requests to [!DNL Adobe Target]'s Edge Network.

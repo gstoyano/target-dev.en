@@ -4,6 +4,7 @@ description: Details about how [!DNL Adobe Target] at.js 2.x and at.js 1.x handl
 title: at.js Cookies
 feature: at.js
 role: Developer
+exl-id: 154a844a-6855-4af7-8aed-0719b4c389f5
 ---
 # at.js cookies 
 

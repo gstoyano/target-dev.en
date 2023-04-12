@@ -1,8 +1,9 @@
 ---
 keywords: Recommendations, settings, preferences, industry vertical, filter incompatible criteria, default host group, thumb base url, recommendations api token, $9
-description: Learn how to implement [!UICONTROL Recommendations] activities in [!DNL Adobe Target]. 
+description: Learn how to implement [!UICONTROL Recommendations] activities in [!DNL Adobe Target].
 title: How Do I Implement [!UICONTROL Recommendations] Activities?
 feature: Recommendations
+exl-id: af1e8b60-6dbb-451b-aa4f-e167d1800d1c
 ---
 # Plan and implement [!UICONTROL Recommendations] 
 

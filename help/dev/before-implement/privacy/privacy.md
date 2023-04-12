@@ -4,6 +4,7 @@ description: Learn how [!DNL Adobe Target] complies with applicable data privacy
 title: How Does Target Handle Privacy Issues, including PII?
 feature: Privacy & Security
 role: Developer
+exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
 ---
 # Privacy
 

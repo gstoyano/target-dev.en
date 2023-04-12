@@ -4,6 +4,7 @@ description: Use the [!UICONTROL adobe.target.applyOffer()] function for the [!D
 title: How Do I Use the [!UICONTROL adobe.target.applyOffer()] Function?
 feature: at.js
 role: Developer
+exl-id: 957bbe92-8012-4bd5-95d6-1ae38b72bb16
 ---
 # [!UICONTROL adobe.target.applyOffer(options)]
 

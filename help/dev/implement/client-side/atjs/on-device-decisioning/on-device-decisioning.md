@@ -4,6 +4,7 @@ description: Learn how to perform [!UICONTROL on-device decisioning] with the at
 title: How Does On-device Decisioning Work with the at.js JavaScript Library?
 feature: at.js
 role: Developer
+exl-id: bd0e062f-c259-46f3-adba-e380af058ac8
 ---
 # [!UICONTROL On-device decisioning] for at.js
 

@@ -4,6 +4,7 @@ description: Get data into [!DNL Target] using data providers.
 title: How Do I Get Data into [!DNL Target] Using Data Providers?
 feature: Implementation
 role: Developer
+exl-id: 9971bd96-f736-4965-afe2-b4901c12d006
 ---
 # Data providers
 

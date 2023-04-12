@@ -4,6 +4,7 @@ description: Use the [!UICONTROL mboxDefine()] and [!UICONTROL mboxUpdate()] fun
 title: How Do I Use the [!UICONTROL mboxDefine()] And [!UICONTROL mboxUpdate()] Functions?
 feature: at.js
 role: Developer
+exl-id: 0a7dbea2-1cbd-4a5b-ba68-4c76a88d65c4
 ---
 # [!UICONTROL mboxDefine()] and [!UICONTROL mboxUpdate()] - at.js 1.x
 

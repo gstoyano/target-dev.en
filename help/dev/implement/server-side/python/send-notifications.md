@@ -3,8 +3,8 @@ title: Send display or click notifications to [!DNL Adobe Target] using the Pyth
 description: Learn how to use sendNotifications() to send display or click notifications to [!DNL Adobe Target] for measurement and reporting.
 feature: APIs/SDKs
 role: Developer
+exl-id: 03827b18-a546-4ec8-8762-391fcb3ac435
 ---
-
 # Send Notifications (Python)
 
 ## Description

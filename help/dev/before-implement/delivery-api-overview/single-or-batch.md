@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Single or Batch Delivery
 description: How do I use [!UICONTROL Adobe Target Delivery API] Single or Batch Delivery calls?
 keywords: delivery api
+exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 ---
-
 # Single or Batch Delivery
 
 The [!UICONTROL Adobe Target Delivery API] supports a single or batch delivery call. One can make a server request for content for single or multiple mboxes.

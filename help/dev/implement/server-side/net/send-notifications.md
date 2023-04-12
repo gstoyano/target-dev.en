@@ -3,8 +3,8 @@ title: Send display or click notifications to [!DNL Adobe Target] using the .NET
 description: Learn how to use sendNotifications() to send display or click notifications to [!DNL Adobe Target] for measurement and reporting.
 feature: APIs/SDKs
 role: Developer
+exl-id: 724e787c-af53-4152-8b20-136f7b5452e1
 ---
-
 # Send Notifications (.NET)
 
 ## Description

@@ -4,6 +4,7 @@ description: Get data into [!DNL Target] using the single profile update API.
 title: How Do I Get Data into [!DNL Target] Using the Single Profile Update API?
 feature: Implementation
 role: Developer
+exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
 ---
 # Single profile update API
 

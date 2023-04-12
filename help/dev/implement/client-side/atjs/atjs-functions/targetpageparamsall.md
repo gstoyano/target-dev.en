@@ -4,6 +4,7 @@ description: Use the [!UICONTROL targetPageParamsAll()] function for the [!DNL A
 title: How Do I Use the [!UICONTROL targetPageParamsAll()] Function?
 feature: at.js
 role: Developer
+exl-id: 32045e60-6904-42a1-bf71-fd7e167a829f
 ---
 # [!UICONTROL targetPageParamsAll()]
 

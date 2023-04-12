@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Overview
 description: Adobe Target Delivery API] Introduction
 keywords: delivery api
+exl-id: e760bddc-b1ae-4b7b-bff2-aba81c6b6d34
 ---
-
 # Delivery API overview
 
 Using [!UICONTROL Adobe Target's Delivery API], you can:

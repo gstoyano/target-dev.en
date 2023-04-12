@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Prefetch
 description: How do I use prefetch in the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
+exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 ---
-
 # Prefetch
 
 Prefetching allows clients like mobile apps and servers to fetch content for multiple mboxes or views in one request, cache it locally, and later notify [!DNL Target] when the user visits those mboxes or views.

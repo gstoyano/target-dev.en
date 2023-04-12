@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Identifying Visitors
 description: How can I identify user within [!DNL Adobe Target]?
 keywords: delivery api
+exl-id: 5b8c28aa-caad-44a9-880a-3c5f844e47b2
 ---
-
 # Identifying Visitors
 
 There are multiple ways in which a visitor can be identified within [!DNL Adobe Target].

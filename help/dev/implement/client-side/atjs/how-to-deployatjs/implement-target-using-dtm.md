@@ -4,6 +4,7 @@ description: Learn how to implement the [!DNL Adobe Target] at.js library using 
 title: Can I Implement [!DNL Target] using [!DNL Dynamic Tag Manager] (DTM)?
 feature: Implement Server-side
 role: Developer
+exl-id: 8ddabd5f-c9ec-4282-a806-32af3d1d16fb
 ---
 # Implement [!DNL Target] using [!DNL Dynamic Tag Manager] (DTM)
 
@@ -12,4 +13,3 @@ role: Developer
 Tags in [!DNL Adobe Experience Platform] are the next generation of tag management capabilities from [!DNL Adobe]. Tags give customers a simple way to deploy and manage the analytics, marketing, and advertising tags necessary to power relevant customer experiences.
 
 For more information, see [Implement [!DNL Target] using [!DNL Adobe Platform]](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md).
-

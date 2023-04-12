@@ -6,8 +6,9 @@ level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail:
+thumbnail: null
 author: Judy Kim
+exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
 ---
 # Fetching Recommendations with the Delivery API
 

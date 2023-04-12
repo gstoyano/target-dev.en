@@ -1,8 +1,8 @@
 ---
 title: User Permissions and Properties
 description: The [!DNL Target] SDKs include support for user permissions and properties.
+exl-id: 612faf1a-e8f9-4321-b831-90fba69ead3a
 ---
-
 # User Permissions and Properties
 
 The [!DNL Target] SDKs include support for user permissions and properties. If you are unfamiliar with how [!DNL Adobe Target] handles enterprise permissions via workspaces and properties, you can read more about it in [Enterprise user permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
@@ -86,4 +86,3 @@ TargetDeliveryResponse targetResponse = targetClient.getOffers(targetDeliveryReq
 ```
 
 >[!ENDTABS]
-

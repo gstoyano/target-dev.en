@@ -5,8 +5,8 @@ description: How do I implement and administer [!DNL Adobe Target] and work with
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 role: Developer
+exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
 ---
-
 # [!DNL Adobe Target] Developer Guide
 
 ![Adobe Target banner image](/help/dev/assets/target-home-banner-simple.png)

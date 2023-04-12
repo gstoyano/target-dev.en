@@ -4,6 +4,7 @@ description: Use the [!UICONTROL targetPageParams()] function for the [!DNL Adob
 title: How Do I Use the [!UICONTROL targetPageParams()] Function?
 feature: at.js
 role: Developer
+exl-id: 274e4d1f-843a-443b-ad98-7139dc4a13f8
 ---
 # [!UICONTROL targetPageParams()] 
 

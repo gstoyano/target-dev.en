@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot on-device decisioning
 description: Learn how to troubleshoot [!UICONTROL on-device decisioning]
+exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 ---
 # Troubleshooting [!UICONTROL on-device decisioning]
 

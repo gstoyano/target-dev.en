@@ -1,8 +1,8 @@
 ---
 title: Event tracking
 description: Use [!DNL Adobe Target]'s event tracking capabilities to effectively measure metrics that matter most for your business and use cases.
+exl-id: a47fa692-c633-4c53-82da-878b1e451a3f
 ---
-
 # Event tracking
 
 Use [!DNL Adobe Target]'s event tracking capabilities to effectively measure metrics that matter most for your business and use cases. Tracking events is key to measuring the success of your experimentation or personalization activities, since they tell you which variation or experience is winning or losing. Understanding this will help you understand how your users are engaging with your product or evolving in an ever-changing landscape.

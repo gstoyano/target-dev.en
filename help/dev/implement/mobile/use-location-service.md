@@ -4,6 +4,7 @@ description: Learn how to use the [!DNL Adobe Experience Platform Location Servi
 title: How do I Use the [!DNL Adobe Location Service]?
 feature: Implement Mobile
 role: Developer
+exl-id: ff38c0bb-3451-420f-8538-10f1d0606232
 ---
 # Use [!UICONTROL Location Service]
 

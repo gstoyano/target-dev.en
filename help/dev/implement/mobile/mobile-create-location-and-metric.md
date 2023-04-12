@@ -4,6 +4,7 @@ description: View sample code to help you learn how to create locations and succ
 title: How Do I Create [!DNL Target] Locations and Success Metrics in an iOS app?
 feature: Implement Mobile
 role: Developer
+exl-id: 755c8b26-5c60-48fc-9e7e-5e97a25edb78
 ---
 # iOS - create a [!DNL Target] location and success metric
 

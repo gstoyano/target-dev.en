@@ -4,6 +4,7 @@ description: Get data into [!DNL Target] using in-page profile attributes.
 title: How Do I Get Data into [!DNL Target] Using In-Page Profile Attributes?
 feature: Implementation
 role: Developer
+exl-id: c19fd746-21a2-4eb5-8c2a-c24806e09324
 ---
 # In-page profile attributes
 

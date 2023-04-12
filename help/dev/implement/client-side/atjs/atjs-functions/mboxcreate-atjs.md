@@ -4,6 +4,7 @@ description: Use the [!UICONTROL mboxCreate()] function for the [!DNL Adobe Targ
 title: How Do I Use the [!UICONTROL mboxCreate()] Function?
 feature: at.js
 role: Developer
+exl-id: 86eba1fc-4e1d-4793-94e7-898bf81f8945
 ---
 # [!UICONTROL mboxCreate(mbox,params)] - at.js 1.x 
 

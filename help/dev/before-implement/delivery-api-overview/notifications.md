@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Notifications
 description: How do I fire notifications using the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
+exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 ---
-
 # Notifications
 
 Notifications should be fired when a prefetched mbox or view has been visited or rendered to the end user.

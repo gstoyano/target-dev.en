@@ -4,6 +4,7 @@ description: Learn about the Content Security Policy (CSP) directives you should
 title: How Does [!DNL Target] Handle Content Security Policies (CSP)?
 feature: Privacy & Security
 role: Developer
+exl-id: ec6942e5-36d8-4f88-b3d6-47f9eaca03a8
 ---
 # Content Security Policy (CSP) directives
 

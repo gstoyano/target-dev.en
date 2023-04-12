@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Getting Started
 description: How do I use the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
+exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 ---
-
 # Getting Started with the [!UICONTROL Adobe Target Delivery API]
 
 A [!UICONTROL Target Delivery API] call looks like this:
@@ -48,4 +48,4 @@ Before making a [!UICONTROL Target Delivery API] call, follow these steps to ens
 
 ## Postman Collection
 
-Postman is an application that makes it easy to fire API calls. [This Postman collection](https://run.pstmn.io/button.svg) contains sample Delivery API calls. 
+Postman is an application that makes it easy to fire API calls. [This Postman collection](https://run.pstmn.io/button.svg) contains sample Delivery API calls.

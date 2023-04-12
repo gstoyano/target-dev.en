@@ -4,6 +4,7 @@ description: Learn how to use [!DNL Adobe Target] for mobile app optimization an
 title: Can I use [!DNL Target] with Mobile Apps?
 feature: Implement Mobile
 role: Developer
+exl-id: 8f61a0ae-04e4-41ed-ad30-fbcca13c4d21
 ---
 # [!DNL Target] for mobile apps
 

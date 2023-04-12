@@ -6,8 +6,9 @@ level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail:
+thumbnail: null
 author: Judy Kim
+exl-id: 51a67a49-a92d-4377-9a9f-27116e011ab1
 ---
 # Manage Custom Criteria
 

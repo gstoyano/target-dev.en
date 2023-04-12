@@ -4,6 +4,7 @@ description: Read frequently asked questions (FAQs) and answers about Adobe [!DN
 title: What Are Frequently Asked Questions About the Global mbox?
 feature: at.js
 role: Developer
+exl-id: 7bcd1b67-809a-466a-b648-6e0e44386157
 ---
 # Global mbox Frequently Asked Questions
 

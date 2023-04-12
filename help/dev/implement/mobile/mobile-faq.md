@@ -4,6 +4,7 @@ description: View frequently asked questions and their answers about [!DNL Adobe
 title: What Are Frequently Asked Questions [!DNL About Target] for Mobile Apps?
 feature: Implement Mobile
 role: Developer
+exl-id: 06cae3de-83a4-4018-a832-66fb292a1d0f
 ---
 # [!DNL Target] for mobile apps FAQ
 

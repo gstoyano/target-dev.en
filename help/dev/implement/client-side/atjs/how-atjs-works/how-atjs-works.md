@@ -4,6 +4,7 @@ description: Learn how the [!DNL Target] at.js JavaScript library functions, inc
 title: How Does the at.js Javascript Library Work?
 feature: at.js
 role: Developer
+exl-id: 9183797c-857b-4b7f-a573-6bb1d583f7b1
 ---
 # How at.js works
 

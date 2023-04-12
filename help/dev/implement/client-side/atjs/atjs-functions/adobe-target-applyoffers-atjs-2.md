@@ -4,6 +4,7 @@ description: Use the [!UICONTROL adobe.target.applyOffers()] function for the [!
 title: How Do I Use the [!UICONTROL adobe.target.applyOffers()] Function?
 feature: at.js
 role: Developer
+exl-id: c391e3f4-fdf1-4e33-8dcb-6bf46e390538
 ---
 # [!UICONTROL adobe.target.applyOffers(options)] - at.js 2.x
 
@@ -127,4 +128,3 @@ then(response => adobe.target.applyOffers({ response: response }))
 .then(() => console.log("Success"))
 .catch(error => console.log("Error", error));
 ```
-

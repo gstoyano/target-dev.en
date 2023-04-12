@@ -4,6 +4,7 @@ description: Learn how [!DNL Target] uses the TLS (Transport Layer Security) pro
 title: How Does [!DNL Target] Use TLS to Provide Security?
 feature: Privacy & Security
 role: Developer
+exl-id: f5ea2272-27ab-49c9-b096-b15dd277d4e5
 ---
 # TLS (Transport Layer Security) encryption changes
 

@@ -4,6 +4,7 @@ description: Get data into [!DNL Target] (page parameters, profile attributes, s
 title: How Do I Get Data into Target?
 feature: Implementation
 role: Developer
+exl-id: a54e306a-ea8e-4d3f-bc5d-b5895b6b9a84
 ---
 # Methods overview
 
@@ -20,15 +21,3 @@ Available methods include:
 |[Bulk profile update API](bulk-profile-update-api.md)|Via API, send a .csv file to [!DNL Target] with visitor profile updates for many visitors. Each visitor profile can be updated with multiple in-page profile attributes in one call.|
 |[Single profile update API](single-profile-update-api.md)|Almost identical to the Bulk Profile Update API, but one visitor profile is updated at a time, in line in the API call instead of with a .csv file.|
 |[Customer attributes](customer-attributes.md)|Customer attributes let you upload visitor profile data via FTP to the Experience Cloud. Once uploaded, use the data in Adobe Analytics and Adobe Target.|
-
-
-
-
-
-
-
-
-
-
-
-

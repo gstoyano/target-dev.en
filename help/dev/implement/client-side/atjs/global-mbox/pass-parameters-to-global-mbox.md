@@ -4,6 +4,7 @@ description: Learn how to use the [!UICONTROL targetPageParams] function to pass
 title: How Do I Pass Parameters to a Global mbox?
 feature: at.js
 role: Developer
+exl-id: 2a6be3e4-a618-4812-9e87-b01789705c40
 ---
 # Pass Parameters to a global mbox
 

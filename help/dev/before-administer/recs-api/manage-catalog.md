@@ -6,8 +6,9 @@ level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail:
+thumbnail: null
 author: Judy Kim
+exl-id: aea82607-cde4-456a-8dfb-2967badce455
 ---
 # Manage Your Recommendations Catalog using APIs
 

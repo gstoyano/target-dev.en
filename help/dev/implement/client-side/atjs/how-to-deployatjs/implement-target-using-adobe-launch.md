@@ -4,6 +4,7 @@ description: Learn how to implement the [!DNL Adobe Target] at.js library using 
 title: How Do I Implement [!DNL Target] using [!DNL Adobe Experience Platform]?
 feature: Implement Server-side
 role: Developer
+exl-id: 0a325871-194a-479c-a3bf-294e3dde3e9a
 ---
 # Implement [!DNL Target] using [!DNL Adobe Experience Platform]
 

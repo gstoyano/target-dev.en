@@ -1,8 +1,8 @@
 ---
 title: Adobe Target Admin API Overview
 description: Overview of the [!DNL Adobe Target Admin API]
+exl-id: 1168d376-c95b-4c5a-b7a2-c7815799a787
 ---
-
 # Target Admin API Overview
 
 This article provides an overview of background information necessary to understand and use [!DNL Adobe Target Admin API]s successfully. The following content assumes you understand how to [configure authentication](../configure-authentication.md) for [!DNL Adobe Target Admin API]s.

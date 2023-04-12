@@ -4,6 +4,7 @@ description: Learn about [!DNL Target] cookie behavior (first-party cookie, thir
 title: Where Can I Find Information About [!DNL Target] Cookies?
 feature: at.js
 role: Developer
+exl-id: d44e02ce-8920-4130-bcad-699ca77c0dad
 ---
 # [!DNL Target] cookies
 

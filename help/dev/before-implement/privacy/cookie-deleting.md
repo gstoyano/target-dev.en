@@ -4,6 +4,7 @@ description: Learn how to delete your [!DNL Target] browser cookies so that you 
 title: How Do I Delete the [!DNL Target] Cookie?
 feature: Privacy & Security
 role: Developer
+exl-id: c975c47f-8d81-4abe-aa89-f65275a73002
 ---
 # Delete the [!DNL Target] cookie
 

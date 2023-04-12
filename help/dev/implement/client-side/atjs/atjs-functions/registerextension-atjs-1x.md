@@ -4,6 +4,7 @@ description: Use the [!UICONTROL registerExtension()] function for the [!DNL Ado
 title: How Do I Use the [!UICONTROL registerExtension()] Function?
 feature: at.js
 role: Developer
+exl-id: 71decf00-84c5-4914-b0cd-bb061fa6265f
 ---
 # [!UICONTROL registerExtension()] - at.js 1.x
 

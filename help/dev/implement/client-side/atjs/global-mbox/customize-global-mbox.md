@@ -4,6 +4,7 @@ description: Learn how to customize a global mbox for at.js on the [!UICONTROL A
 title: How Do I Customize a Global mbox?
 feature: at.js
 role: Developer
+exl-id: f7809c3d-6e77-4bbe-8da3-4ab0a448c801
 ---
 # Customize a global mbox
 
@@ -35,4 +36,3 @@ Information to help you customize an [!DNL Adobe Target] global mbox for at.js.
 >[!WARNING]
 >
 >All activities in your account sync with this mbox. Ensure that the global mbox is present on your site so that activities continue functioning. Be sure to edit and re-save affected activities that were created with the [!UICONTROL Visual Experience Composer] (VEC) that sync with this mbox. It is not necessary to re-save activities created in the [!UICONTROL Form-Based Experience Composer] or via API.
-

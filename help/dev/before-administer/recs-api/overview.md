@@ -6,8 +6,9 @@ level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Recommendations, Administration & Configuration, Overview
 kt: 3815
-thumbnail:
+thumbnail: null
 author: Judy Kim
+exl-id: 0d03c650-0b00-44b8-a794-10e5d738e42c
 ---
 # Adobe Recommendations API overview
 
@@ -44,4 +45,3 @@ Note the following resources, which are necessary to understand this guide and f
 | --- | --- |
 |Postman|Get the [Postman app](https://www.postman.com/downloads/) for your operating system. Postman basic is free with account creation. While not required in order to use Adobe Target APIs in general, Postman makes API workflows easier, and Adobe Target provides several Postman collections to help execute its APIs and learn how they operate. The rest of this guide assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).  |
 |References|Familiarity with the following resources is assumed throughout the rest of this guide:<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Target Admin and Profile API documentation](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API documentation](https://developers.adobetarget.com/api/recommendations/)</li></UL>|
-

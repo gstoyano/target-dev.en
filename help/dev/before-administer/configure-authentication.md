@@ -5,6 +5,7 @@ role: Developer, Admin, Architect
 level: Intermediate
 topic: Personalization, Administration, Integrations, Development
 feature: APIs/SDKs, Administration & Configuration
+exl-id: fc67363c-6527-40aa-aff1-350b5af884ab
 ---
 # Configure authentication for [!DNL Adobe Target] APIs
 

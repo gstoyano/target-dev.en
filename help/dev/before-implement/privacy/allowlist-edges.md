@@ -4,6 +4,7 @@ description: View a list of hosts to help you allowlist [!DNL Adobe Target] edge
 title: How Do I Allowlist [!DNL Target] Edge Nodes?
 feature: Privacy & Security
 role: Developer
+exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
 ---
 # Allowlist [!DNL Target] edge nodes
 

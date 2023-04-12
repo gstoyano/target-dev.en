@@ -4,6 +4,7 @@ description: Use the [!UICONTROL adobe.target.getOffers()] function and its opti
 title: How Do I Use the [!UICONTROL adobe.target.getOffers()] Function?
 feature: at.js
 role: Developer
+exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
 ---
 # [!UICONTROL adobe.target.getOffers()] - at.js 2.x
 

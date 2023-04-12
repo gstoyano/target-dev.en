@@ -4,6 +4,7 @@ description: Learn how to troubleshoot [!UICONTROL on-device decisioning] with t
 title: How Do I Troubleshoot On-Device Decisioning with the at.js JavaScript Library?
 feature: at.js
 role: Developer
+exl-id: b9530cc7-5e83-4fdf-bde9-b2492e0861ff
 ---
 # Troubleshooting [!UICONTROL on-device decisioning] for at.js
 

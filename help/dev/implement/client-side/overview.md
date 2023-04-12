@@ -4,6 +4,7 @@ description: Learn how to implement [!DNL Adobe Target] for client-side web usin
 title: How Do I Implement [!DNL Target] for Client-Side Web
 feature: at.js
 role: Developer
+exl-id: b3a850ff-ace0-4eea-955a-aa71dfad256f
 ---
 # Overview: implement [!DNL Target] for client-side web
 

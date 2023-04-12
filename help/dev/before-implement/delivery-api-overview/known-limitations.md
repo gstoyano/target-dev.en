@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API Known Limitations
 description: What are the known limitations with the [!UICONTROL Adobe Target Delivery API]?
 keywords: delivery api
+exl-id: 49fe13b0-efcb-4b1c-a4cb-03b64fbd9214
 ---
-
 # Known Limitations
 
 1. There is no authentication for [!DNL Target] Delivery APIs.

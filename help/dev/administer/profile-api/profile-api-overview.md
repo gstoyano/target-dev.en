@@ -2,8 +2,8 @@
 title: Adobe Target Profile API
 description: Adobe Target Profile API
 contributors: https://github.com/icaraps
+exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 ---
-
 # [!DNL Adobe Target Profile API]
 
 The [!DNL Adobe Target Profiles API] can be found here:

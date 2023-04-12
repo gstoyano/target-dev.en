@@ -2,8 +2,8 @@
 title: Adobe Target Delivery API and SDKs
 description: Adobe Target Delivery API and SDKs
 keywords: delivery api
+exl-id: fc3996e6-8945-437c-9574-cc3f1a406f54
 ---
-
 # SDKs
 
 [!DNL Adobe Target] offers [server-side SDKs](../../implement/server-side/server-side-overview.md) to interact with the [!DNL Target Delivery API] and help ease the [!UICONTROL Target] integration with other [!DNL Adobe Experience Cloud] solutions such as [!UICONTROL Adobe Analytics] and [!DNL Adobe Audience Manager].
@@ -43,4 +43,3 @@ The [Python SDK](https://github.com/adobe/target-python-sdk) is open sourced and
 Read the [Changelog](https://github.com/adobe/target-python-sdk/blob/master/CHANGELOG.md) for the Python SDK.
 
 <!--- Judy: remove or modify this page? adequately covered elsewhere? Or, add links to analogous info for the .NET and Python SDKs? --->
-
