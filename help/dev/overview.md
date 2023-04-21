@@ -65,29 +65,25 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Email overview**](implement/email/overview.md): Overview of how to implement [!DNL Adobe Target] in emails.
 
-## APIs for implementation
+## API guides
 
 [**Introduction**](before-administer/target-api-overview.md): Overview of [!DNL Adobe Target] APIs.
 
-[**Target Delivery API**](/help/dev/implement/delivery-api/overview.md): Use the [!DNL Adobe Target] Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
+[**[!DNL Target Delivery API]**](/help/dev/implement/delivery-api/overview.md): Use the [!DNL Adobe Target] Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
-[**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
+[**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): Use the [!DNL Adobe Target] Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
 
-## API administration guides
+[**[!DNL Target Profile API]**](https://developers.adobetarget.com/api/#profiles): Retrieve [!DNL Adobe Target] user profile information.
 
-[**Introduction**](before-administer/target-api-overview.md): Overview and configuration requirements for [!DNL Adobe Target] Admin and Profile APIs, including [!DNL Recommendations] APIs.
+[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): Retrieve [!UICONTROL A/B Test] and [!UICONTROL Automated Personalization] activity report data.
 
-[**Admin API**](administer/admin-api/admin-api-overview-new.md): Use the [!DNL Adobe Target] Admin API to manage properties, activities, audiences, offers, properties, reports, mboxes, hosts, environments, and more.
+[**[!DNL Target Recommendations API]**](http://developers.adobetarget.com/api/recommendations/): Use the [!DNL Target Recommendations] API.
 
-[**Profile API**](https://developers.adobetarget.com/api/#profiles): Retrieve [!DNL Adobe Target] user profile information.
-
-[**Reporting API**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): Retrieve [!UICONTROL A/B Test] and [!UICONTROL Automated Personalization] activity report data.
-
-[**Recommendations API**](http://developers.adobetarget.com/api/recommendations/): Use the [!DNL Target Recommendations] API.
-
-[**Models API**](administer/models-api/models-api-overview.md): Manage blocklists to define the features used in [!DNL Target] machine learning models.
+[**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): Manage blocklists to define the features used in [!DNL Target] machine learning models.
 
 [**Admin Console APIs**](https://developer.adobe.com/umapi/): Manage users and product entitlements through the Adobe User Management and User Sync APIs.
+
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
 ## Resources
 
