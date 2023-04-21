@@ -174,10 +174,10 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
     + [Work with redirectors](implement/email/working-with-redirectors.md)
 + API guides {#api}
-  + [Target API overview](/help/dev/before-administer/target-api-overview.md)
-  + [SDKs](/help/dev/before-implement/delivery-api-overview/sdks.md)
-  + [Configure authentication for Target APIs](/help/dev/before-administer/configure-authentication.md)
-  + Delivery API guide for implementation {#delivery-api}
+    + [Target API overview](/help/dev/before-administer/target-api-overview.md)
+    + [SDKs](/help/dev/before-implement/delivery-api-overview/sdks.md)
+    + [Configure authentication for Target APIs](/help/dev/before-administer/configure-authentication.md)
+  + Delivery API guide {#delivery-api}
     + [Getting Started](/help/dev/before-implement/delivery-api-overview/getting-started.md)
     + [User Permissions (Premium)](/help/dev/before-implement/delivery-api-overview/user-permissions.md)
     + [Identifying Visitors](/help/dev/before-implement/delivery-api-overview/identifying-visitors.md)
