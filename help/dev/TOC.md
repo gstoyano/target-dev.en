@@ -202,5 +202,9 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
   + Models API {#models-api}
     + [Models API (Blocklisting) overview](before-administer/models-api.md)
     + [Models API](/help/dev/administer/models-api/models-api-overview.md)
+  + Adobe Admin Console APIs {#admin-console}
+    + [Adobe Admin Console APIs](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
+  + Adobe Experience Platform Edge Network Server API {#edge-network-api}
+    + [Edge Network Server API overview](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 
 
