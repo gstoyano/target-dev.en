@@ -173,7 +173,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Create an Adbox for an image](implement/email/testing-content-with-the-adbox.md)
     + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
     + [Work with redirectors](implement/email/working-with-redirectors.md)
-+ API implementation guide - Delivery API {#delivery-api}
++ Delivery API guide for implementation {#delivery-api}
   + [Delivery API Overview](implement/delivery-api/overview.md)
   + [SDKs](before-implement/delivery-api-overview/sdks.md)
   + [Getting Started](before-implement/delivery-api-overview/getting-started.md)
