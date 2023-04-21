@@ -178,6 +178,7 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [SDKs](/help/dev/before-implement/delivery-api-overview/sdks.md)
     + [Configure authentication for Target APIs](/help/dev/before-administer/configure-authentication.md)
   + Delivery API guide {#delivery-api}
+    + [Delivery API overview](/help/dev/implement/delivery-api/overview.md)
     + [Getting Started](/help/dev/before-implement/delivery-api-overview/getting-started.md)
     + [User Permissions (Premium)](/help/dev/before-implement/delivery-api-overview/user-permissions.md)
     + [Identifying Visitors](/help/dev/before-implement/delivery-api-overview/identifying-visitors.md)
