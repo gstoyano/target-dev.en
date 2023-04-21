@@ -12,7 +12,7 @@ exl-id: aea82607-cde4-456a-8dfb-2967badce455
 ---
 # Manage Your Recommendations Catalog using APIs
 
-At this point, you have learned how to generate an access token, using the JWT authentication flow, to use the Adobe Target Admin APIs on the [Adobe Developer Console](https://developer.adobe.com/console/home), because you have [configured authentication](../configure-authentication.md).
+At this point, you have learned how to [generate an access token](/help/dev/before-administer/configure-authentication.md), using the JWT authentication flow, to use the [!DNL Adobe Target] Admin APIs on the [Adobe Developer Console](https://developer.adobe.com/console/home), because you have [configured authentication](../configure-authentication.md).
   
 You can now use the [Recommendations APIs](https://developers.adobetarget.com/api/recommendations/) to add, update, or delete items in your recommendations catalog. As with the rest of the Adobe Target Admin APIs, the Recommendations APIs require authentication.
 
