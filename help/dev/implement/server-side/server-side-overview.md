@@ -27,7 +27,7 @@ The following sections provide more information about the various server side AP
 
 ## Server Side Delivery APIs
 
-Link: [Server Side Delivery APIs](../delivery-api/overview.md)
+Link: [Server Side Delivery APIs](/help/dev/implement/delivery-api/overview.md)
 
 `/rest/v1/delivery`
 

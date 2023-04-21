@@ -27,7 +27,7 @@ The following table defines the combination of goals and events you can define a
 
 ## How impressions are triggered
 
-Target SDKs call the underlying [Delivery API](../../../delivery-api/overview.md). When an execute object with required parameters is within the request itself, the impression is incremented automatically for qualifying activities. SDK methods that increment an impression automatically are:
+Target SDKs call the underlying [Delivery API](/help/dev/implement/delivery-api/overview.md). When an execute object with required parameters is within the request itself, the impression is incremented automatically for qualifying activities. SDK methods that increment an impression automatically are:
 
 * getOffers()
 * getAttributes()
