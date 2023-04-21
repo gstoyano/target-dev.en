@@ -33,7 +33,7 @@ This guide regarding the Recommendations APIs walk developers through hands-on p
 
 This guide is intended for developers new to Target APIs or Recommendations APIs.
 
-## Pre-requisites
+## Prerequisites {#prerequisites}
 
 The Target admin APIs require [Adobe authentication setup](../configure-authentication.md). Make sure you have this configured prior to using the Recommendations API.
 
