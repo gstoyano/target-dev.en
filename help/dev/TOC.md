@@ -173,21 +173,20 @@ user-guide-description: Learn how to tailor and personalize your customers' expe
     + [Create an Adbox for an image](implement/email/testing-content-with-the-adbox.md)
     + [Test an email image Adbox](implement/email/testing-email-image-adbox.md)
     + [Work with redirectors](implement/email/working-with-redirectors.md)
-+ Delivery API guide for implementation {#delivery-api}
-  + [Delivery API Overview](implement/delivery-api/overview.md)
-  + [SDKs](before-implement/delivery-api-overview/sdks.md)
-  + [Getting Started](before-implement/delivery-api-overview/getting-started.md)
-  + [User Permissions (Premium)](before-implement/delivery-api-overview/user-permissions.md)
-  + [Identifying Visitors](before-implement/delivery-api-overview/identifying-visitors.md)
-  + [Single or Batch Delivery](before-implement/delivery-api-overview/single-or-batch.md)
-  + [Prefetch](before-implement/delivery-api-overview/prefetch.md)
-  + [Notifications](before-implement/delivery-api-overview/notifications.md)
-  + [Integration with Experience Cloud](before-implement/delivery-api-overview/integration.md)
-  + [Known Limitations](before-implement/delivery-api-overview/known-limitations.md)
-  + [Client Hints](before-implement/delivery-api-overview/client-hints.md)
-+ API administration guides {#administration}
++ API guides {#api}
   + [Target API overview](before-administer/target-api-overview.md)
+  + [SDKs](before-implement/delivery-api-overview/sdks.md)
   + [Configure authentication for Target APIs](before-administer/configure-authentication.md)
+  + Delivery API guide for implementation {#delivery-api}
+    + [Getting Started](before-implement/delivery-api-overview/getting-started.md)
+    + [User Permissions (Premium)](before-implement/delivery-api-overview/user-permissions.md)
+    + [Identifying Visitors](before-implement/delivery-api-overview/identifying-visitors.md)
+    + [Single or Batch Delivery](before-implement/delivery-api-overview/single-or-batch.md)
+    + [Prefetch](before-implement/delivery-api-overview/prefetch.md)
+    + [Notifications](before-implement/delivery-api-overview/notifications.md)
+    + [Integration with Experience Cloud](before-implement/delivery-api-overview/integration.md)
+    + [Known Limitations](before-implement/delivery-api-overview/known-limitations.md)
+    + [Client Hints](before-implement/delivery-api-overview/client-hints.md)
   + Admin API {#admin-api}
     + [Admin API overview](before-administer/admin-api-overview/admin-api-overview.md)
     + [Adobe Target Admin API](/help/dev/administer/admin-api/admin-api-overview-new.md)
