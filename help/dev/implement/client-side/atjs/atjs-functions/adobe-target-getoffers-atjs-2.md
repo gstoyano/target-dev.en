@@ -25,7 +25,7 @@ This function lets you retrieve multiple offers by passing in multiple mboxes. A
 
 >[!NOTE]
 >
->Consult the [Delivery API documentation](../../../delivery-api/overview.md) for information about the acceptable types for all fields listed below.
+>Consult the [Delivery API documentation](/help/dev/implement/delivery-api/overview.md) for information about the acceptable types for all fields listed below.
 
 |Field name|Required?|Limitations|Description|
 | --- | --- | --- | --- |

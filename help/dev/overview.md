@@ -69,7 +69,7 @@ This *[!DNL Adobe Target] Developer Guide* provides resources and guides for [!D
 
 [**Introduction**](before-administer/target-api-overview.md): Overview of [!DNL Adobe Target] APIs.
 
-[**Target Delivery API**](implement/delivery-api/overview.md): Use the [!DNL Adobe Target] Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
+[**Target Delivery API**](/help/dev/implement/delivery-api/overview.md): Use the [!DNL Adobe Target] Delivery APIs to deliver experiences across web and mobile channels as well as non-browser based IoT devices such as a connected TV, kiosk, or in-store digital screen.
 
 [**Adobe Experience Platform Edge Network Server API**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Use the [!DNL Adobe Experience Platform Edge Network Server] API for a variety of data collection, personalization, advertising, and marketing use cases.
 
