@@ -11,6 +11,15 @@ exl-id: fc67363c-6527-40aa-aff1-350b5af884ab
 
 The [!DNL Adobe Target] Admin APIs, including [!DNL Recommendations Admin] APIs, are secured by authentication to ensure only authorized users use them to access [!DNL Adobe Target]. Use the [Adobe Developer Console](https://developer.adobe.com/console/home) to manage this authentication for all [!DNL Adobe Experience Cloud solutions], including [!DNL Adobe Target].
 
+>[!IMPORTANT]
+>
+>The Service Account (JWT) credentials describe in this article have been deprecated in favor of the new OAuth Server-to-Server credentials. This article will be updated in the near future.
+>
+>Although the Service Account (JWT) credentials have been marked as deprecated, they will continue to work until Jan 1, 2025. You must migrate your application or integration to use the new OAuth Server-to-Server credential before Jan 1, 2025.
+>
+>For more information and step-by-step instructions, see [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target=_blank} in the *Developer Console* documentation. 
+
+
 Here are the preliminary steps required to generate authentication tokens needed to successfully interact with [!DNL Adobe Target] APIs:
 
 1. Create a project (previously called integration) in the [!DNL Adobe Developer Console].
