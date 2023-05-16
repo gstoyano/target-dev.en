@@ -72,7 +72,7 @@ Now that we have covered what [!DNL Adobe Target] Views are, we can leverage thi
 
    >[!NOTE]
    >
-   >For view support in at.js, `[viewsEnabled](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#viewsenbabled)` must set to true, otherwise all view functionality is disabled. 
+   >For view support in at.js, [viewsEnabled](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#viewsenbabled) must set to true, otherwise all view functionality is disabled. 
 
    **`adobe.target.triggerView(viewName, options)`**
 
