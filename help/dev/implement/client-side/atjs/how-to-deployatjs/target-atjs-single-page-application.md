@@ -60,15 +60,19 @@ Now, marketers might want to run an A/B Test to see whether changing the color f
 
 Now that we have covered what [!DNL Adobe Target] Views are, we can leverage this concept in [!DNL Target] to empower marketers to run A/B and XT tests on SPAs via the VEC. This will require a one-time developer setup. Let's go through the steps to set this up.
 
-1. Install at.js 2.x.
+1. Install at.js 2.*x*.
 
-   First, we need to install at.js 2.x. This version of at.js was developed with SPAs in mind. Previous versions of at.js and mbox.js (now deprecated) do not support [!DNL Adobe Target] Views and the VEC for SPAs.
+   First, we need to install at.js 2.*x*. This version of at.js was developed with SPAs in mind. Previous versions of at.js do not support [!DNL Adobe Target] Views and the VEC for SPAs.
 
-   Download at.js 2.x via the [!DNL Adobe Target] UI located in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.x can also be deployed via tags in Adobe Experience Platform.
+   Download at.js 2.*x* via the [!DNL Adobe Target] UI located in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.*x* can also be deployed via tags in [!DNL Adobe Experience Platform].
 
-1. Implement at.js 2.x's newest function, `triggerView()` on your sites.
+1. Implement the at.js 2.*x* function, `[triggerView()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)` on your sites.
 
-   After defining the Views of your SPA where you want to run an A/B or XT test, implement at.js 2.x's `triggerView()` function with the Views passed in as a parameter. This allows marketers to use the VEC to design and run the A/B and XT tests for those Views defined. If the `triggerView()` function is not defined for those Views, the VEC will not detect the Views and thus marketers cannot use the VEC to design and run A/B and XT tests.
+   After defining the Views of your SPA where you want to run an A/B or XT test, implement the at.js 2.*x* `triggerView()` function with the Views passed in as a parameter. This allows marketers to use the VEC to design and run the A/B and XT tests for those Views defined. If the `triggerView()` function is not defined for those Views, the VEC will not detect the Views and thus marketers cannot use the VEC to design and run A/B and XT tests.
+
+   >[!NOTE]
+   >
+   >For view support in at.js, `[viewsEnabled](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#viewsenbabled)` must set to true, otherwise all view functionality is disabled. 
 
    **`adobe.target.triggerView(viewName, options)`**
 
@@ -278,7 +282,7 @@ The following information describes the order of operations that you must follow
 | --- | --- | --- |
 |1|Load VisitorAPI JS|This library is responsible for assigning an ECID to the visitor. This ID is later consumed by other Adobe solutions on the web page.|
 |2|Load at.js 2.x|at.js 2.x loads all the necessary APIs that you use to implement [!DNL Target] requests and views.|
-|3|Execute [!DNL Target] request|If you have a data layer, we recommend that you load critical data that is required to send to [!DNL Target] before executing a [!DNL Target] request. This lets you use `targetPageParams` to send any data you want to use for targeting. You must ensure that you request for execute > pageLoad as well as prefetch > views in this API call. if you have set `pageLoadEnabled` and `viewsEnabled`, then both execute > pageLoad and prefetch > views automatically happen with Step 2; otherwise, you need to use the `getOffers()` API to make this request.|
+|3|Execute [!DNL Target] request|If you have a data layer, we recommend that you load critical data that is required to send to [!DNL Target] prior to executing the [!DNL Target] request. This lets you use `targetPageParams` to include any data you want to use for targeting.<P>When `pageLoadEnabled` and `viewsEnabled` are set to true in [targetGlobalSettings](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md), at.js automatically requests all VEC [!DNL Target] offers for you in step 2.<P>Note that `getOffers` can also be used to get VEC offers after the page loads. To do so, ensure that the request includes `execute>pageLoad` and `prefetch>views` in the API call.|
 |4|Call `triggerView()`|Because the [!DNL Target] request you initiated in Step 3 could return experiences for both Page Load execution as well as Views, ensure that `triggerView()` is called after the [!DNL Target] request is returned and finishes applying the offers to cache. You must execute this step only once per view.|
 |5|Call the [!DNL Analytics] page view beacon|This beacon sends the SDID associated with Step 3 and 4 to [!DNL Analytics] for data stitching.|
 |6|Call additional `triggerView({"page": false})`|This is an optional step for SPA frameworks that could potentially re-render certain components on the page without a view change happening. On such occasions, it is important that you invoke this API to ensure that [!DNL Target] experiences are re-applied after the SPA framework has re-rendered the components. You can execute this step as many times as you want to ensure that [!DNL Target] experiences persist in your SPA views.|
