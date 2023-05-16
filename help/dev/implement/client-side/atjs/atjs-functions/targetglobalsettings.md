@@ -229,11 +229,11 @@ You can override the following settings:
 * **Default Value**: Value set via UI.
 * **Description**: Represents the [!DNL Target] edge request timeout.
 
-### viewsEnabled
+### viewsEnabled {#viewsenabled}
 
 * **Type**: Boolean
 * **Default Value**: true
-* **Description**: When enabled, automatically retrieve views that must be returned on page load. Views are supported in at.js 2.*x* only.
+* **Description**: When enabled, views are automatically retrieved when the page loads. When `triggerView` is called, applicable views are displayed in the browser. If this option is disabled, views are not retrieved at page load time and `triggerView` does nothing. Views are supported in at.js 2.*x* only.
 
 ### visitorApiTimeout
 
