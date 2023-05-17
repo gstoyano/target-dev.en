@@ -46,6 +46,6 @@ Before making a [!UICONTROL Target Delivery API] call, follow these steps to ens
 1. Use the Delivery API to get a response for the mboxes used in the [!DNL Target] activity created in Step 2.
 1. Present the experience to the visitor.
 
-## Postman Collection
+## Postman Collection {#postman}
 
 Postman is an application that makes it easy to fire API calls. [This Postman collection](https://run.pstmn.io/button.svg) contains sample Delivery API calls.

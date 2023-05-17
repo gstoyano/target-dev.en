@@ -69,7 +69,7 @@ This release contains the following changes:
 * [!UICONTROL Analytics for Target] (A4T) click metrics details are correctly returned when using `prefetch` requests.
 * UUID generation no longer uses `Math.random()`, but relies on `window.crypto`.
 * The `sessionId` cookie expiry is correctly extended on every network call.
-* The Single Page Application (SPA) view cache initialization is now correctly handled and honors `viewsEnable` settings.
+* The Single Page Application (SPA) view cache initialization is now correctly handled and honors `viewsEnabled` settings. Setting `viewsEnabled` to the `false` value now disables the `triggerView()` function.
 
 ## at.js 2.5.0 (May 13, 2021)
 
