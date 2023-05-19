@@ -1,5 +1,5 @@
 ---
-keywords: single page application implementation, implement single page application, spa, at.js 2.x, at.js, single page application, single page app, spa, SPAs, single page application implementation0
+keywords: single page application implementation, implement single page application, spa, at.js 2.x, at.js, single page application, single page app, spa, SPAs, single page application implementation
 description: Learn how to use [!DNL Adobe Target] at.js 2.x to implement [!DNL Target] for Single Page Applications (SPAs).
 title: Can I implement [!DNL Target] for Single Page Applications (SPAs)?
 feature: Implement Server-side
@@ -276,7 +276,7 @@ at.js 2.x APIs let you customize your [!DNL Target] implementation in many ways,
 
 The following information describes the order of operations that you must follow when loading a Single Page Application for the first time in a browser and for any view change that happens afterwards.
 
-### Order of operations for initial page load
+### Order of operations for initial page load {#order}
 
 |Step|Action|Details|
 | --- | --- | --- |
