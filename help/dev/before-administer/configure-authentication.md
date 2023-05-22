@@ -13,14 +13,15 @@ The [!DNL Adobe Target] Admin APIs, including [!DNL Recommendations Admin] APIs,
 
 >[!IMPORTANT]
 >
->The Service Account (JWT) credentials describe in this article have been deprecated in favor of the new OAuth Server-to-Server credentials. This article will be updated in the near future.
+>The Service Account (JWT) credentials describe in this article will be deprecated in favor of the new OAuth Server-to-Server credentials.
 >
->Although the Service Account (JWT) credentials have been marked as deprecated, they will continue to work until Jan 1, 2025. You must migrate your application or integration to use the new OAuth Server-to-Server credential before Jan 1, 2025.
+>The Service Account (JWT) credentials will continue to work until January 1, 2025. You must migrate your application or integration to use the new OAuth Server-to-Server credential before January 1, 2025.
 >
->For more information and step-by-step instructions, see [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target=_blank} in the *Developer Console* documentation. 
+>For more information and step-by-step instructions to migrate your integration, see [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target=_blank} in the *Developer Console* documentation.
+>
+>For information to set up new OAuth credentials, see [OAuth Server-to-Server credential implementation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target=_blank} in the *Developer Console* documentation.
 
-
-Here are the preliminary steps required to generate authentication tokens needed to successfully interact with [!DNL Adobe Target] APIs:
+Here are the preliminary steps required to generate the legacy JWT authentication tokens needed to successfully interact with [!DNL Adobe Target] APIs:
 
 1. Create a project (previously called integration) in the [!DNL Adobe Developer Console].
 1. Export project details to Postman.
