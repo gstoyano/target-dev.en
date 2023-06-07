@@ -12,7 +12,7 @@ Information about using the [!UICONTROL Adobe Experience Cloud Debugger] extensi
 
 You can quickly view your library configuration, examine requests to make sure your custom parameters are being passed correctly, turn on console logging, and disable all [!DNL Target] requests. Authenticate into the [!DNL Experience Cloud] and you can use the powerful Mbox Trace tool to inspect your activity and audience qualifications as well as your visitor profile.
 
-Review the [Adobe Experience Cloud Debugger Extension documentation](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) for more information. Information specific to Target can be found in the [Tools](https://experienceleague.adobe.com/docs/debugger/using/tools.html) section.
+Review the [Adobe Experience Cloud Debugger overview](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html){target=_blank}.
 
 ## Training videos
 
