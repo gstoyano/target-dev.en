@@ -38,7 +38,7 @@ TargetClient.create(options)
 |artifact_payload|object|No|None|The JSON payload of the [on-device decisioning rule artifact](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). If specified, it is used instead of requesting one from a URL.|
 |[events](sdk-events.md)|dict <str, callable>|No|None|An optional object with event name keys and callback function values|
 |environment_id|int|No|production|The [!DNL Target] environment ID|
-|environment_name|str|No|production|The [!DNL Target] environment name|
+|environment|str|No|production|The [!DNL Target] environment name|
 |cdn_environment|str|No|production|The CDN environment name|
 |telemetry_enabled|bool|No|True|If set to False, telemetry data will not be sent to [!DNL Adobe]|
 |version|str|No|None|The version number of this SDK|
