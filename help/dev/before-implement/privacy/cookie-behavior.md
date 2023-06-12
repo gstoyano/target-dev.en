@@ -20,7 +20,7 @@ See also [Delete the [!DNL Target] cookie](cookie-deleting.md).
 
 ## When to Use first-party or third-party cookies
 
-Your site setup determines which cookies you want to use. It is helpful to understand how [!DNL Target] works when trying to understand first and third-party cookies. See [How [!DNL Adobe] [!DNL Target] Works](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) for more information.
+Your site setup determines which cookies you want to use. It is helpful to understand how [!DNL Target] works when trying to understand first-party and third-party cookies. See [How [!DNL Adobe] [!DNL Target] Works](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) for more information.
 
 There are three main use cases for cookies:
 
