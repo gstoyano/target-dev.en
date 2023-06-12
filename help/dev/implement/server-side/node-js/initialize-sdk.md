@@ -27,6 +27,7 @@ TargetClient.create(options: Object): TargetClient
 | --- | --- | --- | --- | --- |
 |client|String|Yes|None|[!UICONTROL Adobe Target Client ID]|
 |organizationId|String|Yes|None|[!UICONTROL Experience Cloud Organization ID]|
+|environment|String|No|production|Target environment name. In the [!DNL Target] UI, [!UICONTROL Administration] > [!UICONTROL Environments].|
 |timeout|Number|No|3000|Timeout in milliseconds|
 |serverDomain|String|No|`*client*.tt.omtrdc.net`|Overrides default hostname|
 |secure|Boolean|No|true|Unset to enforce HTTP scheme|
