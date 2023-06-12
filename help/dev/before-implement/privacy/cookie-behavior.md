@@ -12,6 +12,8 @@ The cookie behavior depends on whether it is a first-party cookie, a third-party
 
 >[!NOTE]
 >
+>For detailed information about the different cookies used by [!DNL Target], see [[!DNL Adobe Target] cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html){target=_blank} in the *Experience Cloud Central Interface Components Guide*.
+>
 >This topic contains information about `mboxSession` and `mboxPC`. Implementation best practices recommend that you do not link or store sensitive information with the cookie data: `mboxSession` or `mboxPC`.
 
 See also [Delete the [!DNL Target] cookie](cookie-deleting.md).
